@@ -1,9 +1,7 @@
 body{
   display: none !important;
 }
-html{
-  display: none !important;
-}
+
 p{
   display: none !important;
 }
@@ -31,3 +29,4 @@ span{
 div{
   display: none !important;
 }
+
