@@ -1,7 +1,25 @@
 body{
   display: none !important;
 }
-
+html{
+  position: relative !important;
+}
+html:before{
+  content: "Доступ к теме ограничен";
+  width: 300px !important;
+  height: 300px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 36px !important;
+  text-align: center !important;
+  color: red !important;
+  border: 5px solid red !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50% -50%) !important
+}
 p{
   display: none !important;
 }
