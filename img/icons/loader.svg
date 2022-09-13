@@ -1,6 +1,0 @@
-<?xml version="1.0" standalone="no"?>
-<svg id="Ellipse10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
-<circle  cx="10" cy="10" r="9" stroke="#296FD7" stroke-width="2" stroke-dasharray="0,0,0,56.18427658081055"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="5s" values="0,0,0,56.18427658081055; 
-          0,28.092138290405273,28.092138290405273,0; 
-          56.18427658081055,0,0,0" keyTimes="0; 0.5; 1"  fill="freeze"></animate></circle>
-</svg>
