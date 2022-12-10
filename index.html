@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная информационная система инвестиционных данных</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header__row container">
+            <a href="/" class="logo">
+                <img class="logo_img" src="img/logo.png" alt="Приморско-Ахтарский район Краснодарского края">
+                <span class="logo_title">Приморско-Ахтарский район Краснодарского края</span>
+            </a>
+            <span class="main-header__description">Интерактивная информационная система инвестиционных данных</span>
+        </div>
+    </header>
+    <section class="login-section">
+            <div class="login-content">
+                <header class="login-content__header">
+                    <h4>Интерфейс администратора. <br>Пожалуйста, введите логин и пароль</h4>
+                </header>
+                <div class="login-content_form">
+                    <form action="#" method="post">
+                        <div class="input-row">
+                            <label for="login" class="input-label">Логин:</label>
+                            <input required type="text" name="login" id="login" placeholder="Введите логин">
+                        </div>
+                        <div class="input-row">
+                            <label for="password" class="input-label">Пароль:</label>
+                            <input required type="password" name="password" id="password" placeholder="Введите пароль">
+                        </div>
+                        <footer class="login-content_form-footer">
+                            <button class="btn btn-form" type="submit">Войти</button>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
