@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: 'Inter-Regular';
+}
+:root{    
+    --light-blue:#0055D6;
+}
+body{
+    background-color: #120439;
+}
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-Bold.eot');
+    src: url('../fonts/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FiraSans-Bold.woff') format('woff'),
+         url('../fonts/FiraSans-Bold.woff2') format('woff2'),
+         url('../fonts/FiraSans-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Bold.woff') format('woff'),
+         url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Inter-Regular.woff') format('woff'),
+         url('../fonts/Inter-Regular.woff2') format('woff2'),
+         url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../fonts/Inter-Medium.eot');
+    src: url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Inter-Medium.woff') format('woff'),
+         url('../fonts/Inter-Medium.woff2') format('woff2'),
+         url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.eot');
+    src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Inter-Bold.woff') format('woff'),
+         url('../fonts/Inter-Bold.woff2') format('woff2'),
+         url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+/* Основные теги */
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'ProximaNova-Bold';
+    font-size: 40px;
+    line-height: 125%;
+}
+h4{
+    font-family: 'Inter-Bold';
+    line-height: 135%;
+    font-size: 18px;
+}
+label{
+    font-size: 18px;
+    opacity: 0.6;
+    font-family: 'Inter-Regular';
+}
+input{
+    width: 100%;
+    font-size: 18px;
+    line-height: 130%;
+    border-radius: 4px;
+    padding: 11px 22px;
+    outline: none;
+    border: thin solid #0055D6;
+    color: #6A6979;
+}
+input::placeholder{
+    color:#6A6979 ;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 4px;
+    padding: 12px 67px;
+    background-color: #0055D6;
+    transition-duration: 0.3s;
+    display: block;
+}
+.btn:hover{
+    opacity: 0.8;
+    transition-duration: 0.3s;
+}
+/* Header страниц */
+.main-header{
+    background-color: #1B2051;
+    padding: 16px 0;
+    border-bottom: thin solid #3F4A77;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+.main-header__row{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 32px;
+}
+.logo_img{
+    margin-right: 18px;
+}
+.logo_title{
+    font-family: 'ProximaNova-Bold';
+    font-size: 20px;
+    padding-right: 32px;
+    border-right: thin solid #3F4A77;
+}
+.main-header__description{
+    font-size: 18px;
+}
+/* Страница входа */
+.login-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/background/bg-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login-content{
+    background-color: #1B2051;
+    background: linear-gradient(180deg, rgba(44, 145, 235, 0.15) 0%, rgba(44, 145, 235, 0) 100%), #1B2051;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.login-content__header{
+    padding: 15px 32px 18px;
+    background: rgba(18, 4, 57, 0.4);
+    border-bottom: thin solid #3F4A77;
+}
+.login-content_form{
+    padding: 40px 32px;
+}
+.input-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.login-content_form .input-row input{
+    width: 398px;
+}
+.login-content_form form{
+    width: 523px;
+}
+.login-content_form-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Основная навигация */
+.nav-page{
+    width: 16.4%;
+    border-right: thin solid #3F4A77;
+}
+.nav-page__list{
+    list-style: none;
+    padding: 0 20px;
+    padding-top: 104px;
+    position: fixed;
+    height: 100vh;
+    width: 16.4%;
+}
+.nav-page__item{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 12px;
+    padding: 8px 20px;
+    margin-bottom: 11px;
+}
+.nav-page__item span{
+    font-family: 'Inter-Medium';
+    font-size: 0.82vw;
+    line-height: 145%;
+}
+.nav-page__item.active{
+    background-color: #0055D6;
+}
+.nav-page__item svg{
+    margin-right: 24px;
+    min-width: 30px;
+}
+.main-content{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* Правая часть контента */
+.page-container{
+    padding: 0 40px;
+    padding-top: 108px;
+    width: 83.5%;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.filter__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 24px;
+}
+.filter__list li:first-of-type .filter__btn{
+    border-radius: 4px 0 0 4px;
+}
+.filter__list li:last-of-type .filter__btn{
+    border-radius: 0 4px 4px 0;
+    border: thin solid #3F4A77;
+}
+.filter__btn{
+    min-width: 100px;
+    border: thin solid #3F4A77;
+    border-right: none;
+    background-color: #120439;
+    cursor: pointer;
+    padding: 4px 16px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #ffffff;
+    transition-duration: 0.3s;
+    display: block;
+    text-decoration: none;
+}
+.filter__btn:hover{
+    background-color: #1B2051;
+    transition-duration: 0.3s;
+}
+.filter__btn.active{
+    background-color: #0055D6;
+    border: thin solid #0055D6 !important;
+    transition-duration: 0.3s;
+    cursor: default;
+}
+
+.statistics__item{
+    border-radius: 12px;
+    overflow: hidden;
+    border: thin solid #3F4A77;
+    background: linear-gradient(180deg, rgba(44, 145, 235, 0.15) 0%, rgba(44, 145, 235, 0) 100%), #1B2051;
+    margin-bottom: 40px;
+}
+.statistics__item-header{
+    border-bottom: thin solid #3F4A77;
+    display: flex;
+    align-items: center;
+    padding: 15px 32px 19px;
+    background-color: #1B2051;
+    min-height: 80px;
+}
+.statistics__item-body{
+    padding: 32px;
+}
+.chart-container{
+    width: 100%;
+}
+.statistics__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.statistics__item_big{
+    width: 69%;
+}
+.statistics__item_little{
+    width: 28%;
+}
+.statistics__item-header h4{
+    font-size: 0.92vw;
+}
+.statistics-item{
+    margin-bottom: 24px;
+}
+.statistics-item:last-of-type{
+    margin-bottom: 0;
+}
+.statistics-item__subtitle{
+    font-size: 16px;
+}
+.statistics-item__number{
+    font-size: 64px;
+    font-family: 'ProximaNova-Bold';
+}
+.statistics-item__number-desc{
+    font-family: 'ProximaNova-Bold';
+    font-size: 24px;
+}
+.statistics__item_full{
+    width: 100%;
+}
+.statistics__item_full .statistics__item-body{
+    padding-bottom: 0;
+}
+.statistics-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.statistics-row .statistics-item{
+    margin-bottom: 32px;
+    margin-right: 11%;
+}
+
+
+
+
+
+
+
+@media(min-width:1921px){
+    .statistics__item-header h4{
+        font-size: 18px;
+    }
+    .nav-page__list{
+        width: 313px;
+    }
+    .nav-page__item span{
+        font-size: 16px;
+    }
+}
