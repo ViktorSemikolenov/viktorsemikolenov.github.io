@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+function randomFromTo(from, to) {
+    return Math.floor(Math.random() * (to - from + 1) + from);
+}
+function new_page(){
+    var num_page = randomFromTo(1, 5); // рандомный номер от 0 до 100
+    window.location = "page-"+num_page+".html"; // переход на рандомную страницу
+}
+window.onload = new_page;
+</script>
+</html>
