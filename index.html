@@ -1,46 +1,556 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интерактивная информационная система инвестиционных данных</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media.css">
+    <title>Fraud.bar</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <!-- javascript -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
 </head>
+
 <body>
-    <header class="main-header">
-        <div class="main-header__row container">
-            <a class="logo">
-                <img class="logo_img" src="img/logo.png" alt="Приморско-Ахтарский район Краснодарского края">
-                <span class="logo_title">Приморско-Ахтарский район Краснодарского края</span>
-            </a>
-            <span class="main-header__description">Интерактивная информационная система инвестиционных данных</span>
-        </div>
+    <header class="navigation-page">
+        <div class="nav-logo"><img src="image/logo.png" alt="Fraund-Bar"></div>
+        <nav class="nav-header">
+            <ul class="nav-list">
+                <li><a href="#product">Товары</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <!-- <li><a href="#news">Новости</a></li> -->
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <!-- <ul class="lang-header">
+                <li><a href="#"><img src="image/icons/uk.png" alt="EN"></a></li>
+                <li><img src="image/icons/ru.png" alt="RU"></li>
+            </ul> -->
+        </nav>
+        <button class="btn-menu"></button>
     </header>
-    <section class="login-section">
-            <div class="login-content">
-                <header class="login-content__header">
-                    <h4>Интерфейс администратора. <br>Пожалуйста, введите логин и пароль</h4>
+    <section class="first-screen">
+        <div class="first-screen-content width-s-layout">
+            <h1>Fraud.bar</h1>
+            <p>Обновляемые списки прокси по народным ценам. <br>
+                Мы предоставляем доступ к постоянно обновляемым <br>
+                спискам публичных HTTP, HTTPS, SOCKS4 и SOCKS5 прокси.</p>
+            <div class="btn-fs-block">
+                <a href="#product" class="btn btn-type-one">
+                    <p>Купить</p>
+                    <div class="bg-btn-one"></div>
+                </a>
+                <a target="_blank" href="https://configshop.net/#rec220798619" class="btn btn-type-two">
+                    <p>Попробовать</p>
+                    <div class="bg-btn-two"></div>
+                </a>
+            </div>
+        </div>
+        <footer class="footer-first-screen width-s-layout">
+            <div class="statistic-header">
+                <div class="statistic-border">
+                    <div class="statistic-circle"></div>
+                </div>
+                <span>Сейчас онлайн 7.5k прокси, включая: </span>
+            </div>
+            <ul class="statistic-block">
+                <li>
+                    <p>HTTP:</p>
+                    <span>2.8k</span>
+                </li>
+                <li>
+                    <p>HTTPS:</p>
+                    <span>2.6k</span>
+                </li>
+                <li>
+                    <p>SOCKS4:</p>
+                    <span>3.4k</span>
+                </li>
+                <li>
+                    <p>SOCKS5:</p>
+                    <span>499</span>
+                </li>
+            </ul>
+        </footer>
+    </section>
+    <section class="proxy" id="product">
+        <header class="section-header width-s-layout">
+            <h2>Прокси</h2>
+            <span class="sub-header">Прокси</span>
+        </header>
+        <div class="proxy-row width-s-layout">
+            <div class="proxy-item">
+                <header class="header-proxy-item">
+                    <h3>"Минимум"</h3>
+                    <p><span>114₽</span>/день</p>
                 </header>
-                <div class="login-content_form">
-                    <form action="#" method="post">
-                        <div class="input-row">
-                            <label for="login" class="input-label">Логин:</label>
-                            <input required type="text" name="login" id="login" placeholder="Введите логин">
-                        </div>
-                        <div class="input-row">
-                            <label for="password" class="input-label">Пароль:</label>
-                            <input required type="password" name="password" id="password" placeholder="Введите пароль">
-                        </div>
-                        <footer class="login-content_form-footer">
-                            <button class="btn btn-form" type="submit">Войти</button>
-                        </footer>
-                    </form>
+                <div class="descript-proxy-item">
+                    <p>Доступ ко всем функциям <br> за 114 руб в день</p>
+                </div>
+                <div class="list-proxy-item">
+                    <span>Преимущества</span>
+                    <ul>
+                        <li>Нет привязки по IP</li>
+                        <li>Обновление 5 минут</li>
+                        <li>Доступ к API</li>
+                        <li>До трёх подсетей</li>
+                    </ul>
+                </div>
+                <footer class="footer-proxy-item">
+                    <a href="https://configshop.net/order" class="btn btn-type-one">
+                        <p>Купить</p>
+                        <div class="bg-btn-one"></div>
+                    </a>
+                </footer>
+            </div>
+            <div class="proxy-item">
+                <header class="header-proxy-item">
+                    <h3>"Стандарт"</h3>
+                    <p><span>216₽</span>/день</p>
+                </header>
+                <div class="descript-proxy-item">
+                    <p>Доступ ко всем функциям <br> за 30 руб в день</p>
+                </div>
+                <div class="list-proxy-item">
+                    <span>Преимущества</span>
+                    <ul>
+                        <li>Нет привязки по IP</li>
+                        <li>Обновление 5 минут</li>
+                        <li>Доступ к API</li>
+                        <li>До трёх подсетей</li>
+                    </ul>
+                </div>
+                <footer class="footer-proxy-item">
+                    <a href="https://configshop.net/order" class="btn btn-type-one">
+                        <p>Купить</p>
+                        <div class="bg-btn-one"></div>
+                    </a>
+                </footer>
+            </div>
+            <div class="proxy-item">
+                <header class="header-proxy-item">
+                    <h3>"Максимум"</h3>
+                    <p><span>624₽</span>/день</p>
+                </header>
+                <div class="descript-proxy-item">
+                    <p>Доступ ко всем функциям <br> за 20 руб в день</p>
+                </div>
+                <div class="list-proxy-item">
+                    <span>Преимущества</span>
+                    <ul>
+                        <li>Нет привязки по IP</li>
+                        <li>Обновление 5 минут</li>
+                        <li>Доступ к API</li>
+                        <li>До трёх подсетей</li>
+                    </ul>
+                </div>
+                <footer class="footer-proxy-item">
+                    <a href="https://configshop.net/order" class="btn btn-type-one">
+                        <p>Купить</p>
+                        <div class="bg-btn-one"></div>
+                    </a>
+                </footer>
+            </div>
+        </div>
+        <footer class="proxy-footer width-s-layout">
+            <div class="proxy-footer-text">
+                <img src="image/content/logo-configshop.png" alt="" class="logo-proxy">
+                <span>Приватные конфиги для <br>
+                    Linken Sphere</span>
+            </div>
+            <a href="https://configshop.net/" target="_blank" class="btn-type-three">Подробнее</a>
+        </footer>
+    </section>
+    <section class="faq" id="faq">
+        <header class="section-header width-s-layout">
+            <h2>Вопрос/Ответ</h2>
+            <span class="sub-header">Вопрос/Ответ</span>
+        </header>
+        <div class="faq-content width-s-layout">
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">Для чего нужны прокси?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ новые адреса тоже имеется возможность , но это работает только тогда, когда вы
+                        продлеваете заказ. </p>
                 </div>
             </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">Прокси каких стран я могу купить?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">Могу ли я протестировать прокси?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">Чем могу оплатить?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">Сколько прокси я могу купить?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">Как использовать ваши прокси?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">В чем ваше преимущество?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <header class="header-faq-item">
+                    <span class="question-name">У вас есть партнерская программа?</span>
+                    <div class="circle-icons-faq"><img src="image/icons/down.png" alt=""></div>
+                </header>
+                <div class="text-question">
+                    <p>Вы сможете при продлении своих прокси, продлевать нужные прокси и не нужные например удалять и
+                        добавлять в заказ <br> новые адреса тоже имеется возможность , но это работает только тогда,
+                        когда вы продлеваете заказ. </p>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="advantages" id="advantages">
+        <header class="section-header width-s-layout">
+            <h2>Преимущества</h2>
+            <span class="sub-header">Преимущества</span>
+        </header>
+        <div class="advantages-row width-s-layout">
+            <div class="triggers-col">
+                <div class="trigger-item">
+                    <img src="image/content/triggers/1.png" alt="">
+                    <span>Выгрузка</span>
+                    <p>Выгрузка прокси в формате ТХТ для <br> использования в своём ПО</p>
+                </div>
+                <div class="trigger-item">
+                    <img src="image/content/triggers/2.png" alt="">
+                    <span>Низкие цены</span>
+                    <p>У нас одни из самых низких цен <br> на рынке</p>
+                </div>
+                <div class="trigger-item">
+                    <img src="image/content/triggers/3.png" alt="">
+                    <span>Удобные фильтры</span>
+                    <p>Вы можете фильтровать прокси по типу, <br> уровню анонимности, скорости, стране и <br> другим
+                        параметрам через наше API</p>
+                </div>
+                <div class="trigger-item">
+                    <img src="image/content/triggers/4.png" alt="">
+                    <span>Вариативность подписки</span>
+                    <p>Возможность покупки подписки на несколько <br> дней/недель/месяцев</p>
+                </div>
+            </div>
+            <div class="advantages-form">
+                <h3>Консультация <br> бесплатно</h3>
+                <p>Мы готовы проконсультировать вас по любому вопросу, связанному с использованием наших прокси.</p>
+                <p>Свяжитесь с нами по контактам ниже или оставьте заявку.</p>
+                <ul>
+                    <li>Telegram:<a target="_blank" href="https://tlgg.ru/FraudBar"> FraudBar</a></li>
+                    <li>Email:<a target="_blank" href="mailto:support@fraud.bar"> support@fraud.bar</a></li>
+                </ul>
+                <form action="" method="post">
+                    <input type="text" required name="" placeholder="Ваш Telegram или email" id="">
+                    <button class="btn btn-type-one">
+                        <p>Оставить заявку</p>
+                        <div class="bg-btn-one"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <header class="section-header width-s-layout">
+            <h2>Отзывы</h2>
+            <span class="sub-header">Отзывы</span>
+        </header>
+        <div id="slider" class="width-m-layout">
+            <div class="owl-carousel reviews-slider">
+                <div class="slide ">
+                    <div class="reviews-item">
+                        <div class="rev-info">
+                            <p class="rev-text">
+                                Виталий
+                                Беру здесь прокси для ВК, все отлично. ВК лоялен к этим прокси, они чистые и стоят не
+                                дорого, мне все нравится, буду работать с вами дальше!
+                            </p>
+                            <a class="rev-link" href="#">https://forum.antichat.ru/threads/474183/page-2</a>
+                        </div>
+                        <div class="rev-human">
+                            <div class="rev-avatar">
+                                <img src="image/content/reviews/1.jpg" alt="Фото человека">
+                            </div>
+                            <span class="rev-name">Виталий</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide blured">
+                    <div class="reviews-item">
+                        <div class="rev-info">
+                            <p class="rev-text">
+                                Алексей
+                                Беру здесь прокси для ВК, все отлично. ВК лоялен к этим прокси, они чистые и стоят не
+                                дорого, мне все нравится, буду работать с вами дальше!
+                            </p>
+                            <a class="rev-link" href="#">https://forum.antichat.ru/threads/474183/page-2</a>
+                        </div>
+                        <div class="rev-human">
+                            <div class="rev-avatar">
+                                <img src="image/content/reviews/2.jpg" alt="Фото человека">
+                            </div>
+                            <span class="rev-name">Алексей</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="reviews-item">
+                        <div class="rev-info">
+                            <p class="rev-text">
+                                RallySwift
+                                Беру здесь прокси для ВК, все отлично. ВК лоялен к этим прокси, они чистые и стоят не
+                                дорого, мне все нравится, буду работать с вами дальше!
+                            </p>
+                            <a class="rev-link" href="#">https://forum.antichat.ru/threads/474183/page-2</a>
+                        </div>
+                        <div class="rev-human">
+                            <div class="rev-avatar">
+                                <img src="image/content/reviews/3.jpg" alt="Фото человека">
+                            </div>
+                            <span class="rev-name">RallySwift</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="reviews-item">
+                        <div class="rev-info">
+                            <p class="rev-text">
+                                Никита
+                                Беру здесь прокси для ВК, все отлично. ВК лоялен к этим прокси, они чистые и стоят не
+                                дорого, мне все нравится, буду работать с вами дальше!
+                            </p>
+                            <a class="rev-link" href="#">https://forum.antichat.ru/threads/474183/page-2</a>
+                        </div>
+                        <div class="rev-human">
+                            <div class="rev-avatar">
+                                <img src="image/content/reviews/4.jpg" alt="Фото человека">
+                            </div>
+                            <span class="rev-name">Никита</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what-proxy width-s-layout">
+        <div class="what-proxy-info">
+            <h2>Зачем нужны прокси ?</h2>
+            <p><span>Смена IP и DNS</span> - Вы можете скрыть свой реальный IP-адрес и DNS, просто подключив прокси.</p>
+            <p><span>Анонимность в сети</span> - Анонимное и безопасное использование интернета, скрытие
+                интернет-активности от своего провайдера.</p>
+            <p><span>Обход блокировок</span> - Снятие ограничений сервисов по IP, GEO-данным, порту и протоколу. Ваш
+                интернет становится свободным.</p>
+            <p><span>Защита от хакеров</span> - Атаки хакеров ложатся на наш прокси-сервер. Злоумышленники не смогут
+                узнать реальный IP.</p>
+            <p><span>Многопоточная работа</span> - Прокси в связке с специальным ПО позволяют работать многопоточно</p>
+        </div>
+    </section>
+    <!-- <section class="news width-s-layout" id="news">
+        <header class="section-header">
+            <h2>Новости</h2>
+            <span class="sub-header">Новости</span>
+        </header>
+        <div class="news-content">
+            <a href="#" class="news-item">
+                <div class="img-news">
+                    <img src="image/content/news/1.jpg" alt="Фото новости">
+                </div>
+                <div class="info-news">
+                    <span class="name-news">Ответы на вопросы веб-мастеров. Краткий конспект прямого эфира</span>
+                    <p class="descript-news">Личный Кабинет сайта временно не доступен, по причине аварии в Дата Центре
+                        OVH. Все прокси, у которых закончился срок аренды, отключены не будут пока не восстановиться
+                        работа личного кабинета и дополнительно будут работать ещё 24 часа от этого срока. ЛК станет
+                        доступен не раньше чем к полудню 11 марта. </p>
+                    <span class="news-date">24.03.2021</span>
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="img-news">
+                    <img src="image/content/news/2.jpg" alt="Фото новости">
+                </div>
+                <div class="info-news">
+                    <span class="name-news">Изменения графика выплат в предновогодний период</span>
+                    <p class="descript-news">Личный Кабинет сайта временно не доступен, по причине аварии в Дата Центре
+                        OVH. Все прокси, у которых закончился срок аренды, отключены не будут пока не восстановиться
+                        работа личного кабинета и дополнительно будут работать ещё 24 часа от этого срока. ЛК станет
+                        доступен не раньше чем к полудню 11 марта. </p>
+                    <span class="news-date">24.03.2021</span>
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="img-news">
+                    <img src="image/content/news/3.jpg" alt="Фото новости">
+                </div>
+                <div class="info-news">
+                    <span class="name-news">Telegram-канал для веб-мастеров — присоединяйтесь!</span>
+                    <p class="descript-news">Личный Кабинет сайта временно не доступен, по причине аварии в Дата Центре
+                        OVH. Все прокси, у которых закончился срок аренды, отключены не будут пока не восстановиться
+                        работа личного кабинета и дополнительно будут работать ещё 24 часа от этого срока. ЛК станет
+                        доступен не раньше чем к полудню 11 марта. </p>
+                    <span class="news-date">24.03.2021</span>
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="img-news">
+                    <img src="image/content/news/4.jpg" alt="Фото новости">
+                </div>
+                <div class="info-news">
+                    <span class="name-news">Cyberpunk 2077: будущее наступит 10 декабря </span>
+                    <p class="descript-news">Личный Кабинет сайта временно не доступен, по причине аварии в Дата Центре
+                        OVH. Все прокси, у которых закончился срок аренды, отключены не будут пока не восстановиться
+                        работа личного кабинета и дополнительно будут работать ещё 24 часа от этого срока. ЛК станет
+                        доступен не раньше чем к полудню 11 марта. </p>
+                    <span class="news-date">24.03.2021</span>
+                </div>
+            </a>
+        </div>
+    </section> -->
+    <section class="other-questions width-s-layout" id="contacts">
+        <header class="section-header">
+            <h2>Остались вопросы?</h2>
+            <span class="sub-header">Остались вопросы?</span>
+        </header>
+        <div class="form-q">
+            <form action="">
+                <div class="input-item">
+                    <label for="name-f">Имя</label>
+                    <input required type="text" id="name-f">
+                </div>
+                <div class="input-item">
+                    <label for="email-f">E-email</label>
+                    <input required type="email" name="" id="email-f">
+                </div>
+                <div class="input-item comment-item">
+                    <label for="comment-f">Сообщение</label>
+                    <textarea name="" id="comment-f"></textarea>
+                </div>
+                <footer class="form-btn-two">
+                    <a target="_blank" href="https://tlgg.ru/FraudBar" class="link-to-telegram"><img
+                            src="image/icons/telega-form.png" alt="telegram">Написать в телеграме</a>
+                    <button class="btn btn-type-one">
+                        <p>Отправить</p>
+                        <div class="bg-btn-one"></div>
+                    </button>
+                </footer>
+            </form>
+        </div>
+    </section>
+    <footer class="footer-page">
+        <div class="brand-row">
+            <img src="image/content/brand/bitcoin.png" alt="" class="barnd-img">
+            <img src="image/content/brand/qiwi.png" alt="" class="barnd-img">
+            <img src="image/content/brand/youmoney.png" alt="" class="barnd-img">
+            <img src="image/content/brand/litecoin.png" alt="" class="barnd-img">
+        </div>
+        <div class="footer-nav">
+            <div class="footer-logo">
+                <img src="image/logo.png" alt="">
+                <p>2022 Copyright Fraud.bar</p>
+                <p>Все права защищены.</p>
+            </div>
+            <div class="nav-item">
+                <span>Меню:</span>
+                <ul>
+                    <li><a href="#product">Товары</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <span>Быстрые ссылки:</span>
+                <ul>
+                    <li><a href="#">Условия и положения</a></li>
+                    <li><a href="#">Политика <br>конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="nav-item contact-item">
+                <span>Контакты:</span>
+                <ul>
+                    <li>Telegram: <a href="#">FraudBar</a></li>
+                    <li>Email: <a href="#">support@fraud.bar</a></li>
+                    <li>Skype: <a href="#">@FraudBar</a></li>
+                </ul>
+                <ul class="sicial-col">
+                    <li><a href="#"><img src="image/icons/t.png" alt="telegram"></a></li>
+                    <li><a href="#"><img src="image/icons/i.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="image/icons/f.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+            <div class="nav-item footer-lang">
+                <ul class="lang-header">
+                    <li><a href="#"><img src="image/icons/uk.png" alt="EN"></a></li>
+                    <li><img src="image/icons/ru.png" alt="RU"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- vendors -->
+    <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="script/main.js"></script>
 </body>
+
 </html>
