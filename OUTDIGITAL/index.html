@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTDIGITAL</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/animate.min.css">
+    <style>
+        .page-hidden{
+            display: none;
+        }
+        .page{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        .page.show{
+            display: block;
+        }
+        .page-one .page__body{
+            z-index: 999;
+        }
+        .hidden-text{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .page-one .page__body p{
+            transition-duration: 0.3s;
+        }
+        body{
+            background-image: url(img/background/page-one/bg.jpg);
+            background-position: center ; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .panel-left__hedden{
+            transition-duration: 0.3s;
+        }
+        .hidden-element .panel-right, .hidden-element .panel-left__hedden{
+            opacity: 0 !important;
+            transition-duration: 0.3s !important;
+        }
+        /* .hidden-element .page__footer{
+            opacity: 0 !important;
+            transition-duration: 60s;
+        } */
+        .loaded_hiding .page-one{
+            display: none;
+        }
+         .page-two .btn, .page-three .btn, .page-four .btn, .page-five .btn, .page-six .btn{
+            opacity: 0;
+        }
+        .btn-hidden{
+            display: none;
+        }
+        .btn-one:hover{
+            border: 0.05vw solid #ffffff;
+            background-color:  #ffffff;
+            transition-duration: 0.3s;
+            color: #010101;
+        }
+        .btn-two:hover{
+            background-color:  #C4D6D9;
+            color: #010101;
+            transition-duration: 0.3s;
+        }
+        .btn-three:hover{
+            border: 0.05vw solid #2DA537;
+            background: #2DA537;
+            color: #ffffff;
+        }
+        .btn-four:hover{
+            background: #4D49EC;
+            color: #ffffff;
+            transition-duration: 0.3s;
+        }
+        .btn-four:hover{
+            border: 0.05vw solid #4D49EC;
+            transition-duration: 0.3s;
+        }
+        .btn-five:hover{
+            border: 0.05vw solid #ffffff;
+            transition-duration: 0.3s;
+            background: #ffffff;
+            color: #000000;
+        }
+        .btn-six:hover{
+            border: 0.05vw solid #171717;
+            transition-duration: 0.3s;
+        }
+        .page-one{
+            display: none;
+        }
+        .loaded .page-one{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="img/content/Preloader.gif" alt="loading">
+    </div>
+    <section class="page page-one">
+        <!-- line -->
+        <div class="page-line">
+            <div data-wow-delay="0ms" data-wow-duration="0.35s" class="line-one line-header animate__animated animate__fadeInLeft wow"></div>
+            <div data-wow-delay="150ms" data-wow-duration="0.35s" class="line-two line-header animate__animated animate__fadeInLeft wow"></div>
+            <div data-wow-delay="250ms" data-wow-duration="0.35s" class="line-three line-header animate__animated animate__fadeInLeft wow"></div>
+            <div data-wow-delay="350ms" data-wow-duration="0.35s" class="line-foure line-header animate__animated animate__fadeInLeft wow"></div>
+        </div>
+        <div class="page__container">
+            <div></div>
+            <header class="page__header">
+                <!-- heavy and thin -->
+                <img data-wow-delay="400ms" data-wow-duration="0.4s" src="img/content/page-detail/page-one/heavy.svg" alt="heavy" class="left-top animate__animated animate__fadeInUp wow">
+                <img data-wow-delay="400ms" data-wow-duration="0.4s" src="img/content/page-detail/page-one/thin.svg" alt="heavy" class="right-top animate__animated animate__fadeInUp wow">
+                <!-- letters -->
+                <div class="letters">
+                    <div class="first-word">
+                        <div  class="letter">
+                            <img data-wow-delay="0s" data-wow-duration="0.3s" class="letter__o animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/O.svg" alt="o">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="100ms" data-wow-duration="0.3s" class="letter__u animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/U.svg" alt="U">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="200ms" data-wow-duration="0.3s" class="letter__t_one animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/T_1.svg" alt="T">
+                        </div>
+                    </div>
+                    <div class="second-word">
+                        <div  class="letter">
+                            <img data-wow-delay="500ms" data-wow-duration="0.3s" src="img/content/letter__detail/page-one/ishodnik.svg" alt="ishodnik" class="letter__detail_d animate__animated animate__fadeIn wow">
+                            <img data-wow-delay="300ms" data-wow-duration="0.3s" class="letter__d animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/D.svg" alt="d">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="400ms" data-wow-duration="0.5s" class="letter__i animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/I_1.svg" alt="i">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="650ms" data-wow-duration="0.3s" src="img/content/letter__detail/page-one/16x.svg" alt="" class="letter__detail_g animate__animated animate__fadeIn wow">
+                            <img data-wow-delay="500ms" data-wow-duration="0.3s" class="letter__g animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/G.svg" alt="g">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="600ms" data-wow-duration="0.5s" class="letter__i_two animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/I_1.svg" alt="i">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="800ms" data-wow-duration="0.5s" src="img/content/letter__detail/page-one/90.svg" alt="" class="letter__detail_t-two animate__animated animate__fadeIn wow">
+                            <img data-wow-delay="700ms" data-wow-duration="0.3s" class="letter__t_two animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/T_2.svg" alt="t">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="800ms" data-wow-duration="0.3s" class="letter__a animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/A.svg" alt="a">
+                        </div>
+                        <div  class="letter">
+                            <img data-wow-delay="900ms" data-wow-duration="0.3s" class="letter__l animate__animated animate__fadeInLeft wow" src="img/content/letters/page-one/I_2.svg" alt="l">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div data-wow-duration="0.6s" class="page__body animate__animated animate__fadeIn wow">
+                <div class="panel-left__hedden">
+                    <img data-wow-delay="500ms" data-wow-duration="0.6s" src="img/content/page-detail/page-one/panel_left.svg" alt="panel-left" class="panel-left animate__animated animate__fadeInLeft wow">
+                </div>
+                
+                    <a href="https://docs.google.com/presentation/d/13vaW637mXlxP5QxmFG3AaR27m4koU6XrBkOrhvRMn-A/edit?usp=sharing" target="_blank" class="btn btn-one">кнопка</a>
+                    <a href="https://docs.google.com/presentation/d/13vaW637mXlxP5QxmFG3AaR27m4koU6XrBkOrhvRMn-A/edit?usp=sharing" target="_blank" class="btn btn-two btn-hidden">кнопка</a>
+                    <a href="https://docs.google.com/presentation/d/13vaW637mXlxP5QxmFG3AaR27m4koU6XrBkOrhvRMn-A/edit?usp=sharing" target="_blank" class="btn btn-three btn-hidden">кнопка</a>
+                    <a href="https://docs.google.com/presentation/d/13vaW637mXlxP5QxmFG3AaR27m4koU6XrBkOrhvRMn-A/edit?usp=sharing" target="_blank" class="btn btn-four btn-hidden">кнопка</a>
+                    <a href="https://docs.google.com/presentation/d/13vaW637mXlxP5QxmFG3AaR27m4koU6XrBkOrhvRMn-A/edit?usp=sharing" target="_blank" class="btn btn-five btn-hidden">кнопка</a>
+                    <a href="https://docs.google.com/presentation/d/13vaW637mXlxP5QxmFG3AaR27m4koU6XrBkOrhvRMn-A/edit?usp=sharing" target="_blank" class="btn btn-six btn-hidden">кнопка</a>
+                <p>Привет, это Out Digital.<span class="text-span">Нажмите на кнопку выше</span></p>
+                <div class="panel-right">
+                    <!-- <div data-wow-delay="500ms" data-wow-duration="0.6s" class="line animate__animated animate__fadeInLeft wow"></div> -->
+                    <img data-wow-delay="550ms" data-wow-duration="0.6s" src="img/content/page-detail/page-one/slider_1.svg" alt="slider" class="slider slider-one animate__animated animate__fadeInLeft wow">
+                    <img data-wow-delay="600ms" data-wow-duration="0.6s" src="img/content/page-detail/page-one/slider_2.svg" alt="slider" class="slider slider-two animate__animated animate__fadeInLeft wow">
+                    <img data-wow-delay="650ms" data-wow-duration="0.6s" src="img/content/page-detail/page-one/slider_3.svg" alt="slider" class="slider slider-three animate__animated animate__fadeInLeft wow">
+                    <div class="utp-row">
+                        <img data-wow-delay="550ms" data-wow-duration="0.6s" src="img/content/page-detail/page-one/square.svg" alt="image" class="utp-row__img animate__animated animate__fadeInLeft wow">
+                        <img data-wow-delay="650ms" data-wow-duration="0.6s" src="img/content/page-detail/page-one/field_left_1.svg" alt="утп" class="utp-row__utp animate__animated animate__fadeInLeft wow">
+                    </div>
+                    <div data-wow-delay="700ms" data-wow-duration="0.6s" class="input-row  animate__animated animate__fadeInLeft wow">
+                        <img  src="img/content/page-detail/page-one/field_left_2.svg" alt="input" class="input-row__input">
+                        <img src="img/content/page-detail/page-one/arrow.svg" alt="left"  class="input-row__btn_left">
+                        <img src="img/content/page-detail/page-one/arrow.svg" alt="right" class="input-row__btn_right">
+                    </div>
+                </div>
+            </div>
+            <footer data-wow-duration="0.6s" class="page__footer animate__animated animate__fadeIn wow">
+                <ul class="social-list">
+                    <li><a target="_blank" href="https://instagram.com/outdigital?igshid=YmMyMTA2M2Y=">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                   <path class="st0" d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6
+                       V138.6C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
+                       C30,78.7,78.7,30,138.6,30h234.8C433.3,30,482,78.7,482,138.6V373.4z"/>
+                   <path class="st0" d="M256,116c-77.2,0-140,62.8-140,140s62.8,140,140,140s140-62.8,140-140S333.2,116,256,116z M256,366
+                       c-60.6,0-110-49.3-110-110c0-60.6,49.3-110,110-110c60.6,0,110,49.3,110,110C366,316.6,316.6,366,256,366z"/>
+                   <path class="st0" d="M399.3,66.3c-22.8,0-41.4,18.6-41.4,41.4s18.6,41.4,41.4,41.4s41.4-18.6,41.4-41.4S422.2,66.3,399.3,66.3z
+                        M399.3,119c-6.3,0-11.4-5.1-11.4-11.4s5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4C410.7,113.9,405.6,119,399.3,119z"/>
+                   </svg> -->
+                   <img src="img/icons/instagram.png" alt="">
+                </a></li>
+                    <li><a target="_blank" href="https://fb.me/OutAgency">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" d="M449.6,0H62.4C28,0,0,28,0,62.4v387.3C0,484,28,512,62.4,512h198.5c8.3,0,15.1-6.8,15.1-15.1V313.6
+			c0-8.3-6.8-15.1-15.1-15.1h-54.3v-43h54.3c8.3,0,15.1-6.8,15.1-15.1v-61.2c0-33.1,26.9-60.1,60.1-60.1h52.4v43H336
+			c-9.4,0-17,7.6-17,17v61.2c0,8.3,6.8,15.1,15.1,15.1h54.3v43h-54.3c-8.3,0-15.1,6.8-15.1,15.1v183.3c0,8.3,6.8,15.1,15.1,15.1
+			h115.5c34.4,0,62.4-28,62.4-62.4V62.4C512,28,484,0,449.6,0z M481.8,449.6c0,17.7-14.4,32.1-32.1,32.1H349.2l0,0v-153h54.3
+			c8.3,0,15.1-6.8,15.1-15.1v-73.3c0-8.3-6.8-15.1-15.1-15.1h-54.3v-32.9h54.3c8.3,0,15.1-6.8,15.1-15.1v-73.3
+			c0-8.3-6.8-15.1-15.1-15.1H336c-49.8,0-90.3,40.5-90.3,90.3v46.1h-54.3c-8.3,0-15.1,6.8-15.1,15.1v73.3c0,8.3,6.8,15.1,15.1,15.1
+			h54.3v153.1H62.4c-17.7,0-32.1-14.4-32.1-32.1V62.4c0-17.7,14.4-32.1,32.1-32.1h387.3c17.7,0,32.1,14.4,32.1,32.1V449.6z"/>
+	</g>
+</g>
+                        </svg> -->
+                        <img src="img/icons/facebook.png" alt="">
+                    </a></li>
+                    <li><a target="_blank" href="https://t.me/out_digital">
+                        <!-- <svg width="100%" height="100%" class="telega-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path id="Path-3" class="st0" d="M49,224.3c128.8-56.1,214.7-93.1,257.7-111c122.7-51,148.2-59.9,164.8-60.2  c3.7-0.1,11.8,0.8,17.1,5.1c4.5,3.6,5.7,8.5,6.3,12c0.6,3.4,1.3,11.3,0.7,17.4c-6.7,69.9-35.4,239.4-50.1,317.7  c-6.2,33.1-18.4,44.2-30.2,45.3c-25.7,2.4-45.1-17-70-33.3c-38.9-25.5-60.9-41.4-98.6-66.2c-43.6-28.8-15.3-44.6,9.5-70.4  c6.5-6.8,119.6-109.6,121.8-118.9c0.3-1.2,0.5-5.5-2.1-7.8s-6.4-1.5-9.1-0.9c-3.9,0.9-66,42-186.4,123.2  c-17.6,12.1-33.6,18-47.9,17.7c-15.8-0.3-46.1-8.9-68.7-16.3c-27.7-9-49.7-13.8-47.8-29C17.1,240.8,28.1,232.6,49,224.3z"/>
+                        </svg> -->
+                        <img src="img/icons/telegram.png" alt="">
+                    </a></li>
+                </ul>
+                <a href="mailto:hello@outdigital.ru">hello@outdigital.ru</a>
+                <a target="_blank" href="https://yandex.ru/maps/-/CCUruPRupB">Москва, пер. Огородная Слабода, 14</a>
+                <p>Телефона — нет</p>
+            </footer>
+        </div>
+    </section>
+    <section class="page page-two page-hidden">
+        <div class="page__container">
+            <div></div>
+            <header class="page__header">
+                <div class="page__header-circle">
+                    <svg data-wow-duration="1s" class="page__header-star animate__animated animate__fadeIn wow"  xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 83.1 83.1">
+                        <g id="star3">
+                          <path class="star-header" d="M83.07,42.12c-38.66,1.07-39.97,2.34-42.09,40.96C39.92,44.41,38.64,43.1,.03,40.98,38.68,39.92,39.99,38.64,42.12,.03c1.07,38.66,2.34,39.97,40.96,42.09Z"/>
+                        </g>
+                      </svg>
+                    <svg class="header-circle__svg" xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 1614.28 488.31">
+                        <g id="ellipse">
+                          <path class="line-one" d="M580.44,2.65c80.97,3.52,167.06,11.09,255.99,23.01,445.2,59.69,792.99,205.86,776.82,326.48-16.17,120.62-390.18,170.02-835.38,110.34C332.66,402.8-15.13,256.63,1.04,136,12.18,52.96,192.91,3.68,449.7,.5"/>
+                        </g>
+                      </svg>
+                </div>
+                <div class="letters">
+                    <img data-original="img/content/page-detail/page-two/gradient-left.png" alt="before" class="lazy letters-detail_one animate__animated animate__fadeIn wow">
+                    <img data-original="img/content/page-detail/page-two/gradient-right.png" alt="before" class="lazy letters-detail_two animate__animated animate__fadeInUp wow">
+                    <div class="first-word">
+                        <div  class="letter">
+                            <img class="letter__o lazy" data-original="img/content/letters/page-two/O.svg" alt="o">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__u lazy" data-original="img/content/letters/page-two/U.svg" alt="U">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__t_one lazy" data-original="img/content/letters/page-two/T.svg" alt="T">
+                        </div>
+                    </div>
+                    <div class="second-word">
+                        <div  class="letter">
+                            <img class="letter__d lazy" data-original="img/content/letters/page-two/D.svg" alt="d">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__i lazy" data-original="img/content/letters/page-two/I_1.svg" alt="i">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__g lazy" data-original="img/content/letters/page-two/G.svg" alt="g">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__i_two lazy" data-original="img/content/letters/page-two/I_1.svg" alt="i">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__ta lazy" data-original="img/content/letters/page-two/TA.svg" alt="t">
+                        </div>
+                        <div  class="letter">
+                            <img class="letter__a lazy" data-original="img/content/letters/page-two/L.svg" alt="a">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__body">
+                <img data-wow-delay="0.3s" data-wow-duration="1s" data-original="img/content/page-detail/page-two/star_1.svg" alt="star2" class="lazy page__body-ster-one animate__animated animate__fadeIn wow">
+                <img data-wow-delay="0.5s" data-wow-duration="1s" data-original="img/content/page-detail/page-two/star_3.svg" alt="star2" class="lazy page__body-ster-two animate__animated animate__fadeIn wow">
+                <img data-original="img/content/page-detail/page-two/gradient-left-two.png" alt="" class="lazy page__body-detail_one animate__animated animate__fadeIn wow">
+                <div class="page__body-row">
+                    <span class="page-two-line page-two-line_left"></span>
+                    <button class="btn">кнопка</button>
+                    <span class="page-two-line page-two-line_left"></span>
+                </div>
+                <p>Out Digital портфолио агентство <br>скачать бесплатно без смс и регистрации</p>
+            </div>
+            <footer class="page__footer">
+                <ul class="social-list">
+                    <li><a target="_blank" href="https://instagram.com/outdigital?igshid=YmMyMTA2M2Y=">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                   <path class="st0" d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6
+                       V138.6C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
+                       C30,78.7,78.7,30,138.6,30h234.8C433.3,30,482,78.7,482,138.6V373.4z"/>
+                   <path class="st0" d="M256,116c-77.2,0-140,62.8-140,140s62.8,140,140,140s140-62.8,140-140S333.2,116,256,116z M256,366
+                       c-60.6,0-110-49.3-110-110c0-60.6,49.3-110,110-110c60.6,0,110,49.3,110,110C366,316.6,316.6,366,256,366z"/>
+                   <path class="st0" d="M399.3,66.3c-22.8,0-41.4,18.6-41.4,41.4s18.6,41.4,41.4,41.4s41.4-18.6,41.4-41.4S422.2,66.3,399.3,66.3z
+                        M399.3,119c-6.3,0-11.4-5.1-11.4-11.4s5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4C410.7,113.9,405.6,119,399.3,119z"/>
+                   </svg> -->
+                   <img src="img/icons/instagram2.png" alt="">
+                </a></li>
+                    <li><a target="_blank" href="https://fb.me/OutAgency">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" d="M449.6,0H62.4C28,0,0,28,0,62.4v387.3C0,484,28,512,62.4,512h198.5c8.3,0,15.1-6.8,15.1-15.1V313.6
+			c0-8.3-6.8-15.1-15.1-15.1h-54.3v-43h54.3c8.3,0,15.1-6.8,15.1-15.1v-61.2c0-33.1,26.9-60.1,60.1-60.1h52.4v43H336
+			c-9.4,0-17,7.6-17,17v61.2c0,8.3,6.8,15.1,15.1,15.1h54.3v43h-54.3c-8.3,0-15.1,6.8-15.1,15.1v183.3c0,8.3,6.8,15.1,15.1,15.1
+			h115.5c34.4,0,62.4-28,62.4-62.4V62.4C512,28,484,0,449.6,0z M481.8,449.6c0,17.7-14.4,32.1-32.1,32.1H349.2l0,0v-153h54.3
+			c8.3,0,15.1-6.8,15.1-15.1v-73.3c0-8.3-6.8-15.1-15.1-15.1h-54.3v-32.9h54.3c8.3,0,15.1-6.8,15.1-15.1v-73.3
+			c0-8.3-6.8-15.1-15.1-15.1H336c-49.8,0-90.3,40.5-90.3,90.3v46.1h-54.3c-8.3,0-15.1,6.8-15.1,15.1v73.3c0,8.3,6.8,15.1,15.1,15.1
+			h54.3v153.1H62.4c-17.7,0-32.1-14.4-32.1-32.1V62.4c0-17.7,14.4-32.1,32.1-32.1h387.3c17.7,0,32.1,14.4,32.1,32.1V449.6z"/>
+	</g>
+</g>
+                        </svg> -->
+                        <img src="img/icons/facebook2.png" alt="">
+                    </a></li>
+                    <li><a target="_blank" href="https://t.me/out_digital">
+                        <!-- <svg width="100%" height="100%" class="telega-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path id="Path-3" class="st0" d="M49,224.3c128.8-56.1,214.7-93.1,257.7-111c122.7-51,148.2-59.9,164.8-60.2  c3.7-0.1,11.8,0.8,17.1,5.1c4.5,3.6,5.7,8.5,6.3,12c0.6,3.4,1.3,11.3,0.7,17.4c-6.7,69.9-35.4,239.4-50.1,317.7  c-6.2,33.1-18.4,44.2-30.2,45.3c-25.7,2.4-45.1-17-70-33.3c-38.9-25.5-60.9-41.4-98.6-66.2c-43.6-28.8-15.3-44.6,9.5-70.4  c6.5-6.8,119.6-109.6,121.8-118.9c0.3-1.2,0.5-5.5-2.1-7.8s-6.4-1.5-9.1-0.9c-3.9,0.9-66,42-186.4,123.2  c-17.6,12.1-33.6,18-47.9,17.7c-15.8-0.3-46.1-8.9-68.7-16.3c-27.7-9-49.7-13.8-47.8-29C17.1,240.8,28.1,232.6,49,224.3z"/>
+                        </svg> -->
+                        <img src="img/icons/telegram2.png" alt="">
+                    </a></li>
+                </ul>
+                <a href="mailto:hello@outdigital.ru">hello@outdigital.ru</a>
+                <a href="https://yandex.ru/maps/-/CCUruPRupB">Москва, пер. Огородная Слабода, 14</a>
+                <p>Телефона — нет</p>
+            </footer>
+        </div>
+        
+    </section>
+    <section class="page page-three page-hidden">
+        <div class="page__container">
+            <header class="page__header">
+                <div class="letters">
+                    <img data-original="img/content/letter__detail/page-three/sparkle_1.png" alt="" class="page-three__star-one lazy">
+                    <img  data-wow-delay="0" data-wow-duration="0.6s" data-original="img/content/letter__detail/page-three/sparkle_2.png" alt="" class="page-three__star-two animate__animated wow lazy">
+                    <img  data-wow-delay="400ms" data-wow-duration="0.5s" data-original="img/content/letter__detail/page-three/sparkle_2.png" alt="" class="page-three__star-three animate__animated wow lazy">
+                    <img  data-wow-delay="420ms" data-wow-duration="0.4s" data-original="img/content/letter__detail/page-three/sparkle_1.png" alt="" class="page-three__star-foure animate__animated wow lazy">
+                    <img data-original="img/content/letters/page-three/head.png" alt="out digital" class="word-img lazy">
+                </div>
+                <div class="frame-outline_block-left">
+                    <img class="fo_block-left-icon fo_block-icon-left-one lazy" data-original="img/content/page-detail/page-three/icon_1.png" alt="">
+                    <img class="fo_block-left-icon fo_block-icon-left-two lazy" data-original="img/content/page-detail/page-three/icon_2.png" alt="">
+                    <img class="fo_block-left-icon fo_block-icon-left-three lazy" data-original="img/content/page-detail/page-three/icon_3.png" alt="">
+                    <img class="fo_block-left-icon fo_block-icon-left-three fo_block-icon-left-three_v2 lazy" data-original="img/content/page-detail/page-three/icon_3-two.png" alt="">
+                </div>
+                <div class="frame-outline_block-right">
+                    <img class="fo_block-left-icon fo_block-icon-right-one lazy" data-original="img/content/page-detail/page-three/icon_1.png" alt="">
+                    <img class="fo_block-left-icon fo_block-icon-right-two lazy" data-original="img/content/page-detail/page-three/icon_11.png" alt="">
+                    <img class="fo_block-left-icon fo_block-icon-right-three lazy" data-original="img/content/page-detail/page-three/icon_12.png" alt="">
+                </div>
+                <div class="frame-outline_block">
+                    
+                </div>
+                
+            </header>
+            
+            <div class="page__body">
+                <div class="page__body-row">
+                    <div class="page__body-row__left">
+                        <img class="page__body-row__left-i page__body-row__left-i-one lazy" data-original="img/content/page-detail/page-three/icon_4.png" alt="">
+                        <img class="page__body-row__left-i page__body-row__left-i-two lazy" data-original="img/content/page-detail/page-three/icon_5.png" alt="">
+                        <img class="page__body-row__left-i page__body-row__left-i-three lazy" data-original="img/content/page-detail/page-three/icon_6.png" alt="">
+                    </div>
+                    <button class="btn">кнопка</button>
+                    <div class="page__body-row__right">
+                        <img class="page__body-row__left-i page__body-row__right-i-one lazy" data-original="img/content/page-detail/page-three/icon_7.png" alt="">
+                        <img class="page__body-row__left-i page__body-row__right-i-two lazy" data-original="img/content/page-detail/page-three/icon_8.png" alt="">
+                        <img class="page__body-row__left-i page__body-row__right-i-three lazy" data-original="img/content/page-detail/page-three/icon_9.png" alt="">
+                    </div>
+                </div>
+                <div class="page__body-row_p">
+                    <img  data-original="img/content/page-detail/page-three/lines_left.png" alt="icon" class="page__body-row_p-icon lazy">
+                    <p>Out Digital — рисуем много вариантов, <br>даже когда это необязательно</p>
+                    <img  data-original="img/content/page-detail/page-three/lines_left.png" alt="icon" class="page__body-row_p-icon lazy">
+                </div>         
+            </div>
+            <footer class="page__footer">
+                <ul class="social-list">
+                    <li><a target="_blank" href="https://instagram.com/outdigital?igshid=YmMyMTA2M2Y=">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                   <path class="st0" d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6
+                       V138.6C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
+                       C30,78.7,78.7,30,138.6,30h234.8C433.3,30,482,78.7,482,138.6V373.4z"/>
+                   <path class="st0" d="M256,116c-77.2,0-140,62.8-140,140s62.8,140,140,140s140-62.8,140-140S333.2,116,256,116z M256,366
+                       c-60.6,0-110-49.3-110-110c0-60.6,49.3-110,110-110c60.6,0,110,49.3,110,110C366,316.6,316.6,366,256,366z"/>
+                   <path class="st0" d="M399.3,66.3c-22.8,0-41.4,18.6-41.4,41.4s18.6,41.4,41.4,41.4s41.4-18.6,41.4-41.4S422.2,66.3,399.3,66.3z
+                        M399.3,119c-6.3,0-11.4-5.1-11.4-11.4s5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4C410.7,113.9,405.6,119,399.3,119z"/>
+                   </svg> -->
+                   <img src="img/icons/instagram.png" alt="">
+                </a></li>
+                    <li><a target="_blank" href="https://fb.me/OutAgency">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" d="M449.6,0H62.4C28,0,0,28,0,62.4v387.3C0,484,28,512,62.4,512h198.5c8.3,0,15.1-6.8,15.1-15.1V313.6
+			c0-8.3-6.8-15.1-15.1-15.1h-54.3v-43h54.3c8.3,0,15.1-6.8,15.1-15.1v-61.2c0-33.1,26.9-60.1,60.1-60.1h52.4v43H336
+			c-9.4,0-17,7.6-17,17v61.2c0,8.3,6.8,15.1,15.1,15.1h54.3v43h-54.3c-8.3,0-15.1,6.8-15.1,15.1v183.3c0,8.3,6.8,15.1,15.1,15.1
+			h115.5c34.4,0,62.4-28,62.4-62.4V62.4C512,28,484,0,449.6,0z M481.8,449.6c0,17.7-14.4,32.1-32.1,32.1H349.2l0,0v-153h54.3
+			c8.3,0,15.1-6.8,15.1-15.1v-73.3c0-8.3-6.8-15.1-15.1-15.1h-54.3v-32.9h54.3c8.3,0,15.1-6.8,15.1-15.1v-73.3
+			c0-8.3-6.8-15.1-15.1-15.1H336c-49.8,0-90.3,40.5-90.3,90.3v46.1h-54.3c-8.3,0-15.1,6.8-15.1,15.1v73.3c0,8.3,6.8,15.1,15.1,15.1
+			h54.3v153.1H62.4c-17.7,0-32.1-14.4-32.1-32.1V62.4c0-17.7,14.4-32.1,32.1-32.1h387.3c17.7,0,32.1,14.4,32.1,32.1V449.6z"/>
+	</g>
+</g>
+                        </svg> -->
+                        <img src="img/icons/facebook.png" alt="">
+                    </a></li>
+                    <li><a target="_blank" href="https://t.me/out_digital">
+                        <!-- <svg width="100%" height="100%" class="telega-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path id="Path-3" class="st0" d="M49,224.3c128.8-56.1,214.7-93.1,257.7-111c122.7-51,148.2-59.9,164.8-60.2  c3.7-0.1,11.8,0.8,17.1,5.1c4.5,3.6,5.7,8.5,6.3,12c0.6,3.4,1.3,11.3,0.7,17.4c-6.7,69.9-35.4,239.4-50.1,317.7  c-6.2,33.1-18.4,44.2-30.2,45.3c-25.7,2.4-45.1-17-70-33.3c-38.9-25.5-60.9-41.4-98.6-66.2c-43.6-28.8-15.3-44.6,9.5-70.4  c6.5-6.8,119.6-109.6,121.8-118.9c0.3-1.2,0.5-5.5-2.1-7.8s-6.4-1.5-9.1-0.9c-3.9,0.9-66,42-186.4,123.2  c-17.6,12.1-33.6,18-47.9,17.7c-15.8-0.3-46.1-8.9-68.7-16.3c-27.7-9-49.7-13.8-47.8-29C17.1,240.8,28.1,232.6,49,224.3z"/>
+                        </svg> -->
+                        <img src="img/icons/telegram.png" alt="">
+                    </a></li>
+                </ul>
+                <a href="mailto:hello@outdigital.ru">hello@outdigital.ru</a>
+                <a href="https://yandex.ru/maps/-/CCUruPRupB">Москва, пер. Огородная Слабода, 14</a>
+                <p>Телефона — нет</p>
+            </footer>
+        </div>
+        
+    </section>
+    <section class="page page-four page-hidden">
+        <!-- Кляксы начало -->
+        <img data-wow-delay="300ms" data-wow-duration="0.4s" data-original="img/content/page-detail/page-four/stain_yellow_2.png" alt="stain_yellow_2" class="lazy stain_yellow_2 animate__animated animate__fadeIn wow">
+        <img data-wow-delay="500ms" data-wow-duration="0.4s" data-original="img/content/page-detail/page-four/stain_lavander_left.png" alt="stain_lavander_left" class="lazy stain_lavander_left animate__animated animate__fadeIn wow">
+        <img data-wow-delay="600ms" data-wow-duration="0.4s" data-original="img/content/page-detail/page-four/stain_blue_1.png" alt="stain_lavander_left" class="lazy stain_blue_1 animate__animated animate__fadeIn wow">
+        <img data-wow-delay="150ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-four/stain_lavander_2.png" alt="stain_lavander_2" class="lazy stain_lavander_2 animate__animated animate__fadeIn wow">
+        <img data-wow-delay="50ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-four/stain_pink_2.png" alt="stain_pink_2" class="lazy stain_pink_2 animate__animated animate__fadeIn wow">
+        <img data-wow-delay="150ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-four/page_right.png" alt="page_right" class="lazy page_right animate__animated animate__fadeIn wow">
+        <img data-wow-delay="500ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-four/page_left.png" alt="page_left" class="lazy page_left animate__animated animate__fadeIn wow">
+        <img data-original="img/content/page-detail/page-four/sticker.png" alt="page_left" class="lazy sticker">
+        <!-- Кляксы конец -->
+    
+        <svg class="arrow_big" viewBox="0 0 1892 622" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="arrow_big-line" d="M0.52002 374.726C27.72 398.259 102.34 456.35 201.66 457.424C225.06 457.68 244.98 454.712 254.4 453.092C319.48 441.914 358.73 409.105 409.8 377.753C468.55 341.686 528.62 306.907 589.65 273.654C713.21 206.338 841.56 145.417 973.78 91.3766C1072.35 51.0979 1174.95 14.1871 1283.62 4.18558C1392.29 -5.80737 1509.04 14.2382 1590.51 76.3616C1616.36 96.0662 1638.89 120.929 1644.78 150.064C1650.67 179.207 1635.79 212.733 1604.12 224.772C1572.44 236.803 1527.92 217.764 1527.36 188.203C1527.02 170.067 1542.09 153.671 1560.78 145.016C1579.47 136.362 1601.27 134.145 1622.51 133.233C1704.72 129.686 1776.8 144.522 1839.78 192.193C1846.23 197.07 1865.71 214.285 1877.91 236.837C1901.41 280.288 1886.3 325.427 1877.05 351.671C1850.72 426.405 1791.65 472.78 1757.55 498.905C1626.94 598.971 1478.26 615.589 1449.89 618.206C1352.51 627.185 1273.29 612.681 1226.47 600.889L-96 457.424" stroke="black" stroke-width="1.5" stroke-miterlimit="10"/>
+            <path  data-wow-delay="1.2s" data-wow-duration="0.6s" class="arrow_small-line animate__animated animate__fadeIn wow" d="M1222.03 609.006C1220.08 604.274 1215.88 600.258 1210.59 598.058C1216.88 597.504 1223.07 596.149 1228.89 594.042" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+            </svg>
+        <div class="page__container"> 
+            <svg class="arrow_little" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 941.47 291.13">
+                <g>
+                  <g>
+                    <path class="arrow_small-big-line"  d="M.31,40.48C121.12-14.89,267-12.23,385.72,47.49c36.81,18.52,84.09,54.47,179.58,124.6,104.56,76.79,133.59,105.36,188.42,113.94,40.36,6.32,96.41,13.8,178.64-41.14"/>
+                    <path data-wow-delay="0.9s" data-wow-duration="0.6s" class="arrow_small-little-line animate__animated animate__fadeIn wow" d="M923.97,238.19c6.15,.13,12.31-2.26,16.77-6.49-1.67,6.4-2.39,13.04-2.12,19.64"/>
+                  </g>
+                </g>
+            </svg>
+            <header class="page__header">
+                <div class="letters">
+                    <img data-original="img/content/letter__detail/page-four/red_cross.png" alt="img" class="lazy latter-o-detail__one">
+                    <img data-original="img/content/letter__detail/page-four/star.png" alt="img" class="lazy latter-o-detail__two">
+                    <img data-wow-delay="350ms" data-wow-duration="0.6s" data-original="img/content/page-detail/page-four/stain_lavander_4.png" alt="img" class="lazy latter-o-detail__three animate__animated animate__fadeIn wow">
+                    <img data-original="img/content/letter__detail/page-four/digital_sign.png" alt="img" class="lazy latter-t-detail">
+                    <img data-wow-delay="300ms" data-wow-duration="0.6s" data-original="img/content/letter__detail/page-four/outdigial_sign.png" alt="img" class="lazy latter-d-detail animate__animated animate__fadeIn wow">
+                    <img data-original="img/content/letter__detail/page-four/underline_splash.png" alt="img" class="lazy latter-i-detail">
+                    <img data-original="img/content/letter__detail/page-four/peace_sign.png" alt="img" class="lazy latter-g-detail">
+                    <img data-original="img/content/letter__detail/page-four/sign_3.png" alt="img" class="lazy latter-a-detail">
+                    <img data-original="img/content/letter__detail/page-four/sign_4.png" alt="img" class="lazy latter-i-detail__two">
+                    <img  data-wow-delay="400ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-four/stain_blue_2.png" alt="img" class="lazy stain_blue_2 animate__animated animate__fadeIn wow">
+                    <img  data-wow-delay="400ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-four/stain_lavander_3.png" alt="img" class="lazy stain_lavander_3 animate__animated animate__fadeIn wow">
+                    <img data-original="img/content/letters/page-four/outdigital.png" alt="out digital" class="lazy word-img ">
+                </div>            
+            </header>
+            
+            <div class="page__body">
+                <img data-wow-delay="300ms" data-wow-duration="0.4s" data-original="img/content/page-detail/page-four/stain_blue_3.png" alt="blue" class="lazy page-four-body-blue-spot animate__animated animate__fadeIn wow">
+                <img data-original="img/content/page-detail/page-four/red_scribble.png" alt="blue" class="lazy red_scribble ">
+                <img data-original="img/content/page-detail/page-four/hello_sticker.png" alt="blue" class="lazy hello_sticker">
+                <img data-original="img/content/page-detail/page-four/sign_5.png" alt="blue" class="lazy sign_blue">
+                <button class="btn">кнопка</button>
+                <p>Out Digital — это креатив, SMM, продакшн, <br>инфлюенс и этот сайт с одной кнопкой</p>
+            </div>
+            <footer class="page__footer">
+                <ul class="social-list">
+                    <li><a target="_blank" href="https://instagram.com/outdigital?igshid=YmMyMTA2M2Y=">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                   <path class="st0" d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6
+                       V138.6C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
+                       C30,78.7,78.7,30,138.6,30h234.8C433.3,30,482,78.7,482,138.6V373.4z"/>
+                   <path class="st0" d="M256,116c-77.2,0-140,62.8-140,140s62.8,140,140,140s140-62.8,140-140S333.2,116,256,116z M256,366
+                       c-60.6,0-110-49.3-110-110c0-60.6,49.3-110,110-110c60.6,0,110,49.3,110,110C366,316.6,316.6,366,256,366z"/>
+                   <path class="st0" d="M399.3,66.3c-22.8,0-41.4,18.6-41.4,41.4s18.6,41.4,41.4,41.4s41.4-18.6,41.4-41.4S422.2,66.3,399.3,66.3z
+                        M399.3,119c-6.3,0-11.4-5.1-11.4-11.4s5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4C410.7,113.9,405.6,119,399.3,119z"/>
+                   </svg> -->
+                   <img src="img/icons/instagram4.png" alt="">
+                </a></li>
+                    <li><a target="_blank" href="https://fb.me/OutAgency">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" d="M449.6,0H62.4C28,0,0,28,0,62.4v387.3C0,484,28,512,62.4,512h198.5c8.3,0,15.1-6.8,15.1-15.1V313.6
+			c0-8.3-6.8-15.1-15.1-15.1h-54.3v-43h54.3c8.3,0,15.1-6.8,15.1-15.1v-61.2c0-33.1,26.9-60.1,60.1-60.1h52.4v43H336
+			c-9.4,0-17,7.6-17,17v61.2c0,8.3,6.8,15.1,15.1,15.1h54.3v43h-54.3c-8.3,0-15.1,6.8-15.1,15.1v183.3c0,8.3,6.8,15.1,15.1,15.1
+			h115.5c34.4,0,62.4-28,62.4-62.4V62.4C512,28,484,0,449.6,0z M481.8,449.6c0,17.7-14.4,32.1-32.1,32.1H349.2l0,0v-153h54.3
+			c8.3,0,15.1-6.8,15.1-15.1v-73.3c0-8.3-6.8-15.1-15.1-15.1h-54.3v-32.9h54.3c8.3,0,15.1-6.8,15.1-15.1v-73.3
+			c0-8.3-6.8-15.1-15.1-15.1H336c-49.8,0-90.3,40.5-90.3,90.3v46.1h-54.3c-8.3,0-15.1,6.8-15.1,15.1v73.3c0,8.3,6.8,15.1,15.1,15.1
+			h54.3v153.1H62.4c-17.7,0-32.1-14.4-32.1-32.1V62.4c0-17.7,14.4-32.1,32.1-32.1h387.3c17.7,0,32.1,14.4,32.1,32.1V449.6z"/>
+	</g>
+</g>
+                        </svg> -->
+                        <img src="img/icons/facebook4.png" alt="">
+                    </a></li>
+                    <li><a target="_blank" href="https://t.me/out_digital">
+                        <!-- <svg width="100%" height="100%" class="telega-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path id="Path-3" class="st0" d="M49,224.3c128.8-56.1,214.7-93.1,257.7-111c122.7-51,148.2-59.9,164.8-60.2  c3.7-0.1,11.8,0.8,17.1,5.1c4.5,3.6,5.7,8.5,6.3,12c0.6,3.4,1.3,11.3,0.7,17.4c-6.7,69.9-35.4,239.4-50.1,317.7  c-6.2,33.1-18.4,44.2-30.2,45.3c-25.7,2.4-45.1-17-70-33.3c-38.9-25.5-60.9-41.4-98.6-66.2c-43.6-28.8-15.3-44.6,9.5-70.4  c6.5-6.8,119.6-109.6,121.8-118.9c0.3-1.2,0.5-5.5-2.1-7.8s-6.4-1.5-9.1-0.9c-3.9,0.9-66,42-186.4,123.2  c-17.6,12.1-33.6,18-47.9,17.7c-15.8-0.3-46.1-8.9-68.7-16.3c-27.7-9-49.7-13.8-47.8-29C17.1,240.8,28.1,232.6,49,224.3z"/>
+                        </svg> -->
+                        <img src="img/icons/telegram4.png" alt="">
+                    </a></li>
+                </ul>
+                <a href="mailto:hello@outdigital.ru">hello@outdigital.ru</a>
+                <a href="https://yandex.ru/maps/-/CCUruPRupB">Москва, пер. Огородная Слабода, 14</a>
+                <p>Телефона — нет</p>
+            </footer>
+            <img src="img/content/page-detail/page-four/sticker_triangle.png" alt="sticker_triangle" class="sticker_triangle">
+            <img src="img/content/page-detail/page-four/star_splash.png" alt="star_splash" class="star_splash">
+            <img data-wow-delay="200ms" data-wow-duration="0.43" src="img/content/page-detail/page-four/stain_yellow_1.png" alt="stain_yellow_1" class="stain_yellow_1 animate__animated animate__fadeIn wow">
+            <img data-wow-delay="200ms" data-wow-duration="0.43" src="img/content/page-detail/page-four/stain_pink_1.png" alt="stain_pink_1" class="stain_pink_1 animate__animated animate__fadeIn wow">
+        </div>
+        
+    </section> 
+    <section class="page page-five page-hidden">
+    <img data-wow-delay="200ms" data-wow-duration="0.4s" data-original="img/content/page-detail/page-five/heart_2.png" alt="heart_2" class="lazy heart_2 animate__animated animate__fadeIn wow">
+    <img data-original="img/content/page-detail/page-five/heart_1.png" alt="heart_1" class="lazy heart_1">
+    <img data-original="img/content/page-detail/page-five/arrow.png" alt="page-five__aroww" class="lazy page-five__arrow">
+    <img data-wow-delay="200ms" data-wow-duration="0.4s" data-original="img/content/page-detail/page-five/heart_3.png" alt="heart_3" class="lazy right-heart animate__animated animate__fadeInUp wow">
+    <div class="page__container"> 
+        <img data-original="img/content/page-detail/page-five/cloud_1.png" alt="" class="lazy cloud-one-five">
+        <img data-original="img/content/page-detail/page-five/cloud_2.png" alt="" class="lazy cloud-two-five">
+        <img data-original="img/content/page-detail/page-five/cloud_1.png" alt="" class="lazy cloud-three-five">
+        <header class="page__header">
+            <div class="letters">
+                <img data-original="img/content/letter__detail/page-five/U.png" alt="U" class="lazy img-page-five_u">
+                <img data-original="img/content/letter__detail/page-five/T.png" alt="T" class="lazy img-page-five_t">
+                <img data-original="img/content/letter__detail/page-five/L.png" alt="L" class="lazy img-page-five_l">
+                <div class="letters-img">
+                    <img data-original="img/content/letters/page-five/sign.png" alt="out digital" class="lazy word-img">
+                </div>
+                
+            </div>            
+        </header>
+        
+        <div class="page__body">
+            <img data-original="img/content/page-detail/page-five/comment.png" alt="comment" class="lazy omment">
+            <img data-original="img/content/page-detail/page-five/heart_3.png" alt="left-heart" class="lazy left-heart">
+            <img data-original="img/content/page-detail/page-five/share.png" alt="right-share" class="lazy right-share">
+            <button class="btn">кнопка</button>
+            <p>Out Digital — агентство, которое знает, <br>что агентством не нужны сайты</p>
+        </div>
+        <footer class="page__footer">
+            <ul class="social-list">
+                <li><a target="_blank" href="https://instagram.com/outdigital?igshid=YmMyMTA2M2Y=">
+                    <!-- <svg width="100%" height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+               <path class="st0" d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6
+                   V138.6C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
+                   C30,78.7,78.7,30,138.6,30h234.8C433.3,30,482,78.7,482,138.6V373.4z"/>
+               <path class="st0" d="M256,116c-77.2,0-140,62.8-140,140s62.8,140,140,140s140-62.8,140-140S333.2,116,256,116z M256,366
+                   c-60.6,0-110-49.3-110-110c0-60.6,49.3-110,110-110c60.6,0,110,49.3,110,110C366,316.6,316.6,366,256,366z"/>
+               <path class="st0" d="M399.3,66.3c-22.8,0-41.4,18.6-41.4,41.4s18.6,41.4,41.4,41.4s41.4-18.6,41.4-41.4S422.2,66.3,399.3,66.3z
+                    M399.3,119c-6.3,0-11.4-5.1-11.4-11.4s5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4C410.7,113.9,405.6,119,399.3,119z"/>
+               </svg> -->
+               <img src="img/icons/instagram2.png" alt="">
+            </a></li>
+                <li><a target="_blank" href="https://fb.me/OutAgency">
+                    <!-- <svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+<g>
+    <path class="st0" d="M449.6,0H62.4C28,0,0,28,0,62.4v387.3C0,484,28,512,62.4,512h198.5c8.3,0,15.1-6.8,15.1-15.1V313.6
+        c0-8.3-6.8-15.1-15.1-15.1h-54.3v-43h54.3c8.3,0,15.1-6.8,15.1-15.1v-61.2c0-33.1,26.9-60.1,60.1-60.1h52.4v43H336
+        c-9.4,0-17,7.6-17,17v61.2c0,8.3,6.8,15.1,15.1,15.1h54.3v43h-54.3c-8.3,0-15.1,6.8-15.1,15.1v183.3c0,8.3,6.8,15.1,15.1,15.1
+        h115.5c34.4,0,62.4-28,62.4-62.4V62.4C512,28,484,0,449.6,0z M481.8,449.6c0,17.7-14.4,32.1-32.1,32.1H349.2l0,0v-153h54.3
+        c8.3,0,15.1-6.8,15.1-15.1v-73.3c0-8.3-6.8-15.1-15.1-15.1h-54.3v-32.9h54.3c8.3,0,15.1-6.8,15.1-15.1v-73.3
+        c0-8.3-6.8-15.1-15.1-15.1H336c-49.8,0-90.3,40.5-90.3,90.3v46.1h-54.3c-8.3,0-15.1,6.8-15.1,15.1v73.3c0,8.3,6.8,15.1,15.1,15.1
+        h54.3v153.1H62.4c-17.7,0-32.1-14.4-32.1-32.1V62.4c0-17.7,14.4-32.1,32.1-32.1h387.3c17.7,0,32.1,14.4,32.1,32.1V449.6z"/>
+</g>
+</g>
+                    </svg> -->
+                    <img src="img/icons/facebook2.png" alt="">
+                </a></li>
+                <li><a target="_blank" href="https://t.me/out_digital">
+                    <!-- <svg width="100%" height="100%" class="telega-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <path id="Path-3" class="st0" d="M49,224.3c128.8-56.1,214.7-93.1,257.7-111c122.7-51,148.2-59.9,164.8-60.2  c3.7-0.1,11.8,0.8,17.1,5.1c4.5,3.6,5.7,8.5,6.3,12c0.6,3.4,1.3,11.3,0.7,17.4c-6.7,69.9-35.4,239.4-50.1,317.7  c-6.2,33.1-18.4,44.2-30.2,45.3c-25.7,2.4-45.1-17-70-33.3c-38.9-25.5-60.9-41.4-98.6-66.2c-43.6-28.8-15.3-44.6,9.5-70.4  c6.5-6.8,119.6-109.6,121.8-118.9c0.3-1.2,0.5-5.5-2.1-7.8s-6.4-1.5-9.1-0.9c-3.9,0.9-66,42-186.4,123.2  c-17.6,12.1-33.6,18-47.9,17.7c-15.8-0.3-46.1-8.9-68.7-16.3c-27.7-9-49.7-13.8-47.8-29C17.1,240.8,28.1,232.6,49,224.3z"/>
+                    </svg> -->
+                    <img src="img/icons/telegram2.png" alt="">
+                </a></li>
+            </ul>
+            <a href="mailto:hello@outdigital.ru">hello@outdigital.ru</a>
+            <a href="https://yandex.ru/maps/-/CCUruPRupB">Москва, пер. Огородная Слабода, 14</a>
+            <p>Телефона — нет</p>
+        </footer>
+    </div>
+    </section>
+    <section class="page page-six page-hidden">
+        <img  data-original="img/content/page-detail/page-six/sticker_1.png" alt="sticker" class="lazy sticker1">
+        <img data-original="img/content/page-detail/page-six/sticker_2.png" alt="sticker" class="lazy sticker2">
+        <img data-original="img/content/page-detail/page-six/sticker_3.png" alt="sticker" class="lazy sticker3">
+        <img data-original="img/content/page-detail/page-six/sticker_4.png" alt="sticker" class="lazy sticker4">
+        <img data-original="img/content/page-detail/page-six/sticker_5.png" alt="sticker" class="lazy sticker5">
+        <img data-wow-delay="50ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-six/back_shadow_top.png" class="lazy back_shadow_top animate__animated animate__fadeIn wow" alt="">
+        <img data-wow-delay="230ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-six/back_shadow_bottom.png" alt="back_shadow_bottom" class="lazy back_shadow_bottom animate__animated animate__fadeIn wow">
+        <img data-wow-delay="150ms" data-wow-duration="0.5s" data-original="img/content/page-detail/page-six/back_shadow_middle.png" alt="back_shadow_middle" class="lazy back_shadow_middle animate__animated animate__fadeIn wow">
+        <div class="page__container"> 
+            <header class="page__header">
+                <div class="letters">
+                    <div class="letters-img">
+                        <img data-original="img/content/letters/page-six/sign.png" alt="out digital" class="lazy word-img">
+                    </div>
+                    
+                </div>            
+            </header>
+            
+            <div class="page__body">
+                <img data-original="img/content/page-detail/page-six/sticker_6.png" alt="sticker" class="lazy sticker6">
+                <img data-original="img/content/page-detail/page-six/sticker_7.png" alt="sticker" class="lazy sticker7">
+                <img data-original="img/content/page-detail/page-six/sticker_8.png" alt="sticker" class="lazy sticker8">
+                <img data-original="img/content/page-detail/page-six/sticker_9.png" alt="sticker" class="lazy sticker9">
+                <button class="btn">кнопка</button>
+                <p>Out Digital — агенство, деятельность <br>которого разрешена на территории РФ</p>
+            </div>
+            <footer class="page__footer">
+                <ul class="social-list">
+                    <li><a target="_blank" href="https://instagram.com/outdigital?igshid=YmMyMTA2M2Y=">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                   <path class="st0" d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6
+                       V138.6C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
+                       C30,78.7,78.7,30,138.6,30h234.8C433.3,30,482,78.7,482,138.6V373.4z"/>
+                   <path class="st0" d="M256,116c-77.2,0-140,62.8-140,140s62.8,140,140,140s140-62.8,140-140S333.2,116,256,116z M256,366
+                       c-60.6,0-110-49.3-110-110c0-60.6,49.3-110,110-110c60.6,0,110,49.3,110,110C366,316.6,316.6,366,256,366z"/>
+                   <path class="st0" d="M399.3,66.3c-22.8,0-41.4,18.6-41.4,41.4s18.6,41.4,41.4,41.4s41.4-18.6,41.4-41.4S422.2,66.3,399.3,66.3z
+                        M399.3,119c-6.3,0-11.4-5.1-11.4-11.4s5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4C410.7,113.9,405.6,119,399.3,119z"/>
+                   </svg> -->
+                   <img src="img/icons/instagram4.png" alt="">
+                </a></li>
+                    <li><a target="_blank" href="https://fb.me/OutAgency">
+                        <!-- <svg width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path class="st0" d="M449.6,0H62.4C28,0,0,28,0,62.4v387.3C0,484,28,512,62.4,512h198.5c8.3,0,15.1-6.8,15.1-15.1V313.6
+			c0-8.3-6.8-15.1-15.1-15.1h-54.3v-43h54.3c8.3,0,15.1-6.8,15.1-15.1v-61.2c0-33.1,26.9-60.1,60.1-60.1h52.4v43H336
+			c-9.4,0-17,7.6-17,17v61.2c0,8.3,6.8,15.1,15.1,15.1h54.3v43h-54.3c-8.3,0-15.1,6.8-15.1,15.1v183.3c0,8.3,6.8,15.1,15.1,15.1
+			h115.5c34.4,0,62.4-28,62.4-62.4V62.4C512,28,484,0,449.6,0z M481.8,449.6c0,17.7-14.4,32.1-32.1,32.1H349.2l0,0v-153h54.3
+			c8.3,0,15.1-6.8,15.1-15.1v-73.3c0-8.3-6.8-15.1-15.1-15.1h-54.3v-32.9h54.3c8.3,0,15.1-6.8,15.1-15.1v-73.3
+			c0-8.3-6.8-15.1-15.1-15.1H336c-49.8,0-90.3,40.5-90.3,90.3v46.1h-54.3c-8.3,0-15.1,6.8-15.1,15.1v73.3c0,8.3,6.8,15.1,15.1,15.1
+			h54.3v153.1H62.4c-17.7,0-32.1-14.4-32.1-32.1V62.4c0-17.7,14.4-32.1,32.1-32.1h387.3c17.7,0,32.1,14.4,32.1,32.1V449.6z"/>
+	</g>
+</g>
+                        </svg> -->
+                        <img src="img/icons/facebook4.png" alt="">
+                    </a></li>
+                    <li><a target="_blank" href="https://t.me/out_digital">
+                        <!-- <svg width="100%" height="100%" class="telega-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path id="Path-3" class="st0" d="M49,224.3c128.8-56.1,214.7-93.1,257.7-111c122.7-51,148.2-59.9,164.8-60.2  c3.7-0.1,11.8,0.8,17.1,5.1c4.5,3.6,5.7,8.5,6.3,12c0.6,3.4,1.3,11.3,0.7,17.4c-6.7,69.9-35.4,239.4-50.1,317.7  c-6.2,33.1-18.4,44.2-30.2,45.3c-25.7,2.4-45.1-17-70-33.3c-38.9-25.5-60.9-41.4-98.6-66.2c-43.6-28.8-15.3-44.6,9.5-70.4  c6.5-6.8,119.6-109.6,121.8-118.9c0.3-1.2,0.5-5.5-2.1-7.8s-6.4-1.5-9.1-0.9c-3.9,0.9-66,42-186.4,123.2  c-17.6,12.1-33.6,18-47.9,17.7c-15.8-0.3-46.1-8.9-68.7-16.3c-27.7-9-49.7-13.8-47.8-29C17.1,240.8,28.1,232.6,49,224.3z"/>
+                        </svg> -->
+                        <img src="img/icons/telegram4.png" alt="">
+                    </a></li>
+                </ul>
+                <a href="mailto:hello@outdigital.ru">hello@outdigital.ru</a>
+                <a href="https://yandex.ru/maps/-/CCUruPRupB">Москва, пер. Огородная Слабода, 14</a>
+                <p>Телефона — нет</p>
+            </footer>
+        </div>
+    </section>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/wow.min.js"></script>
+    <script src="script/lazy-load.js"></script>
+    <script src="script/main.js"></script>
+
+
+    <script>
+ 
+        $('.btn').hover(function(){
+            $('.page-one .page__body p').toggleClass('hidden-text');
+            $('.page-one').toggleClass('hidden-element');
+        });
+
+
+
+        $('.btn-one').hover(function(){
+            $('.page-four').fadeIn(200)
+        });
+
+        $(".btn-one").mouseleave(function () {
+            $('.page-four').fadeOut(200);
+            $('.btn-one').addClass('btn-hidden');
+            $('.btn-two').removeClass('btn-hidden');
+        });
+        // -----------------------------------------
+        $('.btn-two').hover(function(){
+            $('.page-three').fadeIn(200)
+        });
+
+        $(".btn-two").mouseleave(function () {
+            $('.page-three').fadeOut(200);
+            $('.btn-two').addClass('btn-hidden');
+            $('.btn-three').removeClass('btn-hidden');
+        });
+        // -----------------------------------------
+        $('.btn-three').hover(function(){
+            $('.page-two').fadeIn(200)
+        });
+
+        $(".btn-three").mouseleave(function () {
+            $('.page-two').fadeOut(200);
+            $('.btn-three').addClass('btn-hidden');
+            $('.btn-four').removeClass('btn-hidden');
+        });
+        // -----------------------------------------
+        $('.btn-four').hover(function(){
+            $('.page-five').fadeIn(200)
+        });
+
+        $(".btn-four").mouseleave(function () {
+            $('.page-five').fadeOut(200);
+            $('.btn-four').addClass('btn-hidden');
+            $('.btn-five').removeClass('btn-hidden');
+        });
+        // -----------------------------------------
+        $('.btn-five').hover(function(){
+            $('.page-six').fadeIn(200)
+        });
+
+        $(".btn-five").mouseleave(function () {
+            $('.page-six').fadeOut(200);
+            $('.btn-five').addClass('btn-hidden');
+            $('.btn-one').removeClass('btn-hidden');
+        });
+        // -----------------------------------------
+
+
+
+
+
+
+    </script>
+
+    </script>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 1000);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 1000);
+        }
+
+      </script>
+      <script>
+        if(window.innerWidth<1025)
+            location.href='mob-page/index.html';
+        </script>
+    <script>
+
+    </script>
+</body>
+
+</html>
