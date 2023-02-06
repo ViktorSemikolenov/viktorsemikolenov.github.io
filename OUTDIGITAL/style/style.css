@@ -2276,7 +2276,8 @@ html, body {
 }
 
 .mob-page-six .mob-btn-text {
-    margin-top: 30px
+    margin-top: 30px;
+    width: 100%;
 }
 
 .mob-page-six_air img {
