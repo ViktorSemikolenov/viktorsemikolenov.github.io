@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    max-width: 1438px;
+    margin: 0 auto;
+}
+.navigation__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
