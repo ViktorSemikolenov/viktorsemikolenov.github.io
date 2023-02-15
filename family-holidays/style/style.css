@@ -1,14 +1,237 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather-Regular';
 }
-.container{
-    max-width: 1438px;
+
+body, html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('../fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('../fonts/Merriweather-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montrserrat-Black';
+    src: url('../fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montrserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+.container {
+    max-width: 1458px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.navigation {
+    padding-top: 16px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navigation__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 0 20px;
+}
+
+.navigation__left-col {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__phone {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Merriweather-Bold';
+    transition-duration: 0.3s;
+}
+
+.navigation__phone:hover {
+    color: #D77E25;
+    transition-duration: 0.3s;
+}
+
+.messengers__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: 34px;
+}
+
+.messengers__item {
+    margin-right: 18px;
+}
+
+.messengers__item:last-of-type {
+    margin-right: 0;
+}
+
+.messengers__item:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__item {
+    margin-left: 50px;
+}
+
+.menu__item:first-of-type {
+    margin-left: 0;
+}
+
+.menu__link {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.menu__link:hover {
+    color: #D77E25;
+    transition-duration: 0.3s;
+}
+
+.navigation__center-col {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__right-col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.first-screen {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/background/first-screen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phone-icon::before {
+    content: url(../image/icons/phone.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+}
+
+.container-min {
+    max-width: 1200px;
+    padding: 0 10px;
     margin: 0 auto;
 }
-.navigation__row{
+
+h1 {
+    font-size: 100px;
+    font-family: 'Montrserrat-Black';
+    color: #ffffff;
+    line-height: 91.4%;
+}
+
+.first-screen__info {
+    text-align: right;
+}
+
+.first-screen__info h2 {
+    font-family: 'Montrserrat-Regular';
+    font-style: italic;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.first-screen .container-min {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.triggers {
+    display: flex;
+    align-items: flex-end;
+}
+
+.trigger__item {
+    text-align: center;
+    margin-left: 44px;
+}
+
+.trigger__title {
+    color: #EF9F4F;
+    font-family: 'Montrserrat-Regular';
+    font-size: 18px;
+}
+
+.trigger__title span {
+    color: #fff;
+    font-family: 'Montrserrat-Regular';
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+}
+
+.first-screen__footer {
+    display: flex;
     align-items: center;
+}
+
+.button{
+    min-width: 248px;
+    padding: 17px 32px;
+    border-radius: 22px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Merriweather-Regular';
+    background: linear-gradient(180deg, #DAA95C 0%, #D77E25 100%);
+    cursor: pointer;
+    text-decoration: none;
+}
+.button:hover{
+    background: #D77E25 ;
+}
+.button-stroke{
+    background: none;
+    border: 2px solid #EF9F4F;
+    color: #EF9F4F;
+    transition-duration: 0.3s;
+    padding: 15px 32px;
+}
+.button-stroke:hover{
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+.button-row{
+    margin-left: 90px;
+}
+.button-row .button-stroke{
+    margin-right: 20px;
 }
