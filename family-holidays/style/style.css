@@ -133,6 +133,8 @@ body, html {
     background-image: url(../image/background/first-screen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 27vh;
 }
 
 .phone-icon::before {
@@ -204,7 +206,7 @@ h1 {
     align-items: center;
 }
 
-.button{
+.button {
     min-width: 248px;
     padding: 17px 32px;
     border-radius: 22px;
@@ -215,23 +217,82 @@ h1 {
     cursor: pointer;
     text-decoration: none;
 }
-.button:hover{
-    background: #D77E25 ;
+
+.button:hover {
+    background: #D77E25;
 }
-.button-stroke{
+
+.button-stroke {
     background: none;
     border: 2px solid #EF9F4F;
     color: #EF9F4F;
     transition-duration: 0.3s;
     padding: 15px 32px;
 }
-.button-stroke:hover{
+
+.button-stroke:hover {
     color: #ffffff;
     transition-duration: 0.3s;
 }
-.button-row{
+
+.button-row {
     margin-left: 90px;
 }
-.button-row .button-stroke{
+
+.button-row .button-stroke {
     margin-right: 20px;
+}
+
+.about {
+    background-image: url(../image/background/about-two.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.about .container-min {
+    background-image: url(../image/background/about.jpg) !important;
+    background-color: #ffffff;
+    background-repeat: no-repeat !important;
+    background-position: bottom;
+    background-size: 100%;
+    border-radius: 115px;
+    min-height: 751px;
+    position: relative;
+    top: -100px;
+    box-shadow: 0px 103px 103px -55px rgba(239, 159, 79, 0.6);
+    padding: 103px 90px;
+}
+
+.about .title {
+    text-align: center;
+}
+
+.title {
+    color: #EF9F4F;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 4px;
+    background: #EF9F4F;
+}
+
+.about__description {
+    margin-top: 75px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 164.7%;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #5A5A5A;
 }
