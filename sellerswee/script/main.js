@@ -67,7 +67,7 @@ $(".form").submit(function (e) { // Устанавливаем событие о
 
             // $('.modal_two_container .overlay').removeClass("open");
             // $('.modal_two_container .modal').removeClass("open");
-            window.location.replace("thanks.html");
+            window.location.replace("../thanks.html");
 
         }
     });
