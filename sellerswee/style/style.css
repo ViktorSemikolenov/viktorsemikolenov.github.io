@@ -255,12 +255,8 @@ html, body{
 }
 
 .footer_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     align-items: flex-start;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -271,11 +267,7 @@ html, body{
 }
 
 .col_social ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     list-style: none;
     margin-top: 24px;
@@ -291,8 +283,6 @@ html, body{
 
 .col_social ul li a:hover svg path {
     fill: var(--accent);
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
@@ -302,16 +292,12 @@ html, body{
 
 .link_footer a {
     color: var(--white);
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
     text-decoration: none;
 }
 
 .link_footer a:hover {
     color: var(--accent);
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
     text-decoration: underline;
 }
@@ -333,15 +319,11 @@ html, body{
     color: var(--white);
     text-decoration: none;
     font-family: "Montserrat-Bold";
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
 .contacts_list li a:hover {
     color: var(--accent);
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
@@ -349,18 +331,9 @@ html, body{
 .overlay {
     width: 100%;
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
     position: fixed;
@@ -369,8 +342,6 @@ html, body{
     background: rgba(34, 39, 56, 0.781);
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
     transition: 0.35s ease-in-out;
     max-height: 100vh;
     overflow-y: auto;
@@ -386,8 +357,6 @@ html, body{
     background: white;
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
     transition: 0.35s ease-in-out;
     max-height: 100vh;
     overflow-y: auto;
@@ -400,19 +369,13 @@ html, body{
 }
 
 .overlay .modal.open .content {
-    -webkit-transform: translate(0, 0px);
-    -ms-transform: translate(0, 0px);
     transform: translate(0, 0px);
     opacity: 1;
 }
 
 .overlay .modal .content {
-    -webkit-transform: translate(0, -10px);
-    -ms-transform: translate(0, -10px);
     transform: translate(0, -10px);
     opacity: 0;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
     transition: 0.35s ease-in-out;
 }
 
