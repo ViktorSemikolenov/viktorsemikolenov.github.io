@@ -1,0 +1,133 @@
+@media(max-width:920px){
+    .container{
+        max-width: 768px;
+    }
+    .title-page{
+        font-size: 42px;
+    }
+    .first-screen__description{
+        font-size: 18px;
+    }
+    .about, .convenient{
+        padding-top: 90px;
+    }
+    .footer_content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_content > *{
+        width: 100%;
+    }
+    .logo_footer{
+        width: 180px;
+    }
+    .copyright{
+        text-align: center;
+        margin-top: 24px;
+    }
+    .col_social ul{
+        justify-content: center;
+    }
+    .link_footer{
+        text-align: center;
+        margin-top: 32px;
+    }
+    .contacts_list{
+        text-align: center;
+        margin-top: 32px;
+    }
+}
+@media(max-width:767px){
+    .container{
+        max-width: 480px;
+    }
+    .logo-text{
+        font-size: 18px;
+    }
+    .first-screen{
+        padding-bottom: 90px;
+    }
+    .first-screen__text{
+        margin-top: 70px;
+    }
+    .title-page{
+        font-size: 32px;
+    }
+    .first-screen__description{
+        font-size: 16px;
+        margin: 16px 0;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .about__text{
+        padding-right: 0;
+    }
+    .about__img{
+        display: none;
+    }
+    .delivery__title{
+        position: static;
+    }
+    .delivery{
+        padding-top: 60px;
+    }
+    .convenient__item{
+        flex-wrap: wrap;
+    }
+    .list__item{
+        font-size: 16px;
+    }
+}
+@media(max-width:479px){
+    .container{
+        width: 100%;
+    }
+    .title-page br{
+        display: none;
+    }
+    .logo-text{
+        font-size: 16px;
+    }
+    .logo-text span{
+        display: block;
+    }
+    br{
+        display: none;
+    }
+    .button{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .convenient__item-title{
+        font-size: 24px;
+    }
+    .delivery__img{
+        width: 170%;
+        position: relative;
+        left: -70%;
+    }
+    .convenient__img{
+        width: 100%;
+    }
+    .section-header__image{
+        display: none;
+    }
+    .convenient{
+        padding-bottom: 60px;
+    }
+    .triggers-item{
+        flex-wrap: wrap;
+    }
+    .modal__title{
+        font-size: 24px;
+    }
+    .modal_subheader{
+        font-size: 16px;
+    }
+}

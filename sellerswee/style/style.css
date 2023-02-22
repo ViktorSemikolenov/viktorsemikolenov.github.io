@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat-Regular', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+html, body{
+    overflow-x: hidden;
+}
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url(../fonts/Montserrat-Bold.ttf);
