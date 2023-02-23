@@ -81,6 +81,39 @@
     .list__item{
         font-size: 16px;
     }
+    .price__table{
+        width: 470px;
+    }
+    .price__table-col-small{
+        flex-basis: 8%;
+    }
+    .scroll-container{
+        overflow-x: scroll;
+    }
+    .price__table-row{
+        padding: 12px 0;
+    }
+    .price__table-col-medium{
+        display: flex;
+        align-items: center;
+    }
+    html, body{
+    overflow-x: hidden;
+}
+.price__table{
+    margin-top: 0;
+}
+.scroll-icon{
+    display: block;
+}
+.price{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.price__table-col-small{
+    display: flex;
+    align-items: center;
+}
 }
 @media(max-width:479px){
     .container{

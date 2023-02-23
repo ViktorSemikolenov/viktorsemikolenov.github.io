@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat-Regular', Tahoma, Geneva, Verdana, sans-serif;
 }
-html, body{
-    overflow-x: hidden;
-}
+
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url(../fonts/Montserrat-Bold.ttf);
@@ -423,4 +421,65 @@ input{
 }
 .form__button{
     height: 54px;
+}
+.price__table{
+    margin-top: 48px;
+    position: relative;
+}
+.price__table-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.price__table-col{
+    flex-grow: 1;
+    text-align: center;
+}
+.price__table-col-medium{
+    flex-basis: 40%;
+    text-align: left;
+}
+.price__table-col-small{
+    flex-basis: 20%;
+}
+.price__table-row{
+    padding: 18px 0;
+}
+.price__table-row:nth-of-type(2n){
+    background-color: #F7F7F7;;
+}
+.price__table-header{
+    border-bottom: thin solid #0000006c;
+    padding-bottom: 16px;
+    background: var(--white);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.price__table-title{
+    font-size: 18px;
+    font-family: 'Montserrat-Medium';
+}
+
+.price__table-left-title{
+    font-size: 16px;
+    font-family: 'Montserrat-Medium';
+    margin-left: 26px;
+}
+.price__header{
+    padding-bottom: 0;
+    border: none;
+}
+.price-title{
+    text-align: center;
+    width: 100%;
+}
+.section-header__text{
+    width: 100%;
+}
+.scroll-icon{
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
 }
