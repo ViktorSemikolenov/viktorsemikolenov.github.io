@@ -483,3 +483,10 @@ input{
     margin: 0 auto;
     display: none;
 }
+.price__footer{
+    margin-top: 30px;
+}
+.price__footer-number{
+    font-family: 'Montserrat-Medium';
+    display: block;
+}
