@@ -234,13 +234,7 @@
 .how-it-work__footer{
     position: relative;
 }
-.how-it-work__footer::before{
-    content: url(../image/content/how__before.svg);
-    position: absolute;
-    z-index: -1;
-    top: -20px;
-    left: -45px;
-}
+
 .how-it-work__button{
     display: inline-block;
     margin-top: 30px;
