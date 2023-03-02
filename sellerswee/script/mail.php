@@ -3,7 +3,7 @@ $submit = $_POST['submit'];
 if(empty($submit)) {
 ?>
 <?
-    $to = "viktor.semikolenov@gmail.com";
+    $to = "marketing.wee.ae@gmail.com";
     }
         $subject = 'Callback'; //Заголовок сообщения
         $message = '
