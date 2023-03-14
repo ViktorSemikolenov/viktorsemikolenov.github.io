@@ -831,3 +831,53 @@ h1 {
 .navigation.fixed path{
     fill: #000000;
 }
+.hotel-rooms__list-row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0 63px;
+}
+.conveniences{
+    padding-top: 100px;
+    position: relative;
+}
+.conveniences__row{
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0 81px;
+}
+.conveniences__item{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.conveniences__img-one{
+    position: absolute;
+    top: -55px;
+    left: 10vw;
+    z-index: -1;
+}
+.conveniences__img-two{
+    position: absolute;
+    bottom: -60%;
+    z-index: -1;
+}
+.conveniences__img-three{
+    position: absolute;
+    top: 105px;
+    right: 15vw;
+    z-index: -1;
+}
+.conveniences__img-foure{
+    position: absolute;
+    right: 0;
+    bottom: -130px;
+    z-index: -1;
+}
+
+#tl-booking-form{
+    padding-top: 240px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
