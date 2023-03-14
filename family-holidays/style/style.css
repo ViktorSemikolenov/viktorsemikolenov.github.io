@@ -193,6 +193,7 @@ body, html {
     background-size: cover;
     padding-bottom: 150px;
     padding-top: 27vh;
+    background-position: bottom center;
 }
 
 .phone-icon::before {

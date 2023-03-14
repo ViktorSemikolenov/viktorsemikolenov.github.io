@@ -45,9 +45,9 @@
                     <a href="tel:+79957500642" class="phone phone-icon navigation__phone">+7 995 750-06-42</a>
                     <div class="messengers">
                         <ul class="messengers__list">
-                            <li class="messengers__item"><a href="#"><img src="image/icons/vk.svg" alt="Vk"
+                            <li class="messengers__item"><a target="_blank" href="https://vk.com/zamokazov"><img src="image/icons/vk.svg" alt="Vk"
                                         class="messengers__icon"></a></li>
-                            <li class="messengers__item"><a href="#"><img src="image/icons/tg.svg" alt="Telegram"
+                            <li class="messengers__item"><a target="_blank" href="https://t.me/zamokazov"><img src="image/icons/tg.svg" alt="Telegram"
                                         class="messengers__icon"></a></li>
                         </ul>
                     </div>
@@ -68,7 +68,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="/" class="menu__link">Главная</a></li>
-                            <li class="menu__item"><a href="booking.html" class="menu__link">Бронирование</a></li>
+                            <li class="menu__item"><a href="booking/index.html" class="menu__link">Бронирование</a></li>
                             <li class="menu__item"><a href="#hotel-rooms" class="menu__link">Номера</a></li>
                             <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
                         </ul>
@@ -76,9 +76,9 @@
                             <a href="tel:+79957500642" class="phone phone-icon navigation__phone">+7 995 750-06-42</a>
                             <div class="messengers">
                                 <ul class="messengers__list">
-                                    <li class="messengers__item"><a href="#"><img src="image/icons/vk.svg" alt="Vk"
+                                    <li class="messengers__item"><a target="_blank" href="https://vk.com/zamokazov"><img src="image/icons/vk.svg" alt="Vk"
                                                 class="messengers__icon"></a></li>
-                                    <li class="messengers__item"><a href="#"><img src="image/icons/tg.svg"
+                                    <li class="messengers__item"><a target="_blank" href="https://t.me/zamokazov"><img src="image/icons/tg.svg"
                                                 alt="Telegram" class="messengers__icon"></a></li>
                                 </ul>
                             </div>
@@ -117,6 +117,52 @@
                     <a href="#hotel-rooms" class="button button-stroke">Наши номера</a>
                 </div>
             </footer>
+            <style>
+                #block-search, #block-search * {
+                  box-sizing: border-box;
+                }
+                #block-search {
+                  background-color: #FFFFFF;
+                  border-radius: 22px;
+                  width: 100%;
+                  max-width: 1170px;
+                  margin: 0 auto;
+                }
+                .tl-container {
+                  padding: 0 30px;
+                }
+              </style>
+              <!-- start TL Search form script -->
+              <div id='block-search'>
+                  <div id='tl-search-form' class='tl-container'>
+                      <noindex><a href='booking/index.html' rel='nofollow' target='_blank'>TravelLine</a></noindex>
+                  </div>
+              </div>
+              <script type='text/javascript'>
+                  (function(w) {
+                      var q = [
+                          ['setContext', 'TL-INT-azov-zamok_2023-03-07', 'ru'],
+                          ['embed', 'search-form', {
+                              container: 'tl-search-form'
+                          }]
+                      ];
+                       var h=["ru-ibe.tlintegration.ru","ibe.tlintegration.ru","ibe.tlintegration.com"];
+                      var t = w.travelline = (w.travelline || {}),
+                          ti = t.integration = (t.integration || {});
+                      ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+                      if (!ti.__loader) {
+                        ti.__loader = true;
+                        var d=w.document,c=d.getElementsByTagName("head")[0]||d.getElementsByTagName("body")[0];
+                        function e(s,f) {return function() {w.TL||(c.removeChild(s),f())}}
+                        (function l(h) {
+                            if (0===h.length) return; var s=d.createElement("script");
+                            s.type="text/javascript";s.async=!0;s.src="https://"+h[0]+"/integration/loader.js";
+                            s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
+                        })(h);
+                    }
+                  })(window);
+              </script>
+              <!-- end TL Search form script -->
         </div>
     </section>
     <section class="about">
@@ -154,7 +200,7 @@
                             <li>Общие холлы, лифт, игровая комната для детей</li>
                         </ul>
                     </div>
-                    <a href="booking.html" class="button">К бронированию</a>
+                    <a href="booking/index.html" class="button">К бронированию</a>
                 </div>
                 <div class="hotel-rooms__images">
                     <img src="image/content/rooms/double/1.jpg" alt="img1" class="hotel-rooms__image-overlay">
@@ -181,7 +227,7 @@
                             <li>Общие холлы, лифт, игровая комната для детей</li>
                         </ul>
                     </div>
-                    <a href="booking.html" class="button">К бронированию</a>
+                    <a href="booking/index.html" class="button">К бронированию</a>
                 </div>
                 <div class="hotel-rooms__images">
                     <img src="image/content/rooms/Triple/1.jpg" alt="img1" class="hotel-rooms__image-overlay">
@@ -207,7 +253,7 @@
                             <li>Общие холлы, лифт, игровая комната для детей</li>
                         </ul>
                     </div>
-                    <a href="booking.html" class="button">К бронированию</a>
+                    <a href="booking/index.html" class="button">К бронированию</a>
                 </div>
                 <div class="hotel-rooms__images">
                     <img src="image/content/rooms/Triple-nb/1.jpg" alt="img1" class="hotel-rooms__image-overlay">
@@ -235,7 +281,7 @@
                             <li>Общие холлы, лифт, игровая комната для детей</li>
                         </ul>
                     </div>
-                    <a href="booking.html" class="button">К бронированию</a>
+                    <a href="booking/index.html" class="button">К бронированию</a>
                 </div>
                 <div class="hotel-rooms__images">
                     <img src="image/content/rooms/four-room-standart/1.jpg" alt="img1"
@@ -270,7 +316,7 @@
                         </div>
 
                     </div>
-                    <a href="booking.html" class="button">К бронированию</a>
+                    <a href="booking/index.html" class="button">К бронированию</a>
                 </div>
                 <div class="hotel-rooms__images">
                     <img src="image/content/rooms/four-room-comfort/1.jpg" alt="img1"
@@ -457,9 +503,9 @@
                     <li><a href="mailto:gostinicaAzov@bk.ru" class="contacts__email">gostinicaAzov@bk.ru</a></li>
                 </ul>
                 <ul class="messengers__list contacts__messengers">
-                    <li class="messengers__item"><a href="#"><img src="image/icons/vk.svg" alt="Vk"
+                    <li class="messengers__item"><a target="_blank" href="https://vk.com/zamokazov"><img src="image/icons/vk.svg" alt="Vk"
                                 class="messengers__icon"></a></li>
-                    <li class="messengers__item"><a href="#"><img src="image/icons/tg.svg" alt="Telegram"
+                    <li class="messengers__item"><a target="_blank" href="https://t.me/zamokazov"><img src="image/icons/tg.svg" alt="Telegram"
                                 class="messengers__icon"></a></li>
                 </ul>
             </div>
