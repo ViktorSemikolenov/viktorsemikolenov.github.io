@@ -845,13 +845,13 @@ h1 {
 .conveniences__row{
     margin-top: 90px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0 81px;
 }
 .conveniences__item{
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 22px;
 }
 .conveniences__img-one{
     position: absolute;
