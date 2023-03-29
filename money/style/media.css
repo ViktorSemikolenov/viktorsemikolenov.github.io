@@ -927,6 +927,12 @@
     .collection-list__tabs .tab-content__chart-img{
         width: 100%;
     }
+    .home-first-screen__info{
+        padding-top: 16px;
+    }
+    .home-first-screen{
+        padding-bottom: 24px;
+    }
 }
 @media(max-width:374px){
     .container{
@@ -979,5 +985,10 @@
     }
     .title-h2{
         font-size: 24px;
+    }
+}
+@media(max-width:319px){
+    .home-first-screen .h1-title{
+        font-size: 28px ;
     }
 }
