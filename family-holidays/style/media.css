@@ -388,4 +388,16 @@
     .conveniences__item{
         font-size: 16px;
     }
+    .conveniences__list{
+        margin-left: 20px;
+    }
+    .menu{
+        top: 80px;
+    }
+    .booking-contacts{
+        margin-top: 90px;
+    }
+    #tl-booking-form{
+        padding-top: 100px;
+    }
 }
