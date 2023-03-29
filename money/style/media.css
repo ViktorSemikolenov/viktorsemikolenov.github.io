@@ -936,6 +936,36 @@
     .home-first-screen .h1-title{
         font-size: 34px;
     }
+    .stocks__title::before{
+        transform: translateX(-50%) scale(0.6);
+    }
+    .tab-header{
+        overflow: visible;
+    }
+    .best-investment .tab-header{
+        gap: 0 24px ;
+    }
+    .best-investment .tab{
+        display: block;
+    }
+    .best-investment .tab-title{
+        margin-left: 0;
+    }
+    .cards-list__item-row{
+        padding: 32px 20px;
+    }
+    .footer-bottom__info h3{
+        font-size: 20px;
+    }
+    .specifications{
+        gap: 0px;
+    }
+    .form-quez__row{
+        flex-wrap: wrap-reverse;
+    }
+    .form-quez__row .btn{
+        margin-top: 14px;
+    }
 }
 @media(max-width:374px){
     .container{

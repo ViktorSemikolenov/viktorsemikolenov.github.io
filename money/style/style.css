@@ -1929,3 +1929,15 @@ body {
 .form-quez{
     padding-bottom: 32px;
 }
+.btn-back{
+    border: 1px solid var(--accent-green) !important;
+    background: none !important;
+    color: var(--bg-blue) !important;
+}
+.btn-back:hover{
+    background-color: var(--accent-green) !important;
+    color: var(--text-white) !important;
+}
+.form-quez__row .btn{
+    margin-top: 14px;
+}
