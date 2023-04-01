@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media(max-width:1249px){
     .first-screen__title{
         font-size: 120px;
@@ -32,8 +39,11 @@
     }
     .triggers-num{
         width: 100%;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 55px 20px;
     }
     .triggers-num__item{
@@ -53,6 +63,8 @@
         font-size: 42px;
     }
     .documents-visa .owl-nav {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
         position: absolute;
         right: 0;
@@ -74,10 +86,12 @@
     }
     .types-visas__row{
         margin-top: 55px;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .types-visas__item{
-        flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
         padding-top: 46px;
         padding-bottom: 46px;
     }
@@ -108,14 +122,16 @@
         display: none;
     }
     .first-step__row{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 30px 40px;
     }
     .first-step__row .form-contacts {
         margin-bottom: 80px;
     }
     .first-step__row .form-contacts .input-row{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         max-width: 316px;
         margin: 0 auto;
     }
@@ -141,7 +157,9 @@
     }
     .checkbox-row{
         max-width: 316px;
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         margin-top: -110px;
     }
     .consultation-section__container{
@@ -152,7 +170,8 @@
         margin: 0 auto;
     }
     .how-work__row{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 59px 40px;
     }
     .how-work__icon::before{
@@ -163,6 +182,7 @@
     }
     .accordion-wrap{
         margin-top: 40px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .contacts__content{
@@ -184,7 +204,8 @@
         margin-top: 20px;
     }
     .consultation-section__container .input-row{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 316px;
         margin: 0 auto;
         margin-top: 45px;
@@ -197,12 +218,17 @@
         margin-top: -110px;
     }
     .footer-page__row{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .footer-page__info{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .footer-page__text{
         margin-top: 0;
@@ -243,7 +269,9 @@
     }
     .triggers-num{
         gap: 20px 13px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 13px 1fr;
         grid-template-columns: repeat(2, 1fr);
     }
 .triggers-num__line{
@@ -262,7 +290,9 @@
 .documents-visa .owl-nav{
     position: static;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
 }
 .documents-visa__item{
@@ -283,10 +313,12 @@
     font-size: 16px;
 }
 .types-visas__row{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .types-visas__item{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     border: none;
     padding: 0;
     padding-bottom: 42px;
@@ -317,7 +349,8 @@
     font-size: 20px;
 }
 .faq-header{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .faq-header .title-h2{
     width: 100%;
@@ -327,7 +360,9 @@
     margin-top: 30px;
 }
 .faq__managers-text{
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin-right: 0;
     margin-left: 14px;
 }
@@ -339,7 +374,8 @@
     padding: 15px 0 20px;
 }
 .reviews__row{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .reviews__info{
     margin-right: 0;
@@ -368,7 +404,8 @@
     text-align: left;
 }
 .contacts__row{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 40px ;
 }
 .map-page{
@@ -376,8 +413,11 @@
     margin-top: -280px;
 }
 .footer-page__nav{
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
 }
 .footer-page__nav ul{
@@ -419,7 +459,9 @@
         font-size: 24px;
     }
     .first-step__row-img{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 3px;
