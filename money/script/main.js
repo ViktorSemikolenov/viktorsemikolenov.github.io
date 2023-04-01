@@ -17,10 +17,25 @@ $('.input-line input').focusout(function () {
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
-        $(".navigation-page").addClass("fix-navigation");
+        $(".navigation-page").addClass("no-icon");
     } else {
-        $(".navigation-page").removeClass("fix-navigation");
+        $(".navigation-page").removeClass("no-icon");
     }
+});
+
+
+var header = $('.navigation-page'),
+		scrollPrev = 0;
+
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+ 
+	if ( scrolled > 100 && scrolled > scrollPrev ) {
+		header.addClass('fix-navigation');
+	} else {
+		header.removeClass('fix-navigation');
+	}
+	scrollPrev = scrolled;
 });
 
 

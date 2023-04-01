@@ -6,7 +6,9 @@ $(document).ready(function () {
         center: false,
         autoHeight: true,
         loop: true,
-        items: 1
+        items: 1,
+        autoplay:true,
+        autoplayTimeout:5000
     })
 });
 

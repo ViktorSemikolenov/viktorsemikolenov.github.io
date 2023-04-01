@@ -807,9 +807,7 @@
     .mailing-valuables__input{
         width: 100%;
     }
-    .input-line input{
-        padding: 16px;
-    }
+
     .form-btn{
         width: 100%;
         margin-top: 16px;
@@ -965,6 +963,15 @@
     }
     .form-quez__row .btn{
         margin-top: 14px;
+    }
+    .our-collectors .owl-prev, .our-collectors .owl-next{
+        display: none;
+    }
+    .no-icon{
+        top: 0;
+    }
+    .header-nav .navigation-page__social-list{
+        display: flex !important;
     }
 }
 @media(max-width:374px){
