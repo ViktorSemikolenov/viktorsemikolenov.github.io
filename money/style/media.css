@@ -267,7 +267,8 @@
         font-size: 15px;
     }
     .h1-title::before{
-        right: -18px;
+        right: auto !important;
+        left: 2vw;
     }
     .header-nav{
         position: static;
@@ -299,6 +300,9 @@
     }
     .advantages__item-two .advantages__title-marker::before{
         right: -10px;
+    }
+    h2{
+        letter-spacing: 0;
     }
 }
 @media(max-width:767px){
