@@ -496,10 +496,16 @@ body {
 
 .advantages__title-marker::before {
     content: url(../img/content/marker/1.jpg);
+    content: '';
     z-index: -1;
     position: absolute;
-    right: -23px;
-    top: -10px;
+    top: 0px;
+    right: -15px;
+    width: 120%;
+    height: 40px;
+    background-image: url(../img/content/marker/1.jpg);
+    background-position: center;
+    background-size: 100%;
 }
 
 .advantages__text {
@@ -514,13 +520,17 @@ body {
 }
 
 .advantages__item-two .advantages__title-marker::before {
-    content: url(../img/content/marker/2.jpg);
+    content: '';
+    background-image: url(../img/content/marker/2.jpg);
     right: -17px;
+
 }
 
 .advantages__item-three .advantages__title-marker::before {
-    content: url(../img/content/marker/3.jpg);
+    content: '';
     right: -19px;
+    background-image: url(../img/content/marker/1.jpg);
+    width: 104%;
 }
 
 .advantages__item-three {
@@ -538,6 +548,10 @@ body {
     font-size: 48px;
     letter-spacing: 1px;
 }
+.title-h2 span{
+    font-family: Golos-Bold;
+    position: relative;
+}
 
 .stocks__title {
     text-align: center;
@@ -552,13 +566,20 @@ body {
     z-index: 1;
 }
 
-.stocks__title::before {
+.stocks__titl-before::before {
     content: url(../img/content/marker/4.png);
+    content: '';
     position: absolute;
-    right: 0;
-    bottom: -19px;
+    right: -10px;
+    bottom: -20px;
     z-index: -1;
+    width: 110%;
+    height: 35px;
+    background-image: url(../img/content/marker/4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
+
 
 .stocks__row {
     margin-top: 60px;
@@ -1674,13 +1695,25 @@ body {
     position: relative;
 }
 
-.coin-structure__title::before {
-    content: url(../img/content/h1-before.jpg);
-    position: absolute;
-    right: 225px;
-    bottom: -18px;
-    z-index: -1;
+
+
+.coin-structure__title-before{
+    position: relative;
 }
+
+.coin-structure__title-before::before {
+    content: '';
+    width: 110%;
+    height: 35px;
+    background-image: url(../img/content/h1-before.jpg);
+    position: absolute;
+    z-index: -1;
+    right: -14px;
+    bottom: -24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .coin-structure__row{
     display: -ms-grid;
     display: grid;
