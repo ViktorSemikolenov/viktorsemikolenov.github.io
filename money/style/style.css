@@ -124,11 +124,17 @@ body {
 }
 
 .h1-title__line::before {
-    content: url(../img/content/h1-before.jpg);
+    content: '';
     position: absolute;
     right: -10px;
-    bottom: -18px;
+    bottom: -12px;
     z-index: -1;
+    width: 108%;
+    height: 25px;
+    background-image: url(../img/content/h1-before.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .h1-title__line{
     font-family: Golos-Bold;

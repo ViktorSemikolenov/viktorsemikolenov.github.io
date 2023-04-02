@@ -308,13 +308,7 @@
         font-size: 32px;
     }
     .h1-title__line::before {
-        content: url(../img/content/h1-before.jpg);
-        position: absolute;
-        right: -12px;
-        bottom: -18px;
-        z-index: -1;
-        transform: scale(1);
-        zoom: 0.72;
+        
     }
 }
 @media(max-width:767px){
@@ -1075,6 +1069,15 @@
     }
     .title-h2{
         font-size: 24px;
+    }
+    .h1-title__line{
+        display: block;
+    }
+    .h1-title__line::before {
+        width: 98%;
+        background-position: center center;
+        right: 0;
+        background-size:100%;
     }
 }
 @media(max-width:319px){
