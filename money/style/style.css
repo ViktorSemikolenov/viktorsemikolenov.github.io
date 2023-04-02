@@ -93,6 +93,8 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: var(--bg-blue);
+    -webkit-text-size-adjust: 100% !important;
+    overflow-x: hidden !important;
 }
 
 
