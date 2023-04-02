@@ -70,15 +70,24 @@
 
 @font-face {
     font-family: Golos-Regular;
-    src: url(../fonts/golos/GolosText-Regular.ttf);
+    src: url('../fonts/golos/GolosText-Regular.eot');
+    src: url('../fonts/golos/GolosText-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/golos/GolosText-Regular.woff') format('woff'),
+         url('../fonts/golos/GolosText-Regular.ttf') format('truetype'),
+         url('../fonts/golos/GolosText-Regular.svg#FontName') format('svg');
     font-display: swap;
 }
 
 @font-face {
     font-family: Golos-Bold;
-    src: url(../fonts/golos/GolosText-Bold.ttf);
+    src: url('../fonts/golos/GolosText-Bold.eot');
+    src: url('../fonts/golos/GolosText-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/golos/GolosText-Bold.woff') format('woff'),
+         url('../fonts/golos/GolosText-Bold.ttf') format('truetype'),
+         url('../fonts/golos/GolosText-Bold.svg#FontName') format('svg');
     font-display: swap;
 }
+
 
 /* Общие стили */
 body {
