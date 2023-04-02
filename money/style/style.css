@@ -40,37 +40,44 @@
 @font-face {
     font-family: SourceSansPro-Light;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Light.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: SourceSansPro-Regular;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: SourceSansPro-SemiBold;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: SourceSansPro-Bold;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: SourceSansPro-Black;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Black.ttf);
+    font-display: swap;
 }
 
 
 @font-face {
     font-family: Golos-Regular;
     src: url(../fonts/golos/GolosText-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Golos-Bold;
     src: url(../fonts/golos/GolosText-Bold.ttf);
+    font-display: swap;
 }
 
 /* Общие стили */
@@ -1022,12 +1029,15 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 16px;
+    padding-top: 0px;
     gap: 0 52px;
+    padding-top: 12px;
+    padding-bottom: 11px;
 }
 
 .capture-form__img {
-    width: 200px;
+    height: 100px;
+    margin-bottom: -11px;
 }
 
 .capture-form__info {
@@ -1312,6 +1322,7 @@ body {
     font-family: Golos-Bold;
     text-decoration: none;
     color: var(--text-black);
+    letter-spacing: 0;
 }
 .cards-list__title:hover{
     border-bottom: 2px solid var(--bg-grey);

@@ -266,6 +266,34 @@
     .get-medal__step p{
         font-size: 15px;
     }
+    .h1-title::before{
+        right: -18px;
+    }
+    .header-nav{
+        position: static;
+    }
+    .nav__list{
+        gap: 0 12px;
+    }
+    .nav__link{
+        font-size: 14px;
+    }
+    .no-icon .nav__list{
+        margin-top: -10px;
+    }
+    .no-icon .navigation-page__social-list{
+        display: none;
+    }
+    .no-icon .logo__image{
+            margin-top: 0;
+    }
+    .no-icon .logo::before, .no-icon .logo::after{
+        left: 55px;
+        height: 5px;
+    }
+    .about-section{
+        background-size: 98%;
+    }
 }
 @media(max-width:767px){
     .collection-list .tab-content__chart{
