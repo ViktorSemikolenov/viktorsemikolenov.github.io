@@ -1,3 +1,11 @@
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+
 
 // label form
 $('.input-line input').focusin(function () {
@@ -92,3 +100,4 @@ $(".close-modal").on('click', function (e) {
     }, 350);
 
 });
+
