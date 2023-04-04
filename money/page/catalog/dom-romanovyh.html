@@ -31,7 +31,7 @@
                             <a href="tel:88005552525" class="phone-link">8 (800) 555-25-25</a>
                             <div class="feedback__phone-info navigation-page__phone-info">
                                 <span class="label feedback__label">КРУГЛОСУТОЧНО</span>
-                                <button class="btn-text">Заказать звонок</button>
+                                <button class="btn-text open-modal" data-modal="#modal1">Заказать звонок</button>
                             </div>
                         </div>
                         <ul class="social-list navigation-page__social-list">
@@ -51,7 +51,7 @@
                         <a href="tel:88005552525" class="phone-link">8 (800) 555-25-25</a>
                         <div class="feedback__phone-info navigation-page__phone-info">
                             <span class="label feedback__label">КРУГЛОСУТОЧНО</span>
-                            <button class="btn-text">Заказать звонок</button>
+                            <button class="btn-text open-modal" data-modal="#modal1">Заказать звонок</button>
                         </div>
                     </div>
                     <ul class="social-list navigation-page__social-list">
@@ -563,7 +563,7 @@
                             <a href="tel:88005552525" class="phone-link">8 (800) 555-25-25</a>
                             <div class="feedback__phone-info navigation-page__phone-info">
                                 <span class="label feedback__label">КРУГЛОСУТОЧНО</span>
-                                <button class="btn-text">Заказать звонок</button>
+                                <button class="btn-text open-modal" data-modal="#modal1">Заказать звонок</button>
                             </div>
                         </div>
                     </div>
@@ -618,6 +618,33 @@
                 </div>
             </div>
         </footer>
+        <div class='modal' id='modal1'>
+            <div class="content">
+                <h3 class="modal-title">Заказать звонок</h3>
+                <form action="">
+                    <div class="input-group">
+                        <div class="input-line">
+                            <label class="placeholder" for="fio">Фамилия Имя Отчество</label>
+                            <input class="input" type="text" name="Фамилия Имя Отчество" id="fio">
+                        </div>
+                        <div class="input-line">
+                            <label class="placeholder" for="phone">Телефон</label>
+                            <input class="input" type="text" name="Телефон" id="phone">
+                        </div>
+                    </div>
+                    <label for="check"  class="form-quez__polic">
+                        <input class="input-check" checked type="checkbox" name="check" id="check">
+                        <span class="checkbox"></span>
+                        <p>Я ознакомился с <a target="_black" href="#">условиями и даю согласие</a> на <a target="_black" href="#">обработку персональных данных</a></p>
+                    </label>
+                </form>
+            </div>
+            <button class='close-modal' data-modal="#modal1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+                </svg>
+            </button>
+        </div>
     </main>
     <script src="../../script/jquery.min.js"></script>
     <script src="../../script/owl.carousel.min.js"></script>
