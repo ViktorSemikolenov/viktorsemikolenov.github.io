@@ -13,6 +13,7 @@
     font-family: SourceSansPro-Regular;
 }
 
+
 :root {
     --bg-blue: #181f38;
     --bg-blue-light: #3d445e;
@@ -73,8 +74,7 @@
     src: url('../fonts/golos/GolosText-Regular.eot');
     src: url('../fonts/golos/GolosText-Regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/golos/GolosText-Regular.woff') format('woff'),
-         url('../fonts/golos/GolosText-Regular.ttf') format('truetype'),
-         url('../fonts/golos/GolosText-Regular.svg#FontName') format('svg');
+         url('../fonts/golos/GolosText-Regular.ttf') format('truetype');
    
 }
 
@@ -83,8 +83,7 @@
     src: url('../fonts/golos/GolosText-Bold.eot');
     src: url('../fonts/golos/GolosText-Bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/golos/GolosText-Bold.woff') format('woff'),
-         url('../fonts/golos/GolosText-Bold.ttf') format('truetype'),
-         url('../fonts/golos/GolosText-Bold.svg#FontName') format('svg');
+         url('../fonts/golos/GolosText-Bold.ttf') format('truetype');
    
 }
 
