@@ -350,6 +350,15 @@
     .footer-page .nav{
         width: 420px;
     }
+    .capture-form__img-container{
+        display: none;
+    }
+    .capture-form__row{
+        flex-wrap: nowrap;
+    }
+    .capture-form__info{
+        order: -1;
+    }
 }
 @media(max-width:767px){
     
@@ -723,6 +732,12 @@
 .title-h2{
     letter-spacing: -0.1px;
 }
+.capture-form__info{
+    justify-content: flex-start;
+}
+.capture-form__descript br{
+    display: none;
+}
 }
 @media(max-width:574px){
     .container{
@@ -889,6 +904,17 @@
     }
     .coin-structure__title-before::before{
         display: none;
+    }
+    .capture-form__row{
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+    .capture-form__info{
+        justify-content: center;
+        text-align: center;
+    }
+    .capture-form__descript{
+        margin-top: 8px;
     }
 }
 
@@ -1118,6 +1144,9 @@
     }
     .nav__link{
         margin-bottom: 8px;
+    }
+    .capture-form__descript{
+        text-align: left;
     }
 }
 @media(max-width:374px){

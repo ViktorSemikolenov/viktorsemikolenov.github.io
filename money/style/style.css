@@ -1080,8 +1080,8 @@ body {
             justify-content: center;
     padding-top: 0px;
     gap: 0 52px;
-    padding-top: 12px;
-    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-bottom: 7px;
 }
 
 .capture-form__img {
@@ -1121,6 +1121,10 @@ body {
     background-color: var(--bg-blue);
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.footer-page .navigation-page__row{
+    align-items: flex-start;
 }
 
 .footer-page .nav__list {
