@@ -2231,3 +2231,9 @@ body {
   .loaded .preloader {
     display: none;
   }
+  .footer-bottom{
+    margin-top: 10px;
+  }
+  .footer-bottom__feedback{
+    margin-top: 28px;
+  }

@@ -359,6 +359,12 @@
     .capture-form__info{
         order: -1;
     }
+    .capture-form__row{
+        padding-top: 0;
+    }
+    .capture-form__info{
+        margin: 24px 0;
+    }
 }
 @media(max-width:767px){
     
@@ -915,6 +921,15 @@
     }
     .capture-form__descript{
         margin-top: 8px;
+    }
+    .capture-form__info{
+        margin-top: 0;
+    }
+    .capture-form__row{
+        padding: 32px 0;
+    }
+    .footer-page__feedback{
+        margin-top: 10px;
     }
 }
 
