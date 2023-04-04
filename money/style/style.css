@@ -40,31 +40,31 @@
 @font-face {
     font-family: SourceSansPro-Light;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Light.ttf);
-    font-display: swap;
+   
 }
 
 @font-face {
     font-family: SourceSansPro-Regular;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf);
-    font-display: swap;
+   
 }
 
 @font-face {
     font-family: SourceSansPro-SemiBold;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.ttf);
-    font-display: swap;
+   
 }
 
 @font-face {
     font-family: SourceSansPro-Bold;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf);
-    font-display: swap;
+   
 }
 
 @font-face {
     font-family: SourceSansPro-Black;
     src: url(../fonts/Source-Sans-Pro/SourceSansPro-Black.ttf);
-    font-display: swap;
+   
 }
 
 
@@ -75,7 +75,7 @@
          url('../fonts/golos/GolosText-Regular.woff') format('woff'),
          url('../fonts/golos/GolosText-Regular.ttf') format('truetype'),
          url('../fonts/golos/GolosText-Regular.svg#FontName') format('svg');
-    font-display: swap;
+   
 }
 
 @font-face {
@@ -85,7 +85,7 @@
          url('../fonts/golos/GolosText-Bold.woff') format('woff'),
          url('../fonts/golos/GolosText-Bold.ttf') format('truetype'),
          url('../fonts/golos/GolosText-Bold.svg#FontName') format('svg');
-    font-display: swap;
+   
 }
 
 
