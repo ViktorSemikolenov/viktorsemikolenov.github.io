@@ -348,7 +348,7 @@
         margin-bottom: -4px;
     }
     .footer-page .nav{
-        width: 100%;
+        width: 420px;
     }
 }
 @media(max-width:767px){
@@ -717,6 +717,12 @@
 .coin-structure__title-before::before{
     bottom: -28px;
 }
+.home-first-screen__description{
+    margin-top: 25px;
+}
+.title-h2{
+    letter-spacing: -0.1px;
+}
 }
 @media(max-width:574px){
     .container{
@@ -877,6 +883,12 @@
     }
     .advantages__item-three .advantages__title-marker::before{
         right: -15px;
+    }
+    .contacts-list__title{
+        letter-spacing: -0.1px;
+    }
+    .coin-structure__title-before::before{
+        display: none;
     }
 }
 
@@ -1096,6 +1108,16 @@
     .specifications{
         padding: 16px;
         gap: 24px 0;
+    }
+    .footer-page .nav__item{
+        display: inline-block;
+        margin-right: 16px;
+    }
+    .footer-page .nav__item:last-of-type{
+        margin-right: 0;
+    }
+    .nav__link{
+        margin-bottom: 8px;
     }
 }
 @media(max-width:374px){

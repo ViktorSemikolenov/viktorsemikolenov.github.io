@@ -1972,8 +1972,10 @@ body {
     margin-top: 38px;
 }
 .input-group input{
-    padding: 18px 16px;
+
     border: thin solid #c1c9d8;
+    height: 57px;
+    padding-top: 18px;
 }
 .input-group .input-line{
     margin-bottom: 24px;
