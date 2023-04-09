@@ -10,10 +10,26 @@
     <title>О компании</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/media.css">
+    <style>  
+        .lazy-section{
+            display: none;
+        }
+        .loaded .lazy-section{
+            display: block;
+        }
+        .show-loading{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .loaded .show-loading{
+            opacity: 1;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="navigation-page">
+    <header class="navigation-page show-loading">
         <div class="container">
             <div class="navigation-page__row">
                 <a href="../index.html" class="logo"><img loading="lazy" src="../img/logo.png" alt="Европейский монетный двор"
@@ -65,7 +81,7 @@
         </div>
     </header>
     <main class="main-content">
-        <section class="page-first-screen">
+        <section class="page-first-screen show-loading">
             <div class="container">
                 <div class="page-first-screen__row">
                     <div class="page-first-screen__info">
@@ -85,7 +101,7 @@
             </div>
         </section>
         <section class="about-section">
-            <div class="container">
+            <div class="container show-loading">
                 <p class="about-section__text">
                     Европейский Монетный Двор — ваш проводник в мир <br>коллекционирования и <strong
                         class="text-bold">инвестиций.</strong>
@@ -96,8 +112,9 @@
                     этом <br>с удовльствием поможем!
                 </p>
             </div>
+            <img class="about-section__bg show-loading lazy" data-original="../img/background/about-section.png" src=""  alt="bg-img">
         </section>
-        <section class="advantages">
+        <section class="advantages lazy-section">
             <div class="container">
                 <div class="advantages__item advantages__item-one">
                     <div class="advantages__item-info">
@@ -109,10 +126,10 @@
                             Разделите эту страсть с нами!
                         </p>
                     </div>
-                    <img src="../img/content/trigger-man-one.png" alt="Нумизматика — наша страсть" class="advantages__item-img">
+                    <img data-original="../img/content/trigger-man-one.png" src="" alt="Нумизматика — наша страсть" class="advantages__item-img lazy">
                 </div>
                 <div class="advantages__item advantages__item-two">
-                    <img src="../img/content/trigger-man-two.png" alt="Нумизматика — наша страсть" class="advantages__item-img">
+                    <img data-original="../img/content/trigger-man-two.png" src="" alt="Нумизматика — наша страсть" class="advantages__item-img lazy">
                     <div class="advantages__item-info">
                         <h3 class="advantages__title">Инвестиции в <span class="advantages__title-marker">будущее</span></h3>
                         <p class="advantages__text">
@@ -133,11 +150,11 @@
                             великолепного вкуса.
                         </p>
                     </div>
-                    <img src="../img/content/trigger-man-three.png" alt="Нумизматика — наша страсть" class="advantages__item-img">
+                    <img data-original="../img/content/trigger-man-three.png" src="" alt="Нумизматика — наша страсть" class="advantages__item-img lazy">
                 </div>
             </div>
         </section>
-        <section class="mailing-valuables mailing-valuables_brown">
+        <section class="mailing-valuables mailing-valuables_brown lazy-section">
             <div class="container">
                 <h2 class="title-h2 mailing-valuables__title">Рассылка ценностей</h2>
                 <p class="mailing-valuables__description">Подпишитесь на нашу рассылку и узнавайте <br>
@@ -165,7 +182,7 @@
                 </footer>
             </div>
         </section>
-        <footer class="footer-page">
+        <footer class="footer-page lazy-section">
             <div class="container">
                 <div class="navigation-page__row">
                     <nav class="nav ">
@@ -250,8 +267,21 @@
             </svg>
         </button>
     </div>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 0);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 0);
+        }
+    
+      </script>
     <script src="../script/jquery.min.js"></script>
-    <script src="../script/main.js"></script>
+    <script async src="../script/main.js"></script>
 
 </body>
 

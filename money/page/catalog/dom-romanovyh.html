@@ -11,10 +11,26 @@
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/media.css">
     <link rel="stylesheet" href="../../style/owl.carousel.min.css">
+    <style>  
+        .lazy-section{
+            display: none;
+        }
+        .loaded .lazy-section{
+            display: block;
+        }
+        .show-loading{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .loaded .show-loading{
+            opacity: 1;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="navigation-page">
+    <header class="navigation-page show-loading">
         <div class="container">
             <div class="navigation-page__row">
                 <a href="../../index.html" class="logo"><img loading="lazy" src="../../img/logo.png" alt="Европейский монетный двор"
@@ -70,7 +86,7 @@
         </div>
     </header>
     <main class="main-content">
-        <section class="page-first-screen page-first-screen__product">
+        <section class="page-first-screen page-first-screen__product show-loading">
             <div class="container">
                 <div class="page-first-screen__row">
                     <div class="page-first-screen__info">
@@ -104,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section class="line-text">
+        <section class="line-text show-loading">
             <div class="line-text__top"></div>
             <div class="container">
                 <div class="capture-form__info">
@@ -115,9 +131,9 @@
             </div>
             <div class="line-text__bottom"></div>
         </section>
-        <section class="advantages advantages-product">
+        <section class="advantages advantages-product ">
             <div class="container">
-                <div class="advantages__item advantages__item-one">
+                <div class="advantages__item advantages__item-one show-loading">
                     <div class="advantages__item-info">
                         <h3 class="advantages__title">Нумизматика — наша <span
                                 class="advantages__title-marker">страсть</span></h3>
@@ -128,12 +144,12 @@
                             Разделите эту страсть с нами!
                         </p>
                     </div>
-                    <img src="../../img/content/trigger-man-one.png" alt="Нумизматика — наша страсть"
-                        class="advantages__item-img">
+                    <img data-original="../../img/content/trigger-man-one.png" src="" alt="Нумизматика — наша страсть"
+                        class="advantages__item-img lazy">
                 </div>
-                <div class="advantages__item advantages__item-two">
-                    <img src="../../img/content/trigger-man-two.png" alt="Нумизматика — наша страсть"
-                        class="advantages__item-img">
+                <div class="advantages__item advantages__item-two show-loading">
+                    <img data-original="../../img/content/trigger-man-two.png" src="" alt="Нумизматика — наша страсть"
+                        class="advantages__item-img lazy">
                     <div class="advantages__item-info">
                         <h3 class="advantages__title">Инвестиции в <span class="advantages__title-marker">будущее</span>
                         </h3>
@@ -145,7 +161,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="advantages__item advantages__item-three">
+                <div class="advantages__item advantages__item-three show-loading">
                     <div class="advantages__item-info">
                         <h3 class="advantages__title">Из поколения <span class="advantages__title-marker">в
                                 поколение</span></h3>
@@ -156,46 +172,46 @@
                             великолепного вкуса.
                         </p>
                     </div>
-                    <img src="../../img/content/trigger-man-three.png" alt="Нумизматика — наша страсть"
-                        class="advantages__item-img">
+                    <img data-original="../../img/content/trigger-man-three.png" src="" alt="Нумизматика — наша страсть"
+                        class="advantages__item-img lazy">
                 </div>
             </div>
         </section>
-        <section class="collection-list">
+        <section class="collection-list lazy-section">
             <div class="container">
                 <h2 class="title-h2 collection-list__title">Состав коллекции</h2>
                 <div id="tab-container" class="collection-list__tabs">
                     <header class="tab-header owl-carousel header-tab">
                         <div class="tab tab-active" onclick="openTab(event, 'tab1')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-1.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-1.png" src="" alt="img-coin">
                             <span class="tab-title">Александр I</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab2')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-2.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-2.png" src="" alt="img-coin">
                             <span class="tab-title">Пётр I</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab3')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-3.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-3.png" src="" alt="img-coin">
                             <span class="tab-title">Николай II</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab4')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-4.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-4.png" src="" alt="img-coin">
                             <span class="tab-title">Николай I</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab5')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-5.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-5.png" alt="img-coin">
                             <span class="tab-title">Елизавета<br>Петровна</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab6')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-6.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-6.png" alt="img-coin">
                             <span class="tab-title">Екатерина I</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab7')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-7.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-7.png" alt="img-coin">
                             <span class="tab-title">Екатерина II</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab8')">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/tab-1.png" alt="img-coin">
+                            <img class="lazy" data-original="../../img/content/page/catalog/dom-romanovyh/tab-1.png" alt="img-coin">
                             <span class="tab-title">Анна<br> Иоанновка</span>
                         </div>
                     </header>
@@ -204,7 +220,7 @@
                         <div id="tab1" class="tab-content tab-content-active">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -221,7 +237,7 @@
                         <div id="tab2" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -235,7 +251,7 @@
                         <div id="tab3" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -247,7 +263,7 @@
                         <div id="tab4" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -261,7 +277,7 @@
                         <div id="tab5" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -275,7 +291,7 @@
                         <div id="tab6" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -292,7 +308,7 @@
                         <div id="tab7" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -306,7 +322,7 @@
                         <div id="tab8" class="tab-content ">
                             <div class="tab-content__row">
                                 <div class="tab-content__chart">
-                                    <img src="../../img/content/coin.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="../../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                                 <div class="tab-content__info">
                                     <p class="tab-content__text">
@@ -324,7 +340,7 @@
                 </div>
             </div>
         </section>
-        <section class="coin-structure">
+        <section class="coin-structure lazy-section">
             <div class="container">
                 <h2 class="title-h2 coin-structure__title">Искусство <span class="coin-structure__title-before">высшей пробы</span></h2>
                 <div class="coin-structure__row">
@@ -340,8 +356,8 @@
                         </div>
                     </div>
                     <div class="coin-structure__center-col coin-structure__img-gold">
-                        <img src="../../img/content/page/catalog/dom-romanovyh/big-coin.png" alt="coin"
-                            class="coin-structure__img ">
+                        <img data-original="../../img/content/page/catalog/dom-romanovyh/big-coin.png" src="" alt="coin"
+                            class="coin-structure__img lazy">
                     </div>
                     <div class="coin-structure__right-col">
                         <div class="coin-structure__item coin-structure__item-one">
@@ -366,7 +382,7 @@
                 </div>
             </div>
         </section>
-        <section class="order-description">
+        <section class="order-description lazy-section">
             <div class="container">
                 <h2 class="title-h2 order-description__title">Первая медаль — бесплатно</h2>
                 <p class="order-description_subheader">
@@ -397,15 +413,15 @@
                     <h3 class="title-h3">Состав заказа:</h3>
                     <div class="order-structure__row">
                         <div class="order-structure__item">
-                            <img src="../../img/content/coin.png" alt="coin" class="order-structure__img order-structure__img-coin">
+                            <img data-original="../../img/content/coin.png" src="" alt="coin" class="lazy order-structure__img order-structure__img-coin">
                             <h4 class="order-structure__title">Медаль «Николай II» <br>с аннотацией</h4>
                         </div>
                         <div class="order-structure__item">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/sertifacate.png" alt="sertifacate" class="order-structure__img order-structure__img-sertificate">
+                            <img data-original="../../img/content/page/catalog/dom-romanovyh/sertifacate.png"  src="" alt="sertifacate" class="lazy order-structure__img order-structure__img-sertificate">
                             <h4 class="order-structure__title">Сертификат <br>подлинности</h4>
                         </div>
                         <div class="order-structure__item">
-                            <img src="../../img/content/page/catalog/dom-romanovyh/catalog.png" alt="catalog" class="order-structure__img order-structure__img-catalog">
+                            <img data-original="../../img/content/page/catalog/dom-romanovyh/catalog.png" src="" alt="catalog" class="lazy order-structure__img order-structure__img-catalog">
                             <h4 class="order-structure__title">Альбом для <br>коллекции медалей</h4>
                         </div>
                     </div>
@@ -519,7 +535,7 @@
                 </div>
             </div>
         </section>
-        <section class="mailing-valuables mailing-valuables_brown">
+        <section class="mailing-valuables mailing-valuables_brown lazy-section">
             <div class="container">
                 <h2 class="title-h2 mailing-valuables__title">Рассылка ценностей</h2>
                 <p class="mailing-valuables__description">Подпишитесь на нашу рассылку и узнавайте <br>
@@ -547,7 +563,7 @@
                 </footer>
             </div>
         </section>
-        <footer class="footer-page">
+        <footer class="footer-page lazy-section">
             <div class="container">
                 <div class="navigation-page__row">
                     <nav class="nav ">
@@ -647,11 +663,24 @@
             </button>
         </div>
     </main>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 0);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 0);
+        }
+    
+      </script>
     <script src="../../script/jquery.min.js"></script>
-    <script src="../../script/owl.carousel.min.js"></script>
-    <script src="../../script/owl-main.js"></script>
-    <script src="../../script/main.js"></script>
-    <script src="../../script/tabs.js"></script>
+    <script async src="../../script/owl.carousel.min.js"></script>
+    <script async src="../../script/owl-main.js"></script>
+    <script async src="../../script/main.js"></script>
+    <script async src="../../script/tabs.js"></script>
 
 </body>
 

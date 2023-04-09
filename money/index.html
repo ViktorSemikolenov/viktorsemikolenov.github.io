@@ -8,9 +8,25 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Европейский монетный двор</title>
-    <link rel="stylesheet" href="style/style-min.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <style>  
+        .lazy-section{
+            display: none;
+        }
+        .loaded .lazy-section{
+            display: block;
+        }
+        .show-loading{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .loaded .show-loading{
+            opacity: 1;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 
 <body>

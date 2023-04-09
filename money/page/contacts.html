@@ -10,10 +10,26 @@
     <title>Контакты</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/media.css">
+    <style>  
+        .lazy-section{
+            display: none;
+        }
+        .loaded .lazy-section{
+            display: block;
+        }
+        .show-loading{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .loaded .show-loading{
+            opacity: 1;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="navigation-page">
+    <header class="navigation-page show-loading">
         <div class="container">
             <div class="navigation-page__row">
                 <a href="../index.html" class="logo"><img loading="lazy" src="../img/logo.png" alt="Европейский монетный двор"
@@ -65,7 +81,7 @@
         </div>
     </header>
     <main class="main-content">
-        <section class="page-first-screen">
+        <section class="page-first-screen show-loading">
             <div class="container">
                 <div class="page-first-screen__row">
                     <div class="page-first-screen__info">
@@ -84,8 +100,8 @@
                 </div>
             </div>
         </section>
-        <section class="contacts-list">
-            <div class="container">
+        <section class="contacts-list ">
+            <div class="container show-loading">
                 <article class="contacts-list__item">
                     <div class="contacts-list__item-info">
                         <header class="contacts-list__header">
@@ -277,8 +293,21 @@
             </svg>
         </button>
     </div>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 0);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 0);
+        }
+    
+      </script>
     <script src="../script/jquery.min.js"></script>
-    <script src="../script/main.js"></script>
+    <script async src="../script/main.js"></script>
 
 </body>
 

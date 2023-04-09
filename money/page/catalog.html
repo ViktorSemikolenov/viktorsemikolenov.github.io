@@ -10,10 +10,26 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/media.css">
+    <style>  
+        .lazy-section{
+            display: none;
+        }
+        .loaded .lazy-section{
+            display: block;
+        }
+        .show-loading{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .loaded .show-loading{
+            opacity: 1;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="navigation-page">
+    <header class="navigation-page show-loading">
         <div class="container">
             <div class="navigation-page__row">
                 <a href="../index.html" class="logo"><img loading="lazy" src="../img/logo.png" alt="Европейский монетный двор"
@@ -65,7 +81,7 @@
         </div>
     </header>
     <main class="main-content">
-        <section class="page-first-screen">
+        <section class="page-first-screen show-loading">
             <div class="container">
                 <div class="page-first-screen__row">
                     <div class="page-first-screen__info">
@@ -85,12 +101,12 @@
                 </div>
             </div>
         </section>
-        <section class="cards-list">
+        <section class="cards-list show-loading">
             <div class="container">
                 <article class="cards-list__item">
                     <div class="cards-list__item-row">
                         <a href="catalog/dom-romanovyh.html"  class="cards-list__item-image-container">
-                            <img src="../img/content/page/catalog/dom-romanovyh/1.png" alt="dom-romanovyh" class="cards-list__item-image">
+                            <img data-original="../img/content/page/catalog/dom-romanovyh/1.png" src="" alt="dom-romanovyh" class="cards-list__item-image lazy">
                         </a>
                         <div class="cards-list__item-info">
                             <div class="cards-list__item-text">
@@ -122,7 +138,7 @@
                 <article class="cards-list__item">
                     <div class="cards-list__item-row">
                         <a href="catalog/dom-romanovyh.html" class="cards-list__item-image-container">
-                            <img src="../img/content/page/catalog/12-apostolov/1.png" alt="12-apostolov" class="cards-list__item-image">
+                            <img data-original="../img/content/page/catalog/12-apostolov/1.png" src="" alt="12-apostolov" class="cards-list__item-image lazy">
                         </a>
                         <div class="cards-list__item-info">
                             <div class="cards-list__item-text">
@@ -156,7 +172,7 @@
                 
             </div>
         </section>
-        <section class="mailing-valuables mailing-valuables_brown">
+        <section class="mailing-valuables mailing-valuables_brown lazy-section">
             <div class="container">
                 <h2 class="title-h2 mailing-valuables__title">Рассылка ценностей</h2>
                 <p class="mailing-valuables__description">Подпишитесь на нашу рассылку и узнавайте <br>
@@ -184,15 +200,15 @@
                 </footer>
             </div>
         </section>
-        <footer class="footer-page">
+        <footer class="footer-page lazy-section">
             <div class="container">
                 <div class="navigation-page__row">
                     <nav class="nav ">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="../index.html" class="nav__link ">Главная</a></li>
-                            <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
-                            <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
-                            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                            <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="page/catalog.html" class="nav__link">Каталог</a></li>
+                        <li class="nav__item"><a href="page/about.html" class="nav__link">О компании</a></li>
+                        <li class="nav__item"><a href="page/contacts.html" class="nav__link">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="feedback footer-page__feedback">
@@ -222,11 +238,11 @@
                             <span>Пишите нам в любом мессенджере:</span>
                             <ul class="social-list navigation-page__social-list">
                                 <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
-                                            class="social-list__icon" src="../img/icons/whatsapp.svg" alt="whatsApp"></a></li>
+                                            class="social-list__icon lazy" data-original="../img/icons/whatsapp.svg" src="" alt="whatsApp"></a></li>
                                 <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
-                                            class="social-list__icon" src="../img/icons/telegram.svg" alt="Telergam"></a></li>
+                                            class="social-list__icon lazy" data-original="../img/icons/telegram.svg" src="" alt="Telergam"></a></li>
                                 <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
-                                            class="social-list__icon" src="../img/icons/viber.svg" alt="Viber"></a></li>
+                                            class="social-list__icon lazy" data-original="../img/icons/viber.svg" src="" alt="Viber"></a></li>
                             </ul>
                         </div>
                         <div class="footer-bottom__feedback-item">
@@ -269,8 +285,21 @@
             </svg>
         </button>
     </div>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 0);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 0);
+        }
+    
+      </script>
     <script src="../script/jquery.min.js"></script>
-    <script src="../script/main.js"></script>
+    <script async src="../script/main.js"></script>
 
 </body>
 
