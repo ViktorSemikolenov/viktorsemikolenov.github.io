@@ -443,11 +443,17 @@ body {
     background-color: var(--bg-yellow-light);
     text-align: center;
     padding: 60px 0;
-    background-image: url(../img/background/about-section.png);
+    /* background-image: url(../img/background/about-section.png);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    position: relative;
 }
-
+.about-section__bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .about-section__text {
     font-size: 24px;
     color: var(--text-black);
@@ -2235,4 +2241,19 @@ body {
   }
   .footer-bottom__feedback{
     margin-top: 28px;
+  }
+
+  .lazy-section{
+    display: none;
+  }
+  .loaded .lazy-section{
+    display: block;
+  }
+  .show-loading{
+    opacity: 0;
+    transition-duration: 0.3s;
+  }
+  .loaded .show-loading{
+    opacity: 1;
+    transition-duration: 0.3s;
   }

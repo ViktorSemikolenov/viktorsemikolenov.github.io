@@ -365,6 +365,9 @@
     .capture-form__info{
         margin: 24px 0;
     }
+    .about-section__bg{
+        width: 98%;
+    }
 }
 @media(max-width:767px){
     
@@ -755,6 +758,9 @@
     }
     .about-section{
         background-image: none;
+    }
+    .about-section__bg{
+        display: none;
     }
     .about-section__text br{
         display: none;

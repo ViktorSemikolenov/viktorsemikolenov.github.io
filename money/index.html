@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Европейский монетный двор</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-min.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/owl.carousel.min.css">
 </head>
@@ -21,7 +21,7 @@
           </path>
         </svg>
       </div> -->
-    <header class="navigation-page">
+    <header class="navigation-page show-loading">
         <div class="container">
             <div class="navigation-page__row">
                 <a href="index.html" class="logo"><img loading="lazy" src="img/logo.png" alt="Европейский монетный двор"
@@ -74,7 +74,7 @@
     </header>
     <main class="main-content">
         <section class="home-first-screen bg-blue">
-            <div class="container">
+            <div class="container show-loading">
                 <div class="home-first-screen__row">
                     <div class="home-first-screen__info">
                         <h1 class="h1-title">Один клик — <br>и вы <span class="h1-title__line">коллекционер</span></h1>
@@ -84,7 +84,7 @@
                             <strong>БЕСПЛАТНО</strong></a>
                         <p class="home-first-screen__btn-descript">* Количество медалей по акции ограничено.</p>
                     </div>
-                    <img loading="lazy" class="home-first-screen__image" src="img/content/man.png" alt="man">
+                    <img loading="lazy" class="home-first-screen__image" src="img/content/man.png"  alt="man">
                 </div>
                 <footer class="home-first-screen__footer triggers">
                     <div class="triggers-item">
@@ -111,7 +111,7 @@
             </div>
         </section>
         <section class="about-section">
-            <div class="container">
+            <div class="container show-loading">
                 <p class="about-section__text">
                     Европейский Монетный Двор — ваш проводник в мир <br>коллекционирования и <strong
                         class="text-bold">инвестиций.</strong>
@@ -122,8 +122,9 @@
                     этом <br>с удовльствием поможем!
                 </p>
             </div>
+            <img class="about-section__bg show-loading lazy" data-original="img/background/about-section.png" src=""  alt="bg-img">
         </section>
-        <section class="advantages">
+        <section class="advantages lazy-section">
             <div class="container">
                 <div class="advantages__item advantages__item-one">
                     <div class="advantages__item-info">
@@ -135,10 +136,10 @@
                             Разделите эту страсть с нами!
                         </p>
                     </div>
-                    <img src="img/content/trigger-man-one.png" alt="Нумизматика — наша страсть" class="advantages__item-img">
+                    <img data-original="img/content/trigger-man-one.png" src="" alt="Нумизматика — наша страсть" class="advantages__item-img lazy">
                 </div>
                 <div class="advantages__item advantages__item-two">
-                    <img src="img/content/trigger-man-two.png" alt="Нумизматика — наша страсть" class="advantages__item-img">
+                    <img data-original="img/content/trigger-man-two.png" src="" alt="Нумизматика — наша страсть" class="advantages__item-img lazy">
                     <div class="advantages__item-info">
                         <h3 class="advantages__title">Инвестиции в <span class="advantages__title-marker">будущее</span></h3>
                         <p class="advantages__text">
@@ -159,16 +160,16 @@
                             великолепного вкуса.
                         </p>
                     </div>
-                    <img src="img/content/trigger-man-three.png" alt="Нумизматика — наша страсть" class="advantages__item-img">
+                    <img data-original="img/content/trigger-man-three.png" src="" alt="Нумизматика — наша страсть" class="advantages__item-img lazy">
                 </div>
             </div>
         </section>
-        <section class="stocks">
+        <section class="stocks lazy-section">
             <div class="container">
                 <h2 class="title-h2 stocks__title">Первая медаль — <span class="stocks__titl-before"> бесплатно!</span></h2>
                 <div class="stocks__row">
                     <div class="stocks__image-col">
-                        <img src="img/content/coin.png" alt="coin" class="stocks__image">
+                        <img data-original="img/content/coin.png"  src="" alt="coin" class="stocks__image lazy">
                     </div>
                     <div class="stocks__info-col">
                         <p class="stocks__description">
@@ -185,21 +186,21 @@
                 </div>
             </div>
         </section>
-        <section class="best-investment">
+        <section class="best-investment lazy-section">
             <div class="container">
                 <h2 class="title-h2 best-investment__title">Ваша лучшая инвестиция</h2>
                 <div id="tab-container">
                     <header class="tab-header">
                         <div class="tab tab-active" onclick="openTab(event, 'tab1')">
-                            <img src="img/icons/gold-tab.png" alt="Золото" class="tab-title-icon">
+                            <img data-original="img/icons/gold-tab.png" src="" alt="Золото" class="tab-title-icon lazy">
                             <span class="tab-title">Золото</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab2')">
-                            <img src="img/icons/silver-tab.png" alt="Серебро" class="tab-title-icon">
+                            <img data-original="img/icons/silver-tab.png" src="" alt="Серебро" class="tab-title-icon lazy">
                             <span class="tab-title">Серебро</span>
                         </div>
                         <div class="tab" onclick="openTab(event, 'tab3')">
-                            <img src="img/icons/coin-tab.png" alt="Монеты" class="tab-title-icon">
+                            <img data-original="img/icons/coin-tab.png" src="" alt="Монеты" class="tab-title-icon lazy">
                             <span class="tab-title">Монеты</span>
                         </div>
                     </header>
@@ -216,10 +217,10 @@
                                         выросло на 101% - такую доходность<br>
                                         не дает ни один вклад.
                                     </p>
-                                    <img src="img/content/tabs/logo/Forbes_logo.png" alt="forbes" class="tab-content__logo">
+                                    <img data-original="img/content/tabs/logo/Forbes_logo.png" src="" alt="forbes" class="tab-content__logo lazy">
                                 </div>
                                 <div class="tab-content__chart">
-                                    <img src="img/content/tabs/chart/1.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="img/content/tabs/chart/1.png" src="" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                             </div>
                         </div>
@@ -232,10 +233,10 @@
                                         раз подтвердили, что ни одна мировая <br>
                                         валюта не является столь надежной
                                     </p>
-                                    <img src="img/content/tabs/logo/Forbes_logo.png" alt="forbes" class="tab-content__logo">
+                                    <img data-original="img/content/tabs/logo/Forbes_logo.png" src="" alt="forbes" class="tab-content__logo lazy">
                                 </div>
                                 <div class="tab-content__chart">
-                                    <img src="img/content/tabs/chart/2.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original='img/content/tabs/chart/2.png' src="" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                             </div>
                         </div>
@@ -246,10 +247,10 @@
                                     <p class="tab-content__text">
                                         Последние мировые события в очередной
                                     </p>
-                                    <img src="img/content/tabs/logo/Forbes_logo.png" alt="forbes" class="tab-content__logo">
+                                    <img data-original="img/content/tabs/logo/Forbes_logo.png" src="" alt="forbes" class="tab-content__logo lazy">
                                 </div>
                                 <div class="tab-content__chart">
-                                    <img src="img/content/tabs/chart/1.png" alt="график" class="tab-content__chart-img">
+                                    <img data-original="img/content/tabs/chart/1.png" src="" alt="график" class="tab-content__chart-img lazy">
                                 </div>
                             </div>
                         </div>
@@ -257,7 +258,7 @@
                 </div>
             </div>
         </section>
-        <section class="mailing-valuables">
+        <section class="mailing-valuables lazy-section">
             <div class="container">
                 <h2 class="title-h2 mailing-valuables__title">Рассылка ценностей</h2>
                 <p class="mailing-valuables__description">Подпишитесь на нашу рассылку и узнавайте <br>
@@ -271,21 +272,21 @@
                 </form>
                 <footer class="mailing-valuables__triggers">
                     <div class="mailing-valuables__item">
-                        <img src="img/icons/mark-ok.png" alt="mark" class="mailing-valuables__icon">
+                        <img  data-original="img/icons/mark-ok.png" src="" alt="mark" class="mailing-valuables__icon lazy">
                         <p class="mailing-valuables__text">Акции и спец.предложения</p>
                     </div>
                     <div class="mailing-valuables__item">
-                        <img src="img/icons/mark-ok.png" alt="mark" class="mailing-valuables__icon">
+                        <img  data-original="img/icons/mark-ok.png" src="" alt="mark" class="mailing-valuables__icon lazy">
                         <p class="mailing-valuables__text">Персональные рекомендации</p>
                     </div>
                     <div class="mailing-valuables__item">
-                        <img src="img/icons/mark-ok.png" alt="mark" class="mailing-valuables__icon">
+                        <img  data-original="img/icons/mark-ok.png" src="" alt="mark" class="mailing-valuables__icon lazy">
                         <p class="mailing-valuables__text">Анонсы новых коллекций</p>
                     </div>
                 </footer>
             </div>
         </section>
-        <section class="our-collectors">
+        <section class="our-collectors lazy-section">
             <div class="container">
                 <h2 class="title-h2 our-collectors__title">
                     Наши Коллекционеры
@@ -294,7 +295,7 @@
                     <div class="item">
                        <div class="our-collectors__row">
                             <div class="our-collectors__image">
-                                <img src="img/content/our-collectors/1.jpg" alt="1">
+                                <img class="lazy" data-original="img/content/our-collectors/1.jpg" src="" alt="1">
                             </div>
                             <div class="our-collectors__info">
                                 <p>Пожалуй, это лучшая <br>
@@ -314,7 +315,7 @@
                     <div class="item">
                         <div class="our-collectors__row">
                             <div class="our-collectors__image">
-                                <img src="img/content/our-collectors/1.jpg" alt="1">
+                                <img class="lazy" data-original="img/content/our-collectors/1.jpg" src="" alt="1">
                             </div>
                             <div class="our-collectors__info">
                                 <p>Пожалуй, это лучшая <br>
@@ -334,7 +335,7 @@
                     <div class="item">
                         <div class="our-collectors__row">
                             <div class="our-collectors__image">
-                                <img src="img/content/our-collectors/1.jpg" alt="1">
+                                <img class="lazy" data-original="img/content/our-collectors/1.jpg" src="" alt="1">
                             </div>
                             <div class="our-collectors__info">
                                 <p>Пожалуй, это лучшая <br>
@@ -354,7 +355,7 @@
                     <div class="item">
                         <div class="our-collectors__row">
                             <div class="our-collectors__image">
-                                <img src="img/content/our-collectors/1.jpg" alt="1">
+                                <img class="lazy" data-original="img/content/our-collectors/1.jpg" src="" alt="1">
                             </div>
                             <div class="our-collectors__info">
                                 <p>Пожалуй, это лучшая <br>
@@ -374,11 +375,11 @@
                 </div>
             </div>
         </section>
-        <section class="capture-form">
+        <section class="capture-form lazy-section">
             <div class="container">
                 <div class="capture-form__row">
                     <div class="capture-form__img-container">
-                        <img src="img/icons/capture-form__coin.png" alt="coin" class="capture-form__img">
+                        <img data-original="img/icons/capture-form__coin.png" src="" alt="coin" class="capture-form__img lazy">
                     </div>
                     <div class="capture-form__info">
                         <span class="capture-form__label">16.02.2023</span>
@@ -389,7 +390,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer-page">
+        <footer class="footer-page lazy-section">
             <div class="container">
                 <div class="navigation-page__row">
                     <nav class="nav ">
@@ -427,11 +428,11 @@
                             <span>Пишите нам в любом мессенджере:</span>
                             <ul class="social-list navigation-page__social-list">
                                 <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
-                                            class="social-list__icon" src="img/icons/whatsapp.svg" alt="whatsApp"></a></li>
+                                            class="social-list__icon lazy" data-original="img/icons/whatsapp.svg" src="" alt="whatsApp"></a></li>
                                 <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
-                                            class="social-list__icon" src="img/icons/telegram.svg" alt="Telergam"></a></li>
+                                            class="social-list__icon lazy" data-original="img/icons/telegram.svg" src="" alt="Telergam"></a></li>
                                 <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
-                                            class="social-list__icon" src="img/icons/viber.svg" alt="Viber"></a></li>
+                                            class="social-list__icon lazy" data-original="img/icons/viber.svg" src="" alt="Viber"></a></li>
                             </ul>
                         </div>
                         <div class="footer-bottom__feedback-item">
@@ -474,11 +475,24 @@
             </svg>
         </button>
     </div>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 0);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 0);
+        }
+    
+      </script>
     <script src="script/jquery.min.js"></script>
-    <script src="script/owl.carousel.min.js"></script>
-    <script src="script/owl-main.js"></script>
-    <script src="script/tabs.js"></script>
-    <script src="script/main.js"></script>
+    <script async src="script/owl.carousel.min.js"></script>
+    <script async src="script/owl-main.js"></script>
+    <script async src="script/tabs.js"></script>
+    <script async src="script/main.js"></script>
 
 </body>
 
