@@ -1012,7 +1012,7 @@ body {
     content: '«';
     position: absolute;
     left: -18px;
-    top: -6px;
+    top: -3px;
 }
 
 .our-collectors__info p::after {
