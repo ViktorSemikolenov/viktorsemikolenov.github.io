@@ -415,20 +415,14 @@
         left: 70px;
     }
 
-    .our-collectors .owl-next {
-        right: 8px;
-    }
 
-    .our-collectors .owl-prev {
-        left: 8px;
-    }
 
     .our-collectors__info p br {
         display: none;
     }
 
     .our-collectors__owl {
-        padding: 0 32px;
+        padding: 0px;
     }
 
     .our-collectors__row {
