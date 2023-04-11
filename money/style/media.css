@@ -1235,6 +1235,12 @@
     * {
         letter-spacing: 0 !important;
     }
+    .home-first-screen .container{
+        max-width: 100%;
+    }
+    .capture-form__label{
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:479px) {
