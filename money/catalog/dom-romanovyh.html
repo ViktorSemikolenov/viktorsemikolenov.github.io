@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Дом Романовых</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/owl.carousel.min.css">
+    <style>  
+        .lazy-section{
+            display: none;
+        }
+        .loaded .lazy-section{
+            display: block;
+        }
+        .show-loading{
+            opacity: 0;
+            transition-duration: 0.3s;
+        }
+        .loaded .show-loading{
+            opacity: 1;
+            transition-duration: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navigation-page show-loading">
+        <div class="container">
+            <div class="navigation-page__row">
+                <a href="../index.html" class="logo"><img loading="lazy" src="../img/logo.png" alt="Европейский монетный двор"
+                        class="logo__image"></a>
+                <nav class="nav header-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html" class="nav__link ">Главная</a></li>
+                        <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+                        <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                    <div class="feedback navigation-page__feedback navigation-page__feedback-mob">
+                        <div class="feedback__phone">
+                            <a href="tel:88005552525" class="phone-link">8 (800) 555-25-25</a>
+                            <div class="feedback__phone-info navigation-page__phone-info">
+                                <span class="label feedback__label">КРУГЛОСУТОЧНО</span>
+                                <button class="btn-text open-modal" data-modal="#modal1">Заказать звонок</button>
+                            </div>
+                        </div>
+                        <ul class="social-list navigation-page__social-list">
+                            <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                        class="social-list__icon" src="../img/icons/whatsapp.svg" alt="whatsApp"></a>
+                            </li>
+                            <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                        class="social-list__icon" src="../img/icons/telegram.svg" alt="Telergam"></a>
+                            </li>
+                            <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                        class="social-list__icon" src="../img/icons/viber.svg" alt="Viber"></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="feedback navigation-page__feedback">
+                    <div class="feedback__phone">
+                        <a href="tel:88005552525" class="phone-link">8 (800) 555-25-25</a>
+                        <div class="feedback__phone-info navigation-page__phone-info">
+                            <span class="label feedback__label">КРУГЛОСУТОЧНО</span>
+                            <button class="btn-text open-modal" data-modal="#modal1">Заказать звонок</button>
+                        </div>
+                    </div>
+                    <ul class="social-list navigation-page__social-list">
+                        <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                    class="social-list__icon" src="../img/icons/whatsapp.svg" alt="whatsApp"></a>
+                        </li>
+                        <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                    class="social-list__icon" src="../img/icons/telegram.svg" alt="Telergam"></a>
+                        </li>
+                        <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                    class="social-list__icon" src="../img/icons/viber.svg" alt="Viber"></a></li>
+                    </ul>
+                </div>
+                <button class="humburger"></button>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="page-first-screen page-first-screen__product show-loading">
+            <div class="container">
+                <div class="page-first-screen__row">
+                    <div class="page-first-screen__info">
+                        <h1 class="h1-title h1-title_no-line">
+                            Дом Романовых
+                        </h1>
+                        <h2 class="home-first-screen__description">
+                            Уникальная ограниченная серия, <br>
+                            выполненная в честь празднования <br>
+                            300-летия дома Романовых
+                        </h2>
+                        <footer class="specifications first-screen__specifications">
+                            <div class="specifications__item">
+                                <span class="specifications__item-title">КОЛЛЕКЦИЯ</span>
+                                <h3 class="specifications__item-value">8 медалей</h3>
+                            </div>
+                            <div class="specifications__item">
+                                <span class="specifications__item-title">ДИАМЕТР</span>
+                                <h3 class="specifications__item-value">39 см.</h3>
+                            </div>
+                            <div class="specifications__item">
+                                <span class="specifications__item-title">ИСПОЛНЕНИЕ</span>
+                                <h3 class="specifications__item-value">Пруф-лайк</h3>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="page-first-screen__img-container">
+                        <img class="page-first-screen__img" src="../img/content/page/about/first-screen.png"
+                            alt="О компании">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="line-text show-loading">
+            <div class="line-text__top"></div>
+            <div class="container">
+                <div class="capture-form__info">
+                    <span class="capture-form__label">4 фев. 2023</span>
+                    <p class="capture-form__descript">Ограниченное предложение — первая медаль для Вас <strong
+                            class="text-bold">бесплатно</strong>! Подробности ниже ↓</p>
+                </div>
+            </div>
+            <div class="line-text__bottom"></div>
+        </section>
+        <section class="advantages advantages-product ">
+            <div class="container">
+                <div class="advantages__item advantages__item-one show-loading">
+                    <div class="advantages__item-info">
+                        <h3 class="advantages__title">Нумизматика — наша <span
+                                class="advantages__title-marker">страсть</span></h3>
+                        <p class="advantages__text">
+                            Когда за дело берутся увлеченные своим делом професионалы, <br>
+                            можно не сомеваться в успехе. Мы посвятили свою жизнь <br>
+                            коллекционированию и добились выдающихся результатов. <br>
+                            Разделите эту страсть с нами!
+                        </p>
+                    </div>
+                    <img data-original="../img/content/trigger-man-one.png" src="" alt="Нумизматика — наша страсть"
+                        class="advantages__item-img lazy">
+                </div>
+                <div class="advantages__item advantages__item-two show-loading">
+                    <img data-original="../img/content/trigger-man-two.png" src="" alt="Нумизматика — наша страсть"
+                        class="advantages__item-img lazy">
+                    <div class="advantages__item-info">
+                        <h3 class="advantages__title">Инвестиции в <span class="advantages__title-marker">будущее</span>
+                        </h3>
+                        <p class="advantages__text">
+                            Драгоценные металлы и коллекционные монеты уверенно <br>
+                            растут в цене, что делает их отличной инвестицией. Ни один <br>
+                            другой актив не обладает такой высокой стабильностью <br>
+                            и надежностью.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__item advantages__item-three show-loading">
+                    <div class="advantages__item-info">
+                        <h3 class="advantages__title">Из поколения <span class="advantages__title-marker">в
+                                поколение</span></h3>
+                        <p class="advantages__text">
+                            Пусть передача вашей уникальной коллекции от отца к сыну <br>
+                            станет вашей доброй традицией. Ваши наследники получат<br>
+                            не только ликвидный актив, но и частичку вашего <br>
+                            великолепного вкуса.
+                        </p>
+                    </div>
+                    <img data-original="../img/content/trigger-man-three.png" src="" alt="Нумизматика — наша страсть"
+                        class="advantages__item-img lazy">
+                </div>
+            </div>
+        </section>
+        <section class="collection-list">
+            <div class="container">
+                <h2 class="title-h2 collection-list__title">Состав коллекции</h2>
+                <div id="tab-container" class="collection-list__tabs">
+                    <header class="tab-header owl-carousel header-tab">
+                        <div class="tab tab-active" onclick="openTab(event, 'tab1')">
+                            <img src="../img/content/page/catalog/dom-romanovyh/tab-1.png" alt="img-coin">
+                            <span class="tab-title">Александр I</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab2')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-2.png" alt="img-coin">
+                            <span class="tab-title">Пётр I</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab3')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-3.png" alt="img-coin">
+                            <span class="tab-title">Николай II</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab4')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-4.png" alt="img-coin">
+                            <span class="tab-title">Николай I</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab5')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-5.png" alt="img-coin">
+                            <span class="tab-title">Елизавета<br>Петровна</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab6')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-6.png" alt="img-coin">
+                            <span class="tab-title">Екатерина I</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab7')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-7.png" alt="img-coin">
+                            <span class="tab-title">Екатерина II</span>
+                        </div>
+                        <div class="tab" onclick="openTab(event, 'tab8')">
+                            <img  src="../img/content/page/catalog/dom-romanovyh/tab-1.png" alt="img-coin">
+                            <span class="tab-title">Анна<br> Иоанновка</span>
+                        </div>
+                    </header>
+
+                    <div class="tab-body">
+                        <div id="tab1" class="tab-content tab-content-active">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На реверсе изображен профиль императора <br>
+                                        Николая Второго, выполненный в уникальной <br>
+                                        технике пруф-лайк - высочайшее качество. <br>
+                                        На аверсе изображен герб российской имеперии. <br>
+                                        который венчает надпись с названием серии. <br>
+                                        Полностью уникальная монета.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На реверсе изображен профиль императора <br>
+                                        Николая Второго, выполненный в уникальной <br>
+                                        технике пруф-лайк - высочайшее качество. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На реверсе изображен профиль императора
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab4" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На аверсе изображен герб российской имеперии. <br>
+                                        который венчает надпись с названием серии. <br>
+                                        Полностью уникальная монета.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab5" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На аверсе изображен герб российской имеперии. <br>
+                                        который венчает надпись с названием серии. <br>
+                                        Полностью уникальная монета.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab6" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На реверсе изображен профиль императора <br>
+                                        Николая Второго, выполненный в уникальной <br>
+                                        технике пруф-лайк - высочайшее качество. <br>
+                                        На аверсе изображен герб российской имеперии. <br>
+                                        который венчает надпись с названием серии. <br>
+                                        Полностью уникальная монета.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab7" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На реверсе изображен профиль императора <br>
+                                        Николая Второго, выполненный в уникальной <br>
+                                        технике пруф-лайк - высочайшее качество. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab8" class="tab-content ">
+                            <div class="tab-content__row">
+                                <div class="tab-content__chart">
+                                    <img data-original="../img/content/coin.png" alt="график" class="tab-content__chart-img lazy">
+                                </div>
+                                <div class="tab-content__info">
+                                    <p class="tab-content__text">
+                                        На реверсе изображен профиль императора <br>
+                                        Николая Второго, выполненный в уникальной <br>
+                                        технике пруф-лайк - высочайшее качество. <br>
+                                        На аверсе изображен герб российской имеперии. <br>
+                                        который венчает надпись с названием серии. <br>
+                                        Полностью уникальная монета.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="coin-structure lazy-section">
+            <div class="container">
+                <h2 class="title-h2 coin-structure__title">Искусство <span class="coin-structure__title-before">высшей пробы</span></h2>
+                <div class="coin-structure__row">
+                    <div class="coin-structure__left-col">
+                        <div class="coin-structure__item coin-structure__item-one">
+                            <p>Покрытие <br>золотом 999 пробы</p>
+                        </div>
+                        <div class="coin-structure__item coin-structure__item-two">
+                            <p>Качество <br>«пруф-лайк»</p>
+                        </div>
+                        <div class="coin-structure__item coin-structure__item-three">
+                            <p>Рубчатый гурт</p>
+                        </div>
+                    </div>
+                    <div class="coin-structure__center-col coin-structure__img-gold">
+                        <img data-original="../img/content/page/catalog/dom-romanovyh/big-coin.png" src="" alt="coin"
+                            class="coin-structure__img lazy">
+                    </div>
+                    <div class="coin-structure__right-col">
+                        <div class="coin-structure__item coin-structure__item-one">
+                            <p>8 медалей <br>в коллекции</p>
+                        </div>
+                        <div class="coin-structure__item coin-structure__item-two">
+                            <p>Ограниченный <br>тираж 10 000 экз.</p>
+                        </div>
+                        <div class="coin-structure__item coin-structure__item-three">
+                            <p>Вес 24 г. <br>Диаметр 38 мм.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coin-structure__description">
+                    <p>Не откладывайте на завтра - начните собирать свою <br>
+                        коллекцию уже сегодня! У вас есть уникальная <br>
+                        возможность получить первую медаль вашей <br>
+                        коллекции соверешенно бесплатно! </p>
+                    <a href="#" class="home-first-screen__btn">Получить первую медаль
+                        <strong>БЕСПЛАТНО</strong></a>
+                    <p class="home-first-screen__btn-descript">* Количество медалей по акции ограничено.</p>
+                </div>
+            </div>
+        </section>
+        <section class="order-description lazy-section">
+            <div class="container">
+                <h2 class="title-h2 order-description__title">Первая медаль — бесплатно</h2>
+                <p class="order-description_subheader">
+                    Европейский Монетный Двор имеет честь предложить вам получить первую медаль Николай II из
+                    коллекции «Дом Романовых» совершенно
+                    <strong class="text-bold">бесплатно.</strong>
+                </p>
+                <footer class="specifications order-description__price">
+                    <div class="specifications__item">
+                        <span class="specifications__item-title">ПЕРВАЯ МЕДАЛЬ</span>
+                        <h3 class="specifications__item-value">
+                            <span class="price-old">1 990 р</span> 
+                            <span class="price">Бесплатно*</span>
+                        </h3>
+                    </div>
+                    <div class="specifications__item">
+                        <span class="specifications__item-title">СЛЕДУЮЩИЕ МЕДАЛИ КОЛЛЕКЦИИ</span>
+                        <h3 class="specifications__item-value">1 990 р.</h3>
+                    </div>
+                    <div class="specifications__item">
+                        <span class="specifications__item-title">МЕДАЛЕЙ В СЕРИИ</span>
+                        <h3 class="specifications__item-value">8</h3>
+                    </div>
+                    <div></div>
+                </footer>
+                <p class="notation">* Дополнительно оплачивается услуга упаковки и доставки медали по фиксированной цене 399 р.</p>
+                <div class="order-structure">
+                    <h3 class="title-h3">Состав заказа:</h3>
+                    <div class="order-structure__row">
+                        <div class="order-structure__item">
+                            <img data-original="../img/content/coin.png" src="" alt="coin" class="lazy order-structure__img order-structure__img-coin">
+                            <h4 class="order-structure__title">Медаль «Николай II» <br>с аннотацией</h4>
+                        </div>
+                        <div class="order-structure__item">
+                            <img data-original="../img/content/page/catalog/dom-romanovyh/sertifacate.png"  src="" alt="sertifacate" class="lazy order-structure__img order-structure__img-sertificate">
+                            <h4 class="order-structure__title">Сертификат <br>подлинности</h4>
+                        </div>
+                        <div class="order-structure__item">
+                            <img data-original="../img/content/page/catalog/dom-romanovyh/catalog.png" src="" alt="catalog" class="lazy order-structure__img order-structure__img-catalog">
+                            <h4 class="order-structure__title">Альбом для <br>коллекции медалей</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="get-medal">
+                    <h3 class="title-h3">Как получить медаль</h3>
+                    <div class="get-medal__steps">
+                        <div class="get-medal__step">
+                            <span class="get-medal__step-number">1</span>
+                            <p>Заполните форму заказа на сайте.<br>
+                                Это не займет много времени.
+                            </p>
+                        </div>
+                        <div class="get-medal__step">
+                            <span class="get-medal__step-number">2</span>
+                            <p>Дождитесь смс-подтверждения <br>
+                                заказа или звонка оператора.
+                            </p>
+                        </div>
+                        <div class="get-medal__step">
+                            <span class="get-medal__step-number">3</span>
+                            <p>Получите заказ в удобном <br>
+                                вам месте по всей России.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-quez">
+                        <h3 class="title-h3">Форма заказа медали</h3>
+                        <form class="owl-carousel form-quez__slider">
+                            <div class="form-quez__item"  data-hash="one">
+                                <div class="progress-bar">
+                                    <header class="progress-bar__header">
+                                        <span class="progress-bar__steps">Шаг 1/3</span>
+                                        <span class="progress-bar__procent">заполнено на 6%</span>
+                                    </header>
+                                    <div class="progress-bar__line">
+                                        <div class="progress-bar__line-color"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="fio">Фамилия Имя Отчество</label>
+                                        <input class="input" type="text" name="Фамилия Имя Отчество" id="fio">
+                                    </div>
+                                    <div class="input-line">
+                                        <label class="placeholder" for="phone">Телефон</label>
+                                        <input class="input" type="text" name="Телефон" id="phone">
+                                    </div>
+                                </div>
+                                <label for="check"  class="form-quez__polic">
+                                    <input class="input-check" checked type="checkbox" name="check" id="check">
+                                    <span class="checkbox"></span>
+                                    <p>Я ознакомился с <a target="_black" href="#">условиями и даю согласие</a> на <a target="_black" href="#">обработку персональных данных</a></p>
+                                </label>
+                                <a class="btn" href="#two">Продолжить</a>
+                            </div>
+                            <div class="form-quez__item" data-hash="two">
+                                <div class="progress-bar">
+                                    <header class="progress-bar__header">
+                                        <span class="progress-bar__steps">Шаг 2/3</span>
+                                        <span class="progress-bar__procent">заполнено на 68%</span>
+                                    </header>
+                                    <div class="progress-bar__line">
+                                        <div class="progress-bar__line-color progress-bar__line-step-two"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="fio2">Фамилия Имя Отчество</label>
+                                        <input class="input" type="text" name="Фамилия Имя Отчество" id="fio2">
+                                    </div>
+                                    <div class="input-line">
+                                        <label class="placeholder" for="phone2">Телефон</label>
+                                        <input class="input" type="text" name="Телефон" id="phone2">
+                                    </div>
+                                </div>
+                                <footer class="form-quez__row">
+                                    <a class="btn btn-back" href="#one">Назад</a>
+                                    <a class="btn" href="#three">Продолжить</a>
+                                </footer>
+                                
+                            </div>
+                            <div class="form-quez__item" data-hash="three">
+                                <div class="progress-bar">
+                                    <header class="progress-bar__header">
+                                        <span class="progress-bar__steps">Шаг 3/3</span>
+                                        <span class="progress-bar__procent">заполнено на 99%</span>
+                                    </header>
+                                    <div class="progress-bar__line">
+                                        <div class="progress-bar__line-color progress-bar__line-step-three"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="fio3">Фамилия Имя Отчество</label>
+                                        <input class="input" type="text" required name="Фамилия Имя Отчество" id="fio3">
+                                    </div>
+                                    <div class="input-line">
+                                        <label class="placeholder" for="phone3">Телефон</label>
+                                        <input class="input" type="text" required name="Телефон" id="phone3">
+                                    </div>
+                                </div>
+                                <footer class="form-quez__row">
+                                    <a class="btn btn-back"" href="#two">Назад</a>
+                                    <button class="btn">Отправить</button>
+                                </footer>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mailing-valuables mailing-valuables_brown lazy-section">
+            <div class="container">
+                <h2 class="title-h2 mailing-valuables__title">Рассылка ценностей</h2>
+                <p class="mailing-valuables__description">Подпишитесь на нашу рассылку и узнавайте <br>
+                    первыми интересные новости!</p>
+                <form class="form" action="" method="post">
+                    <div class="input-line mailing-valuables__input">
+                        <label class="placeholder" for="email">Ваш емайл</label>
+                        <input class="input" type="email" required="" name="Почта" id="email">
+                    </div>
+                    <button class="btn form-btn">Подписаться</button>
+                </form>
+                <footer class="mailing-valuables__triggers">
+                    <div class="mailing-valuables__item">
+                        <img src="../img/icons/mark-ok.png" alt="mark" class="mailing-valuables__icon">
+                        <p class="mailing-valuables__text">Акции и спец.предложения</p>
+                    </div>
+                    <div class="mailing-valuables__item">
+                        <img src="../img/icons/mark-ok.png" alt="mark" class="mailing-valuables__icon">
+                        <p class="mailing-valuables__text">Персональные рекомендации</p>
+                    </div>
+                    <div class="mailing-valuables__item">
+                        <img src="../img/icons/mark-ok.png" alt="mark" class="mailing-valuables__icon">
+                        <p class="mailing-valuables__text">Анонсы новых коллекций</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <footer class="footer-page lazy-section">
+            <div class="container">
+                <div class="navigation-page__row">
+                    <nav class="nav ">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="../index.html" class="nav__link ">Главная</a></li>
+                            <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+                            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="feedback footer-page__feedback">
+                        <div class="feedback__phone">
+                            <a href="tel:88005552525" class="phone-link">8 (800) 555-25-25</a>
+                            <div class="feedback__phone-info navigation-page__phone-info">
+                                <span class="label feedback__label">КРУГЛОСУТОЧНО</span>
+                                <button class="btn-text open-modal" data-modal="#modal1">Заказать звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__info">
+                        <span>Адрес для корреспонденции:</span>
+                        <h3>ООО "Европейский Монетный Двор" <br>
+                            101000, Москва, а/я 41</h3>
+                        <p class="footer-bottom__info-text">Все права на изображения, нанесенные на продукцию ООО
+                            «Европейский Монетный Двор» и иллюстративные материалы защищены законодательством Российской
+                            Федерации об авторских и смежных правах, нормами международного права. Воспроизведение
+                            изображений из настоящего сайта и их нелицензионное использование на каком-либо материальном
+                            носителе без согласия правообладателей преследуется по закону.</p>
+                        <p class="footer-bottom__info-text">В соответствии с подп. 1 п. 4 ст. 9 и ст. 15 ФЗ РФ «О
+                            персональных данных» № 152-ФЗ, вы предоставляете свои персональные данные и даете согласие
+                            на их обработку в маркетинговых целях, связанных с дистанционной торговлей, включая
+                            хранение, использование, распространение, уточнение, трансграничную передачу ООО
+                            «Европейский Монетный Двор» (ОГРН 1227700384966; адрес: 101000, город Москва, Мясницкая ул,
+                            д. 22 стр. 1), АО «Почта России» (ОГРН 1197746000000) и их контрагентам. Данное согласие
+                            действительно в течение 5 лет. По истечении указанного срока согласие считается продленным
+                            на каждые последующие 5 лет при отсутствии заявления о его отзыве заказным письмом с
+                            уведомлением по адресу: 101000, г. Москва, а/я 41.</p>
+                        <p class="copyright">
+                            © 2023 ООО "Европейский Монетный Двор" <br>
+                            Все права защищены.
+                        </p>
+                    </div>
+                    <div class="footer-bottom__feedback">
+                        <div class="footer-bottom__feedback-item">
+                            <span>Пишите нам в любом мессенджере:</span>
+                            <ul class="social-list navigation-page__social-list">
+                                <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                            class="social-list__icon" src="../img/icons/whatsapp.svg"
+                                            alt="whatsApp"></a></li>
+                                <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                            class="social-list__icon" src="../img/icons/telegram.svg"
+                                            alt="Telergam"></a></li>
+                                <li class="social-list__item"><a target="_blank" href="#" class="social-list__link"><img
+                                            class="social-list__icon" src="../img/icons/viber.svg" alt="Viber"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom__feedback-item">
+                            <span>Для звонков из-за рубежа:</span>
+                            <a href="tel:+74952255567" class="phone-link">+7 (495) 225-55-67</a>
+                        </div>
+                        <div class="footer-bottom__feedback-item">
+                            <a href="mailto:info@euromint.ru" class="email-link">info@euromint.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class='modal' id='modal1'>
+            <div class="content">
+                <h3 class="modal-title">Заказать звонок</h3>
+                <form action="">
+                    <div class="input-group">
+                        <div class="input-line">
+                            <label class="placeholder" for="fio">Ваше имя</label>
+                            <input class="input" type="text" name="Фамилия Имя Отчество" id="fio">
+                        </div>
+                        <div class="input-line">
+                            <label class="placeholder" for="phone">Телефон</label>
+                            <input class="input" type="text" name="Телефон" id="phone">
+                        </div>
+                    </div>
+                    <label for="check"  class="form-quez__polic">
+                        <input class="input-check" checked type="checkbox" name="check" id="check">
+                        <span class="checkbox"></span>
+                        <p>Я ознакомился с <a target="_black" href="#">условиями и даю согласие</a> на <a target="_black" href="#">обработку персональных данных</a></p>
+                    </label>
+                    <button class="btn btn-modal">Отправить</button>
+                </form>
+            </div>
+            <button class='close-modal' data-modal="#modal1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+                </svg>
+            </button>
+        </div>
+    </main>
+    <script>
+        window.onload = function () {
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            var imageElements = document.querySelectorAll('img.lazy');
+            imageElements.forEach(c=> c.setAttribute('src',c.getAttribute('data-original')));
+          }, 0);
+          window.setTimeout(function () {
+            document.body.classList.remove('loaded_hiding');
+          }, 0);
+        }
+    
+      </script>
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/owl.carousel.min.js"></script>
+    <script src="../script/owl-main.js"></script>
+    <script async src="../script/main.js"></script>
+    <script async src="../script/tabs.js"></script>
+
+</body>
+
+</html>
