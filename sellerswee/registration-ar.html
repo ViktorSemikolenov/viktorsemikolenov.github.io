@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-53HX7T8');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53HX7T8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="navigation_page arabic-page-s">
+        <div class="container row_header">
+            <a href="#" class="logo">
+                <img src="img/logo-arabic.svg" alt="Marketplace Sellers">
+            </a>
+            <div class="btn-row_nav">
+                <a href="https://api.whatsapp.com/send?phone=971569831502" class="whatsapp_link">
+                    <img src="img/icons/WhatsApp.svg" alt="WhatsApp">
+                    +971 56 983 1502
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <section class="registration-main">
+        <div class="container">
+            <form class="form step-form" method="POST">
+                <!-- <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+                <input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+                <input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+                <input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>"> -->
+                <input type="hidden" name="formid" value="Регистрация">
+                <div class="owl-carousel start_selling-slider">
+                    
+                    <div class="item">
+                        <header class="step-form__header">
+                            <span class="step-form__step arabic-page-s">2/3 المرحلة</span>
+                            <h3 class="arabic-page-s">ضف معلومات عن منتجاتك</h3>
+                        </header>
+                        <div class="checkselect step-form__checklist arabic-page-s">
+                            <label><input type="checkbox" name="cat_company" value="Food"> <span
+                                    class="checkbox_list"></span> الطعام </label>
+                            <label><input type="checkbox" name="cat_company" value="Accessories"> <span
+                                    class="checkbox_list"></span> اكسسوارات </label>
+                            <label><input type="checkbox" name="cat_company" value="Pet Supplies"> <span
+                                    class="checkbox_list"></span> مستلزمات الحيوانات الأليفة </label>
+                            <label><input type="checkbox" name="cat_company" value="Beauty and Health"> <span
+                                    class="checkbox_list"></span> الجمال و الصحة </label>
+                            <label><input type="checkbox" name="cat_company" value="Household"> <span
+                                    class="checkbox_list"></span> مستلزمات المنزل</label>
+                            <label><input type="checkbox" name="cat_company" value="Automotive"> <span
+                                    class="checkbox_list"></span> السيارات</label>
+                            <label><input type="checkbox" name="cat_company" value="Sports and Leisure"> <span
+                                    class="checkbox_list"></span> الرياضة والترفيه</label>
+                            <label><input type="checkbox" name="cat_company" value="Stationery and Craft Supplies"> <span
+                                    class="checkbox_list"></span> اللوازم المكتبية والقرطاسية</label>
+                            <label><input type="checkbox" name="cat_company" value="Garden and Outdoor"> <span
+                                    class="checkbox_list"></span> الحدائق والأماكن الخارجية</label>
+                            <label><input type="checkbox" name="cat_company" value="Kids and Toys"> <span
+                                    class="checkbox_list"></span> الاطفال والالعاب</label>
+                            <label><input type="checkbox" name="cat_company" value="Electronics and Appliances"> <span
+                                    class="checkbox_list"></span> الإلكترونيات والأجهزة</label>
+                            <label><input type="checkbox" name="cat_company" value="Clothing and Footwear"> <span
+                                    class="checkbox_list"></span> الملابس والأحذية</label>
+                        </div>
+                        <div class="row_upload_kolv arabic-page-s">
+                            <div class="upload_col">
+                                <span>أضيفوا قائمة المنتجات الخاصة بكم</span>
+                                <input type="file" name="file" id="file">
+                                <label for="file">جاري التحميل</label>
+                            </div>
+                            <div class="kolvo_col">
+                                <span>منافذ البيع</span>
+                                <div class='count_box number'>
+                                    <div class="minus number-minus"><img src="img/icons/in_minus.svg" alt="-"></div>
+                                    <input name="kol-item" class='inp_price number-text' type="text" value="1" />
+                                    <div class="plus number-plus"><img src="img/icons/in_plus.svg" alt="+"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn arabic-page-s" href="#two">"اضغط على زر "التالي</a>
+                    </div>
+                    <div class="item" data-hash="two">
+                        <header class="step-form__header arabic-page-s">
+                            <span class="step-form__step">المرحلة 3/3</span>
+                            <h3>حدد التفاصيل المصرفية الخاصة بك</h3>
+                        </header>
+                        <div class="input arabic-page-s">
+                            <label class="label_input " for="name1">اسم الكيان (حسب شهادة التسجيل الضريبي)</label>
+                            <input required type="text" name="name" id="name1">
+                        </div>
+                        <div class="input arabic-page-s">
+                            <label class="label_input" for="Address">العنوان</label>
+                            <input required type="text" name="address" id="Address">
+                        </div>
+                        <div class="input arabic-page-s">
+                            <label class="label_input" for="Registration-No">رقم التسجيل الضريبي</label>
+                            <input required type="text" name="registration-no" id="Registration-No">
+                        </div>
+                        <div class="input arabic-page-s">
+                            <label class="label_input" for="License-No">رقم الرخصة التجارية</label>
+                            <input required type="text" name="license-no" id="License-No">
+                        </div>
+                        <div class="upload_col row-file-two arabic-page-s">
+                            <span>أرفق نسخة ممسوحة ضوئيًا من رخصتك التجارية</span>
+                            <input required type="file" name="file-two" id="file-two">
+                            <label for="file-two">الحمولة</label>
+                        </div>
+                        <div class="input arabic-page-s">
+                            <label class="label_input" for="Bank-Name">اسم البنك</label>
+                            <input required type="text" name="bank-name" id="Bank-Name">
+                        </div>
+                        <div class="input arabic-page-s">
+                            <label class="label_input" for="SWIFT">السويفت كود</label>
+                            <input required type="text" name="SWIFT" id="SWIFT">
+                        </div>
+                        <div class="input arabic-page-s">
+                            <label class="label_input" for="IBAN-No">رقم الايبان</label>
+                            <input required type="text" name="IBAN-No" id="IBAN-No">
+                        </div>
+                        <input class="btn_hidden arabic-page-s" type="submit" id="send_two" value="send">
+                        <label class="btn analytics_second_btn arabic-page-s" for="send_two">
+                        <!-- <img src="img/icons/plus.svg" alt="plus"> -->
+                        ارسل</label>
+                        <div class="police_row arabic-page-s">
+                            <input checked type="checkbox" name="checkbox" id="check1">
+                            <label for="check1"><span class="checkbox_box"></span> <span class="text_policy">أوافق على <a target="_blank" href="https://wee.ae/privacy-policy">سياسة الخصوصية</a> <a target="_blank" href="https://wee.ae/seller-agreement">واتفاقية البائع</a></span></label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+   
+    <footer class="footer_page">
+        <div class="footer_content container">
+            <img src="img/icons/logo_footer.svg" alt="" class="logo_footer">
+            <div class="col_social">
+                <p class="copyright">© | 2023 | WEE HUB GENERAL TRADING L.L.C | <br> كل الحقوق محفوظة</p>
+                <ul>
+                    <li><a target="_blank" href="https://www.facebook.com/marketwee ">
+                            <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.90066 5.67625C9.82983 5.59154 9.72887 5.54325 9.62187 5.54167H6.78127V4.42542C6.78127 4.20375 6.82648 3.95042 7.16555 3.95042H9.42597C9.52618 3.95517 9.62338 3.91163 9.68969 3.83167C9.75599 3.75963 9.79367 3.66304 9.79517 3.5625V0.395833C9.79517 0.177333 9.62639 0 9.41844 0H6.15589C2.53921 0 2.26042 3.24583 2.26042 4.23542V5.54167H0.376737C0.168778 5.54167 0 5.719 0 5.9375V9.10417C0 9.32267 0.168778 9.5 0.376737 9.5H2.26042V18.6042C2.26042 18.8227 2.4292 19 2.63716 19H6.40454C6.61249 19 6.78127 18.8227 6.78127 18.6042V9.5H9.30541C9.49981 9.50079 9.66256 9.34642 9.68215 9.14375L9.99861 5.97708C10.0077 5.86704 9.97224 5.75779 9.90066 5.67625Z" fill="white"></path>
+                            </svg>
+                        </a></li>
+                    <li><a target="_blank" href="https://instagram.com/wee_ae ">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 0C12.0812 0 12.4032 0.00949994 13.4159 0.0569999C14.4276 0.1045 15.1164 0.26315 15.7225 0.49875C16.3495 0.74005 16.8777 1.06685 17.4059 1.5941C17.889 2.069 18.2628 2.64346 18.5012 3.2775C18.7359 3.88265 18.8955 4.57235 18.943 5.5841C18.9876 6.5968 19 6.91885 19 9.5C19 12.0812 18.9905 12.4032 18.943 13.4159C18.8955 14.4276 18.7359 15.1164 18.5012 15.7225C18.2634 16.3569 17.8896 16.9315 17.4059 17.4059C16.9309 17.8888 16.3564 18.2626 15.7225 18.5012C15.1173 18.7359 14.4276 18.8955 13.4159 18.943C12.4032 18.9876 12.0812 19 9.5 19C6.91885 19 6.5968 18.9905 5.5841 18.943C4.57235 18.8955 3.8836 18.7359 3.2775 18.5012C2.64321 18.2633 2.06865 17.8894 1.5941 17.4059C1.11094 16.9311 0.737135 16.3566 0.49875 15.7225C0.26315 15.1173 0.1045 14.4276 0.0569999 13.4159C0.0123499 12.4032 0 12.0812 0 9.5C0 6.91885 0.00949994 6.5968 0.0569999 5.5841C0.1045 4.5714 0.26315 3.8836 0.49875 3.2775C0.736474 2.64307 1.11036 2.06845 1.5941 1.5941C2.06879 1.11077 2.64331 0.736943 3.2775 0.49875C3.8836 0.26315 4.5714 0.1045 5.5841 0.0569999C6.5968 0.0123499 6.91885 0 9.5 0ZM9.5 4.75C8.24022 4.75 7.03204 5.25044 6.14124 6.14124C5.25044 7.03204 4.75 8.24022 4.75 9.5C4.75 10.7598 5.25044 11.968 6.14124 12.8588C7.03204 13.7496 8.24022 14.25 9.5 14.25C10.7598 14.25 11.968 13.7496 12.8588 12.8588C13.7496 11.968 14.25 10.7598 14.25 9.5C14.25 8.24022 13.7496 7.03204 12.8588 6.14124C11.968 5.25044 10.7598 4.75 9.5 4.75ZM15.675 4.5125C15.675 4.19756 15.5499 3.89551 15.3272 3.67281C15.1045 3.45011 14.8024 3.325 14.4875 3.325C14.1726 3.325 13.8705 3.45011 13.6478 3.67281C13.4251 3.89551 13.3 4.19756 13.3 4.5125C13.3 4.82744 13.4251 5.12949 13.6478 5.35219C13.8705 5.57489 14.1726 5.7 14.4875 5.7C14.8024 5.7 15.1045 5.57489 15.3272 5.35219C15.5499 5.12949 15.675 4.82744 15.675 4.5125ZM9.5 6.65C10.2559 6.65 10.9808 6.95027 11.5153 7.48475C12.0497 8.01922 12.35 8.74413 12.35 9.5C12.35 10.2559 12.0497 10.9808 11.5153 11.5153C10.9808 12.0497 10.2559 12.35 9.5 12.35C8.74413 12.35 8.01922 12.0497 7.48475 11.5153C6.95027 10.9808 6.65 10.2559 6.65 9.5C6.65 8.74413 6.95027 8.01922 7.48475 7.48475C8.01922 6.95027 8.74413 6.65 9.5 6.65Z" fill="white"></path>
+                            </svg>
+                        </a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/weeae ">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.2236 0H4.7613C2.13957 0 0 2.14127 0 4.76508V14.25C0 16.8587 2.13957 19 4.7613 19H14.2387C16.8604 19 19 16.8587 19 14.2349V4.76508C18.9849 2.14127 16.8454 0 14.2236 0ZM6.32831 15.381H3.61618V7.53968H6.32831V15.381ZM4.95718 6.33333C4.18874 6.33333 3.57098 5.71508 3.57098 4.94603C3.57098 4.17698 4.18874 3.55873 4.95718 3.55873C5.72562 3.55873 6.34338 4.17698 6.34338 4.94603C6.32831 5.71508 5.71055 6.33333 4.95718 6.33333ZM15.3838 15.381H15.3688H13.1086V11.581C13.1086 10.6611 12.9881 9.48492 11.7375 9.48492C10.4568 9.48492 10.2458 10.4802 10.2458 11.5206V15.381H7.98573V7.53968H10.0952V8.59524H10.1554C10.4869 7.99206 11.2554 7.5246 12.4607 7.5246C14.9469 7.5246 15.3838 8.95714 15.3838 11.0833V15.381Z" fill="white"></path>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <ul class="link_footer">
+                <li><a href="https://wee.ae/privacy-policy">سياسة الخصوصية</a></li>
+                <li><a href="https://wee.ae/seller-agreement  ">اتفاقية البائع</a></li>
+                <li><a href="http://b2bhelp.wee.ae/">مساعدة</a></li>
+            </ul>
+            <ul class="contacts_list">
+                <li>تواصلوا معنا عبر:</li>
+                <li><a class="email_footer" href="mailto:sales@wee.ae">sales@wee.ae</a></li>
+                <li><a class="phone_footer" href="tel:٠٠٩٧١٥٦٩٨٣١٥٠٢">٠٠٩٧١٥٦٩٨٣١٥٠٢</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        history.pushState('', document.title, window.location.pathname);
+    </script>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/form.js"></script>
+    <script src="https://snipp.ru/cdn/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.start_selling-slider');
+            owl.owlCarousel({
+                nav: false,
+                loop: false,
+                dots: true,
+                mouseDrag: false,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash',
+                items: 1,
+                autoHeight: true,
+            })
+        });
+    </script>
+        <script>
+            $(".form").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+                e.preventDefault();
+                var form_data = $(this).serialize(); // Собираем все данные из формы
+                $.ajax({
+                    type: "POST", // Метод отправки
+                    url: "script/mail-two.php", // Путь до php файла отправителя
+                    data: form_data,
+                    success: function () {
+                        document.querySelector('form').reset()
+    
+                        // Код в этом блоке выполняется при успешной отправке сообщения                    
+                        // $('.modal_thanks_container .overlay').addClass("open");
+                        // $('.modal_thanks_container .modal_thanks').addClass("open");
+    
+                        // $('.modal_one_container .overlay').removeClass("open");
+                        // $('.modal_one_container .modal').removeClass("open");
+    
+                        // $('.modal_two_container .overlay').removeClass("open");
+                        // $('.modal_two_container .modal').removeClass("open");
+                        window.location.replace("thanks.html");
+    
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>

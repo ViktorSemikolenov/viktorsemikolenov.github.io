@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Redirect 301 /invest/ https://wee.onelink.me/53Rs/8kneovex
+
+</IfModule>
