@@ -4,8 +4,8 @@ $submit = $_POST['submit'];
 if(empty($submit)) {
 ?>
 <?
-    // $to = "marketing.wee.ae@gmail.com, marketing@saychas.ru, sales@wee.ae, sale@wee.ae";
-    $to = "viktor.semikolenov@gmail.com";
+    $to = "marketing.wee.ae@gmail.com, marketing@saychas.ru, sales@wee.ae, sale@wee.ae";
+    // $to = "viktor.semikolenov@gmail.com";
     }
         $subject = 'Callback registration page'; //Заголовок сообщения
         $message = '

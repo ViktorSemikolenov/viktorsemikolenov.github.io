@@ -4,6 +4,7 @@ if(empty($submit)) {
 ?>
 <?
     $to = "marketing.wee.ae@gmail.com, marketing@saychas.ru, sales@wee.ae, sale@wee.ae";
+    // $to = "viktor.semikolenov@gmail.com";
     }
         $subject = 'Callback'; //Заголовок сообщения
         $message = '

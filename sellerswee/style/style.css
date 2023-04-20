@@ -894,7 +894,7 @@ h2 span {
 }
 
 .upload_col input {
-    /* display: none; */
+    display: none;
 }
 
 .row_upload_kolv span {
