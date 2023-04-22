@@ -54,9 +54,15 @@ section{
     width: 98%;
     margin: 0 auto;
     margin-top: 5vw;
+    height: 32.7vw;
+    opacity: 0;
+}
+.loaded .svg-container{
+    opacity: 1;
 }
 .svg-container svg{
     width: 100%;
+    height: 32.7vw;
 }
 .about{
     padding-top: 160px;
@@ -114,11 +120,12 @@ section{
 }
 .suitable-text{
     font-size: 24px;
+    line-height: 110%;
 }
 .suitable__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px 100px;
+    gap:  4vw;
 }
 .suitable__row > div{
     max-width: 100%;
@@ -205,6 +212,13 @@ section{
     opacity: 0.5;
     transition-duration:0.2s !important;
 }
+.social__item img{
+    width: 4vw;
+}
+
+
+
+
 
 @media(min-width:1930px){
     .about__container{
@@ -216,6 +230,15 @@ section{
     }
     .svg-container{
         margin-top: 148px;
+    }
+    .svg-container{
+        height: auto;
+    }
+    .svg-container svg{
+        height:auto;
+    }
+    .suitable__row {
+        gap: 80px 100px;
     }
 }
 
@@ -245,8 +268,63 @@ section{
     .title{
         font-size: 64px;
     }
-}
+    .suitable-icon{
+        margin-bottom: 10px;
+    }
+    .suitable-title{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .suitable-text{
+        font-size: 20px;
+        line-height: 110%;
+    }
+    .opportunities__item{
+        padding: 24px 32px;
+    }
+    .opportunities__text{
+        font-size: 20px;
+    }
+    .social__item img{
+        width: 52px;
+    }
+    .social {
+        justify-content: flex-end;
+        gap: 0 12px;
+    }
+    .footer-nav__link , .phone-link, .copyright{
+        font-size: 20px;
+    }
+    .footer-page{
+        padding: 90px 0 ;
+    }
 
+}
+@media(max-width:1199px){
+    .about__container{
+        padding: 5vw 5vw;
+    }
+    .title{
+        font-size: 42px;
+    }
+    .about__description{
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .btn{
+        font-size: 18px;
+        padding: 16px 32px;
+    }
+    .suitable-title{
+        font-size: 24px;
+    }
+    .suitable-text{
+        font-size: 18px;
+    }
+    .video-frame{
+        height: 560px;
+    }
+}
 @media(max-width:991px){
     
     .navbar-nav{
@@ -257,5 +335,105 @@ section{
     }
     .nav-link:hover{
         border-color: var(--white);
+    }
+    .suitable-title{
+        font-size: 20px;
+    }
+    .suitable-text{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .suitable-icon{
+        width:52px;
+    }
+    .footer-page__row{
+        justify-content: center !important;
+        text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+    .social-col{
+        order: -1;
+    }
+    .footer-page{
+        padding: 45px 0;
+    }
+}
+@media(max-width:769px){
+    .suitable__row{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+    }
+    .opportunities__text{
+        font-size: 18px;
+    }
+    .opportunities__item{
+        padding: 16px;
+        border: 2px solid #CECECE;
+    }
+    .video-frame{
+        height: 400px;
+    }
+    .footer-nav{
+        width: 100%;
+    }
+    .footer-nav__item{
+        margin-right: 24px;
+    }
+    
+}
+@media(max-width:480px){
+    .social__item img{
+        width: 42px;
+    }
+    .video-frame{
+        height: 375px;
+    }
+    section, .about{
+        padding-top: 75px ;
+    }
+    .about__description{
+        font-size: 16px;
+    }
+    .about__description-secondary{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .about .btn{
+        margin-top: 24px;
+    }
+    .about__container{
+        padding: 24px;
+    }
+    .suitable__row{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+    .suitable-title{
+        font-size: 24px;
+    }
+    .suitable-link{
+        font-size: 16px;
+    }
+    .opportunities__text{
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    .opportunities__item{
+        padding: 24px 16px;
+    }
+    .footer-nav__link, .phone-link, .copyright{
+        font-size: 18px;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+    .opportunities-row{
+        margin-top: 24px !important;
     }
 }
