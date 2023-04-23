@@ -90,10 +90,10 @@ section{
     line-height: 115%;
 }
 .btn{
-    background-color: var(--black);
+    background-color: var(--black) !important;
     font-size: 24px;
     padding: 24px 45px;
-    border-color: var(--black);
+    border-color: var(--black) !important;
     border-radius: 10px;
     transition-duration: 0.3s;
 }
