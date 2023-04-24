@@ -1,5 +1,6 @@
 *{
     font-family: 'Pragmatapro' !important;
+    outline: none !important;
 }
 :root{
     --black:#000000;
@@ -506,7 +507,9 @@ input{
     .scroll-icon__img{
         width: 72px;
     }
-
+    .navbar-nav .dropdown-menu{
+        width: 77px !important;
+    }
 }
 @media(max-width:769px){
     .suitable__row{
