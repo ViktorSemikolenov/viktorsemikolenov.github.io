@@ -238,6 +238,9 @@
     .experts_content{
         grid-area: 0 32px;
     }
+    .catalog_item{
+        width: 100% !important;
+    }
 }
 
 @media(max-width:1000px) {
@@ -517,6 +520,12 @@
     }
     .experts{
         padding-bottom: 72px;
+    }
+    .catalog .catalog_row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .catalog .catalog_item_info .price{
+        top: 205px;
     }
 }
 
@@ -978,6 +987,9 @@
     }
     .navigation_page .social_nav ul{
         flex-wrap: wrap;
+    }
+    .catalog .catalog_row{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
