@@ -509,6 +509,10 @@ input{
     }
     .navbar-nav .dropdown-menu{
         width: 77px !important;
+        margin-top: 0 !important; 
+    }
+    .navbar-nav{
+        margin-top: 0 !important;
     }
 }
 @media(max-width:769px){
