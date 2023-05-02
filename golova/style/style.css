@@ -613,3 +613,8 @@ input{
         width: 828px;
     }
 }
+.link{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: normal;
+}
