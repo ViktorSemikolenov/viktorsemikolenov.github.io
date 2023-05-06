@@ -461,6 +461,29 @@ padding: 20px 20px;
     padding: 26px 0;
 }
 
+.information__contacts-text{
+    font-size: 28px;
+    line-height: 125%;
+}
+textarea{
+    background-color: var(--white) !important;
+    padding: 15px 20px !important;
+    border: 2px solid var(--black) !important;
+    font-size: 25px !important;
+    border-radius: 5px !important;
+    color: var(--black);
+}
+.message-text{
+    font-size: 18px;
+}
+.message-text a{
+    color: var(--black);
+    text-decoration: underline;
+}
+.message-text a:hover{
+    text-decoration: none;
+}
+
 @media(min-width:1930px) {
     .about__container {
         border-radius: 10px;
@@ -870,6 +893,9 @@ padding: 20px 20px;
 
     .price-scroller .row {
         width: 828px;
+    }
+    .information__contacts-text{
+        font-size: 18px;
     }
 }
 
