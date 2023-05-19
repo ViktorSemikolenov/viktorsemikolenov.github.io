@@ -492,6 +492,28 @@
     * {
         letter-spacing: 0 !important;
     }
+    .select-type-money{
+        width: 100%;
+    }
+    .form-quez__row{
+        max-width: 85%;
+    }
+    .quez-money{
+        width: 320px;
+    }
+    .quez-money__list li{
+        font-size: 16px;
+    }
+    .quez-money__coverage{
+        font-size: 16px;
+    }
+    .quez-money__triggers strong{
+        font-size: 16px;
+    }
+    .quez-money__triggers img{
+        margin-right: 12px;
+        width: 24px !important;
+    }
 }
 
 @media(max-width:767px) {
@@ -983,6 +1005,75 @@
     }
     .capture-form__label{
         margin: 0 auto;
+    }
+    .form-quez__row{
+        max-width: 100%;
+    }
+    .quez-money-row{
+        width: 550px;
+        overflow: hidden;
+    }
+    .quez-money-row__scroll{
+        overflow-x: scroll;
+        width: 98%;
+    }
+    .input-group__row{
+        flex-wrap: wrap;
+    }
+    .input-group__row input{
+        width: 100%;
+        margin-top: 6px;
+    }
+    .input-group__row .input-line{
+        width: 100%;
+    }
+    .form-quez__item-type-three{
+        max-width: 100%;
+    }
+    .select-row{
+        flex-wrap: wrap;
+    }
+    .select-row > div{
+        width: 100%;
+    }
+    .block-phone-accent{
+        flex-wrap: wrap;
+    }
+    .block-phone-accent input{
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+    .block-phone-accent p{
+        margin-top: 10px;
+    }
+    .info-people, .my-order, .warning-message-width-type{
+        width: 100%;
+    }
+    .info-people strong{
+        width: 100%;
+    }
+    .info-people li{
+        flex-wrap: wrap;
+    }
+    .info-people strong{
+        margin-top: 4px;
+    }
+    .my-order{
+        flex-wrap: wrap;
+    }
+    .my-order__info{
+        width: 100%;
+        margin-top: 32px;
+    }
+    .thanks-container__row{
+        flex-wrap: wrap;
+        padding: 0 24px;
+    }
+    .thanks-container__row p{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 24px;
     }
 }
 
@@ -1548,7 +1639,19 @@
         padding: 0;
         gap: 12px 0;
     }
-
+    .btn-back{
+        position: relative;
+    }
+    .form-quez__row{
+        flex-wrap: wrap-reverse;
+    }
+    .form-quez__row .btn{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-back{
+        margin-top: 42px;
+    }
 }
 
 @media(max-width:374px) {

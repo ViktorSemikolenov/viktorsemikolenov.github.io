@@ -101,3 +101,16 @@ $(".close-modal").on('click', function (e) {
 
 });
 
+$(".btn-accent-phone").click(function () {
+    $(this).addClass("hidden");
+    $(".edit-phone").addClass("visible");
+    $(".block-phone-accent").addClass("visible");
+    $(".form-quez__row-off").addClass("visible-op");
+});
+
+$(".edit-phone").click(function () {
+    $(this).removeClass("visible");
+    $('.block-phone-accent').removeClass("visible");
+    $('.form-quez__row-off').removeClass("visible-op");
+    $('.btn-accent-phone').removeClass("hidden");
+});
