@@ -1652,6 +1652,9 @@
     .btn-back{
         margin-top: 42px;
     }
+    .form-quez__item-type-one .input-group{
+        margin-top: 0;
+    }
 }
 
 @media(max-width:374px) {
