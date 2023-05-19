@@ -49,6 +49,7 @@ $(document).ready(function () {
         loop: false,
         dots: true,
         mouseDrag: false,
+        touchDrag:false,
         URLhashListener: true,
         autoplayHoverPause: true,
         startPosition: 'URLHash',
