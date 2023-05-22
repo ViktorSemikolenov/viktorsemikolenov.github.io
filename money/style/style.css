@@ -2761,3 +2761,6 @@ input[disabled]{
     font-weight: bold;
     font-size: 18px;
 }
+.thanks-img{
+    width: 105px !important;
+}
