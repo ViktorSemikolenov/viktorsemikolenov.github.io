@@ -114,3 +114,16 @@ $(".edit-phone").click(function () {
     $('.form-quez__row-off').removeClass("visible-op");
     $('.btn-accent-phone').removeClass("hidden");
 });
+
+
+const buttons = document.querySelectorAll('.btn-scroll');
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const targetSelector = button.dataset.target;
+    const targetSection = document.querySelector(targetSelector);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+history.pushState('', document.title, window.location.pathname);
