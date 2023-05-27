@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Живописный семейный отдых</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+</head>
+<body class="body-page">
+    <header class="navigation navigation-grey animate__animated animate__fadeInDown wow">
+        <div class="container">
+            <div class="navigation__row">
+                <div class="navigation__left-col">
+                    <a href="tel:+79957500642" class="phone phone-icon navigation__phone">+7 995  750-06-42</a>
+                    <div class="messengers">
+                        <ul class="messengers__list">
+                            <li class="messengers__item"><a target="_blank" href="https://vk.com/zamokazov"><img src="../image/icons/vk.svg" alt="Vk"
+                                        class="messengers__icon"></a></li>
+                            <li class="messengers__item"><a target="_blank" href="https://t.me/zamokazov"><img src="../image/icons/tg.svg" alt="Telegram"
+                                        class="messengers__icon"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navigation__center-col">
+                    <a href="/" class="logo navigation__logo">
+                        <img src="../image/logo.png" alt="Замок Азов" class="logo__img">
+                    </a>
+                </div>
+                <div class="navigation__right-col">
+                    <button class="humburger">
+                        <svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H42V6H0V0Z" fill="white"></path>
+                            <path d="M0 12H42V18H0V12Z" fill="white"></path>
+                            <path d="M0 24H42V30H0V24Z" fill="white"></path>
+                        </svg>
+                    </button>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="/" class="menu__link">Главная</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Бронирование</a></li>
+                            <li class="menu__item"><a href="../index.html#hotel-rooms" class="menu__link">Номера</a></li>
+                            <li class="menu__item"><a href="../index.html#reviews" class="menu__link">Отзывы</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>      
+    </header>
+
+    <div id='tl-booking-form'>&nbsp;</div>
+<script type='text/javascript'>
+    (function(w) {
+        var q = [
+            ['setContext', 'TL-INT-azov-zamok_2023-03-07', 'ru'],
+            ['embed', 'booking-form', {
+                container: 'tl-booking-form'
+            }]
+        ];
+        var h=["ru-ibe.tlintegration.ru","ibe.tlintegration.ru","ibe.tlintegration.com"];
+        var t = w.travelline = (w.travelline || {}),
+            ti = t.integration = (t.integration || {});
+        ti.__cq = ti.__cq? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+            ti.__loader = true;
+            var d=w.document,c=d.getElementsByTagName("head")[0]||d.getElementsByTagName("body")[0];
+            function e(s,f) {return function() {w.TL||(c.removeChild(s),f())}}
+            (function l(h) {
+                if (0===h.length) return; var s=d.createElement("script");
+                s.type="text/javascript";s.async=!0;s.src="https://"+h[0]+"/integration/loader.js";
+                s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
+            })(h);
+        }
+    })(window);
+</script>
+
+    <section class="contacts booking-contacts">
+        <div class="container">
+            <div class="contacts__col-left">
+                <div class="contacts__logo">
+                    <img src="../image/logo-contacts.png" alt="Замок Азов">
+                </div>
+                <ul class="contacts__list">
+                    <li class="contacts__address">Пересыпь, ул. Калабадка 60</li>
+                    <li><a href="tel:+7995750-06-42" class="contacts__phone">+7 995 750-06-42</a></li>
+                    <li><a href="mailto:gostinicaAzov@bk.ru" class="contacts__email">gostinicaAzov@bk.ru</a></li>
+                </ul>
+                <ul class="messengers__list contacts__messengers">
+                    <li class="messengers__item"><a target="_blank" href="https://vk.com/zamokazov"><img src="../image/icons/vk.svg" alt="Vk"
+                                class="messengers__icon"></a></li>
+                    <li class="messengers__item"><a target="_blank" href="https://t.me/zamokazov"><img src="../image/icons/tg.svg" alt="Telegram"
+                                class="messengers__icon"></a></li>
+                </ul>
+            </div>
+            <div class="contacts__col-right">
+                <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd3b0f5324e1497fd339b67fcf04ecdfacf88189748ce8814349d31cc9fbb32c&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/jquery.min.js"></script>
+</body>
+</html>

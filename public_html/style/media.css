@@ -1,0 +1,403 @@
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media(max-width:1439px){
+    .container{
+        max-width: 1200px;
+    }
+    .menu__item{
+        margin-left: 24px;
+    }
+    .navigation__phone{
+        font-size: 20px;
+    }
+    .conveniences__item{
+        font-size: 18px;
+    }
+    .conveniences__img-foure{
+        display: none;
+    }
+    .conveniences__img-three{
+        right: 15px;
+    }
+
+}
+@media(max-width:1199px){
+    .container{
+        max-width: 980px;
+    }
+    .navigation__row{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .navigation__left-col{
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+    .navigation .logo__img{
+        width: 90px;
+    }
+    .container-min{
+        max-width: 980px;
+    }
+    h1{
+        font-size: 86px;
+    }
+}
+@media(max-width:980px){
+    .container, .container-min{
+        max-width: 768px;
+    }
+    .navigation__left-col{
+        display: none;
+    }
+    .humburger{
+        display: block;
+    }
+    .navigation .logo__img{
+        width: 70px;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #EAEAEA;
+        height: 0;
+        overflow: hidden;
+        top: 90px;
+        -webkit-transition-duration: 0.3s;
+             -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+    }
+    .menu.open{
+        height: 100vh;
+        padding-top: 42px;
+        -webkit-transition-duration: 0.3s;
+             -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+    }
+    .mob-contacts{
+        display: block;
+    }
+    .mob-contacts .messengers__list{
+        margin-left: 0;
+    }
+    .menu__list{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .menu__list a{
+        color: black;
+    }
+    .menu__item{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom:24px;
+    }
+    .mob-contacts{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .navigation__phone{
+        width: 100%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 32px;
+    }
+    .navigation.open{
+        background: #EAEAEA;
+        
+    }
+    .navigation{
+        -webkit-transition-duration: 0.3s;
+             -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+    }
+
+    .humburger.open path{
+        fill: #000000;
+    }
+    .first-screen__footer{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        margin-top: 60px;
+    }
+    .first-screen{
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    .first-screen__info h2{
+        font-size: 30px;
+    }
+    .triggers{
+        margin-bottom: 70px;
+    }
+    .about .container-min{
+        padding: 70px 24px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .about__description{
+        font-size: 16px;
+    }
+    .about .container-min{
+        min-height: 500px;
+    }
+    .about .container-min{
+        top: 0;
+        max-width: 100%;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    .hotel-rooms{
+        padding-top: 90px;
+    }
+    .hotel-rooms__item{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    .gallery-slider .center .slider-name{
+        font-size: 16px;
+        bottom: 35px;
+    }
+    .gallery-slider .center img{
+        -webkit-transform: scale(1) !important;
+            -ms-transform: scale(1) !important;
+                transform: scale(1) !important; 
+    }
+    .gallery .owl-stage{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .gallery{
+        padding-top: 70px;
+    }
+    .owl-next{
+        right: 10px !important;
+        display: none !important;
+    }
+    .owl-prev{
+        left: 10px !important;
+        display: none !important;
+    }
+    .navigation.fixed{
+        padding: 8px 0;
+    }
+    .reviews .owl-item{
+        padding: 0;
+    }
+    .owl-dots{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 8px;
+    }
+    .owl-dot{
+        width: 8px;
+        height: 8px; 
+        background-color: #EBEBEB !important;
+        margin: 0 4px;
+        border-radius: 90px;
+    }
+    .owl-dot.active{
+        background-color: #D77E25 !important; 
+    }
+    .contacts__map{
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 400px;
+    }
+    .contacts .container{
+        max-width: 100%;
+    }
+    .contacts__col-left{
+        max-width: 768px;
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 32px;
+    }
+    .conveniences__list{
+        width: 100%;
+    }
+    .conveniences__img{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .container, .container-min{
+        max-width: 480px;
+    }
+    .contacts__col-left{
+        max-width: 480px;
+    }
+    h1{
+        font-size: 56px;
+    }
+    .first-screen__info{
+        text-align: left;
+    }
+    .first-screen__info h2{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .triggers{
+        width: 100%;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        margin-bottom: 42px;
+    }
+    .trigger__item{
+        margin-left: 0;
+        margin-right: 42px;
+    }
+    .trigger__item:last-of-type{
+        margin-right: 0;
+    }
+    .button-row{
+        margin-left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .button-row .button{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+    }
+    .button-row .button-stroke{
+        margin-bottom: 24px;
+    }
+    .title{
+        font-size: 26px
+    }
+    .hotel-rooms__item{
+        padding: 60px 0;
+        height: 600px;
+    }
+    .hotel-rooms__title{
+        font-size: 28px;
+    }
+    .hotel-rooms__description{
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .hotel-rooms__characteristic{
+        font-size: 20px;
+    }
+    .hotel-rooms__images::before{
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .button{
+        font-size: 16px;
+        text-align: center;
+    }
+    .contacts__logo img{
+        width: 320px;
+    }
+    .contacts__list a, .contacts__list li{
+        font-size: 16px;
+    }
+    .contacts__list li{
+        margin-bottom: 8px;
+    }
+    .hotel-rooms__item{
+        height: auto;
+    }
+}
+@media(max-width:479px){
+    .container, .container-min{
+        max-width: 375px;
+    }
+    .contacts__col-left{
+        max-width: 375px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .trigger__item{
+        text-align: left;
+    }
+    .gallery-slider .center .slider-name{
+        width: 90%;
+    }
+    .contacts__logo{
+        margin-bottom: 32px;
+    }
+    .contacts__logo img{
+        width: 250px;
+    }
+    .triggers{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+    }  
+    .trigger__item{
+        margin-right: 0;
+        text-align: center;
+    } 
+    .button-row .button-stroke{
+        width: 100%;
+        background-color: #D77E25;
+        border: none;
+        color: #ffffff;
+    }
+    .button-row{
+        width: 100%;
+    }
+    .conveniences__item{
+        font-size: 16px;
+    }
+    .conveniences__list{
+        margin-left: 20px;
+    }
+    .menu{
+        top: 80px;
+    }
+    .booking-contacts{
+        margin-top: 90px;
+    }
+    #tl-booking-form{
+        padding-top: 100px;
+    }
+}

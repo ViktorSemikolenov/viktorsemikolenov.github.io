@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монетный двор</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+</head>
+<body>
+    <main class="main-page">
+        <div class="row h-100">
+            <div class="col--6 main-image"></div>
+            <div class="col--6 main-info">
+                <header class="header-page">
+                    <a href="/" class="logo">
+                        <img src="images/logo.png" alt="Европейский монетный двор" class="logo__img">
+                    </a>
+                </header>
+                <div class="registration-form">
+                    <form id="quiz-form" class="owl-carousel form-quez__slider">
+                        <!-- 111111111111111111111111111111111111 -->
+                        <div class="form-quez__item" data-hash="one">
+                            <header class="quez-money__header">
+                                <h2 class="title">Заказ медали</h2>
+                            </header>
+                            <div class="numerical-information">
+                                <div class="numerical-information__item remains">
+                                    <p class="numerical-information__title">Осталось медалей по акции:</p>
+                                    <span class="remains__numb numerical-information__numb">12</span>
+                                </div>
+                                <div class="numerical-information__item make-order">
+                                    <span class="make-order__numb numerical-information__numb"></span>
+                                    <p class="numerical-information__title">Человек сейчас делают заказ</p>
+                                </div>
+                                <div class="numerical-information__item timer">
+                                    <p class="numerical-information__title">Акция закончится через:</p>
+                                    <span class="numerical-information__numb timer-span" id="timer1"></span>
+                                    <span id="message1"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="fio">Фамилия Имя Отчество</label>
+                                        <input required  class="input" type="text" name="Фамилия Имя Отчество" id="fio">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="warning-message">
+                                <p class="warning-message__text"><strong class="text-strong">Внимание!
+                                    </strong>Заполняйте это поле внимательно — на это ФИО будет выcлана посылка с
+                                    медалью Почтой России. При ошибке в ФИО вам <span class="text-underline">могут
+                                        отказать</span> в выдаче посылки. Также на ФИО будет выписан сертификат
+                                    подлинности.</p>
+                            </div>
+                            <label for="check" class="form-quez__polic">
+                                <input required class="input-check input" type="checkbox" name="check" id="check">
+                                <span class="checkbox"></span>
+                                <p>Я ознакомился с <a target="_black" href="#">условиями и даю согласие</a> на <a
+                                        target="_black" href="#">обработку персональных данных</a></p>
+                            </label>
+                            <footer class="form-quez__row">
+                                <a class="btn btn-next btn-scroll"  data-target=".header-page" href="#two">Продолжить</a>
+                            </footer>
+                        </div>
+                        <!-- 2222222222222222222222222222222222222222222222222222222222222222222 -->
+                        <div class="form-quez__item" data-hash="two">
+                            <header class="quez-money__header">
+                                <h2 class="title">Комплектация</h2>
+                                <span class="subtitle">Предалагаем вам выбрать один из двух вариантов заказа медали:</span>
+                            </header>
+                            <div class="scroll-row">
+                            <div class="money-row">
+                                <div class="money-item money-item--silver">
+                                    <header class="money-item__header">
+                                        <span class="money-item__label"></span>
+                                        <div class="money-item__top">
+                                            <h2 class="money-item__title">Серебро</h2>
+                                        </div>
+                                        <div class="money-item__img-wrapper">
+                                            <img src="images/content/silver-price.png" alt="Серебренная монета" class="money-item__img">
+                                        </div>
+                                    </header>
+                                    <div class="price-row">
+                                        <span class="price-now">0 р</span>
+                                    </div>
+                                    <ul class="price-list">
+                                        <li class="price-list__item">Покрытие: серебро</li>
+                                        <li class="price-list__item">Диаметр 39 мм., толщина 3 мм</li>
+                                        <li class="price-list__item">Аверс: Профиль императора <br>Николая Второго</li>
+                                        <li class="price-list__item">Реверс: Герб Дома Романовых</li>
+                                        <li class="price-list__item">Сертификат подлинности</li>
+                                    </ul>
+                                </div>
+                                <div class="money-item money-item--gold">
+                                    <header class="money-item__header">
+                                        <span class="money-item__label">ВЫБОР БОЛЬШИНСТВА</span>
+                                        <div class="money-item__top">
+                                            <h2 class="money-item__title">ЗОЛОТО</h2>
+                                        </div>
+                                        <div class="money-item__img-wrapper">
+                                            <img src="images/content/gold-price.png" alt="Золотая монета" class="money-item__img">
+                                        </div>
+                                    </header>
+                                    <div class="price-row price-row-f">
+                                       <div class="price-now-col">
+                                            <p class="price-label"><img class="price-label_img" src="images/icons/price.jpg" alt="ПО АКЦИИ"> ПО АКЦИИ</p>
+                                            <span class="price-now">790 р</span>
+                                       </div>
+                                       <div class="price-old-col">
+                                            <p class="price-label">ПОЛНАЯ СТОИМОСТЬ</p>
+                                            <span class="price-old">1 990 р</span>
+                                       </div>
+                                    </div>
+                                    <div class="discount">
+                                        <div class="discount__title">
+                                            <span>ЭКОНОМИЯ 62%!</span>
+                                        </div>
+                                        <div class="discount__timer">
+                                            <span class="discount__timer-span">КОНЕЦ АКЦИИ:</span>
+                                            <span class="discount__timer-timer" id="timer2"></span>
+                                            <span id="message2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="money-item__message">
+                                        <p class="money-item__message-text">
+                                            “Данный лот совмещает в себе высокое искусство, 
+                                            высоклассную чеканку, покрытие золотом 999 
+                                            пробы, что делает его лучшей инвестицией.”
+                                        </p>
+                                    </div>
+                                    <ul class="price-list">
+                                        <li class="price-list__item">Покрытие: золото 999 пробы</li>
+                                        <li class="price-list__item">Диаметр 39 мм., толщина 3 мм</li>
+                                        <li class="price-list__item">Аверс: Профиль императора <br>Николая Второго</li>
+                                        <li class="price-list__item">Реверс: Герб Дома Романовых</li>
+                                        <li class="price-list__item">Сертификат подлинности</li>
+                                        <li class="price-list__item">Ограниченный тираж</li>
+                                        <li class="price-list__item">Первоклассная чеканка</li>
+                                        <li class="price-list__item">Уникальная инвестиция</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="message-delivery">
+                                <p>Для обоих вариантов дополнительно оплачивается услуга упаковки и доставки медали в размере 390 р.</p>
+                            </div>
+                            <div class="select-money">
+                                <h3 class="subtitle">Выберите свой вариант для заказа:</h3>
+                                <div class="input-wrapper">
+                                    <div class="custom-select input-line">
+                                        <label for="select-one" class="arrow-down"></label>
+                                        <input id="select-one" required type="text" class="select-input input" placeholder="Ваш выбор" readonly>
+                                        <ul class="select-options" style="display: none;" >
+                                          <li class="option-item" data-value="value-1">Серебро</li>
+                                          <li class="option-item" data-value="value-2">Золото</li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <footer class="form-quez__row justify-center">
+                                <a class="btn btn-next btn-scroll"  data-target=".header-page" href="#three">Продолжить</a>
+                                <a class="btn-back btn-scroll"  data-target=".header-page" href="#one">Назад</a>
+
+                            </footer>
+                        </div>
+                        <!-- 3333333333333333333333333333333333333333333333333333333333333333333 -->
+                        <div class="form-quez__item" data-hash="three">
+                            <header class="quez-money__header">
+                                <h2 class="title">Адрес</h2>
+                                <span class="subtitle">Начните заполнять поля - вам будут выдаваться подсказки. Выберите нужный <br>
+                                    вариант в подсказках и используйте его.</span>
+                            </header>
+                            <div class="input-group address-input">
+                                <div class="input-line">
+                                    <label class="placeholder" for="address">Введите свой адрес</label>
+                                    <input required  class="input" type="text" name="Введите свой адрес" id="address">
+                                </div>
+                            </div>
+                            <div class="form-output input-wrapper">
+                                <header class="form-output__header">
+                                    <h3 class="form-output__title">Внимательно проверьте адрес:</h3>
+                                </header>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Индекс</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="456786" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Регион</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="Челябинская обл." id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Район</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="Каслинский р-н" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Город / н. п.</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="г Касли" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Улица</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="ул Ленина" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Дом</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес" value="д 1А"
+                                            id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Квартира</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес" value="56"
+                                            id="address3">
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="no-apartment" class="form-quez__polic">
+                                <input class="input-check input" type="checkbox" name="check" id="no-apartment">
+                                <span class="checkbox"></span>
+                                <p>В адресе нет квартиры</p>
+                            </label>
+                            
+                            
+                            <footer class="form-quez__row justify-center form-quez__row-type-two">
+                                
+                                <a class="btn btn-next btn-scroll"  data-target=".header-page" href="#foure">Продолжить</a>
+                                <a class="btn-back btn-scroll"  data-target=".header-page" href="#two">Назад</a>
+                            </footer>
+                        </div>
+                        <div class="form-quez__item" data-hash="foure">
+                            <header class="quez-money__header">
+                                <h2 class="title">Контакты</h2>
+                                <span class="subtitle">Начните заполнять поля - вам будут выдаваться подсказки.<br> Выберите нужный 
+                                    вариант в подсказках и используйте его.</span>
+                            </header>
+                            <div class="input-wrapper">
+                                <header class="form-output__header">
+                                    <h3 class="form-output__title">Внимательно проверьте адрес:</h3>
+                                </header>
+                                <div class="select-row">
+                                    <div class="select-block select-block-day">
+                                        <select class="select" name="" id="">
+                                            <option>Число</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                            <option value="1">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-block select-block-month">
+                                        <select class="select" name="" id="">
+                                            <option>Месяц</option>
+                                            <option value="Январь">Январь</option>
+                                            <option value="Февраль">Февраль</option>
+                                            <option value="Март">Март</option>
+                                            <option value="Апрель">Апрель</option>
+                                            <option value="Май">Май</option>
+                                            <option value="Июнь">Июнь</option>
+                                            <option value="Июль">Июль</option>
+                                            <option value="Август">Август</option>
+                                            <option value="Сентябрь">Сентябрь</option>
+                                            <option value="Октябрь">Октябрь</option>
+                                            <option value="Ноябрь">Ноябрь</option>
+                                            <option value="Декабрь">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-block select-block-year">
+                                        <select class="select" name="" id="">
+                                            <option>Год</option>
+                                            <option value="2014">2005</option>
+                                            <option value="2013">2004</option>
+                                            <option value="2012">2003</option>
+                                            <option value="2011">2002</option>
+                                            <option value="2010">2001</option>
+                                            <option value="2009">2000</option>
+                                            <option value="2008">1999</option>
+                                            <option value="2007">1998</option>
+                                            <option value="2006">1997</option>
+                                            <option value="2005">1996</option>
+                                            <option value="2004">1995</option>
+                                            <option value="2003">1994</option>
+                                            <option value="2002">1994</option>
+                                            <option value="2001">1992</option>
+                                            <option value="2000">1990</option>
+                                            <option value="1999">1989</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="warning-message warning-message--last">
+                                    <p class="warning-message__text">Зная вашу дату рождения - у нас будет возможность поздравить вас с днем рождения!</p>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="Email-step">Email</label>
+                                        <input required  class="input" type="email" name="Email" id="Email-step">
+                                    </div>
+                                </div>
+                                <div class="warning-message warning-message--last">
+                                    <p class="warning-message__text">На электорнную почту будут приходить уведомления о статусе доставки вашей посылки с медалью.</p>
+                                </div>
+                                <header class="form-output__header">
+                                    <h3 class="form-output__title">Телефон</h3>
+                                </header>
+                                <div class="input-group mt-5">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="tel-step">Телефон</label>
+                                        <input autocomplete="off" maxlength="11" required class="input input-tel" type="tel" name="tel" id="tel-step" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                        <p class="edit-phone">Изменить</p>
+                                    </div>
+                                </div>
+                                <div class="btn-row__hidden">
+                                    <p class="btn btn-accent-phone">Подтвердить телефон</p>
+                                    <a class="btn-back btn-back-accent btn-scroll"  data-target=".header-page" href="#three">Назад</a>
+                                </div>
+                                <div class="block-phone-accent mt-5">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="code">Код</label>
+                                        <input minlength="4" required class="input" type="text" name="text" id="code" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                    <p>Вам был выслан код по СМС. Введите
+                                        его в окно слева. Отправка нового кода
+                                        возможна через <span>00:59</span></p>
+                                </div>
+                            </div>
+                            
+                            <footer class="form-quez__row justify-center form-quez__row-type-two form-quez__row-off">
+                                
+                                <a class="btn btn-next btn-scroll"  data-target=".header-page" href="#five">Продолжить</a>
+                                <a class="btn-back btn-scroll"  data-target=".header-page"  href="#three">Назад</a>
+                                <!-- кнопка отправки формы <button class="btn">Заказать</button> -->
+                            </footer>
+                        </div>
+                        <div class="form-quez__item" data-hash="five">
+                            <header class="quez-money__header">
+                                <h2 class="title">Спасибо за заказ</h2>
+                                <span class="subtitle mt-3">Заказ успешно оформлен!  <br>
+                                    Ожидайте смс или звонка оператора с подтверждением заказа.  <br>
+                                    Как только мы отправим ваш заказ Почтой России - вы молучите смс <br>
+                                    с трек-номером вашего заказа. <br>
+                                    Мы будем информировать вас о состоянии заказа по электронной почте и смс <br>  
+                                    на протяжение всего процесса доставки заказа.</span>
+                            </header>
+                        </div>
+                    </form>
+                      
+                      
+                </div>
+                <footer class="footer-page">
+                    <p class="copyright">© 2023 ООО «Европейский Монетнй Двор». <br>
+                        Все права защищены.</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/owl-main.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

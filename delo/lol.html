@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <div class="step step-1">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" >
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" >
+          <a class="next-btn">Далее</a>
+        </div>
+        <div class="step step-2">
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" >
+          <label for="address">Адрес:</label>
+          <input type="text" id="address" name="address" >
+          <button class="prev-btn">Назад</button>
+          <button class="next-btn">Далее</button>
+        </div>
+        <div class="step step-3">
+          <label for="card-number">Номер карты:</label>
+          <input type="text" id="card-number" name="card-number" >
+          <label for="expiry-date">Срок действия:</label>
+          <input type="text" id="expiry-date" name="expiry-date" >
+          <button class="prev-btn">Назад</button>
+          <button class="submit-btn">Отправить</button>
+        </div>
+      </form>
+      <style>
+        .step:not(:first-of-type) {
+  display: none;
+}
+
+      </style>
+      <script>
+        const form = document.querySelector('.form');
+const steps = form.querySelectorAll('.step');
+const prevBtns = form.querySelectorAll('.prev-btn');
+const nextBtns = form.querySelectorAll('.next-btn');
+const submitBtn = form.querySelector('.submit-btn');
+
+let currentStep = 0;
+
+function showStep(stepIndex) {
+  steps[currentStep].style.display = 'none';
+  steps[stepIndex].style.display = 'block';
+  currentStep = stepIndex;
+}
+
+function validateStep(stepIndex) {
+  const inputs = steps[stepIndex].querySelectorAll('input[]');
+  for (let i = 0; i < inputs.length; i++) {
+    if (!inputs[i].value) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function updateButtons() {
+  prevBtns.forEach(btn => {
+    btn.style.display = currentStep === 0 ? 'none' : 'inline-block';
+  });
+  nextBtns.forEach(btn => {
+    btn.disabled = !validateStep(currentStep);
+  });
+  submitBtn.disabled = !validateStep(steps.length - 1);
+}
+
+function goToPrevStep() {
+  showStep(currentStep - 1);
+  updateButtons();
+}
+
+function goToNextStep() {
+  showStep(currentStep + 1);
+  updateButtons();
+}
+
+prevBtns.forEach(btn => {
+  btn.addEventListener('click', goToPrevStep);
+});
+
+nextBtns.forEach(btn => {
+  btn.addEventListener('click', goToNextStep);
+});
+
+updateButtons();
+
+      </script>
+</body>
+</html>

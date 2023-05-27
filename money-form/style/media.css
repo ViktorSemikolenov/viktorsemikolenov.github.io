@@ -1,0 +1,204 @@
+@media(max-width:1440px){
+    .main-info{
+        padding: 32px;
+    }
+    .main-image{
+        width: 45%;
+    }
+    .main-info{
+        width: 55%;
+    }
+    .address-input{
+        width: 95%;
+    }
+}
+@media(max-width:1200px){
+    .main-image{
+        display: none;
+    }
+    .main-info{
+        width: 100%;
+    }
+    .form-quez__item{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .address-input{
+        max-width: 100%;
+        width: 100%;
+    }
+    .input-wrapper{
+        margin: 0 auto;
+        max-width: 768px;
+        margin-top: 32px;
+    }
+    .select-row .select-block{
+        width: 32%;
+    }
+}
+@media(max-width:768px){
+    .title{
+        font-size: 24px;
+    }
+    .numerical-information{
+        flex-wrap: wrap;
+        gap: 10px 12px;
+        justify-content: center;
+    }
+    .numerical-information__item{
+        width: 47%;
+        margin: 0;
+    }
+    .numerical-information__item.timer{
+        width: 97%;
+    }
+    .form-quez__row-type-two{
+        max-width: 100%;
+    }
+    br{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .numerical-information__numb{
+        font-size: 24px;
+        height: 25px;
+        margin-top: 0;
+    }
+    .numerical-information__item{
+        width: 97%;
+    }
+    .placeholder{
+        font-size: 16px;
+    }
+    .money-row{
+        width: 600px;
+    }
+    .scroll-row{
+        overflow-x: scroll;
+    }
+    .money-item__title{
+        font-size: 24px;
+    }
+    .money-item__top{
+        height: 160px;
+        padding-top: 20px;
+    }
+    .price-row{
+        padding-top: 18px;
+    }
+    .price-now, .price-old{
+        font-size: 32px;
+    }
+    .price-label{
+        font-size: 14px;
+    }
+    .price-label_img{
+        display: none !important;
+    }
+    .price-row .price-old-col{
+        margin-top: 0;
+    }
+    .price-old{
+        margin-top: 0;
+    }
+    .price-now-col::after{
+        top: 0;
+    }
+    .price-old::before{
+        width: 70%;
+    }
+    .discount{
+        flex-wrap: wrap;
+        border-radius: 0;
+    }
+    .discount__title{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 8px 8px 0 0;
+    }
+    .discount__timer{
+        width: 100%;
+        text-align: center;
+    }
+    .money-item__message{
+        margin-top: 16px;
+    }
+    .price-list__item{
+        font-size: 15px;
+    }
+    .price-list__item::before{
+        margin-right: 4px;
+    }
+    .money-item__img{
+        width: 120px !important;
+    }
+    .message-delivery{
+        margin: 24px 0;
+        padding: 16px ;
+    }
+    .input-group__row{
+        flex-wrap: wrap;
+    }
+    .form-output .input-line{
+        width: 100%;
+    }
+    .input-group__row input{
+        width: 100%;
+    }
+    .title-input{
+        margin-bottom: 12px;
+    }
+    .form-quez__row{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-back{
+        position: relative;
+        margin-top: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .form-quez__row{
+        flex-wrap: wrap;
+
+    }
+    .btn-back-accent{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    .select-row{
+        flex-wrap: wrap;
+    }
+    .select-row .select-block{
+        width: 100%;
+    }
+    .select-row .select-block .select{
+        margin-top: 16px;
+    }
+    .block-phone-accent{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .block-phone-accent input{
+        width: 100%;
+        margin-right: 0;
+    }
+    .block-phone-accent .input-line{
+        width: 100%;
+    }
+    .block-phone-accent p{
+        margin-top: 6px;
+    }
+    .subtitle.mt-3{
+        font-size: 16px;
+    }
+
+}
