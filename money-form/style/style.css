@@ -877,3 +877,8 @@ em span{
 .owl-item.active{
     height: auto !important;
 }
+.header-page{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* для плавности на iOS */
+    display: table;
+}

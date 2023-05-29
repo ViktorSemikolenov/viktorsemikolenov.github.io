@@ -164,14 +164,16 @@ inputTel.addEventListener('input', () => {
     buttonAccent.classList.remove('active');
   }
 });
-
+// ---------------------
 const buttonsScroll = document.querySelectorAll('.btn-scroll');
 
 buttonsScroll.forEach((button) => {
   button.addEventListener('click', () => {
     const targetSelector = button.dataset.target;
     const targetSection = document.querySelector(targetSelector);
-    targetSection.scrollIntoView({ behavior: 'smooth' });
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 });
 
