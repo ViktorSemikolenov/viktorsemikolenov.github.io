@@ -20,7 +20,7 @@ for (var i = 0; i < elements.length; i++) {
   elements[i].innerHTML = randomNumber;
 }
 
-// ---------------------------------------------------------------------
+// Таймер начало
 
 // получаем массив элементов страницы
 const timerEls = document.querySelectorAll("[id^='timer']");
@@ -39,6 +39,10 @@ function updateTimer() {
   for (let i = 0; i < timerEls.length; i++) {
     let countdown = countdowns[i];
 
+    // уменьшаем счетчик на 1 секунду
+    countdown--;
+    countdowns[i] = countdown;
+
     // вычисляем оставшееся время
     let hours = Math.floor(countdown / 3600);
     let minutes = Math.floor((countdown - (hours * 3600)) / 60);
@@ -52,15 +56,13 @@ function updateTimer() {
     // выводим оставшееся время на страницу
     timerEls[i].innerText = `${hours}:${minutes}:${seconds}`;
 
-    // если таймер закончился, выводим сообщение и перезапускаем
+    // если таймер закончился, выводим сообщение и сохраняем значение в локальное хранилище браузера
     if (countdown === 0) {
       messageEls[i].innerText = "Таймер закончился!";
+      clearInterval(updateTimerId);
 
       // сохраняем значение таймера в локальное хранилище браузера
       localStorage.setItem(`countdown${i}`, countdown);
-
-      // останавливаем выполнение функции обновления таймера для данного таймера
-      clearInterval(updateTimerIds[i]);
 
     } else {
       messageEls[i].innerText = "";
@@ -68,21 +70,11 @@ function updateTimer() {
       // сохраняем значение таймера каждую секунду в локальное хранилище браузера
       localStorage.setItem(`countdown${i}`, countdown);
     }
-
-    // уменьшаем счетчик на 1 секунду
-    countdown--;
-    countdowns[i] = countdown;
   }
 }
 
 // вызываем функцию обновления таймера каждую секунду
-const updateTimerIds = [];
-for (let i = 0; i < timerEls.length; i++) {
-  const updateTimerId = setInterval(updateTimer, 1000);
-  updateTimerIds.push(updateTimerId);
-}
-
-
+const updateTimerId = setInterval(updateTimer, 1000);
 // ---------------------------------------------------------------------
 
 // Получаем все элементы с классом .form-quez__item
