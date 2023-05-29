@@ -871,3 +871,9 @@ select {
 em span{
     color: #ff0000;
 }
+.owl-item{
+    height: 0 !important;
+}
+.owl-item.active{
+    height: auto !important;
+}
