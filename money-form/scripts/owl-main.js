@@ -13,9 +13,11 @@ $(document).ready(function () {
         autoplayHoverPause:false,
         startPosition: 'URLHash',
         items: 1,
-        autoHeight: true,
+        autoHeight: false,
         animateOut: 'fadeOut',
         smartSpeed:0,
         
     })
 });
+
+

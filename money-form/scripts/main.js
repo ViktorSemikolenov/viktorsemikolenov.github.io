@@ -151,12 +151,6 @@ $(".btn-accent-phone").click(function () {
   $(".form-quez__row-off").addClass("visible-op");
 });
 
-$(".edit-phone").click(function () {
-  $(this).removeClass("visible");
-  $('.block-phone-accent').removeClass("visible");
-  $('.form-quez__row-off').removeClass("visible-op");
-  $('.btn-row__hidden').removeClass("hidden");
-});
 
 
 
@@ -229,7 +223,6 @@ $(".close-modal").on('click', function (e) {
   }, 350);
 
 });
-
 
 
 

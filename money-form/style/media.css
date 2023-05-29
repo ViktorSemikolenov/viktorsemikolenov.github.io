@@ -221,4 +221,20 @@
     .price-label{
         font-size: 13px;
     }
+    .form-quez__row-off{
+        opacity: 0;
+        display: none;
+    }
+    .owl-item{
+        height: 0 !important;
+    }
+    .owl-item.active{
+        height: auto !important;
+    }
+    
+    .visible-op{
+        opacity: 1;
+        display: flex;
+    
+    }
 }
