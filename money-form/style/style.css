@@ -635,9 +635,13 @@ input[disabled]{
 }
 .form-quez__row-off{
     opacity: 0;
+    height: 0;
+    margin-top: 0;
 }
 .visible-op{
     opacity: 1;
+    margin-top: 5vh;
+    height: auto;
 }
 .hidden{
     display: none;
