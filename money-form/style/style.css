@@ -675,6 +675,7 @@ input[disabled]{
     padding: 0;
     max-width: 100%;
     margin: 0;
+    display: flex;
 }
 .select-block-day{
     width: 144px;
