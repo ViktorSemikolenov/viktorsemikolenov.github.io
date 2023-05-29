@@ -58,6 +58,7 @@
     br{
         display: none;
     }
+   
 }
 @media(max-width:480px){
     .numerical-information__numb{
@@ -200,5 +201,24 @@
     .subtitle.mt-3{
         font-size: 16px;
     }
-
+    .money-row{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 32px;
+    }
+    .money-item{
+        width: 100%;
+    }
+    .money-item--gold{
+        margin-top: 90px;
+    }
+    .scroll-row{
+        overflow: hidden;
+    }
+    .price-now, .price-old{
+        font-size: 26px;
+    }
+    .price-label{
+        font-size: 13px;
+    }
 }
