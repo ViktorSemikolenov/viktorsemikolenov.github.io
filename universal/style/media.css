@@ -1,0 +1,153 @@
+@media(max-width:991px){
+    .navbar{
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-collapse{
+        padding-left: 24px !important;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .mob-logo{
+        display: block;
+        transition-duration: 0.3s;
+        height: 126px;
+        width: 76px;
+    }
+    .navbar-toggler{
+        margin-top: 16px;
+    }
+    .navigation.fixed .mob-logo{
+        transform: translateY(-100%);
+        transition-duration: 0.3s;
+        height: 0;
+    }
+    .banner{
+        height: 720px;
+    }
+    .title__h1{
+        font-size: 42px;
+    }
+    .title-description{
+        font-size: 18px;
+    }
+    .banner .btn{
+        padding: 14px 32px !important;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .owl-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 16px;
+    }
+    .owl-dot{
+        width: 8px;
+        height: 8px;
+        border-radius: 90px;
+        background-color: #8D9FBB !important; 
+    }
+    .owl-dot.active{
+        background-color:  var(--blue) !important;
+    }
+    .owl-nav{
+        display: none;
+    }
+    .about__row::before{
+        display: none;
+    }
+    .projects{
+        padding-top: 80px;
+    }
+    .about__row{
+        flex-wrap: wrap-reverse;
+    }
+    .row-sertificate{
+        margin-top: 32px;
+    }
+    .about{
+        padding-bottom: 80px;
+    }
+    .about .btn{
+        display: none;
+    }
+    .mb-4-mob{
+        margin-bottom: 24px;
+    }
+    .project-info{
+        padding-left: 42px !important;
+        padding-right: 42px !important;
+    }
+    .project-descript{
+        padding-right: 0;
+    }
+    .experience-info{
+        padding-bottom: 32px;
+        padding-left: 32px;
+        padding-top:32px;
+    }
+    .accordion-section .btn{
+        display: none;
+    }
+}
+
+@media(max-width:580px){
+    .title__h1{
+        font-size: 32px;
+    }
+    .banner{
+        height: 640px;
+    }
+    .orm-group{
+        width: 100% !important;
+    }
+    .form-inline{
+        flex-wrap: wrap;
+    }
+    .consultation-img{
+        display: none;
+    }
+    .consultation{
+        padding: 80px 0 !important;
+    }
+    .form-inline .form-group{
+        width: 100%;
+    }
+    .form-inline .btn{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .title-description br{
+        display: none;
+    }
+    .banner{
+        height: auto;
+        padding-top: 180px !important;
+    }
+    .title{
+        font-size: 26px;
+    }
+    .contact-form{
+        padding: 42px 24px ;
+    }
+    .banner-page{
+        margin-bottom: 32px;
+    }
+    .har-list li{
+        flex-wrap: wrap;
+    }
+    .grey-text{
+        width: 100%;
+    }
+    .grey-text br{
+        display: none;
+    }
+    .black-text{
+        width: 100%;
+    }
+}

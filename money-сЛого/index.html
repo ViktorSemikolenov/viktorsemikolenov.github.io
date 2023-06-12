@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монетный двор</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+</head>
+<body>
+    
+    <main class="main-page">
+        <div class="row h-100">
+            <div class="col--6 main-image"></div>
+            <div class="col--6 main-info">
+                <div class="scroll-top"></div>
+                <header class="header-page">
+                    <a class="logo">
+                        <img src="images/logo.png" alt="Европейский монетный двор" class="logo__img">
+                    </a>
+                </header>
+                <div class="registration-form">
+                    <form id="quiz-form" class="owl-carousel form-quez__slider">
+                        <!-- 111111111111111111111111111111111111 -->
+                        <div class="form-quez__item" data-hash="one">
+                            <header class="quez-money__header">
+                                <h2 class="title">Заказ медали</h2>
+                            </header>
+                            <div class="numerical-information">
+                                <div class="numerical-information__item remains">
+                                    <p class="numerical-information__title">Осталось медалей по акции:</p>
+                                    <span class="remains__numb numerical-information__numb">12</span>
+                                </div>
+                                <div class="numerical-information__item make-order">
+                                    <span class="make-order__numb numerical-information__numb"></span>
+                                    <p class="numerical-information__title">Человек сейчас делают заказ</p>
+                                </div>
+                                <div class="numerical-information__item timer">
+                                    <p class="numerical-information__title">Акция закончится через:</p>
+                                    <span class="numerical-information__numb timer-span" id="timer1"></span>
+                                    <span id="message1"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="fio">Фамилия Имя Отчество</label>
+                                        <input required  class="input" type="text" name="Фамилия Имя Отчество" id="fio">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="warning-message">
+                                <p class="warning-message__text"><strong class="text-strong">Внимание!
+                                    </strong>Заполняйте это поле внимательно — на это ФИО будет выcлана посылка с
+                                    медалью Почтой России. При ошибке в ФИО вам <span class="text-underline">могут
+                                        отказать</span> в выдаче посылки. Также на ФИО будет выписан сертификат
+                                    подлинности.</p>
+                            </div>
+                            <label for="check" class="form-quez__polic">
+                                <input required class="input-check input" type="checkbox" name="check" id="check">
+                                <span class="checkbox"></span>
+                                <p>Я ознакомился с <a class="open-modal link" data-modal="#modal1">условиями и даю согласие</a> на <a
+                                        class="open-modal link" data-modal="#modal2">обработку персональных данных</a></p>
+                            </label>
+                            <footer class="form-quez__row">
+                                <a class="btn btn-next btn-scroll"  data-target=".scroll-top" href="#two">Продолжить</a>
+                            </footer>
+                        </div>
+                        <!-- 2222222222222222222222222222222222222222222222222222222222222222222 -->
+                        <div class="form-quez__item" data-hash="two">
+                            <header class="quez-money__header">
+                                <h2 class="title">Комплектация</h2>
+                                <span class="subtitle">Предалагаем вам выбрать один из двух вариантов заказа медали:</span>
+                            </header>
+                            <div class="scroll-row">
+                            <div class="money-row">
+                                <div class="money-item money-item--silver">
+                                    <header class="money-item__header">
+                                        <span class="money-item__label"></span>
+                                        <div class="money-item__top">
+                                            <h2 class="money-item__title">Серебро</h2>
+                                        </div>
+                                        <div class="money-item__img-wrapper">
+                                            <img src="images/content/silver-price.png" alt="Серебренная монета" class="money-item__img">
+                                        </div>
+                                    </header>
+                                    <div class="price-row">
+                                        <span class="price-now">0 р</span>
+                                    </div>
+                                    <ul class="price-list">
+                                        <li class="price-list__item">Покрытие: серебро</li>
+                                        <li class="price-list__item">Диаметр 39 мм., толщина 3 мм</li>
+                                        <li class="price-list__item">Аверс: Профиль императора <br>Николая Второго</li>
+                                        <li class="price-list__item">Реверс: Герб Дома Романовых</li>
+                                        <li class="price-list__item">Сертификат подлинности</li>
+                                    </ul>
+                                </div>
+                                <div class="money-item money-item--gold">
+                                    <header class="money-item__header">
+                                        <span class="money-item__label">ВЫБОР БОЛЬШИНСТВА</span>
+                                        <div class="money-item__top">
+                                            <h2 class="money-item__title">ЗОЛОТО</h2>
+                                        </div>
+                                        <div class="money-item__img-wrapper">
+                                            <img src="images/content/gold-price.png" alt="Золотая монета" class="money-item__img">
+                                        </div>
+                                    </header>
+                                    <div class="price-row price-row-f">
+                                       <div class="price-now-col">
+                                            <p class="price-label"><img class="price-label_img" src="images/icons/price.jpg" alt="ПО АКЦИИ"> ПО АКЦИИ</p>
+                                            <span class="price-now">790 р</span>
+                                       </div>
+                                       <div class="price-old-col">
+                                            <p class="price-label">ПОЛНАЯ СТОИМОСТЬ</p>
+                                            <span class="price-old">1 990 р</span>
+                                       </div>
+                                    </div>
+                                    <div class="discount">
+                                        <div class="discount__title">
+                                            <span>ЭКОНОМИЯ 62%!</span>
+                                        </div>
+                                        <div class="discount__timer">
+                                            <span class="discount__timer-span">КОНЕЦ АКЦИИ:</span>
+                                            <span class="discount__timer-timer" id="timer2"></span>
+                                            <span id="message2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="money-item__message">
+                                        <p class="money-item__message-text">
+                                            “Данный лот совмещает в себе высокое искусство, 
+                                            высоклассную чеканку, покрытие золотом 999 
+                                            пробы, что делает его лучшей инвестицией.”
+                                        </p>
+                                    </div>
+                                    <ul class="price-list">
+                                        <li class="price-list__item">Покрытие: золото 999 пробы</li>
+                                        <li class="price-list__item">Диаметр 39 мм., толщина 3 мм</li>
+                                        <li class="price-list__item">Аверс: Профиль императора <br>Николая Второго</li>
+                                        <li class="price-list__item">Реверс: Герб Дома Романовых</li>
+                                        <li class="price-list__item">Сертификат подлинности</li>
+                                        <li class="price-list__item">Ограниченный тираж</li>
+                                        <li class="price-list__item">Первоклассная чеканка</li>
+                                        <li class="price-list__item">Уникальная инвестиция</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="message-delivery">
+                                <p>Для обоих вариантов дополнительно оплачивается услуга упаковки и доставки медали в размере 390 р.</p>
+                            </div>
+                            <div class="select-money">
+                                <h3 class="subtitle">Выберите свой вариант для заказа:</h3>
+                                <div class="input-wrapper">
+                                    <div class="custom-select input-line">
+                                        <label for="select-one" class="arrow-down"></label>
+                                        <input id="select-one" required type="text" class="select-input input" placeholder="Ваш выбор" readonly>
+                                        <ul class="select-options" style="display: none;" >
+                                          <li class="option-item" data-value="value-1">Серебро</li>
+                                          <li class="option-item" data-value="value-2">Золото</li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <footer class="form-quez__row justify-center">
+                                <a class="btn btn-next btn-scroll"  data-target=".scroll-top" href="#three">Продолжить</a>
+                                <a class="btn-back btn-scroll"  data-target=".scroll-top" href="#one">Назад</a>
+
+                            </footer>
+                        </div>
+                        <!-- 3333333333333333333333333333333333333333333333333333333333333333333 -->
+                        <div class="form-quez__item" data-hash="three">
+                            <header class="quez-money__header">
+                                <h2 class="title">Адрес</h2>
+                                <span class="subtitle">Начните заполнять поля - вам будут выдаваться подсказки. Выберите нужный <br>
+                                    вариант в подсказках и используйте его.</span>
+                            </header>
+                            <div class="input-group address-input">
+                                <div class="input-line">
+                                    <label class="placeholder" for="address">Введите свой адрес</label>
+                                    <input required  class="input" type="text" name="Введите свой адрес" id="address">
+                                </div>
+                            </div>
+                            <div class="form-output input-wrapper">
+                                <header class="form-output__header">
+                                    <h3 class="form-output__title">Внимательно проверьте адрес:</h3>
+                                </header>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Индекс</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="456786" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Регион</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="Челябинская обл." id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Район</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="Каслинский р-н" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Город / н. п.</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="г Касли" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Улица</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес"
+                                            value="ул Ленина" id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Дом</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес" value="д 1А"
+                                            id="address3">
+                                    </div>
+                                </div>
+                                <div class="input-group input-group__row">
+                                    <span class="title-input">Квартира</span>
+                                    <div class="input-line">
+                                        <input disabled class="input" type="text"  name="Адрес" value="56"
+                                            id="address3">
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="no-apartment" class="form-quez__polic">
+                                <input class="input-check input" type="checkbox" name="check" id="no-apartment">
+                                <span class="checkbox"></span>
+                                <p>В адресе нет квартиры</p>
+                            </label>
+                            
+                            
+                            <footer class="form-quez__row justify-center form-quez__row-type-two">
+                                
+                                <a class="btn btn-next btn-scroll"  data-target=".scroll-top" href="#foure">Продолжить</a>
+                                <a class="btn-back btn-scroll"  data-target=".scroll-top" href="#two">Назад</a>
+                            </footer>
+                        </div>
+                        <div class="form-quez__item form-quez__item-foure" data-hash="foure">
+                            <header class="quez-money__header">
+                                <h2 class="title">Контакты</h2>
+                                <span class="subtitle">Начните заполнять поля - вам будут выдаваться подсказки.<br> Выберите нужный 
+                                    вариант в подсказках и используйте его.</span>
+                            </header>
+                            <div class="input-wrapper">
+                                <header class="form-output__header">
+                                    <h3 class="form-output__title">Внимательно проверьте адрес:</h3>
+                                </header>
+                                <div class="select-row">
+                                    <div class="select-block select-block-day">
+                                        <select class="select" name="" id="">
+                                            <option>Число</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                            <option value="1">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-block select-block-month">
+                                        <select class="select" name="" id="">
+                                            <option>Месяц</option>
+                                            <option value="Январь">Январь</option>
+                                            <option value="Февраль">Февраль</option>
+                                            <option value="Март">Март</option>
+                                            <option value="Апрель">Апрель</option>
+                                            <option value="Май">Май</option>
+                                            <option value="Июнь">Июнь</option>
+                                            <option value="Июль">Июль</option>
+                                            <option value="Август">Август</option>
+                                            <option value="Сентябрь">Сентябрь</option>
+                                            <option value="Октябрь">Октябрь</option>
+                                            <option value="Ноябрь">Ноябрь</option>
+                                            <option value="Декабрь">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-block select-block-year">
+                                        <select class="select" name="">
+                                            <option>Год</option>
+                                            <option value="2014">2005</option>
+                                            <option value="2013">2004</option>
+                                            <option value="2012">2003</option>
+                                            <option value="2011">2002</option>
+                                            <option value="2010">2001</option>
+                                            <option value="2009">2000</option>
+                                            <option value="2008">1999</option>
+                                            <option value="2007">1998</option>
+                                            <option value="2006">1997</option>
+                                            <option value="2005">1996</option>
+                                            <option value="2004">1995</option>
+                                            <option value="2003">1994</option>
+                                            <option value="2002">1994</option>
+                                            <option value="2001">1992</option>
+                                            <option value="2000">1990</option>
+                                            <option value="1999">1989</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="warning-message warning-message--last">
+                                    <p class="warning-message__text">Зная вашу дату рождения - у нас будет возможность поздравить вас с днем рождения!</p>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="Email-step">Email</label>
+                                        <input required  class="input" type="email" name="Email" id="Email-step">
+                                    </div>
+                                </div>
+                                <div class="warning-message warning-message--last">
+                                    <p class="warning-message__text">На электорнную почту будут приходить уведомления о статусе доставки вашей посылки с медалью.</p>
+                                </div>
+                                <header class="form-output__header">
+                                    <h3 class="form-output__title">Телефон</h3>
+                                </header>
+                                <div class="input-group mt-5">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="tel-step">Телефон</label>
+                                        <input autocomplete="off" maxlength="11" required class="input input-tel" type="tel" name="tel" id="tel-step" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                        <p class="edit-phone">Изменить</p>
+                                    </div>
+                                </div>
+                                <div class="btn-row__hidden">
+                                    <p class="btn btn-accent-phone">Подтвердить телефон</p>
+                                    <a class="btn-back btn-back-accent btn-scroll"  data-target=".scroll-top" href="#three">Назад</a>
+                                </div>
+                                <div class="block-phone-accent mt-5">
+                                    <div class="input-line">
+                                        <label class="placeholder" for="code">Код</label>
+                                        <input minlength="4" required class="input" type="text" name="text" id="code" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                                    </div>
+                                    <p>Вам был выслан код по СМС. Введите
+                                        его в окно слева. Отправка нового кода
+                                        возможна через <span>00:59</span></p>
+                                </div>
+                                
+                            </div>
+                            
+                            <footer class="form-quez__row justify-center form-quez__row-type-two form-quez__row-off">
+                                
+                                <a class="btn btn-next btn-scroll"  data-target=".scroll-top" href="#five">Продолжить</a>
+                                <a class="btn-back btn-scroll"  data-target=".scroll-top"  href="#three">Назад</a>
+                                <!-- кнопка отправки формы <button class="btn">Заказать</button> -->
+                            </footer>
+                        </div>
+                        <div class="form-quez__item" data-hash="five">
+                            <header class="quez-money__header">
+                                <h2 class="title">Спасибо за заказ</h2>
+                                <span class="subtitle mt-3">Заказ успешно оформлен!  <br>
+                                    Ожидайте смс или звонка оператора с подтверждением заказа.  <br>
+                                    Как только мы отправим ваш заказ Почтой России - вы молучите смс <br>
+                                    с трек-номером вашего заказа. <br>
+                                    Мы будем информировать вас о состоянии заказа по электронной почте и смс <br>  
+                                    на протяжение всего процесса доставки заказа.</span>
+                            </header>
+                        </div>
+                    </form>
+                      
+                      
+                </div>
+                
+                <footer class="footer-page">
+                    <p class="copyright">© 2023 ООО «Европейский Монетнй Двор». <br>
+                        Все права защищены.</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <div class='modal' id='modal1'>
+        <div class="content">
+            <button class='close-modal' data-modal="#modal1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                        fill="#000000" />
+                </svg>
+            </button>
+            <h3 class="title">Условия</h3>
+            <p class="mt-5">
+                Изъявляю желание заказать памятную медаль «Николай Второй»*. Я заказываю медаль в соответствии с выбранными мной дополнительными опциями (Икона с молитвой, покрытие золотом) за соответствующую цену + 390 руб. за доставку и упаковку заказа. Я могу заказать только одну бесплатную медаль. С данным заказом не связаны никакие последующие обязательства. Я оплачиваю медаль после получения. Я могу вернуть медаль в течение 14 дней (с момента получения), и Европейский Монетный Двор возместит стоимость этой покупки**.
+            </p>
+            <p class="mt-3">
+                Срок действия акции с 01.01.2023 по 31.12.2023.
+            </p>
+            <p class="mt-3">
+                Продавец: ООО «Европейский Монетный Двор»; ОГРН 1227700384966; 101000, город Москва, Мясницкая ул, д. 22 стр. 1, оф. 104. Предложение действительно, пока товар имеется в наличии. Производство: по заказу ООО «Европейский Монетный Двор».
+            </p>
+            <p class="mt-3">
+                В соответствии с подп. 1 п. 4 ст. 9 и ст. 15 ФЗ РФ «О персональных данных» № 152-ФЗ, я предоставляю свои персональные данные, указанные мною в бланке заказа, и даю согласие на их обработку в маркетинговых целях, связанных с дистанционной торговлей, включая хранение, использование, распространение, уточнение, трансграничную передачу ООО «Европейский монетный двор» (ОГРН 1227700384966; адрес: 101000, город Москва, Мясницкая ул, д. 22 стр. 1, оф. 104), АО «Почта России» (ОГРН 1197746000000) и их контрагентам. Данное согласие действительно в течение 5 лет. По истечении указанного срока согласие считается продленным на каждые последующие 5 лет при отсутствии моего заявления о его отзыве заказным письмом с уведомлением по адресу: 101000, г. Москва, а/я 41 для  ООО “Европейский Монетный Двор”.
+            </p>
+            <p class="mt-3">
+                <em><span>*</span>  Действие предложения распространяется только на совершеннолетних лиц.
+                </em>
+            </p>
+            <p class="mt-3">
+                <em><span>**</span>  Медаль надлежащего качества, приобретенная за 0 руб., возврату и обмену не подлежит. Возврату и обмену подлежат медали, приобретенные за сумму, превышающую 0 руб. (не считая расходов на упаковку и пересылку), либо медали стоимостью 0 руб., чье качество не соответствует заявленному продавцом. Возврат или обмен осуществляется в соответствии с установленной процедурой.
+                </em>
+            </p>
+        </div>
+        
+    </div>
+    <div class='modal' id='modal2'>
+        <div class="content">
+            <button class='close-modal' data-modal="#modal2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                        fill="#000000" />
+                </svg>
+            </button>
+            <h3 class="title">бработку персональных данных</h3>
+            <h4 class="subtitle mt-5">1 ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h4>
+            <p class="mt-3">
+                1.1 Настоящая политика в отношении обработки персональных данных (далее – Политика) является общедоступной, разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» (далее – Федеральный закон о персональных данных) и определяет основные положения по обработке персональных данных, принятые в ООО «Европейский Монетный Двор» (далее – Общество). 
+            </p>
+            <h4 class="subtitle mt-5">2 ОБЩИЕ ПОЛОЖЕНИЯ</h4>
+            <p class="mt-3">
+                2.1 Общество осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, а также действия (операции), совершаемые с персональными данными.
+
+            </p>
+            <p class="mt-3">
+                2.2 При обработке персональных данных Общество ориентируется на соответствие положениям Федерального закона о персональных данных и других нормативных правовых актов Российской Федерации. 
+
+            </p>
+            <p class="mt-3">
+                2.3 Настоящая Политика распространяется также на случаи, когда Общество выступает третьим лицом, обрабатывающим персональные данные субъектов по поручению Оператора персональных данных. 
+            </p>
+            <h4 class="subtitle mt-5">3 ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ </h4>
+            <p class="mt-3">
+                Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники. 
+Блокирование персональных данных – временное прекращение обработки персональных данных.
+Информационная система персональных данных – совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств. 
+Общество – ООО «Европейский Монетный Двор.
+Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+Обезличивание персональных данных – действия, в результате которых становится невозможным без использования дополнительной информации определить принадлежность персональных данных конкретному субъекту персональных данных.
+Персональные данные – любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных). Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц.
+Распространение персональных данных – действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации или предоставление доступа к персональным данным каким-либо иным образом.
+Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому лицу или иностранному юридическому лицу. Уничтожение персональных данных – действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе персональных данных и (или) в результате которых уничтожаются материальные носители персональных данных. 
+            </p>
+            <h4 class="subtitle mt-5">4. ПРИНЦИПЫ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h4>
+            <p class="mt-3">
+                4.1 Общество принимает и обеспечивает выполнение следующих принципов обработки персональных данных:
+- обработка персональных данных должна ограничиваться достижением конкретных, заранее определенных и законных целей; 
+- не допускается обработка персональных данных, несовместимая с целями сбора персональных данных;
+- не допускается объединение баз данных, содержащих персональные данные, обработка которых осуществляется в целях, несовместимых между собой;
+- обработке подлежат только персональные данные, которые отвечают целям их обработки;
+- содержание и объем обрабатываемых персональных данных должны соответствовать заявленным целям обработки. Обрабатываемые персональные данные не должны быть избыточными по отношению к заявленным целям их обработки;
+- при обработке персональных данных должны быть обеспечены точность персональных данных, их достаточность, а в необходимых случаях и актуальность по отношению к целям обработки персональных данных. Общество должно принимать необходимые меры либо обеспечивать их принятие по удалению или уточнению неполных или неточных данных;
+- хранение персональных данных должно осуществляться в форме, позволяющей определить субъекта персональных данных, не дольше, чем этого требуют цели обработки персональных данных, если срок хранения персональных данных не установлен Федеральным законом о персональных данных, договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных. Обрабатываемые персональные данные подлежат уничтожению либо обезличиванию по достижении целей обработки или в случае утраты необходимости в достижении этих целей, если иное не предусмотрено Федеральным законом о персональных данных; 
+- при получении доступа к персональным данным, Общество обязано не раскрывать третьим лицам и не распространять персональные данные без согласия субъекта персональных данных, если иное не предусмотрено Федеральным законом о персональных данных. 
+
+            </p>
+            <h4 class="subtitle mt-5">5 УСЛОВИЯ И ЦЕЛИ ОБРАБОТКИ</h4>
+            <p class="mt-3">5.1 Обществом определен перечень обрабатываемых персональных данных, цели и условия обработки персональных данных. Настоящие положения зафиксированы в документе «Перечень персональных данных», принятом Обществом.
+            </p>
+            <p class="nt-3">5.2 Обработка персональных данных Обществом производится в следующих случаях: обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его персональных данных; обработка персональных данных необходима для исполнения договора, стороной которого либо выгодоприобретателем или поручителем по которому является субъект персональных данных, а также для заключения договора по инициативе субъекта персональных данных или договора, по которому субъект персональных данных будет являться выгодоприобретателем или поручителем; обработка персональных данных необходима для осуществления прав и законных интересов Общества или третьих лиц либо для достижения общественно значимых целей при условии, что при этом не нарушаются права и свободы субъекта персональных данных. 
+            </p>
+            <h4 class="subtitle mt-5">6 ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ </h4>
+            <p class="mt-3">
+                6.1 При обработке персональных данных Общество совершает следующие действия (операции) или совокупность действий (операций), с использованием средств автоматизации или без использования таких средств с персональными данными: сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление и уничтожение, за исключением случаев, когда более узкий состав действий с персональными данными определен поручением Оператора персональных данных, по поручению которого действует Общество, либо вытекает из условия обработки персональных данных. 
+
+            </p>
+            <p class="mt-3">
+                6.2 Обработка специальных категорий персональных данных, касающихся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений, состояния здоровья, интимной жизни, частной жизни, о членстве субъекта персональных данных в общественных объединениях или их профсоюзной деятельности не осуществляется. 
+            </p>
+            <p class="mt-3">
+                6.3 Обществом не осуществляется принятие на основании исключительно автоматизированной обработки персональных данных решений, порождающих юридические последствия в отношении субъекта персональных данных или иным образом затрагивающих его права и законные интересы.
+            </p>
+            <p class="mt-3">
+                6.4 Для некоторых категорий персональных данных, обрабатываемых Обществом, допускается трансграничная передача. При этом Общество выполняет требования к такой передаче, определенные законодательством Российской Федерации.
+            </p>
+            <p class="mt-3">
+                6.5 Трансграничная передача персональных данных на территорию иностранных государств, не обеспечивающих адекватную защиту прав субъектов персональных данных, может осуществляться в случае наличия согласия (в письменной форме) субъекта персональных данных на трансграничную передачу его персональных данных, либо в рамках исполнения договора, стороной которого является субъект персональных данных. 
+            </p>
+            <h4 class="subtitle mt-5">7 СРОКИ ХРАНЕНИЯ И ТРЕБОВАНИЯ К УНИЧТОЖЕНИЮ ПЕРСОНАЛЬНЫХ ДАННЫХ</h4>
+            <p class="mt-3">
+                7.1 Сроки хранения персональных данных в Обществе определены, и зависят от состава обрабатываемых данных. Перечень сроков хранения зафиксирован в документе «Перечень персональных данных», принятом Обществом. 
+            </p>
+            <p class="mt-3">
+                7.2 Персональные данные, обрабатываемые Обществом, подлежат уничтожению в следующих случаях: при достижении целей обработки или в случае утраты необходимости в их достижении;  при получении соответствующего запроса от субъекта персональных данных, если это не противоречит требованиям к сроку хранения персональных данных, установленному Федеральным законом о персональных данных или договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных; при получении соответствующего предписания от уполномоченного органа по защите прав субъектов персональных данных; по истечении определенных сроков хранения персональных данных. 
+            </p>
+            <h4 class="subtitle mt-5">8 МЕРЫ В ОБЛАСТИ ОБРАБОТКИ И ЗАЩИТЫ ПЕРСОНАЛЬНЫХ ДАННЫХ </h4>
+            <p class="mt-3">
+                8.1 Общество реализовало следующие меры, направленные на обеспечение выполнения обязанностей в области обработки и обеспечения безопасности персональных данных:
+                - назначены ответственные:
+                    - за организацию обработки персональных данных;
+                    - за обеспечение безопасности персональных данных;
+                    - за реагирование на запросы субъектов персональных данных;
+                - изданы и внедрены внутренние документы по вопросам обработки и обеспечения безопасности персональных данных, направленные на предотвращение и выявление нарушений законодательства Российской Федерации, устранение последствий таких нарушений;
+                - применяются правовые, организационные и технические меры по обеспечению безопасности персональных данных с учетом уровня их защищенности, а именно:
+                    - определены угрозы безопасности персональных данных при их обработке в информационных системах персональных данных;
+                    - применяются прошедшие в установленном порядке процедуру оценки соответствия средства защиты информации;
+                    - произведена оценка эффективности принимаемых мер по обеспечению безопасности персональных данных до ввода в эксплуатацию информационных систем персональных данных;
+                    - производится учет машинных носителей персональных данных;
+                    - реализованы средства обнаружения фактов несанкционированного доступа к персональным данным и принимаются меры по каждому инциденту;
+                    - реализована возможность восстановлением персональных данных, модифицированных или уничтоженных вследствие несанкционированного доступа к ним;
+                    - установлены правила доступа к персональным данным, обрабатываемым в информационных системах персональных данных Общества;
+                    - производится контроль за принимаемыми мерами по обеспечению безопасности персональных данных и уровня защищенности информационных систем персональных данных;
+                - осуществляется внутренний контроль соответствия обработки персональных данных требованиям Федерального закона о персональных данных и принятым в соответствии с ним нормативным правовым актам, требованиям к защите персональных данных, политике Общества в отношении обработки персональных данных, внутренним документам Общества;
+                - проведена оценка вреда, который может быть причинен субъектам персональных данных;
+                - работники Общества, непосредственно осуществляющие обработку персональных данных, ознакомлены с положениями законодательства Российской Федерации о персональных данных, в том числе с требованиями к защите персональных данных, документами, определяющими политику Общества в отношении обработки персональных данных, локальными актами по вопросам обработки персональных данных. 
+            </p>
+            <h4 class="subtitle mt-5">9 ПРАВА СУБЪЕКТА ПЕРСОНАЛЬНЫХ ДАННЫХ </h4>
+            <p class="mt-3">
+                9.1 Общество гарантирует соблюдение прав субъектов персональных данных, определенных Федеральным законом о персональных данных, а именно:
+- право на уточнение его персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки;
+- право на получение информации, касающейся обработки своих персональных данных, в том числе содержащей:
+    - подтверждение факта обработки персональных данных Обществом;
+    - правовые основания и цели обработки персональных данных;
+    - цели и применяемые Обществом способы обработки персональных данных;
+    - наименование и место нахождения Общества;
+    - обрабатываемые персональные данные, относящиеся к соответствующему субъекту персональных данных, источник их получения, если иной порядок представления таких данных не предусмотрен Федеральным законом о персональных данных; 
+    - сроки обработки персональных данных, в том числе сроки их хранения;
+    - порядок осуществления субъектом персональных данных прав, предусмотренных Федеральным законом о персональных данных;
+    - информацию об осуществлении или о предполагаемой трансграничной передаче данных;
+    - наименование или фамилию, имя, отчество и адрес лица, осуществляющего обработку персональных данных по поручению Общества, если обработка поручена или будет поручена такому лицу;
+    - иные сведения, предусмотренные Федеральным законом о персональных данных;
+- права субъекта персональных данных при обработке его персональных данных в целях продвижения товаров, работ, услуг на рынке;
+- права субъекта персональных данных при принятии решений на основании исключительно автоматизированной обработки его персональных данных;
+- и других, предусмотренных федеральными законами.
+
+
+            </p>
+
+        </div>
+       
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/owl-main.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
