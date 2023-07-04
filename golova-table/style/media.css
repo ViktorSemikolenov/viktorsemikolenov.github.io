@@ -1,0 +1,9 @@
+@media(max-width:980px){
+    .panel-row{
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .panel-item{
+        flex-basis: 100%;
+    }
+}
