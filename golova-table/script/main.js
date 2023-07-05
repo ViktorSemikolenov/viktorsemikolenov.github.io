@@ -78,59 +78,120 @@ toggleButtons.forEach(function(button) {
 // ======================================================================
 
 
-// Получаем элементы с классами "collapse-all", "input-inside" и "toggle-button"
-const collapseAllButton = document.querySelector('.collapse-all');
-const inputInsideElementsOne = document.querySelectorAll('.input-inside');
-const toggleButtonOne = document.querySelector('.toggle-button');
+// Получаем все элементы с классом "toggle-button"
+const toggleButtonsOne = document.querySelectorAll('.toggle-button');
 
-// Функция для добавления классов "hidden" и "collapsed"
-function collapseAll() {
-  inputInsideElementsOne.forEach(element => {
-    element.classList.add('hidden');
-  });
-
-  toggleButtonOne.classList.add('collapsed');
+// Функция для добавления или удаления класса "level-hidden" у первого родителя с классом ".level-input__inputs"
+function toggleLevelHiddenClass(event) {
+  const toggleButtonOne = event.target;
+  const levelInputParent = toggleButtonOne.closest('.level-input__inputs');
+  
+  if (levelInputParent) {
+    levelInputParent.classList.toggle('level-hidden');
+  }
 }
 
-// Назначаем обработчик события на клик по элементу с классом "collapse-all"
-collapseAllButton.addEventListener('click', collapseAll);
+// Назначаем обработчик события на клик для каждого элемента с классом "toggle-button"
+toggleButtonsOne.forEach(button => {
+  button.addEventListener('click', toggleLevelHiddenClass);
+});
 
 // ===============================================================================
-// Получаем элементы с классами "expand-all", "input-inside" и "toggle-button"
-const expandAllButton = document.querySelector('.expand-all');
-const inputInsideElements = document.querySelectorAll('.input-inside');
-const toggleButton = document.querySelector('.toggle-button');
+// Получаем все элементы с классом ".input-label"
+var inputLabels = document.querySelectorAll(".input-label");
 
-// Функция для удаления классов "hidden" и "collapsed"
-function expandAll() {
-  inputInsideElements.forEach(element => {
-    element.classList.remove('hidden');
+// Перебираем полученные элементы и назначаем обработчик события клика
+for (var i = 0; i < inputLabels.length; i++) {
+  inputLabels[i].addEventListener("click", function() {
+    // Находим родительский элемент с классом ".level-input__inputs"
+    var parent = this.closest(".level-input__inputs");
+    
+    if (parent) {
+      // Получаем все элементы input внутри родительского элемента
+      var inputs = parent.getElementsByTagName("input");
+
+      // Перебираем полученные элементы input и устанавливаем атрибут "checked"
+      for (var j = 0; j < inputs.length; j++) {
+        inputs[j].checked = true;
+      }
+    }
   });
-
-  toggleButton.classList.remove('collapsed');
 }
-
-// Назначаем обработчик события на клик по элементу с классом "expand-all"
-expandAllButton.addEventListener('click', expandAll);
-
-
 
 
 // =================================================================
 
+// Получаем все элементы с классом ".input-label"
+var inputLabels = document.querySelectorAll(".input-label");
 
+// Перебираем полученные элементы и назначаем обработчик события клика
+for (var i = 0; i < inputLabels.length; i++) {
+  inputLabels[i].addEventListener("click", function() {
+    // Находим родительский элемент с классом ".level-input__inputs"
+    var parent = this.closest(".level-input__inputs");
 
-$(document).ready(function() {
-  $('.input-label').click(function() {
-    var inputElements = $(this).parent().find('input');
-    
-    if (inputElements.prop('checked')) {
-      inputElements.prop('checked', false);
-    } else {
-      inputElements.prop('checked', true);
+    if (parent) {
+      // Получаем все элементы input внутри родительского элемента
+      var inputs = parent.getElementsByTagName("input");
+
+      // Перебираем полученные элементы input
+      for (var j = 0; j < inputs.length; j++) {
+        // Проверяем, есть ли атрибут "checked"
+        if (inputs[j].hasAttribute("checked")) {
+          // Если атрибут есть, то удаляем его и класс "checked"
+          inputs[j].removeAttribute("checked");
+          inputs[j].classList.remove("checked");
+        } else {
+          // Если атрибута нет, то добавляем его и класс "checked"
+          inputs[j].setAttribute("checked", "checked");
+          inputs[j].classList.add("checked");
+        }
+      }
     }
   });
+}
+
+
+
+// ===================================
+// Получаем все элементы с классом ".toggle-button"
+const toggleButtonsP = document.querySelectorAll('.toggle-button');
+
+// Получаем элемент с классом ".level-input__inputs"
+const levelInputs = document.querySelector('.level-input__inputs');
+
+// Получаем элемент с классом ".collapse-all"
+const collapseAllButton = document.querySelector('.collapse-all');
+
+// Добавляем обработчик события для нажатия на элемент с классом ".collapse-all"
+collapseAllButton.addEventListener('click', function() {
+  // Перебираем все элементы с классом ".toggle-button"
+  toggleButtonsP.forEach(function(button) {
+    // Добавляем класс "collapsed"
+    button.classList.add('collapsed');
+  });
+
+  // Добавляем класс "level-hidden" к элементу с классом ".level-input__inputs"
+  levelInputs.classList.add('level-hidden');
 });
+// ========================================================
+// Получаем все элементы с классом ".toggle-button"
+const toggleButtonsL = document.querySelectorAll('.toggle-button');
 
+// Получаем элемент с классом ".level-input__inputs"
+const levelInputsL = document.querySelector('.level-input__inputs');
 
+// Получаем элемент с классом ".expand-all"
+const expandAllButton = document.querySelector('.expand-all');
 
+// Добавляем обработчик события для нажатия на элемент с классом ".expand-all"
+expandAllButton.addEventListener('click', function() {
+  // Перебираем все элементы с классом ".toggle-button"
+  toggleButtonsL.forEach(function(button) {
+    // Удаляем класс "collapsed"
+    button.classList.remove('collapsed');
+  });
+
+  // Удаляем класс "level-hidden" у элемента с классом ".level-input__inputs"
+  levelInputsL.classList.remove('level-hidden');
+});
