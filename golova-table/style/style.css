@@ -356,3 +356,17 @@
 .input-check_input.checked::before{
     display: none;
 }
+.panel-heading .setting-btn img{
+    width: 20px;
+    margin-left: 8px;
+}
+
+.panel-row{
+    gap: 0;
+}
+.panel-item {
+    margin-right: 20px;
+}
+.panel-item:last-of-type{
+    margin-right: 0;
+}

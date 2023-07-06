@@ -6,4 +6,7 @@
     .panel-item{
         flex-basis: 100%;
     }
+    .panel-item{
+        margin-right: 0;
+    }
 }
