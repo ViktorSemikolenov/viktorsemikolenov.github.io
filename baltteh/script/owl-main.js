@@ -27,7 +27,7 @@ $(document).ready(function () {
         autoplayTimeout:5000,
         nav: true,
         mouseDrag: false,
-        touchDrag: false,
+        touchDrag: true,
         navContainer: '.navigation-product-one',
         dotsContainer: '.pagination-product-one',
         responsive:{
@@ -61,7 +61,7 @@ $(document).ready(function () {
         autoplayTimeout:5000,
         nav: true,
         mouseDrag: false,
-        touchDrag: false,
+        touchDrag: true,
         navContainer: '.navigation-product-two',
         dotsContainer: '.pagination-product-two',
         responsive:{
@@ -95,7 +95,7 @@ $(document).ready(function () {
         autoplayTimeout:5000,
         nav: true,
         mouseDrag: false,
-        touchDrag: false,
+        touchDrag: true,
         navContainer: '.navigation-product-three',
         dotsContainer: '.pagination-product-three',
         responsive:{
@@ -129,7 +129,7 @@ $(document).ready(function () {
         autoplayTimeout:5000,
         nav: true,
         mouseDrag: false,
-        touchDrag: false,
+        touchDrag: true,
         navContainer: '.navigation-product-foure',
         dotsContainer: '.pagination-product-foure',
         responsive:{
