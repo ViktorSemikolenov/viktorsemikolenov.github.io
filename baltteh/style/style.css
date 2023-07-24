@@ -3985,7 +3985,7 @@ margin-top: 15px;
     padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0;
 background: #F5F5F5;
 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 27px 59px 0px rgba(0, 0, 0, 0.05), 0px 107px 107px 0px rgba(0, 0, 0, 0.04), 0px 240px 144px 0px rgba(0, 0, 0, 0.03), 0px 427px 171px 0px rgba(0, 0, 0, 0.01), 0px 667px 187px 0px rgba(0, 0, 0, 0.00);
 position: fixed;
@@ -3993,21 +3993,27 @@ top: 0;
 left: 0;;
 z-index: 9981;
 height: 100%;
-display: none;
+left: -100%;
+transition-duration: 0.5s;
 }
 .desktop-menu.show{
     display: block;
+    left: 0;
+    transition-duration: 0.5s;
 }
-
+.overflow-menu{
+    display: none;
+}
 .overflow-menu.open{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00000067;
+    background: #000000a2;
     z-index: 999;
     cursor: pointer;
+    display: block;
 }
 .desktop-menu__header{
     display: flex;
@@ -4016,7 +4022,7 @@ display: none;
 }
 
 .search-menu{
-    width: 900px;
+    width: 960px;
     position: relative;
 }
 .search-menu input{
@@ -4044,6 +4050,9 @@ display: none;
 .nav-right{
     display: none;
 }
+.nav-right.active{
+    display: block;
+}
 .desktop-menu__item:hover .nav-right {
     display: block;
 }
@@ -4053,7 +4062,9 @@ display: none;
     top: 0;
 }
 .link-left{
-    width: 100%;
+    width: 420px;
+    height: 85vh;
+    overflow-y: scroll;
 }
 .desktop-menu__item{
     display: flex;
@@ -4070,7 +4081,7 @@ font-weight: 700;
 text-transform: uppercase;
 text-decoration: none;
 width: 460px;
-padding: 24px 0;
+padding: 20px 0;
 padding-left: 50px;
 }
 .desktop-menu__item > a:hover{
@@ -4084,10 +4095,11 @@ padding-left: 50px;
     transform: translateY(-50%);
 }
 .desktop-menu__body{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .nav-right{
-    width: 920px;
+    width: 945px;
+    padding-left: 25px;
 }
 .nav-right__header{
     display: flex;
@@ -4110,6 +4122,7 @@ padding-left: 50px;
 }
 .popular-product__list{
     list-style: none;
+    width: 190px;
 }
 .popular-product__list li{
     margin-bottom: 10px;
@@ -4123,11 +4136,90 @@ text-decoration: none;
 .popular-product__list a:hover{
     text-decoration: underline;
 }
+
+
+.nav-right__body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main-menu-item{
+    width: 190px;
+}
+.main-menu-item li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.main-menu-item li::before{
+    content: attr(data-word);
+    position: absolute;
+    left: -20px;
+    color: #F6DE63;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.main-menu-item a{
+    color: #000;
+font-size: 14px;
+font-weight: 400;
+text-decoration: none;
+
+}
+.main-menu-item a:hover{
+    color:#F6DE63 ;
+    text-decoration: underline;
+}
+.overflow-menu img{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    zoom: 2;
+}
+
 .nav-right{
     padding-right: 30px;
     background: #F5F5F5;
     padding-top: 20px;
+    height: 85vh;
+    overflow-y: auto;
 }
-.nav-right.active{
-    display: block;
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #ACAFB1;
+    border-radius: 35px;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    border-radius: 35px;
+background: #F6DE63;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fcd200;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    display: none;
 }

@@ -188,19 +188,42 @@ headers.forEach(header => {
 
 
 
-// Получаем элементы кнопки и меню
-var catalogBtn = document.querySelector('.catalog-btn');
+// Получаем все элементы классом catalog-btn
+var catalogBtns = document.querySelectorAll('.catalog-btn');
 var desktopMenu = document.querySelector('.desktop-menu');
 var overflowMenu = document.querySelector('.overflow-menu');
 
-// Добавляем обработчик события на кнопку .catalog-btn
-catalogBtn.addEventListener('click', function() {
-  desktopMenu.classList.add('show');
-  overflowMenu.classList.add('open');
+// Добавляем обработчик события на каждый элемент с классом .catalog-btn
+catalogBtns.forEach(function(catalogBtn) {
+  catalogBtn.addEventListener('click', function() {
+ desktopMenu.classList.add('show');
+    overflowMenu.classList.add('open');
+  });
 });
 
 // Добавляем обработчик события на меню .overflow-menu
 overflowMenu.addEventListener('click', function() {
   desktopMenu.classList.remove('show');
   overflowMenu.classList.remove('open');
+});
+
+
+// Получаем ссылки списка навигации
+const navLinks = document.querySelectorAll('.footer-page__nav-list');
+
+// Перебираем ссылки и добавляем обработчик события клика
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Проверяем ширину экрана
+    if (window.innerWidth < 699) {
+      // Проверяем, содержит ли элемент класс "active"
+      if (link.classList.contains('active')) {
+        // Если содержит, удаляем класс "active"
+        link.classList.remove('active');
+      } else {
+        // Если не содержит, добавляем класс "active"
+        link.classList.add('active');
+      }
+    }
+  });
 });
