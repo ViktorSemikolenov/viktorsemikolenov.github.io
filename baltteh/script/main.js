@@ -280,3 +280,4 @@ $(".close-modal").on('click', function (e) {
   }, 350);
 
 });
+
