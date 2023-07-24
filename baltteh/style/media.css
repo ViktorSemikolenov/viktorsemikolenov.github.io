@@ -3747,6 +3747,19 @@ text-decoration: none;
         font-size: 16px;
         text-align: center;
     }
+    .product-slider .owl-dots{
+        display: flex !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
+    }
+    #slider{
+        overflow: visible;
+    }
+    #slider .product-image_cover{
+        height: 180px;
+    }
 }
 
 @media(max-width:479px) {
