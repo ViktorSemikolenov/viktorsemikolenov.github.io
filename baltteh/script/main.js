@@ -208,22 +208,75 @@ overflowMenu.addEventListener('click', function() {
 });
 
 
-// Получаем ссылки списка навигации
-const navLinks = document.querySelectorAll('.footer-page__nav-list');
 
-// Перебираем ссылки и добавляем обработчик события клика
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // Проверяем ширину экрана
-    if (window.innerWidth < 699) {
-      // Проверяем, содержит ли элемент класс "active"
-      if (link.classList.contains('active')) {
-        // Если содержит, удаляем класс "active"
-        link.classList.remove('active');
-      } else {
-        // Если не содержит, добавляем класс "active"
-        link.classList.add('active');
+
+ // Получаем все кнопки с классом "type-cards-btn"
+ const navItems = document.querySelectorAll('.footer-page__nav-list');
+
+ // Добавляем обработчик события для каждой кнопки
+ navItems.forEach(button => {
+   button.addEventListener('click', () => {
+     // Проверяем, есть ли у кнопки класс "active"
+     const isActive = button.classList.contains('active');
+
+     // Если класс уже есть, то удаляем его
+     if (isActive) {
+       button.classList.remove('active');
+     } else {
+       // Удаляем класс "active" у всех кнопок
+       navItems.forEach(btn => btn.classList.remove('active'));
+       // Добавляем классactive" к текущей кнопке
+       button.classList.add('active');
+     }
+   });
+ });
+
+
+
+ // Modal
+$(".modal").each(function () {
+  $(this).wrap('<div class="overlay"></div>')
+});
+
+$(".open-modal").on('click', function (e) {
+  e.preventDefault();
+  e.stopImmediatePropagation;
+
+  var $this = $(this),
+      modal = $($this).data("modal");
+
+  $(modal).parents(".overlay").addClass("open");
+  setTimeout(function () {
+      $(modal).addClass("open");
+  }, 350);
+
+  $(document).on('click', function (e) {
+      var target = $(e.target);
+
+      if ($(target).hasClass("overlay")) {
+          $(target).find(".modal").each(function () {
+              $(this).removeClass("open");
+          });
+          setTimeout(function () {
+              $(target).removeClass("open");
+          }, 350);
       }
-    }
+
   });
+
+});
+
+
+$(".close-modal").on('click', function (e) {
+  e.preventDefault();
+  e.stopImmediatePropagation;
+
+  var $this = $(this),
+      modal = $($this).data("modal");
+
+  $(modal).removeClass("open");
+  setTimeout(function () {
+      $(modal).parents(".overlay").removeClass("open");
+  }, 350);
+
 });
