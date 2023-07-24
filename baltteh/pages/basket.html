@@ -430,20 +430,97 @@
                                         </footer>
                                         <button class="btn-delete btn-nostyle"><img src="../image/icons/delete.svg" alt=""></button>
                                     </div>
-
+                                    <header class="section-basket__form-total-row">
+                                        <h3 class="section-basket__form-total-title">Итого:</h3>
+                                        <span class="section-basket__form-total">246	600 руб.</span>
+                                    </header>
                                     <div class="delivery-method">
                                         <h2 class="title">Выберите способ доставки</h2>
                                         <div class="delivery-method__col">
                                             <div class="delivery-method__header">
-                                                <button class="delivery-method__header-item btn-nostyle">
+                                                <div class="delivery-method__header-item active btn-nostyle">
                                                     <h3>Самовывоз</h3>
                                                     <p>Вы можете самостоятельно забрать заказ из нашего магазина.</p>
                                                     <button class="delivery-method__header-item__button">
                                                         <span></span>
                                                     </button>
-                                                </button>
+                                                </div>
+                                                <div class="delivery-method__header-item btn-nostyle">
+                                                    <h3>Доставка по городу</h3>
+                                                    <p>Бесплатная для заказов на сумму от 100 ООО руб.</p>
+                                                    <span class="delivery-method__header-item__price">От 1 до 3 дней</span>
+                                                    <button class="delivery-method__header-item__button">
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="delivery-method__header-item btn-nostyle">
+                                                    <h3>Доставка за МКАД <br>
+                                                        (цена за 1 км)</h3>
+                                                    <p>Доставка за пределы Москвы</p>
+                                                    <span class="delivery-method__header-item__price">От 1 до 3 дней</span>
+                                                    <button class="delivery-method__header-item__button">
+                                                        <span></span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="delivery-adress">
+                                        <h3 class="delivery-adress__title">Адрес склада:</h3>
+                                        <span class="delivery-adress__adress">109382, Москва, ул. Люблинская, д. 40</span>
+                                        <form action="">
+                                            <input placeholder="Адрес доставки" type="text" name="" id="adress">
+                                        </form>
+                                        <div class="map">
+                                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8881a7c8e1c102d2ebaf85325c198714aa58489c41eaa18f9ea8a538ba30a5df&amp;source=constructor" width="100%" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <h2 class="title">Выберите способ оплаты</h2>
+                                        <div class="delivery-method__col">
+                                            <div class="delivery-method__header">
+                                                <div class="delivery-method__header-item active btn-nostyle">
+                                                    <h3>Наличные</h3>
+                                                    <img src="../image/icons/payment1.svg" alt="">
+                                                    <button class="delivery-method__header-item__button">
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="delivery-method__header-item btn-nostyle">
+                                                    <h3>Оплата картой</h3>
+                                                    <img src="../image/icons/payment2.svg" alt="">
+                                                    
+                                                    <button class="delivery-method__header-item__button">
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                                <div class="delivery-method__header-item btn-nostyle">
+                                                    <h3>Безналичными по <br> выставленному счету</h3>
+                                                    <img src="../image/icons/payment3.svg" alt="">
+                                                    <button class="delivery-method__header-item__button">
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-form">
+                                        <h3 class="order-form__title">Заполните данные покупателя</h3>
+                                        <form class="order-form__form" action="#">
+                                            <input placeholder="E-Mail" type="email" name="" id="">
+                                            <input placeholder="Телефон*" type="email" name="" id="">
+                                            <input placeholder="Ф.И.О.*" type="email" name="" id="">
+                                            <textarea placeholder="Коментарий к заказу" name="" id=""></textarea>
+                                            <header class="section-basket__form-total-row order-form_totol">
+                                                <h3 class="section-basket__form-total-title">Итого:</h3>
+                                                <span class="section-basket__form-total">246	600 руб.</span>
+                                                <ul>
+                                                    <li><p>1 товар</p></li>
+                                                    <li><span>Доставка бесплатно</span></li>
+                                                </ul>
+                                            </header>
+                                            <button class="btn-yellow">отправить</button>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="section-basket__form-col">
@@ -493,7 +570,7 @@
                             </div>
                     </div>
                     
-                    <div class="tab-content" id="tab2">
+                    <div class="tab-content wishlist-basket" id="tab2">
                         <!--отложенное для Tab 2 -->
                         <div class="section-basket__product-col section-product-filter__product-list"">
                             <div class="product-card">
@@ -527,6 +604,7 @@
                                             <li class="product-card__item"><strong>Расстояние между уровнями:</strong> 40 мм</li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                                 <footer class="product-card__footer">
                                     <div class="horizont-btn">
@@ -561,6 +639,11 @@
                                         </div>
                                     </div>
                                 </footer>
+                                <div class="product-card__status">
+                                    <p class="product-card__status__title">Товар отложен.</p>
+                                    <button class="btn-nostyle product-card__status_add">Добавить в корзину?</button>
+                                    
+                                </div>
                                 <button class="btn-delete btn-nostyle"><img src="../image/icons/delete.svg" alt=""></button>
                             </div>
                             <div class="product-card">
@@ -594,6 +677,7 @@
                                             <li class="product-card__item"><strong>Расстояние между уровнями:</strong> 40 мм</li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                                 <footer class="product-card__footer">
                                     <div class="horizont-btn">
@@ -628,6 +712,11 @@
                                         </div>
                                     </div>
                                 </footer>
+                                <div class="product-card__status">
+                                    <p class="product-card__status__title">Товар отложен.</p>
+                                    <button class="btn-nostyle product-card__status_add">Добавить в корзину?</button>
+                                    
+                                </div>
                                 <button class="btn-delete btn-nostyle"><img src="../image/icons/delete.svg" alt=""></button>
                             </div>
                             <div class="product-card">
@@ -661,6 +750,7 @@
                                             <li class="product-card__item"><strong>Расстояние между уровнями:</strong> 40 мм</li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                                 <footer class="product-card__footer">
                                     <div class="horizont-btn">
@@ -695,6 +785,11 @@
                                         </div>
                                     </div>
                                 </footer>
+                                <div class="product-card__status">
+                                    <p class="product-card__status__title">Товар отложен.</p>
+                                    <button class="btn-nostyle product-card__status_add">Добавить в корзину?</button>
+                                    
+                                </div>
                                 <button class="btn-delete btn-nostyle"><img src="../image/icons/delete.svg" alt=""></button>
                             </div>
                             <div class="product-card">
@@ -728,6 +823,7 @@
                                             <li class="product-card__item"><strong>Расстояние между уровнями:</strong> 40 мм</li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                                 <footer class="product-card__footer">
                                     <div class="horizont-btn">
@@ -762,6 +858,11 @@
                                         </div>
                                     </div>
                                 </footer>
+                                <div class="product-card__status">
+                                    <p class="product-card__status__title">Товар отложен.</p>
+                                    <button class="btn-nostyle product-card__status_add">Добавить в корзину?</button>
+                                    
+                                </div>
                                 <button class="btn-delete btn-nostyle"><img src="../image/icons/delete.svg" alt=""></button>
                             </div>
                         </div>
@@ -934,4 +1035,5 @@
     <script src="../script/jquery.fancybox.min.js"></script>
     <script src="../script/tabs.js"></script>
     <script src="../script/main.js"></script>
+    <script src="../script/basket.js"></script>
 </body>
