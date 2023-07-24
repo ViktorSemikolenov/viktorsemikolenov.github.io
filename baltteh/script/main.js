@@ -188,19 +188,19 @@ headers.forEach(header => {
 
 
 
-// Получаем ссылки на элементы кнопок и секцию с продуктами
-const listBtn = document.querySelector('.type-cards-btn__list');
-const tableBtn = document.querySelector('.type-cards-btn__table');
-const productSection = document.querySelector('.section-product-filter__product');
+// Получаем элементы кнопки и меню
+var catalogBtn = document.querySelector('.catalog-btn');
+var desktopMenu = document.querySelector('.desktop-menu');
+var overflowMenu = document.querySelector('.overflow-menu');
 
-// Обработчик события для кнопки списка
-listBtn.addEventListener('click', function() {
-  // Добавляем класс к секции с продуктами
-  productSection.classList.add('section-product-filter__product-list');
+// Добавляем обработчик события на кнопку .catalog-btn
+catalogBtn.addEventListener('click', function() {
+  desktopMenu.classList.add('show');
+  overflowMenu.classList.add('open');
 });
 
-// Обработчик события для кнопки таблицы
-tableBtn.addEventListener('click', function() {
-  // Удаляем класс из секции продуктами
-  productSection.classList.remove('section-product-filter__product-list');
+// Добавляем обработчик события на меню .overflow-menu
+overflowMenu.addEventListener('click', function() {
+  desktopMenu.classList.remove('show');
+  overflowMenu.classList.remove('open');
 });
