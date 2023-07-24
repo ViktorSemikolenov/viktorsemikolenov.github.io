@@ -15,3 +15,6 @@
     productFilter.classList.remove('show');
     closeOverlay.classList.remove('show');
   });
+
+
+  
