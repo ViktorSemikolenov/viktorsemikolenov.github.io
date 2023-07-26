@@ -1,3 +1,6 @@
+
+
+
 document.querySelectorAll('.count .plus').forEach(item => {
   item.addEventListener('click', function () {
     let input = item.parentElement.querySelector('input');
@@ -281,3 +284,88 @@ $(".close-modal").on('click', function (e) {
 
 });
 
+// Обработчик события клика на ссылку с якорем
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // Получение целевого элемента, на который нужно выполнить скролл
+      const target = document.querySelector(this.getAttribute('href'));
+
+      // Вычисление позиции скролла с учетом смещения
+      const offset = 40;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      // Плавный скролл к целевой позиции
+      window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+      });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var nextNavLevelOne = document.querySelector('.next-nav-level__one');
+  var mobNavigation = document.querySelector('.mob-navigation');
+  var linkLeft = document.querySelector('.link-left');
+  var backMenuOne = document.querySelector('.back-manu_level-one');
+
+
+  nextNavLevelOne.addEventListener('click', function() {
+    mobNavigation.classList.add('hidden');
+    linkLeft.classList.add('show');
+  });
+
+  backMenuOne.addEventListener('click', function() {
+    mobNavigation.classList.remove('hidden');
+    linkLeft.classList.remove('show');
+  });
+});
+
+
+
+
+// Получаем все элементы с классом "next-nav-level__two"
+var nextNavLevelTwoItems = document.getElementsByClassName("next-nav-level__two");
+
+// Добавляем обработчик события для каждого элемента
+for (var i = 0; i < nextNavLevelTwoItems.length; i++) {
+  nextNavLevelTwoItems[i].addEventListener("click", function() {
+    // Получаем родительский элемент "desktop-menu__item"
+    var parentItem = this.closest(".desktop-menu__item");
+    
+    // Добавляем класс "show-menu" к родительскому элементу
+    parentItem.classList.add("show-menu");
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var nextNavLevelTwoList = document.querySelectorAll('.next-nav-level__two');
+  var linkLeftTwo = document.querySelector('.link-left');
+
+  nextNavLevelTwoList.forEach(function(nextNavLevelTwo) {
+    nextNavLevelTwo.addEventListener('click', function() {
+      linkLeftTwo.classList.add('hidden-item');
+    });
+  });
+});
+
+
+// Получаем все элементы с классом ".back-manu_level-two"
+var backMenuLevelTwoItems = document.querySelectorAll('.back-manu_level-two');
+
+// Перебираем полученные элементы и добавляем обработчик события клика
+backMenuLevelTwoItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    // Находим родительский элемент с классомlink-left"
+    var linkLeftElement = this.closest('.link-left');
+    // Удаляем класс "hidden-item" найденного элемента
+    linkLeftElement.classList.remove('hidden-item');
+
+    var desktopMenu = this.closest('.desktop-menu__item');
+
+    desktopMenu.classList.remove('show-menu');
+  });
+});
