@@ -239,7 +239,9 @@ input:focus, textarea:focus {
     color: #E2BD1D;
     ;
 }
-
+.feedback-item_cons{
+    cursor: pointer;
+}
 .feedback-item_cons a {
     text-decoration: underline;
 }
@@ -995,6 +997,9 @@ input:focus, textarea:focus {
     padding-right: 20px;
 }
 
+.news-item__body > a{
+    text-decoration: none;
+}
 .news-title {
     color: #000;
     font-size: 18px;
@@ -2036,6 +2041,7 @@ input:focus, textarea:focus {
     text-transform: uppercase;
     cursor: pointer;
     border: thin solid #ECF0F2;
+    text-decoration: none
     ;
 }
 
@@ -2605,6 +2611,7 @@ input:focus, textarea:focus {
     line-height: 17px;
     position: relative;
     margin-bottom: 12px;
+    text-decoration: none;
 }
 
 .catalog-page-item__filter-typ-btn::after {
@@ -2658,6 +2665,14 @@ input:focus, textarea:focus {
     height: auto;
 }
 
+.catalog-page__category-item{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.catalog-page__category-item:hover .category-item__icon{
+    border-color: #5e5e5e;
+}
 .catagory-slider .catalog-page__category-item {
     width: 100%;
     margin: 0;
@@ -4076,7 +4091,7 @@ transition-duration: 0.5s;
 }
 .desktop-menu__item:hover .nav-right {
     display: block;
-    transition-delay: 0.3s;
+    transition-delay: 1s;
 }
 .nav-right{
     position: absolute;
@@ -4164,6 +4179,7 @@ text-decoration: none;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding-bottom: 56px;
 }
 .main-menu-item{
     width: 190px;
@@ -4349,7 +4365,7 @@ line-height: 20px; /* 111.111% */
     transition: 0.35s ease-in-out;
     max-height: 100vh;
     overflow-y: auto;
-    z-index: 99999;
+    z-index: 9999999999999999999999;
 }
 
 .overlay.open {
@@ -4589,6 +4605,9 @@ border-bottom: thin dashed #ACAFB1;
 .order-form__form-type-two input:last-of-type{
     margin-bottom: 0;
 }
+.global-mob-menu__info{
+    padding-bottom: 52px;
+}
 .global-mob-menu__info .feedback-item__link{
     font-size: 18px;
 }
@@ -4606,4 +4625,106 @@ border-bottom: thin dashed #ACAFB1;
 .mob-navigation{
     height: 80vh;
     overflow-y: scroll;
+}
+
+.basket-small{
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 999;
+    border-radius: 15px;
+border: 1px solid #ACAFB1;
+background: #FFF;
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 41px 90px 0px rgba(0, 0, 0, 0.10), 0px 163px 163px 0px rgba(0, 0, 0, 0.09), 0px 366px 220px 0px rgba(0, 0, 0, 0.05), 0px 651px 260px 0px rgba(0, 0, 0, 0.01), 0px 1018px 285px 0px rgba(0, 0, 0, 0.00);
+    padding: 20px 40px;
+    width: 400px;
+}
+.basket-small__item{
+    border-bottom: thin dashed #ACAFB1;
+    padding: 20px 0;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.basket-small__item-btn{
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/icons/delete.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+}
+.basket-small__title{
+    color: #000;
+font-size: 18px;
+font-weight: 700;
+}
+.basket-small__info{
+    margin-top: 4px;
+    display: block;
+    color: #6A6C6D;
+font-size: 14px;
+font-weight: 700;
+}
+.level-two .container{
+    position: relative;
+}
+.subcategory-title > a{
+    color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+}
+.subcategory{
+    margin-top: 6px;
+    padding-left:18px ;
+}
+
+.feedback-modal {
+    width: 95% !important;
+    max-width: 600px !important; 
+}
+.feedback-modal form{
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.feedback-modal input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.feedback-modal button{
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: #000000;
+}
+.product-card__body > a{
+    color: #000;
+    text-decoration: none;
+}
+.product-filter__body form:not(.search-form_filter){
+    max-height: 200px;
+    overflow-y: auto;
+}
+.about-tab a{
+    display: block;
+    text-decoration: none;
+}
+.about-content .tab-content{
+    height: auto;
+}
+.owl-prev.disabled, .owl-next.disabled{
+    opacity: 0;
+}
+.desktop-menu__item.active .nav-right{
+    display: block;
+}
+.link-left__list{
+    padding-bottom: 52px;
+}
+.product-doc .title{
+    width: 100%;
 }

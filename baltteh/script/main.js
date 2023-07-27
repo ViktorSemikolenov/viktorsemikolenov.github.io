@@ -284,25 +284,6 @@ $(".close-modal").on('click', function (e) {
 
 });
 
-// Обработчик события клика на ссылку с якорем
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      // Получение целевого элемента, на который нужно выполнить скролл
-      const target = document.querySelector(this.getAttribute('href'));
-
-      // Вычисление позиции скролла с учетом смещения
-      const offset = 40;
-      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-      // Плавный скролл к целевой позиции
-      window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-      });
-  });
-});
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -367,5 +348,27 @@ backMenuLevelTwoItems.forEach(function(item) {
     var desktopMenu = this.closest('.desktop-menu__item');
 
     desktopMenu.classList.remove('show-menu');
+  });
+});
+
+
+
+// Получаем все элементы с классом "desktop-menu__item"
+const menuItems = document.querySelectorAll('.desktop-menu__item');
+
+// Проходимся по каждому элементу
+menuItems.forEach(item => {
+  // Получаем ссылку внутри элемента
+  const link = item.querySelector('a');
+
+  // Назначаем обработчик события наведения мыши на ссылку
+  link.addEventListener('mouseover', () => {
+    // Удаляем класс "active" у всех элементов с классом "desktop-menu__item"
+    menuItems.forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Добавляем класс "active" к родительскому элементу
+    item.classList.add('active');
   });
 });
