@@ -1386,9 +1386,9 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="section-basket__form-col">
-                                    <div class="section-basket__form-col_sticky">
-                                        <div class="section-basket__form">
+                                <div class="section-basket__form-col basket-sticky">
+                                    <div class="section-basket__form-col_sticky ">
+                                        <div class="section-basket__form ">
                                             <form action="" class="discount-form">
                                                 <input class="discount-form__input" placeholder="Введите код купона для скидки:" type="text" name="" id="">
                                                 <button class="discount-form__btn"><img src="../image/icons/btn-discount.svg" alt=""></button>
@@ -1848,4 +1848,14 @@
     <script src="../script/tabs.js"></script>
     <script src="../script/main.js"></script>
     <script src="../script/basket.js"></script>
+    <script src="../script/ResizeSensor.js"></script>
+    <script src="../script/theia-sticky-sidebar.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+    jQuery('.basket-sticky').theiaStickySidebar({
+    // Settings
+    additionalMarginTop: 80
+    });
+});
+    </script>
 </body>
