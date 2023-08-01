@@ -1527,7 +1527,25 @@
         padding-right: 15px;
     }
     .nav-right{
-        width: 640px;
+        width: 715px;
+    }
+    .main-menu-item{
+        gap: 0 32px;
+    }
+    .desktop-menu{
+        padding-right: 0;
+    }
+    .desktop-menu__header{
+        padding-right: 20px;
+    }
+    .desktop-menu__item > a{
+        padding-right: 0;
+    }
+    .desktop-menu{
+        width: 970px;
+    }
+    .main-menu-item li::before{
+        left: -15px;
     }
     .link-left{
         width: 210px;

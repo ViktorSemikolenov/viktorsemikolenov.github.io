@@ -5412,7 +5412,6 @@ font-weight: 700;
 }
 .subcategory{
     margin-top: 6px;
-    padding-left:18px ;
 }
 
 .feedback-modal {
@@ -5471,7 +5470,6 @@ font-weight: 700;
 .next-nav-level__one{
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 .next-nav-level__one span{
     font-weight: bold;
