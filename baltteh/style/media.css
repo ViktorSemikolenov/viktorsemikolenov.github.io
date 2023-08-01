@@ -2801,9 +2801,6 @@ font-weight: 700;
 .portfolio-slider .owl-nav{
     display: none !important;
 }
-.navigation-page{
-    position: absolute !important;
-}
 }
 
 @media(max-width:699px) {
