@@ -14,3 +14,19 @@ tableBtn.addEventListener('click', function() {
   // Удаляем класс из секции продуктами
   productSection.classList.remove('section-product-filter__product-list');
 });
+
+
+document.querySelector(".btn-clear-filter").addEventListener("click", function() {
+  var element = document.querySelector(".section-product-filter__header-left");
+  if (element) {
+    element.remove();
+  }
+});
+
+
+document.querySelector('.btn-filter-page').addEventListener('click', function() {
+  var parentRow = this.closest('.btn-filter-page__row');
+  if (parentRow) {
+    parentRow.remove();
+  }
+});

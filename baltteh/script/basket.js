@@ -76,3 +76,20 @@ paymentMethodOnes.forEach(function(paymentMethodOne) {
     orderFormTypeOne.classList.remove('hidden');
   });
 });
+
+// Находим все кнопки с классом "btn-delete"
+var deleteButtons = document.getElementsByClassName('btn-delete');
+
+// Перебираем найденные кнопки и добавляем обработчик события клика
+Array.from(deleteButtons).forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Находим родительский элемент с классом "product-card" для текущей кнопки
+    var productCard = button.closest('.product-card');
+    
+    // Проверяем, что родительский элемент найден, а затем удаляем его
+    if (productCard) {
+      productCard.remove();
+    }
+  });
+});
+

@@ -15,3 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+  $(document).ready(function() {
+    $('.filter-alphabet__words-row').hover(
+      function() {
+        $(this).addClass('active');
+        $('.filter-alphabet__words-row').not(this).removeClass('active');
+      },
+     
+    );
+  });
+  

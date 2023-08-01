@@ -18,3 +18,16 @@
 
 
   
+// Находим все элементы .checkbox-row
+const checkboxRows = document.querySelectorAll('.checkbox-row');
+
+// Добавляем обработчик события клика для каждого элемента .checkbox-row
+checkboxRows.forEach((checkboxRow) => {
+  checkboxRow.addEventListener('click', () => {
+    // Находим элемент confirmation-window
+    const confirmationWindow = document.querySelector('.confirmation-window');
+
+    // Перемещаем элемент confirmation-window внутрь выбранного checkboxRow
+    checkboxRow.appendChild(confirmationWindow);
+  });
+});
