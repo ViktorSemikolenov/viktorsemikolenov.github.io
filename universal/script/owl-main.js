@@ -4,7 +4,6 @@ $(document).ready(function () {
         nav: true,
         margin: 24,
         center: false,
-        autoHeight: false,
         loop: true,
         items: 3,
         autoplay:false,

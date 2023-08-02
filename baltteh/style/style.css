@@ -5507,12 +5507,15 @@ background: #FFF;
     position: absolute;
     bottom: 18px;
     right: 0;
+    z-index: 999;
+    font-size: 0;
 }
 .basket-small__title{
     color: #000;
 font-size: 18px;
 font-weight: 700;
 transition-duration: 0.3s;
+text-decoration: none;
 }
 .basket-small__info{
     margin-top: 4px;
@@ -5556,7 +5559,7 @@ font-weight: 700;
     padding-top: 20px;
     padding-bottom: 30px;
 }
-.basket-small__item:hover .basket-small__title{
+.basket-small__title:hover{
     color: #FFD521;
     transition-duration: 0.3s;
 }
@@ -5662,4 +5665,7 @@ font-weight: 700;
 .descript-tabs li, .descript-tabs p{
     font-size: 14px;
     line-height: 150%;
+}
+.basket-quantity .quantity{
+    background-color: #FFD521;
 }

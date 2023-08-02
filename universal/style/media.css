@@ -1,3 +1,61 @@
+@media(max-width:1150px){
+    .consultation .form-inline{
+        width: 100%;
+    }
+    .consultation .col-lg-8{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media(max-width:1100px){
+    .tel{
+        margin-right: 0px;
+        margin-bottom: 6px;
+    }
+    .navbar-collapse{
+        padding-right: 12px;
+        padding-left: 90px;
+    }
+    .form-inline{
+        justify-content: flex-end ;
+        width: 150px;
+    }
+    .advantages__item{
+        padding: 24px 18px;
+    }
+    .advantages__item p{
+        font-size: 14px;
+    }
+    .services .owl-nav{
+        display: none;
+    }
+    .service-item{
+        min-height: 515px;
+    }
+    .services .owl-dots{
+        display: flex !important;
+        justify-content: center;
+        margin-top: 32px;
+    }
+    .services .owl-dot{
+        width: 8px;
+        height: 8px;
+        border-radius: 900px;
+        background-color: #8D9FBB !important;
+        margin: 0 8px;
+    }
+    .services .owl-dot.active{
+        background-color: var(--blue) !important;
+    }
+    .consultation .form-inline{
+        width: 100%;
+    }
+    .consultation .form-inline .form-control{
+        width: 214px;
+    }
+}
 @media(max-width:991px){
     .navbar{
         justify-content: space-between;

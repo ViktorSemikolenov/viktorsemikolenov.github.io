@@ -4784,6 +4784,19 @@ font-weight: 700;
         font-size: 13px;
         line-height: 140%;
     }
+    .product-card{
+        border-radius: 8px;
+    }
+    .section-product-filter__product .label-top-seller, .section-product-filter__product .product-image_zoom, .section-product-filter__product .add-wishlist{
+        right:8px;
+    }
+    .section-product-filter__product .owl-product-slider{
+        padding-right: 16px;
+        height: 150px;
+    }
+    .section-product-filter__product .product-card__header{
+        height: 150px;
+    }
 }
 @media(max-width:420px){
     .product-card .owl-carousel .owl-stage-outer{

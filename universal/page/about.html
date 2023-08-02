@@ -10,46 +10,49 @@
     <link rel="stylesheet" href="../style/media.css">
 </head>
 <body>
-    <header class="navigation">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <img class="mob-logo" src="../image/logo.png" alt="">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="/">
-                <img src="../image/logo.png" alt="">
-              </a>
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Главная</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html#service">Услуги</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html#project">Проекты</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html#documents">Документация</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">О компании</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacts.html">Контакты</a>
-                </li>
-              </ul>
-              <div class="form-inline my-2 my-lg-0">
-                <a href="tel:8 800 555 35 35" class="tel">8 800 555 35 35</a>
-                <button class=" btn-outline-success my-2 my-sm-0 btn-secondary" type="submit">Связаться</button>
-              </div>
-            </div>
-          </nav>
+  <header class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img class="mob-logo" src="image/logo.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="/">
+            <img src="../image/logo.png" alt="">
+          </a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#service">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#project">Проекты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#documents">Документация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <a href="tel:+7 (987) 060-89-99" class="tel">+7 (987) 060-89-99</a>
+            <button class=" btn-outline-success my-2 my-sm-0 btn-secondary" data-toggle="modal" data-target="#consultation" type="submit">Связаться</button>
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
     <section class="banner-page">
         <div class="container">
             <h1 class="title__h1">О компании</h1>
@@ -63,7 +66,7 @@
             <h2 class="title mb-4-mob">
               Строительная <br>компания <span class="blue-color">«Универсал»</span>
             </h2>
-            <a href="page/about.html" class="btn btn_border mt-3">консультация</a>
+            <a href="" class="btn btn_border mt-3"  data-toggle="modal" data-target="#consultation">консультация</a>
           </div>
           <div class="col-lg-4 col-md-6">
             <p>Наша компания специализируется на выполнении широкого спектра услуг, включая строительно-монтажные работы,
@@ -100,7 +103,6 @@
               <span class="blue-color">Лицензии на работу</span> <br>
               в сфере строительства
             </h2>
-            <a download="download" href="#" class="grey-link about-link">Скачать полное свидетельство</a>
           </div>
         </div>
       </div>
@@ -116,7 +118,7 @@
           <div class="col-lg-8 experience-info">
             <h2 class="title text-white">Опыт и профессионализм</h2>
             <p>Мы гордимся нашим многолетним опытом и профессионализмом в строительной отрасли. Наша компания имеет высококвалифицированную команду специалистов, включая инженеров, строителей, монтажников и других профессионалов с многолетним стажем работы в сфере строительства и монтажных работ. Мы постоянно совершенствуем наши навыки и знания, чтобы оставаться впереди технологического развития и предлагать передовые решения для наших клиентов. Наша команда тесно взаимодействует с заказчиками на всех этапах проекта, начиная от консультации и проектирования до фактического строительства и ввода объекта в эксплуатацию.</p>
-            <div class="btn btn-white">Получить консультацию</div>
+            <div class="btn btn-white" data-toggle="modal" data-target="#consultation">Получить консультацию</div>
           </div>
         </div>
       </div>
@@ -150,7 +152,7 @@
             <h2 class="title">
               Создаём комфортные условия сотрудничества для спокойствия каждого клиента
             </h2>
-            <button class="btn mt-4">Получить консультацию</button>
+            <button class="btn mt-4" data-toggle="modal" data-target="#consultation">Получить консультацию</button>
           </div>
           <div class="col-lg-6">
             <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
@@ -160,8 +162,12 @@
                 </div>
                 <div class="accordion__body">
                   <div class="accordion__content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequuntur autem, mollitia rem aperiam
-                    fugit eos officia vel quidem quis officiis dolores porro beatae veritatis tenetur. Culpa ex libero a!
+                    Наша компания имеет богатый опыт в реализации проектов различной сложности и масштаба. Мы
+успешно завершили множество объектов в различных отраслях, таких как промышленное,
+коммерческое и жилое строительство, инфраструктурные проекты и другие строительные
+объекты федерального и регионального значения. Наша репутация основана на качестве нашей
+работы, соблюдении сроков и удовлетворенности наших клиентов. Наши выполненные работы
+можно посмотреть на странице «Выполненные проекты»
                   </div>
                 </div>
               </div>
@@ -171,9 +177,11 @@
                 </div>
                 <div class="accordion__body">
                   <div class="accordion__content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos a autem perspiciatis sit eum
-                    exercitationem expedita omnis ipsam voluptate veritatis dolores similique eligendi, earum quasi officia in
-                    facilis dolorum!
+                    Мы постоянно следим за новыми технологиями и инновациями в строительной отрасли и
+стремимся использовать их в наших проектах. Мы инвестируем в обучение наших сотрудников и
+развитие их профессиональных навыков, чтобы оставаться впереди в техническом и
+инновационном аспектах строительства. Мы также активно сотрудничаем с ведущими
+компаниями и специалистами в отрасли, чтобы обмениваться опытом и знаниями, а также
                   </div>
                 </div>
               </div>
@@ -183,9 +191,10 @@
                 </div>
                 <div class="accordion__body">
                   <div class="accordion__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta pariatur dolore consectetur perferendis libero
-                    nam sit magni voluptatibus voluptates autem nesciunt, praesentium quidem deserunt ipsa totam esse ullam? Quod,
-                    maiores!
+                    Мы придаем высокое значение безопасности на рабочем месте и соблюдаем все промышленные
+стандарты и нормы безопасности, применяем современные методы оценки и управления
+рисками, обеспечиваем соответствующее обучение и сертификацию нашего персонала по
+вопросам охраны труда и промышленной безопасности.
                   </div>
                 </div>
               </div>
@@ -195,9 +204,11 @@
                 </div>
                 <div class="accordion__body">
                   <div class="accordion__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta pariatur dolore consectetur perferendis libero
-                    nam sit magni voluptatibus voluptates autem nesciunt, praesentium quidem deserunt ipsa totam esse ullam? Quod,
-                    maiores!
+                    Мы гарантируем высокое качество и используем только проверенные материалы и технологии.
+Мы следим за строгими стандартами контроля качества на всех этапах строительного процесса,
+чтобы обеспечить соответствие проекта требованиям заказчика и отраслевым стандартам. Мы
+также придаем важность соблюдению сроков и надежности нашей работы, чтобы наши клиенты
+могли быть уверены в успешной реализации своих проектов.
                   </div>
                 </div>
               </div>
@@ -207,9 +218,10 @@
                 </div>
                 <div class="accordion__body">
                   <div class="accordion__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta pariatur dolore consectetur perferendis libero
-                    nam sit magni voluptatibus voluptates autem nesciunt, praesentium quidem deserunt ipsa totam esse ullam? Quod,
-                    maiores!
+                    Мы осуществляем свою деятельность на всей территории Российской Федерации. Мы имеем
+широкий опыт работы в различных регионах страны, включая крупные города и отдаленные
+населенные пункты. Наша компания готова предоставить свои услуги в любой точке России,
+обеспечивая высокий уровень профессионализма и качества везде, где мы работаем.
                   </div>
                 </div>
               </div>
@@ -219,9 +231,11 @@
                 </div>
                 <div class="accordion__body">
                   <div class="accordion__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta pariatur dolore consectetur perferendis libero
-                    nam sit magni voluptatibus voluptates autem nesciunt, praesentium quidem deserunt ipsa totam esse ullam? Quod,
-                    maiores!
+                    Наша компания имеет всю необходимую документацию. Мы полностью соответствуем
+требованиям законодательства и нормам качества, установленным в отрасли. Мы постоянно
+следим за изменениями в законодательстве и обновляем сертификаты и разрешения, чтобы
+гарантировать клиентам надежность и профессионализм на всех этапах проекта. Сертификаты и
+разрешения размещены на странице «Документация»
                   </div>
                 </div>
               </div>
@@ -238,23 +252,16 @@
           </div>
         </div>
         <div class="row mt-3 pb-4">
-          <div class="col-lg-4 col-md-12 contacts-item">
+          <div class="col-lg-6 col-md-12 contacts-item">
             <span class="label-contact">адрес</span>
-            <p>пр-кт Достык 310 «Г», офис 110</p>
+            <p>г. Казань, ул. Лейтенанта Шмидта д.35А, помещ.208</p>
           </div>
           <div class="col-lg-3 col-md-4 contacts-item">
             <span class="label-contact">телефон</span>
-            <a href="tel:+7(708)779-49-76">+7 (708) 779-49-76 </a>
-          </div>
-          <div class="col-lg-2 col-md-2 contacts-item">
-            <span class="label-contact">соц. сети</span>
-            <ul class="social-row">
-              <li><a href="#"><img src="../image/icons/telegram.svg" alt=""></a></li>
-              <li><a href="#"><img src="../image/icons/instagram.svg" alt=""></a></li>
-            </ul>
+            <a href="tel:+7 (987) 060-89-99">+7 (987) 060-89-99 </a>
           </div>
           <div class="col-lg-3 col-md-5">
-            <button class="btn btn_border w-100">Бесплатная консультация</button>
+            <button class="btn btn_border w-100" data-toggle="modal" data-target="#consultation">Бесплатная консультация</button>
           </div>
         </div>
       </div>
@@ -265,12 +272,47 @@
     <footer class="footer-page">
       <div class="container">
         <div class="row">
-          <p class="copyright">© ИП «TOP SMM» <br>
-            Все права защищены</p>
+          <p class="copyright">
+           <strong>Юридический адрес:</strong>  420097, РТ, г.Казань, ул. Лейтенанта Шмидта д.35а, помещ. 208 <br>
+           <strong>Почтовый адрес:</strong> 420097, РТ, г.Казань, ул. Лейтенанта Шмидта д.35а, помещ. 208 <br>
+           ИНН/КПП 1655266772/165501001
+          </p>
           <a href="#">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="consultation" tabindex="-1" role="dialog" aria-labelledby="consultation" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Консультация</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-12 col-md-12">
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="input1" class="sr-only">Имя</label>
+              <input type="text" class="form-control" id="input1" placeholder="Имя">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="input2" class="sr-only">Телефон</label>
+              <input type="tel" class="form-control" id="input2" placeholder="Телефон">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Оставить заявку</button>
+          </form>
+          <p>Нажимая кнопку, вы принимаете условия <a href="#" target="_blank">политики</a>  и <a href="#" target="_blank">пользовательского соглашения</a> </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
     <script src="../script/jquery-3.2.1.slim.min.js"></script>
     <script src="../script/jquery.fancybox.min.js"></script>
     <script src="../script/main.js"></script>

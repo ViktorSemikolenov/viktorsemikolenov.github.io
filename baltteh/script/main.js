@@ -374,25 +374,6 @@ menuItems.forEach(item => {
 });
 
 
-// Получаем все кнопки .basket-small__item-btn
-const deleteButtonsNew = document.querySelectorAll('.basket-small__item-btn');
-// Добавляем обработчик события click для каждой кнопки
-deleteButtonsNew.forEach(button => {
-  button.addEventListener('click', () => {
-    // Находим родительский элемент с классом .basket-small__item
-    const parentItemTwo = button.closest('.basket-small__item');
-    // Удаляем родительский элемент
-    parentItemTwo.remove();
-    // Проверяем, остались ли другие элементы .basket-small__item
-    const remainingItems = document.querySelectorAll('.basket-small__item');
-    if (remainingItems.length === 0) {
-      // Если нет, добавляем класс hidden к .basket-small-content
-      const basketContent = document.querySelector('.basket-small-content');
-      basketContent.classList.add('hidden');
-    }
-  });
-});
-
 
 // Получаем все элементы с классом "desktop-menu__item"
 var menuItemsOne = document.querySelectorAll('.desktop-menu__item');
@@ -408,3 +389,91 @@ menuItemsOne.forEach(function(item) {
     item.classList.add('link_true');
   }
 });
+
+// Получаем все элементы с классом ".product-card .btn"
+const productBtns = document.querySelectorAll('.product-card .btn');
+
+// Получаем элементы ".backet-link" и ".backet-link .quantity"
+const backetLink = document.querySelector('.backet-link');
+const quantityElement = backetLink.querySelector('.quantity');
+
+// Инициализируем количество товара
+let clickCount = parseInt(quantityElement.textContent);
+
+// Функция для обновления видимости корзины
+function updateBasketVisibility() {
+  const basketItems = document.querySelectorAll('.basket-small-content .basket-small__item');
+  const basketContent = document.querySelector('.basket-small-content');
+
+  if (basketItems.length === 0) {
+    basketContent.classList.add('hidden');
+  } else {
+    basketContent.classList.remove('hidden');
+  }
+}
+
+// Добавляем обработчик события клика на каждую кнопку
+productBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Увеличиваем количество нажатий
+    clickCount++;
+
+    // Добавляем класс "basket-quantity" к элементу ".backet-link"
+    backetLink.classList.add('basket-quantity');
+
+    // Обновляем текст элемента ".backet-link .quantity" с помощью количества нажатий
+    quantityElement.textContent = clickCount;
+
+    // Получить данные о товаре, которые нужно добавить в корзину
+    var productName = $(btn).closest('.product-card').find('.product-card__title').text();
+    var productPrice = $(btn).closest('.product-card').find('.price').text();
+
+    // Создать новый элемент корзины
+    var basketItem = $('<div class="basket-small__item">' +
+      '<button class="basket-small__item-btn btn-nostyle">Remove</button>' + // Добавляем текст и класс кнопке
+      '<a href="#" class="basket-small__title">' + productName + '</a>' +
+      '<span class="basket-small__info">1х ' + productPrice + '</span>' +
+      '</div>');
+
+    // Добавить новый элемент в корзину
+    $('.basket-small-content').append(basketItem);
+
+    // Обновление видимости корзины после добавления элемента
+    updateBasketVisibility();
+  });
+});
+
+// Обработчик события для кнопки ".basket-small__item-btn"
+$(document).on('click', '.basket-small__item-btn', function(e) {
+  e.preventDefault(); // Отменить стандартное действие ссылки
+
+  // Удалить соответствующий элемент корзины
+  $(this).closest('.basket-small__item').remove();
+
+  // Получить текущее значение количества товаров в корзине
+  var quantity = parseInt($('.backet-link .quantity').text());
+
+  // Проверить, что количество больше 0, чтобы избежать отрицательных значений
+  if (quantity > 0) {
+    // Уменьшить количество на 1
+    quantity--;
+
+    // Обновить значение количества товаров в корзине
+    $('.backet-link .quantity').text(quantity);
+  }
+
+  // Обновление видимости корзины после удаления элемента
+  updateBasketVisibility();
+
+  // Обновить значение переменной clickCount
+  clickCount = quantity;
+});
+
+// Используем DOMContentLoaded, чтобы убедиться, что весь HTML был полностью загружен
+document.addEventListener('DOMContentLoaded', () => {
+  // Обновление видимости корзины при начальной загрузке страницы
+  updateBasketVisibility();
+});
+
+
+
