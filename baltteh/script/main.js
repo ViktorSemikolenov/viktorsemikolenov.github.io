@@ -394,11 +394,11 @@ menuItemsOne.forEach(function(item) {
 const productBtns = document.querySelectorAll('.product-card .btn');
 
 // Получаем элементы ".backet-link" и ".backet-link .quantity"
-const backetLink = document.querySelector('.backet-link');
-const quantityElement = backetLink.querySelector('.quantity');
+const backetLinks = document.querySelectorAll('.backet-link');
+const quantityElements = document.querySelectorAll('.backet-link .quantity');
 
 // Инициализируем количество товара
-let clickCount = parseInt(quantityElement.textContent);
+let clickCount = parseInt(quantityElements[0].textContent);
 
 // Функция для обновления видимости корзины
 function updateBasketVisibility() {
@@ -419,10 +419,10 @@ productBtns.forEach(btn => {
     clickCount++;
 
     // Добавляем класс "basket-quantity" к элементу ".backet-link"
-    backetLink.classList.add('basket-quantity');
+    backetLinks.forEach(link => link.classList.add('basket-quantity'));
 
     // Обновляем текст элемента ".backet-link .quantity" с помощью количества нажатий
-    quantityElement.textContent = clickCount;
+    quantityElements.forEach(element => element.textContent = clickCount);
 
     // Получить данные о товаре, которые нужно добавить в корзину
     var productName = $(btn).closest('.product-card').find('.product-card__title').text();
@@ -456,17 +456,15 @@ $(document).on('click', '.basket-small__item-btn', function(e) {
   // Проверить, что количество больше 0, чтобы избежать отрицательных значений
   if (quantity > 0) {
     // Уменьшить количество на 1
-    quantity--;
+    clickCount--;
 
-    // Обновить значение количества товаров в корзине
-    $('.backet-link .quantity').text(quantity);
+    // Обновить значение количества товаров во всех элементах с классом ".backet-link .quantity"
+    quantityElements.forEach(element => element.textContent = clickCount);
   }
 
   // Обновление видимости корзины после удаления элемента
   updateBasketVisibility();
 
-  // Обновить значение переменной clickCount
-  clickCount = quantity;
 });
 
 // Используем DOMContentLoaded, чтобы убедиться, что весь HTML был полностью загружен
@@ -474,6 +472,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Обновление видимости корзины при начальной загрузке страницы
   updateBasketVisibility();
 });
-
-
 
