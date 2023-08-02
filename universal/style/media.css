@@ -151,3 +151,8 @@
         width: 100%;
     }
 }
+@media(max-width:475px){
+    .project-tag{
+        font-size: 14px;
+    }
+}

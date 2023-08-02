@@ -5656,3 +5656,7 @@ font-weight: 700;
 .desktop-menu__item > a{
     cursor: pointer;
 }
+.descript-tabs li, .descript-tabs p{
+    font-size: 14px;
+    line-height: 150%;
+}
