@@ -2840,6 +2840,13 @@ font-weight: 700;
 .section-basket__form-total-row{
     margin-top: 24px;
 }
+
+#slider .product-image_cover img{
+    object-fit: contain;
+}
+#slider .product-image_cover{
+    height: 380px;
+}
 }
 
 @media(max-width:699px) {
