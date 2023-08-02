@@ -374,4 +374,23 @@ menuItems.forEach(item => {
 });
 
 
+// Получаем все кнопки .basket-small__item-btn
+const deleteButtonsNew = document.querySelectorAll('.basket-small__item-btn');
+// Добавляем обработчик события click для каждой кнопки
+deleteButtonsNew.forEach(button => {
+  button.addEventListener('click', () => {
+    // Находим родительский элемент с классом .basket-small__item
+    const parentItemTwo = button.closest('.basket-small__item');
+    // Удаляем родительский элемент
+    parentItemTwo.remove();
+    // Проверяем, остались ли другие элементы .basket-small__item
+    const remainingItems = document.querySelectorAll('.basket-small__item');
+    if (remainingItems.length === 0) {
+      // Если нет, добавляем класс hidden к .basket-small-content
+      const basketContent = document.querySelector('.basket-small-content');
+      basketContent.classList.add('hidden');
+    }
+  });
+});
+
 

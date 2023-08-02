@@ -117,6 +117,30 @@
                                 </svg>
                                 <span class="quantity">0</span>
                             </a>
+                            <div class="basket-small">
+                                <div class="basket-small-content">
+                                    <a href="#" class="basket-small__item">
+                                        <button class="basket-small__item-btn btn-nostyle"></button>
+                                        <span class="basket-small__title">Вафельница для гонконгских вафель Gastrorag FY-6</span>
+                                        <span class="basket-small__info">1х 158 000 руб.</span>
+                                    </a>
+                                    <a href="#" class="basket-small__item">
+                                        <button class="basket-small__item-btn btn-nostyle"></button>
+                                        <span class="basket-small__title">Вафельница для гонконгских вафель Gastrorag FY-6</span>
+                                        <span class="basket-small__info">1х 158 000 руб.</span>
+                                    </a>
+                                    <a href="#" class="basket-small__item">
+                                        <button class="basket-small__item-btn btn-nostyle"></button>
+                                        <span class="basket-small__title">Вафельница для гонконгских вафель Gastrorag FY-6</span>
+                                        <span class="basket-small__info">1х 158 000 руб.</span>
+                                    </a>
+                                    <a href="#" class="basket-small__item">
+                                        <button class="basket-small__item-btn btn-nostyle"></button>
+                                        <span class="basket-small__title">Вафельница для гонконгских вафель Gastrorag FY-6</span>
+                                        <span class="basket-small__info">1х 158 000 руб.</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1222,7 +1246,7 @@
                         <div class="product-filter__content-content" id="filter">
                             <div class="confirmation-window">
                                 <p>Подбранно товаров: <span>154</span> </p>
-                                <button class="confirmation-window__btn">показать</button>
+                                <a href="#" class="confirmation-window__btn">показать</a>
                             </div>
                             <div class="product-filter__item open">
                                 <header class="product-filter__item-header">
@@ -1250,7 +1274,7 @@
                             </div>
                             <div class="product-filter__item open">
                                 <header class="product-filter__item-header">
-                                    <span>Статус</span>
+                                    <span>Наличие</span>
                                 </header>
                                 <div class="product-filter__body">
                                     <form action="#">
@@ -1290,37 +1314,15 @@
                                     
                                 </div>
                             </div>
-                            <div class="product-filter__item open">
-                                <header class="product-filter__item-header">
-                                    <span>Цена</span>
-                                </header>
-                                <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-3">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-3">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-4">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-4">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
-                                </div>
-                            </div>
                             <div class="product-filter__item">
                                 <header class="product-filter__item-header">
                                     <span>Бренд</span>
                                 </header>
                                 <div class="product-filter__body">
                                     <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
+                                        <input class="search-filter-input" placeholder="Поиск" type="search" name="" id="">
                                     </form>
-                                    <form action="#">
+                                    <form class="search-filter-result" action="#">
                                         <label class="checkbox-row" for="s-5">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-5">
                                             <span class="checkbox-check"></span>
@@ -1389,21 +1391,21 @@
                                     <span>Мощность, кВт</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-7">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-7">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-8">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-8">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1411,21 +1413,21 @@
                                     <span>Ширина, мм</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-9">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-9">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-10">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-10">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1433,21 +1435,21 @@
                                     <span>Глубина, мм</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-11">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-11">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-12">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-12">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1455,21 +1457,21 @@
                                     <span>Высота, мм</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-13">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-13">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-14">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-14">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1478,21 +1480,21 @@
                                         режим до, °С</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-15">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-15">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-16">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-16">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1500,9 +1502,6 @@
                                     <span>Способ установки</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
                                     <form action="#">
                                         <label class="checkbox-row" for="s-17">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-17">
@@ -1522,9 +1521,6 @@
                                     <span>Управление</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
                                     <form action="#">
                                         <label class="checkbox-row" for="s-19">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-19">
@@ -1544,9 +1540,6 @@
                                     <span>Вид товара</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
                                     <form action="#">
                                         <label class="checkbox-row" for="s-21">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-21">
@@ -1566,21 +1559,21 @@
                                     <span>Мощность, кВт</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-23">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-23">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-24">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-24">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1588,21 +1581,21 @@
                                     <span>Ширина, мм</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
-                                    <form action="#">
-                                        <label class="checkbox-row" for="s-25">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-25">
-                                            <span class="checkbox-check"></span>
-                                            В наличии
-                                        </label>
-                                        <label class="checkbox-row" for="s-26">
-                                            <input class="checkbox-input" type="checkbox" name="" id="s-26">
-                                            <span class="checkbox-check"></span>
-                                            Под заказ
-                                        </label>
-                                    </form>
+                                    <div class="price-input">
+                                        <div class="field">
+                                          <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                          <input type="number" class="input-max" value="7500">
+                                        </div>
+                                      </div>
+                                      <div class="slider">
+                                        <div class="progress"></div>
+                                      </div>
+                                      <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                      </div>
                                 </div>
                             </div>
                             <div class="product-filter__item">
@@ -1610,9 +1603,7 @@
                                     <span>Глубина, мм</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
+
                                     <form action="#">
                                         <label class="checkbox-row" for="s-27">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-27">
@@ -1632,9 +1623,6 @@
                                     <span>Высота, мм</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
                                     <form action="#">
                                         <label class="checkbox-row" for="s-29">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-29">
@@ -1655,9 +1643,6 @@
                                         режим до, °С</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
                                     <form action="#">
                                         <label class="checkbox-row" for="s-31">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-31">
@@ -1677,9 +1662,6 @@
                                     <span>Способ установки</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
                                     <form action="#">
                                         <label class="checkbox-row" for="s-33">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-33">
@@ -1699,9 +1681,7 @@
                                     <span>Управление</span>
                                 </header>
                                 <div class="product-filter__body">
-                                    <form class="search-form_filter" action="">
-                                        <input placeholder="Поиск" type="search" name="" id="">
-                                    </form>
+
                                     <form action="#">
                                         <label class="checkbox-row" for="s-35">
                                             <input class="checkbox-input" type="checkbox" name="" id="s-35">
@@ -1720,6 +1700,7 @@
                         </div>
                     </div>
                 </aside>
+                
                 <div class="section-product-filter__col">
                     <div class="section-product-filter__product">
                         <div class="product-card">
@@ -3928,7 +3909,7 @@
     <script src="../script/price-slider.js"></script>
     <script src="../script/filter.js"></script>
     <script src="../script/sort.js"></script>
-    <script src="../script/ResizeSensor.js"></script>
     <script src="../script/theia-sticky-sidebar.js"></script>
     <script src="../script/sidebar.js"></script>
 </body>
+</html>
