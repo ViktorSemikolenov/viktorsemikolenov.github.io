@@ -394,3 +394,17 @@ deleteButtonsNew.forEach(button => {
 });
 
 
+// Получаем все элементы с классом "desktop-menu__item"
+var menuItemsOne = document.querySelectorAll('.desktop-menu__item');
+
+// Проходимся по каждому элементу
+menuItemsOne.forEach(function(item) {
+  // Ищем дочерний элемент "a"
+  var linkOne = item.querySelector('a');
+  
+  // Проверяем, есть ли у "a" ссылка
+  if (linkOne && linkOne.href) {
+    // Добавляем класс "link_true"
+    item.classList.add('link_true');
+  }
+});
