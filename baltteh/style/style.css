@@ -12,6 +12,9 @@
             box-sizing: border-box;
     font-family: 'Montserrat', Tahoma;
 }
+p, li{
+    font-size: 14px;
+}
 button{
     outline: none !important;
 }

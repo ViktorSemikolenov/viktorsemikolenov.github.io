@@ -155,4 +155,17 @@
     .project-tag{
         font-size: 14px;
     }
+    .owl-nav{
+        display: none !important;
+    }
+    .project-info{
+        padding: 16px;
+    }
+    .project-title{
+        font-size: 20px;
+    }
+    .item-project .btn{
+        width: 100%;
+        margin-top: 15px;
+    }
 }
