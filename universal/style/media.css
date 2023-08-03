@@ -208,6 +208,18 @@
     .black-text{
         width: 100%;
     }
+    .consultation .form-inline .form-control{
+        width: 100%;
+    }
+    .form-inline .form-group{
+        width: 100%;
+    }
+   .modal .form-inline{
+    width: 100%;
+    }
+    .contacts .btn_border{
+        margin-top: 24px;
+    }
 }
 @media(max-width:475px){
     .project-tag{

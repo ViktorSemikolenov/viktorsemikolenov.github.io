@@ -497,6 +497,7 @@ input::placeholder {
     top: 0;
     left: 0;
     z-index: -1;
+    object-fit: cover;
 }
 
 .bg-blue {
