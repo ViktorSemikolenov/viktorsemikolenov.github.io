@@ -5488,6 +5488,8 @@ font-weight: 700;
     background: #FFF;
         padding: 0px 40px;
     width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
 }
 .basket-small__item, .wishlist-small__item{
     border-bottom: thin dashed #ACAFB1;
