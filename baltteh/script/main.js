@@ -410,6 +410,11 @@ function updateBasketVisibility() {
   } else {
     basketContent.classList.remove('hidden');
   }
+
+  // Уд аление класса "basket-quantity" из элемента ".backet-link", если количество товаров равно 0
+  if (clickCount === 0) {
+    backetLinks.forEach(link => link.classList.remove('basket-quantity'));
+  }
 }
 
 // Добавляем обработчик события клика на каждую кнопку
@@ -432,7 +437,7 @@ productBtns.forEach(btn => {
     var basketItem = $('<div class="basket-small__item">' +
       '<button class="basket-small__item-btn btn-nostyle">Remove</button>' + // Добавляем текст и класс кнопке
       '<a href="#" class="basket-small__title">' + productName + '</a>' +
-      '<span class="basket-small__info">1х ' + productPrice + '</span>' +
+      '<span class="basket-small__info">' + productPrice + '</span>' +
       '</div>');
 
     // Добавить новый элемент в корзину
@@ -473,3 +478,93 @@ document.addEventListener('DOMContentLoaded', () => {
   updateBasketVisibility();
 });
 
+
+
+// Избранное
+// Получаем все элементы с классом ".product-card .btn"
+const wishlistBtn = document.querySelectorAll('.add-wishlist');
+
+// Получаем элементы ".backet-link" и ".backet-link .quantity"
+const wishlistLinks = document.querySelectorAll('.wishlist-link');
+const wishlistQuantityElements = document.querySelectorAll('.wishlist-link .quantity');
+
+// Инициализируем количество товара
+let clickCountWishlist = parseInt(wishlistQuantityElements[0].textContent);
+
+// Функция для обновления видимости корзины
+function updateWishlistVisibility() {
+  const wishlistItems = document.querySelectorAll('.wishlist-small-content .wishlist-small__item');
+  const wishlistContent = document.querySelector('.wishlist-small-content');
+
+  if (wishlistItems.length === 0) {
+    wishlistContent.classList.add('hidden');
+  } else {
+    wishlistContent.classList.remove('hidden');
+  }
+
+  // Уд аление класса "basket-quantity" из элемента ".backet-link", если количество товаров равно 0
+  if (clickCountWishlist === 0) {
+    wishlistLinks.forEach(link => link.classList.remove('wishlist-quantity'));
+  }
+}
+
+// Добавляем обработчик события клика на каждую кнопку
+wishlistBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Увеличиваем количество нажатий
+    clickCountWishlist++;
+
+    // Добавляем класс "basket-quantity" к элементу ".backet-link"
+    wishlistLinks.forEach(link => link.classList.add('wishlist-quantity'));
+
+    // Обновляем текст элемента ".backet-link .quantity" с помощью количества нажатий
+    wishlistQuantityElements.forEach(element => element.textContent = clickCountWishlist);
+
+    // Получить данные о товаре, которые нужно добавить в корзину
+    var productName = $(btn).closest('.product-card').find('.product-card__title').text();
+    var productPrice = $(btn).closest('.product-card').find('.price').text();
+
+    // Создать новый элемент корзины
+    var basketItem = $('<div class="wishlist-small__item">' +
+      '<button class="wishlist-small__item-btn btn-nostyle">Remove</button>' + // Добавляем текст и класс кнопке
+      '<a href="#" class="wishlist-small__title">' + productName + '</a>' +
+      '<span class="wishlist-small__info">' + productPrice + '</span>' +
+      '</div>');
+
+    // Добавить новый элемент в корзину
+    $('.wishlist-small-content').append(basketItem);
+
+    // Обновление видимости корзины после добавления элемента
+    updateWishlistVisibility();
+  });
+});
+
+// Обработчик события для кнопки ".basket-small__item-btn"
+$(document).on('click', '.wishlist-small__item-btn', function(e) {
+  e.preventDefault(); // Отменить стандартное действие ссылки
+
+  // Удалить соответствующий элемент корзины
+  $(this).closest('.wishlist-small__item').remove();
+
+  // Получить текущее значение количества товаров в корзине
+  var quantity = parseInt($('.wishlist-link .quantity').text());
+
+  // Проверить, что количество больше 0, чтобы избежать отрицательных значений
+  if (quantity > 0) {
+    // Уменьшить количество на 1
+    clickCountWishlist--;
+
+    // Обновить значение количества товаров во всех элементах с классом ".backet-link .quantity"
+    wishlistQuantityElements.forEach(element => element.textContent = clickCountWishlist);
+  }
+
+  // Обновление видимости корзины после удаления элемента
+  updateWishlistVisibility();
+
+});
+
+// Используем DOMContentLoaded, чтобы убедиться, что весь HTML был полностью загружен
+document.addEventListener('DOMContentLoaded', () => {
+  // Обновление видимости корзины при начальной загрузке страницы
+  updateWishlistVisibility();
+});

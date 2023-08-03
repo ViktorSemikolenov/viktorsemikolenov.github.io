@@ -587,7 +587,7 @@
 .buttons-product .btn-stroke{
     width: 182px;
 }
-.basket-small{
+.basket-small, .wishlist-small{
     top: 40px;
 }
 .order-form__form-type-two textarea{
@@ -595,6 +595,12 @@
 }
 .product-filter__col{
     width: 250px !important;
+}
+.product-payment__item-image{
+    width: 175px;
+}
+.product-payment__item-title{
+    font-size: 16px;
 }
 }
 
@@ -1726,6 +1732,15 @@
     .order-form__form-type-two textarea{
         margin-left: 28px;
     }
+    .drop-link .drop-menu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .drop-menu__link{
+        padding: 10px 0;
+    }
 }
 
 @media(max-width:939px) {
@@ -2785,7 +2800,7 @@ font-weight: 700;
 .link-left{
     padding-right: 0;
 }
-.basket-small{
+.basket-small, .wishlist-small{
     display: none;
 }
 .btn-filter-page__row{
