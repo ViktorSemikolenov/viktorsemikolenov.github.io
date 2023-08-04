@@ -880,7 +880,7 @@ input:hover, textarea:hover {
 .product-card__footer {
     width: 87%;
     margin: 0 auto;
-    margin-top: 37px;
+    margin-top: 20px;
     padding-bottom: 23px;
 }
 
@@ -5681,5 +5681,24 @@ text-decoration: none;
     display: none;
 }
 .next-nav-level__three{
+    display: none;
+}
+.product-card .owl-item .item>img{
+    height: 175px;
+    object-fit: contain;
+}
+.product-card__header{
+    height: auto;
+}
+
+.owl-carousel .owl-stage{
+    display: flex;
+}
+
+
+.owl-stage .item{
+    height: 100%;
+}
+.price-text::after{
     display: none;
 }

@@ -602,6 +602,10 @@
 .product-payment__item-title{
     font-size: 16px;
 }
+.product-card .owl-item .item>img{
+    height: 175px;
+    object-fit: contain;
+}
 }
 
 @media(max-width:1439px) {
@@ -4882,9 +4886,10 @@ font-weight: 700;
     .section-product-filter__product .product-card__header{
         height: 150px;
     }
-}
-@media(max-width:420px){
+    .product-card .owl-item .item>img, .owl-product-slider, .product-card__header{
+        height: 120px;
+    }
     .product-card .owl-carousel .owl-stage-outer{
-        padding-top: 20px !important;
+        padding-top: 0 !important;
     }
 }

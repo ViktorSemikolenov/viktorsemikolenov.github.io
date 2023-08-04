@@ -20,7 +20,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         margin: 20,
         center: false,
-        autoHeight: false,
+        autoHeight:false,
         loop: false,
         items: 5,
         autoplay:false,
@@ -54,7 +54,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         margin: 20,
         center: false,
-        autoHeight: false,
+        autoHeight:false,
         loop: false,
         items: 5,
         autoplay:false,
@@ -88,7 +88,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         margin: 20,
         center: false,
-        autoHeight: false,
+        autoHeight:false,
         loop: false,
         items: 5,
         autoplay:false,
@@ -122,7 +122,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         margin: 20,
         center: false,
-        autoHeight: false,
+        autoHeight:false,
         loop: false,
         items: 5,
         autoplay:false,
@@ -174,7 +174,7 @@ $(document).ready(function () {
     owl.owlCarousel({
         margin: 20,
         center: false,
-        autoHeight: false,
+        autoHeight:true,
         loop:false,
         items: 5,
         autoplay:false,
@@ -201,3 +201,23 @@ $(document).ready(function () {
         }
     })
 });
+
+window.addEventListener('load', function() {
+    var owlStage = document.querySelector('.owl-stage');
+    var owlItems = owlStage.querySelectorAll('.owl-item');
+    var maxHeight = 0;
+    
+    // Находим самую большую высоту элемента
+    for (var i = 0; i < owlItems.length; i++) {
+      if (owlItems[i].offsetHeight > maxHeight) {
+        maxHeight = owlItems[i].offsetHeight;
+      }
+    }
+    
+    // Устанавливаем одинаковую высоту для всех элементов
+    for (var i = 0; i < owlItems.length; i++) {
+      owlItems[i].style.height = maxHeight + 'px';
+    }
+  });
+
+
