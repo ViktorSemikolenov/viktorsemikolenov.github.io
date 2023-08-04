@@ -625,19 +625,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Получаем все элементы с классом "subcategory-title"
-var subcategoryTitlesLink = document.querySelectorAll('.subcategory-title');
-
-// Перебираем каждый элемент
-subcategoryTitlesLink.forEach(function(title) {
-  // Получаем ссылку внутри элемента
-  var link = title.querySelector('a');
-
-  // Получаем значение атрибута href у ссылки
-  var href = link.getAttribute('href');
-
-  // Проверяем длину значения href и добавляем класс "link_true", если она больше 3
-  if (href.length > 3) {
-    title.classList.add('link_true');
-  }
-});
