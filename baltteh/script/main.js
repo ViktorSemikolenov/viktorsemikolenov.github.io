@@ -374,6 +374,73 @@ menuItems.forEach(item => {
 });
 
 
+// Получаем все элементы с классом .next-nav-level__three
+const subcategoryItems = document.querySelectorAll('.next-nav-level__three');
+
+// Перебираем каждый элемент и добавляем обработчик события "click"
+subcategoryItems.forEach(item => {
+  item.addEventListener('click', function() {
+    // Находим родительский элемент с классом .subcategory-title
+    const parent = this.closest('.subcategory-title');
+    
+    // Добавляем класс visible к родительскому элементу
+    parent.classList.add('visible');
+    
+    // Находим все элементы с классом .main-menu-item > li
+    const mainMenuItems = document.querySelectorAll('.main-menu-item > li');
+    
+    // Перебираем каждый элемент и добавляем класс hidden
+    mainMenuItems.forEach(item => {
+      item.classList.add('hidden');
+    });
+
+    // Находим элементы с классом .back-manu_level-two
+    const backMenuItems = document.querySelectorAll('.back-manu_level-two');
+
+    // Перебираем каждый элемент и добавляем класс hidden
+    backMenuItems.forEach(item => {
+      item.classList.add('hidden');
+    });
+
+    // Находим элементы с классом .back-manu_level-three
+    const backMenuLevelThreeItems = document.querySelectorAll('.back-manu_level-three');
+
+    // Перебираем каждый элемент и добавляем класс visible
+    backMenuLevelThreeItems.forEach(item => {
+      item.classList.add('visible');
+    });
+  });
+});
+// =====================
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const backButtons = document.querySelectorAll('.back-manu_level-three');
+  const menuItem = document.querySelectorAll('.main-menu-item > li');
+  const backMenuLevelTwo = document.querySelectorAll('.back-manu_level-two');
+
+  backButtons.forEach(function(backButton) {
+    backButton.addEventListener('click', function() {
+      // Remove 'visible' class from all .back-manu_level-three elements
+      backButtons.forEach(function(button) {
+        button.classList.remove('visible');
+      });
+
+      for (let i = 0; i < menuItem.length; i++) {
+        menuItem[i].classList.remove('visible', 'hidden');
+      }
+
+      for (let i = 0; i < backMenuLevelTwo.length; i++) {
+        backMenuLevelTwo[i].classList.remove('hidden');
+      }
+    });
+  });
+});
+
+
+
+
+
 
 // Получаем все элементы с классом "desktop-menu__item"
 var menuItemsOne = document.querySelectorAll('.desktop-menu__item');
@@ -567,4 +634,23 @@ $(document).on('click', '.wishlist-small__item-btn', function(e) {
 document.addEventListener('DOMContentLoaded', () => {
   // Обновление видимости корзины при начальной загрузке страницы
   updateWishlistVisibility();
+});
+
+
+// Получаем все элементы с классом "subcategory-title"
+var subcategoryTitles = document.querySelectorAll('.subcategory-title');
+
+// Перебираем каждый элемент с классом "subcategory-title"
+subcategoryTitles.forEach(function(title) {
+  // Назначаем обработчик события 'click' для каждого элемента
+  title.addEventListener('click', function() {
+    // Получаем ближайший родительский элемент с классом "subcategory"
+    var subcategory = this.closest('.subcategory');
+    
+    // Проверяем, существует ли элемент "subcategory"
+    if (subcategory) {
+      // Добавляем класс "hui" к элементу "subcategory"
+      subcategory.classList.add('hui');
+    }
+  });
 });

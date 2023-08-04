@@ -5677,3 +5677,9 @@ text-decoration: none;
 .fixed-nav .wishlist-quantity .quantity{
     color: #000000;
 }
+.back-manu_level-three{
+    display: none;
+}
+.next-nav-level__three{
+    display: none;
+}
