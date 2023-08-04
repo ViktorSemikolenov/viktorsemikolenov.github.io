@@ -2679,7 +2679,23 @@ font-weight: 700;
     justify-content: flex-end;
     padding: 20px 0;
     padding-right: 12px;
+    width: 100% !important; 
 }
+.next-nav-level__three{
+    width: 100% !important;
+    position: absolute;
+    right: 0;
+    display: flex !important;
+    justify-content: flex-end;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.subcategory-title.link_true .next-nav-level__three{
+    position: static;
+    width: 42px !important;
+}
+
 .link-left__list{
     overflow-y: scroll;
     height: 82vh;
@@ -2903,7 +2919,7 @@ font-weight: 700;
     margin-bottom: 0;
 }
 .main-menu-item > li.hidden .next-nav-level__three{
-    display: none;
+    display: none !important;
 }
 .subcategory-title.visible .subcategory-content{
     display: block;

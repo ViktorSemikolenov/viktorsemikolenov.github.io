@@ -442,20 +442,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Получаем все элементы с классом "desktop-menu__item"
-var menuItemsOne = document.querySelectorAll('.desktop-menu__item');
 
-// Проходимся по каждому элементу
-menuItemsOne.forEach(function(item) {
-  // Ищем дочерний элемент "a"
-  var linkOne = item.querySelector('a');
-  
-  // Проверяем, есть ли у "a" ссылка
-  if (linkOne && linkOne.href) {
-    // Добавляем класс "link_true"
-    item.classList.add('link_true');
-  }
-});
 
 // Получаем все элементы с классом ".product-card .btn"
 const productBtns = document.querySelectorAll('.product-card .btn');
@@ -637,20 +624,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Получаем все элементы с классом "subcategory-title"
-var subcategoryTitles = document.querySelectorAll('.subcategory-title');
 
-// Перебираем каждый элемент с классом "subcategory-title"
-subcategoryTitles.forEach(function(title) {
-  // Назначаем обработчик события 'click' для каждого элемента
-  title.addEventListener('click', function() {
-    // Получаем ближайший родительский элемент с классом "subcategory"
-    var subcategory = this.closest('.subcategory');
-    
-    // Проверяем, существует ли элемент "subcategory"
-    if (subcategory) {
-      // Добавляем класс "hui" к элементу "subcategory"
-      subcategory.classList.add('hui');
-    }
-  });
+// Получаем все элементы с классом "subcategory-title"
+var subcategoryTitlesLink = document.querySelectorAll('.subcategory-title');
+
+// Перебираем каждый элемент
+subcategoryTitlesLink.forEach(function(title) {
+  // Получаем ссылку внутри элемента
+  var link = title.querySelector('a');
+
+  // Получаем значение атрибута href у ссылки
+  var href = link.getAttribute('href');
+
+  // Проверяем длину значения href и добавляем класс "link_true", если она больше 3
+  if (href.length > 3) {
+    title.classList.add('link_true');
+  }
 });
