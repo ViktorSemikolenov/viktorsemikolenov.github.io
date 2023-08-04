@@ -2936,6 +2936,9 @@ font-weight: 700;
 .next-nav-level__three{
     display: block;
 }
+.link-left__list{
+    padding-bottom: 120px;
+}
 }
 
 @media(max-width:699px) {
