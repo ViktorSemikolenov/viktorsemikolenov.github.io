@@ -2943,6 +2943,10 @@ font-weight: 700;
 .link-left__list{
     padding-bottom: 120px;
 }
+.owl-carousel .owl-item .item>img{
+    width: 65%;
+    margin: 0 auto;
+}
 }
 
 @media(max-width:699px) {
@@ -3042,7 +3046,7 @@ font-weight: 700;
     .label-top-seller {
         left: auto;
         right: 10px;
-        top: 28px;
+        top: 10px;
         width: 32px;
         height: 32px;
         border-radius: 7px;
@@ -3059,7 +3063,7 @@ font-weight: 700;
 
     .product-image_zoom {
         right: 10px;
-        top: 66px;
+        top: 50px;
         width: 32px;
         height: 32px;
     }
@@ -3074,9 +3078,16 @@ font-weight: 700;
 
     .add-wishlist {
         right: 10px;
-        top: 103px;
+        top: 88px;
         width: 32px;
         height: 32px;
+    }
+    .product-card.no-hit .product-image_zoom{
+        top: 10px;
+    }
+
+    .product-card.no-hit .add-wishlist{
+        top: 50px;
     }
 
     .product-card__title {

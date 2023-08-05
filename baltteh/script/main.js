@@ -625,3 +625,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Получаем все элементы с классом .product-card
+const productCards = document.querySelectorAll('.product-card');
+
+// Перебираем каждый элемент
+productCards.forEach((card) => {
+  // Проверяем, есть ли блок .label-top-seller
+  const topSellerLabel = card.querySelector('.label-top-seller');
+
+  // Если блок отсутствует, добавляем класс .no-hit
+  if (!topSellerLabel) {
+    card.classList.add('no-hit');
+  }
+});
