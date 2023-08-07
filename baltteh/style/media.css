@@ -4918,7 +4918,7 @@ font-weight: 700;
 }
 @media(max-width:420px){
     .product-card .owl-item .item>img, .owl-product-slider, .product-card__header{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     .product-card__header{
@@ -4926,5 +4926,19 @@ font-weight: 700;
     }
     .label-top-seller, .product-image_zoom, .add-wishlist{
         right: 0;
+    }
+    .label-product{
+        left: -42px;
+        top: 45%;
+    }
+    .label-product_stonks{
+        left: -21px;
+    }
+    .label-product_new{
+        left: -29px;
+    }
+    .product-card .owl-dots{
+        bottom: 0;
+        margin-left: 8px;
     }
 }
