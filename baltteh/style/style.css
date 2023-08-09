@@ -720,6 +720,7 @@ input:hover, textarea:hover {
 .product-card__header {
     position: relative;
     height: 212px;
+    padding-top: 8px;
 }
 
 .label-top-seller {
@@ -3216,6 +3217,8 @@ input:hover, textarea:hover {
     font-style: normal;
     font-weight: 500;
     margin-left: 25px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .sorting-btn__icon,
@@ -3734,8 +3737,14 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
 }
 .section-product-filter__product-list .owl-product-slider{
+   width: 150px;
+   display: none !important;
+}
+
+.section-product-filter__product-list .owl-dots{
     display: none !important;
 }
+
 .section-product-filter__product-list .horizontal-card__img{
     display: block;
     width:150px ;
@@ -3915,6 +3924,13 @@ input[type="range"]::-moz-range-thumb {
 }
 .catalog-page .catalog-page__category-item{
     background-color: #ffffff;
+}
+
+.catalog-page__category-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-filter .catalog-page__list-block{

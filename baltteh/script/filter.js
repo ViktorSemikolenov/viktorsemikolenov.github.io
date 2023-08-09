@@ -32,19 +32,16 @@ checkboxRows.forEach((checkboxRow) => {
   });
 });
 
-// Получение элементов DOM
-const searchInput = document.querySelector('.product-filter__body .search-filter-input');
-const checkboxRowsSearch = document.querySelectorAll('.search-filter-result .checkbox-row');
 
-// Обработчик события ввода в поле поиска
+const searchInput = document.querySelector('.product-filter__body .search-filter-input');
+const checkboxRowsSearch = document.querySelectorAll('.product-filter__body .search-filter-result .checkbox-row');
+
 searchInput.addEventListener('input', function() {
   const searchTerm = searchInput.value.toLowerCase();
   
-  // Перебор всех вариантов поиска
   checkboxRowsSearch.forEach(function(checkboxRow) {
     const label = checkboxRow.textContent.toLowerCase();
     
-    // Скрытие или отображение варианта поиска в зависимости от соответствия
     if (label.includes(searchTerm)) {
       checkboxRow.style.display = 'flex';
     } else {

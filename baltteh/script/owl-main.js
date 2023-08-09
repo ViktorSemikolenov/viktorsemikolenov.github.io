@@ -155,7 +155,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     var owl = $('.owl-product-slider');
     owl.owlCarousel({
-        margin: 20,
+        margin: 0,
         center: false,
         autoHeight: false,
         loop:false,
@@ -163,7 +163,15 @@ $(document).ready(function () {
         autoplay:false,
         autoplayTimeout:5000,
         nav: true,
-        mouseDrag: true
+        mouseDrag: true,
+        responsive:{
+            0 : {
+                items: 1,
+            },
+            2560 : {
+                items: 1,
+            }
+        }
     })
 });
 
