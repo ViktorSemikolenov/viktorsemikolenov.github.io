@@ -33,19 +33,23 @@ checkboxRows.forEach((checkboxRow) => {
 });
 
 
-const searchInput = document.querySelector('.product-filter__body .search-filter-input');
-const checkboxRowsSearch = document.querySelectorAll('.product-filter__body .search-filter-result .checkbox-row');
+const searchForms = document.querySelectorAll('.product-filter__body .search-form_filter');
+const checkboxRowsResults = document.querySelectorAll('.product-filter__body .search-filter-result');
+
+searchForms.forEach(function(searchForm, index) {
+const searchInput = searchForm.querySelector('.search-filter-input');
+const checkboxRows = checkboxRowsResults[index].querySelectorAll('.checkbox-row');
 
 searchInput.addEventListener('input', function() {
-  const searchTerm = searchInput.value.toLowerCase();
-  
-  checkboxRowsSearch.forEach(function(checkboxRow) {
-    const label = checkboxRow.textContent.toLowerCase();
-    
-    if (label.includes(searchTerm)) {
-      checkboxRow.style.display = 'flex';
-    } else {
-      checkboxRow.style.display = 'none';
-    }
-  });
+const searchTerm = searchInput.value.toLowerCase();
+checkboxRows.forEach(function(checkboxRow) {
+  const label = checkboxRow.textContent.toLowerCase();
+
+  if (label.includes(searchTerm)) {
+    checkboxRow.style.display = 'flex';
+  } else {
+    checkboxRow.style.display = 'none';
+  }
+});
+});
 });
