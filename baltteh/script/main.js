@@ -48,42 +48,46 @@ const parentElements = document.querySelectorAll('.catalog-page__list-block');
 
 // Проходимся по каждому родительскому элементу
 parentElements.forEach(parentElement => {
-  // Получаем все дочерние элементы списка
-  const listItems = parentElement.querySelectorAll('.catalog-page__list-item');
-  
-  // Скрываем все элементы, начиная с пятого
-  for (let i = 5; i < listItems.length; i++) {
-    listItems[i].style.display = 'none';
+// Получаем все дочерние элементы списка
+const listItems = parentElement.querySelectorAll('.catalog-page__list-item');
+
+// Проверяем количество элементов списка
+if (listItems.length > 5) {
+// Скрываем все элементы, начиная с пятого
+for (let i = 5; i < listItems.length; i++) {
+listItems[i].style.display = 'none';
+}
+// Создаем кнопку "Показать еще"
+const showMoreButton = document.createElement('button');
+showMoreButton.textContent = 'Показать еще';
+showMoreButton.classList.add('catalog-page__list-btn');
+
+//обавляем обработчик события на кнопку
+showMoreButton.addEventListener('click', () => {
+  // Проверяем текущее состояние кнопки
+  if (showMoreButton.textContent === 'Показать еще') {
+    // Показываем скрытые элементы
+    for (let i = 5; i < listItems.length; i++) {
+      listItems[i].style.display = '';
+    }
+    // Меняем текст кнопки на "Скрыть"
+    showMoreButton.textContent = 'Скрыть';
+  } else {
+    // Скрываем элементы, начиная с пятого
+    for (let i = 5; i < listItems.length; i++) {
+      listItems[i].style.display = 'none';
+    }
+    //еняем текст кнопки наПоказать еще"
+    showMoreButton.textContent = 'Показать еще';
   }
-  
-  // Создаем кнопку "Показать еще"
-  const showMoreButton = document.createElement('button');
-  showMoreButton.textContent = 'Показать еще';
-  showMoreButton.classList.add('catalog-page__list-btn');
-  
-  //обавляем обработчик события на кнопку
-  showMoreButton.addEventListener('click', () => {
-    // Проверяем текущее состояние кнопки
-    if (showMoreButton.textContent === 'Показать еще') {
-      // Показываем скрытые элементы
-      for (let i = 5; i < listItems.length; i++) {
-        listItems[i].style.display = '';
-      }
-      // Меняем текст кнопки на "Скрыть"
-      showMoreButton.textContent = 'Скрыть';
- } else {
-      // Скрываем элементы, начиная с пятого
-      for (let i = 5; i < listItems.length; i++) {
-        listItems[i].style.display = 'none';
-      }
-      //еняем текст кнопки наПоказать еще"
-      showMoreButton.textContent = 'Показать еще';
- }
-  });
-  
-  //обавляем кнопку водительский элемент
-  parentElement.appendChild(showMoreButton);
 });
+
+
+//обавляем кнопку водительский элемент
+parentElement.appendChild(showMoreButton);
+}
+});
+// -------------------------------------------------------
 
 
 // Получаем все элементы с классом .catalog-page-item__filter-typ-btn
