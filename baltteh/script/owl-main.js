@@ -163,6 +163,7 @@ $(document).ready(function () {
         autoplay:false,
         autoplayTimeout:5000,
         nav: true,
+        dots: true,
         mouseDrag: true,
         responsive:{
             0 : {

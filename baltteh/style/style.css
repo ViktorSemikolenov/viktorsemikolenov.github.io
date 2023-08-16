@@ -800,9 +800,7 @@ input:hover, textarea:hover {
 }
 
 .product-card .owl-dots {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -5791,4 +5789,7 @@ text-decoration: none;
     position: absolute;
     bottom: 12px;
     width: 90%;
+}
+.fancybox__toolbar__items{
+    display: none !important;
 }

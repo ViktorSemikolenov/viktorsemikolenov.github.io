@@ -11,7 +11,7 @@ $(document).ready(function() {
         nav: true,
         autoplay: false, 
         dots: true,
-        loop: true,
+        loop: false,
         navContainer: '.nav-product-row',
         responsiveRefreshRate: 200,
         navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
@@ -33,18 +33,18 @@ $(document).ready(function() {
 
     function syncPosition(el) {
         //if you set loop to false, you have to restore this next line
-        //var current = el.item.index;
+        var current = el.item.index;
 
         //if you disable loop you have to comment this block
-        var count = el.item.count - 4;
-        var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+        // var count = el.item.count - 4;
+        // var current = Math.round(el.item.index - (el.item.count / 2) - .5);
 
-        if (current < 0) {
-            current = count;
-        }
-        if (current > count) {
-            current = 0;
-        }
+        // if (current < 0) {
+        //     current = count;
+        // }
+        // if (current > count) {
+        //     current = 0;
+        // }
 
         //end block
 

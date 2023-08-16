@@ -4997,6 +4997,11 @@ font-weight: 700;
     .product-card.no-hit .label-product_stonks{
         top:45px;
     }
+
+    .product-page-info__info .col-right button{
+        width: 100%;
+        justify-content: flex-start;
+    }
 }
 @media(max-width:420px){
     .product-card .owl-item .item>img, .owl-product-slider, .product-card__header{

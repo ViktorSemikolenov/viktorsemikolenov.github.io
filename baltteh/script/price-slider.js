@@ -2,7 +2,7 @@ function setupProductFilter(parentElement) {
   const rangeInput = parentElement.querySelectorAll(".range-input input"),
   priceInput = parentElement.querySelectorAll(".price-input input"),
   range = parentElement.querySelector(".slider .progress");
-  let priceGap = 10;
+  let priceGap = 1;
   
   priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {
