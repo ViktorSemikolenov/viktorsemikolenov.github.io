@@ -1526,7 +1526,6 @@ input:hover, textarea:hover {
     color: #FFF;
     font-size: 14px;
     font-weight: 500;
-    text-transform: capitalize;
     text-decoration: none;
 }
 
@@ -2195,6 +2194,10 @@ input:hover, textarea:hover {
 .about-content {
     margin-top: 0;
     padding-top: 0;
+}
+
+.about-text{
+    max-width: 972px;
 }
 
 .about-text h3 {
@@ -5792,4 +5795,12 @@ text-decoration: none;
 }
 .fancybox__toolbar__items{
     display: none !important;
+}
+.range-input.active .confirmation-window{
+    display: block;
+    left: 110%;
+    bottom: 0;
+}
+.confirmation-window.hidden{
+    display: none;
 }

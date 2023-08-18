@@ -53,3 +53,14 @@ checkboxRows.forEach(function(checkboxRow) {
 });
 });
 });
+
+function addActiveClass(parentElement) {
+  $(parentElement).addClass("active");
+  }
+
+
+$(document).ready(function() {
+  $(".checkbox-row").click(function() {
+    $(".range-input").removeClass("active");
+  });
+});
