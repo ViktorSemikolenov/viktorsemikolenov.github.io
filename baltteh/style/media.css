@@ -335,9 +335,10 @@
         margin-right: 0 !important;
     }
 
-    .section-product-filter__product {
+    .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content {
         width: 1050px;
     }
+    
 
     .label-product {
         left: -45px;
@@ -795,7 +796,7 @@
     }
 
     .section-product__bottom .section-product__bottom-content,
-    .section-content-right .container>div {
+    .section-content-right .container>div, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content {
         width: 925px;
     }
 
@@ -1252,7 +1253,7 @@
         padding-top: 0;
     }
 
-    .section-product-filter__product {
+    .section-product-filter__product, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content {
         width: 699px;
     }
 
@@ -1365,7 +1366,7 @@
     }
 
     .no-filter_page .section-product-filter__product,
-    .no-filter_page .section-product-filter__col {
+    .no-filter_page .section-product-filter__col, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content {
         width: 940px !important;
     }
 
@@ -2985,6 +2986,27 @@ font-weight: 700;
 }
 .product-card.no-hit .label-product_stonks{
     top:65px;
+}
+.confirmation-window{
+    position: static;
+    margin-left: 0;
+    width: 100%;
+
+}
+.checkbox-row{
+    flex-wrap: wrap;
+}
+.product-filter .slider{
+    margin-bottom: 10px;
+}
+.range-input input{
+    top: -30px;
+}
+.section-product-filter__product, .section-product-filter__col, .section-product__bottom-content{
+    width: 100%;
+}
+.no-filter_page .section-product-filter__product, .no-filter_page .section-product-filter__col, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content{
+    width: 680px !important;
 }
 }
 
@@ -4792,6 +4814,9 @@ font-weight: 700;
         width: 100%;
         margin-top: 12px;
     }
+    .no-filter_page .section-product-filter__product, .no-filter_page .section-product-filter__col, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content{
+        width: 480px !important;
+    }
 }
 
 @media(max-width:479px) {
@@ -5001,6 +5026,9 @@ font-weight: 700;
     .product-page-info__info .col-right button{
         width: 100%;
         justify-content: flex-start;
+    }
+    .no-filter_page .section-product-filter__product, .no-filter_page .section-product-filter__col, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content{
+        width: 100% !important;
     }
 }
 @media(max-width:420px){

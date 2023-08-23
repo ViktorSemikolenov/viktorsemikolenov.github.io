@@ -2216,7 +2216,15 @@ input:hover, textarea:hover {
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;
-
+    line-height: 150%;
+}
+.about-text ul{
+    margin-top: 24px;
+    list-style: disc;
+    padding-left: 20px;
+}
+.about-text ul li{
+    margin-bottom: 6px;
 }
 
 .section-brand__header {
@@ -4969,7 +4977,7 @@ text-decoration: none;
 }
 
 /* полоса прокрутки (скроллбар) */
-::-webkit-scrollbar {
+.search-filter-result::-webkit-scrollbar {
     width: 3px; /* ширина для вертикального скролла */
     height: 8px; /* высота для горизонтального скролла */
     background-color: #ACAFB1;
@@ -4977,30 +4985,30 @@ text-decoration: none;
 }
 
 /* ползунок скроллбара */
-::-webkit-scrollbar-thumb {
+.search-filter-result::-webkit-scrollbar-thumb {
     border-radius: 35px;
 background: #F6DE63;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.search-filter-result::-webkit-scrollbar-thumb:hover {
     background: #fcd200;
 }
 
 /* Стрелки */
 
-::-webkit-scrollbar-button:vertical:start:decrement {
+.search-filter-result::-webkit-scrollbar-button:vertical:start:decrement {
     display: none;
 }
 
-::-webkit-scrollbar-button:vertical:end:increment {
+.search-filter-result::-webkit-scrollbar-button:vertical:end:increment {
     display: none;
 }
 
-::-webkit-scrollbar-button:horizontal:start:decrement {
+.search-filter-result::-webkit-scrollbar-button:horizontal:start:decrement {
     display: none;
 }
 
-::-webkit-scrollbar-button:horizontal:end:increment {
+.search-filter-result::-webkit-scrollbar-button:horizontal:end:increment {
     display: none;
 }
 
@@ -5633,6 +5641,7 @@ text-decoration: none;
     border-radius: 8px;
     position: relative;
     margin-right: 24px;
+    text-decoration: none;
 }
 
 .btn-clear-filter::after{
@@ -5803,4 +5812,16 @@ text-decoration: none;
 }
 .confirmation-window.hidden{
     display: none;
+}
+.search-filter-result .checkbox-row .confirmation-window{
+    top: 15%;
+}
+.section-product__bottom-content{
+    width: 100%;
+}
+.section-product-filter__col, .section-product__bottom-content {
+    width: 1200px;
+}
+.title-h3{
+    margin-top: 24px;
 }

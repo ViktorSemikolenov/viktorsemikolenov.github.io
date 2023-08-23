@@ -43,3 +43,5 @@ if ((maxVal - minVal) < priceGap) {
 // Применяем функцию для всех элементов .product-filter__body
 const productFilterBodies = document.querySelectorAll('.product-filter__body');
 productFilterBodies.forEach(setupProductFilter);
+
+
