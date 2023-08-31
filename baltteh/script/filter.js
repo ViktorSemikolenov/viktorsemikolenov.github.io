@@ -84,3 +84,12 @@ $(document).ready(function() {
     $(".range-input").removeClass("active");
   });
 });
+
+// Находим все элементы с классом ".confirmation-window"
+const confirmationWindows = document.querySelectorAll('.confirmation-window');
+
+// Перебираем все элементы, начиная со второго
+for (let i = 1; i < confirmationWindows.length; i++) {
+  // Удаляем текущий элемент
+  confirmationWindows[i].remove();
+}
