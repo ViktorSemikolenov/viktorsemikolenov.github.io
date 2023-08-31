@@ -33,6 +33,18 @@ checkboxRows.forEach((checkboxRow) => {
 });
 
 
+// Находим все элементы с классом "confirmation-window"
+var confirmationWindowsR = document.getElementsByClassName("confirmation-window");
+
+// Проверяем, есть ли более одного элемента
+if (confirmationWindowsR.length > 1) {
+  // Удаляем все элементы, кроме первого
+  for (var i = 1; i < confirmationWindowsR.length; i++) {
+    confirmationWindowsR[i].parentNode.removeChild(confirmationWindows[i]);
+  }
+}
+
+
 const searchForms = document.querySelectorAll('.product-filter__body .search-form_filter');
 const checkboxRowsResults = document.querySelectorAll('.product-filter__body .search-filter-result');
 
