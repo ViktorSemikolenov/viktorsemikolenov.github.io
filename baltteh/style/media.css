@@ -1767,6 +1767,12 @@
         left: 10px;
         top: 10px;
     }
+    .no-filter_page .section-product-filter__product, .no-filter_page .section-product-filter__col, .section-product-filter__product, .section-product-filter__col, .section-product__bottom-content{
+        width: 699px !important;
+    }
+    .section-product-filter__product{
+        width: 725px !important;
+    }
 }
 
 @media(max-width:939px) {
@@ -3034,7 +3040,9 @@ font-weight: 700;
 .checkbox-row .confirmation-window{
     margin-top: 8px;
 }
-
+.section-product-filter__product{
+    width: 700px !important;
+}
 }
 
 @media(max-width:699px) {

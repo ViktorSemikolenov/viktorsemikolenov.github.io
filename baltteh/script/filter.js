@@ -1,4 +1,3 @@
- 
   // Получаем ссылки на элементы DOM
   const btnOpenFilter = document.querySelector('.btn-open-filter');
   const productFilter = document.querySelector('.product-filter');
@@ -18,40 +17,40 @@
 
 
   
-// Находим все элементы .checkbox-row
-const checkboxRows = document.querySelectorAll('.checkbox-row');
+// // Находим все элементы .checkbox-row
+// const checkboxRows = document.querySelectorAll('.checkbox-row');
 
-// Добавляем обработчик события клика для каждого элемента .checkbox-row
-checkboxRows.forEach((checkboxRow) => {
-  checkboxRow.addEventListener('click', () => {
-    // Находим элемент confirmation-window
-    const confirmationWindow = document.querySelector('.confirmation-window');
+// // Добавляем обработчик события клика для каждого элемента .checkbox-row
+// checkboxRows.forEach((checkboxRow) => {
+//   checkboxRow.addEventListener('click', () => {
+//     // Находим элемент confirmation-window
+//     const confirmationWindow = document.querySelector('.confirmation-window');
 
-    // Перемещаем элемент confirmation-window внутрь выбранного checkboxRow
-    checkboxRow.appendChild(confirmationWindow);
-  });
-});
+//     // Перемещаем элемент confirmation-window внутрь выбранного checkboxRow
+//     checkboxRow.appendChild(confirmationWindow);
+//   });
+// });
 
 
-// Получаем все элементы checkbox-row
-const checkboxRowTwo = document.querySelectorAll('.checkbox-row');
+// // Получаем все элементы checkbox-row
+// const checkboxRowTwo = document.querySelectorAll('.checkbox-row');
 
-// Проходимся циклом по всем checkbox-row элементам
-checkboxRowTwo.forEach(row => {
-  // Получаем все .confirmation-window элементы внутри текущего checkbox-row
-  const confirmationWindowsTwo = row.querySelectorAll('.confirmation-window');
+// // Проходимся циклом по всем checkbox-row элементам
+// checkboxRowTwo.forEach(row => {
+//   // Получаем все .confirmation-window элементы внутри текущего checkbox-row
+//   const confirmationWindowsTwo = row.querySelectorAll('.confirmation-window');
   
-  // Если количество .confirmation-window элементов больше одного, то удаляем их
-  if (confirmationWindowsTwo.length > 1) {
-    confirmationWindowsTwo.forEach(element => {
-      element.remove();
-    });
-  }
-});
+//   // Если количество .confirmation-window элементов больше одного, то удаляем их
+//   if (confirmationWindowsTwo.length > 1) {
+//     confirmationWindowsTwo.forEach(element => {
+//       element.remove();
+//     });
+//   }
+// });
 
 
-var confirmationWindow = document.querySelector('.confirmation-window');
-confirmationWindow.remove();
+// var confirmationWindow = document.querySelector('.confirmation-window');
+// confirmationWindow.remove();
 
 const searchForms = document.querySelectorAll('.product-filter__body .search-form_filter');
 const checkboxRowsResults = document.querySelectorAll('.product-filter__body .search-filter-result');
@@ -85,11 +84,16 @@ $(document).ready(function() {
   });
 });
 
-// Находим все элементы с классом ".confirmation-window"
-const confirmationWindows = document.querySelectorAll('.confirmation-window');
 
-// Перебираем все элементы, начиная со второго
-for (let i = 1; i < confirmationWindows.length; i++) {
-  // Удаляем текущий элемент
-  confirmationWindows[i].remove();
-}
+
+$(document).ready(function() {
+  $(".checkbox-row").click(function() {
+    var checkboxPos = $(this).position().top;
+    var parentPos = $(this).closest(".product-filter__content-content").position().top;
+    var windowPos = checkboxPos - parentPos;
+    $(".confirmation-window").css({
+      top: windowPos,
+      "transition-duration": "0.3s"
+    });
+  });
+});

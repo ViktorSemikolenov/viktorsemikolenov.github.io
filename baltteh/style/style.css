@@ -3393,9 +3393,7 @@ input:hover, textarea:hover {
     background-size: contain;
     background-position: center;
 }
-.product-filter__item{
-    position: relative;
-}
+
 .product-filter__item-header {
     width: 100%;
     display: -webkit-box;
@@ -3705,7 +3703,7 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 15px;
     text-align: center;
     padding: 11px 20px 20px;
-    display: none;
+    display: block;
 }
 .checkbox-row .confirmation-window{
     display: block;
@@ -5636,7 +5634,7 @@ text-decoration: none;
     border-radius: 10px;
     border: 1px solid #DCDEDF;
     background: #ffffff;
-    margin-right: 27px;
+    margin-right: 16px;
     line-height: 17px;
     position: relative;
     text-decoration: none;
@@ -5650,6 +5648,7 @@ text-decoration: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    flex-wrap: wrap;
 }
 
 .btn-filter-page::after{
@@ -5682,8 +5681,9 @@ text-decoration: none;
     padding-right: 32px;
     border-radius: 8px;
     position: relative;
-    margin-right: 24px;
+    margin-right: 0px;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .btn-clear-filter::after{
@@ -5700,7 +5700,9 @@ text-decoration: none;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    flex-wrap: wrap;
 }
+
 
 .fixed-nav .basket-small, .fixed-nav .wishlist-small{
     top: 40px;
