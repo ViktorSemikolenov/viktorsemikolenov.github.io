@@ -93,7 +93,7 @@ $(document).ready(function() {
     var windowPos = checkboxPos - parentPos;
     $(".confirmation-window").css({
       top: windowPos,
-      "transition-duration": "0.3s"
+      "transition-duration": "0s"
     });
   });
 });
