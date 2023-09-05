@@ -3698,7 +3698,7 @@ input[type="range"]::-moz-range-thumb {
     background-color: #FAFAFA;
     position: absolute;
     left: 100%;
-    top:-1000px;
+    top:-1200px;
     margin-left: 10px;
     z-index: 999999;
     border-radius: 15px;

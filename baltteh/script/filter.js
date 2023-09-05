@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $(".checkbox-row").click(function() {
+  $(".checkbox-row, .range-input ").click(function() {
     var checkboxPos = $(this).position().top;
     var parentPos = $(this).closest(".product-filter__content-content").position().top;
     var windowPos = checkboxPos - parentPos;
