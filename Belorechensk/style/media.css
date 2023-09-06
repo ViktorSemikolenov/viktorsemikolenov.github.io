@@ -257,6 +257,11 @@
     .navigation.fixed, .navigation.open-menu{
         top: -211px;
     }
+    a.drop-navigation__header-link{
+        border-bottom: thin solid #D6E3EA;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
 }
 @media(max-width:760px){
     .container{
