@@ -233,10 +233,10 @@
     .business{
         margin-top: 32px;
     }
-    .owl-four-slider .owl-stage-outer{
+    /* .owl-four-slider .owl-stage-outer{
         overflow: visible !important; 
 
-    }
+    } */
     body, html{
         overflow-x: hidden;
     }
@@ -254,7 +254,7 @@
         margin-top: 4px;
         margin-left: 0;
     }
-    .navigation.fixed{
+    .navigation.fixed, .navigation.open-menu{
         top: -211px;
     }
 }
@@ -488,7 +488,7 @@
         margin: 0 auto;
         margin-top: 16px;
     }
-    .navigation.fixed{
+    .navigation.fixed, .navigation.open-menu{
         top: 0;
     }
     .navigation.fixed .level-two{

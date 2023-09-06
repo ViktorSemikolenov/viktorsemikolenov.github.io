@@ -97,7 +97,6 @@ $(document).ready(function() {
 $('.drop-navigation__header').click(function() {
   var parentCol = $(this).parent('.drop-navigation__col');
   parentCol.toggleClass('active');
-  parentCol.siblings('.drop-navigation__col').removeClass('active');
 });
 
 // -------------------------------------------------
@@ -105,4 +104,21 @@ $('.drop-navigation__header').click(function() {
 $('.btn-menu-open').click(function() {
   $('.drop-navigation').toggleClass("active");
   $(this).toggleClass("active");
+  $('body').toggleClass("overflow-hidden");
+  $('html').toggleClass("overflow-hidden");
+  $('.navigation').toggleClass("open-menu");
+});
+
+// -------------------------------------------
+$(document).ready(function() {
+  $(window).on('resize', function() {
+    if ($(window).width() < 760) {
+      $('.drop-navigation__col').removeClass('active');
+    }
+  });
+
+  // Также выполните проверку при загрузке страницы
+  if ($(window).width() < 760) {
+    $('.drop-navigation__col').removeClass('active');
+  }
 });

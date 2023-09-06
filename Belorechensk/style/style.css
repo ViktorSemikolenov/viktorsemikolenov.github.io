@@ -400,8 +400,12 @@ body {
     border: 1px solid #E3E4E7;
     background: #FFF;
     padding: 16px;
+    text-decoration: none;
 }
-
+.banner:hover .banner-title{
+    color: #00AEEF;
+    transition-duration: 0.3s;
+}
 .banner-img-container {
     width: 376px;
     display: flex;
@@ -426,7 +430,7 @@ body {
     font-style: normal;
     font-weight: 800;
     line-height: 125%;
-
+    transition-duration: 0.3s;
 }
 
 .card-item {
@@ -755,6 +759,13 @@ a.card-item:hover .card-item__title {
     align-items: center;
     padding: 20px;
     min-height: 112px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.activity__item:hover{
+    border: 1px solid var(--Line, #E3E4E7);
+    background: #E8F9FF;
+    transition-duration: 0.3s;
 }
 
 .activity__item-title {
@@ -929,6 +940,9 @@ a.card-item:hover .card-item__title {
     border-radius: 4px;
     border: 1px solid var(--Line, #E3E4E7);
     background: #E8F9FF;
+}
+.business .activity__item:hover{
+    background-color: #ffffff;
 }
 
 .citizens,
@@ -1396,9 +1410,10 @@ input:focus {
 }
 .drop-navigation.active{
     height: 100vh;
-
+    overflow-y: scroll;
     transition-duration: 0.3s;
     padding-top: 40px;
+    padding-bottom: 120px;
 }
 .btn-menu-open.active{
     background-image: url(../image/icons/close-menu.svg);
@@ -1424,4 +1439,18 @@ input:focus {
 }
 .level-one .logo-fix{
     display: none;
+}
+.overflow-hidden{
+    overflow: hidden !important;
+}
+.navigation{
+    transition-duration: 0.3s;
+}
+.navigation.open-menu{
+    top: -194px;
+    transition-duration: 0.3s;
+}
+
+.navigation.fixed{
+    transition-duration: 0s;
 }
