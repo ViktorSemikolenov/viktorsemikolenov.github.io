@@ -122,3 +122,24 @@ $(document).ready(function() {
     $('.drop-navigation__col').removeClass('active');
   }
 });
+
+
+$(document).ready(function() {
+  $(window).on('resize', function() {
+    adjustNavigation();
+  });
+
+  // Также выполните проверку при загрузке страницы
+  adjustNavigation();
+});
+
+function adjustNavigation() {
+  var $thirdElement = $('.drop-navigation__col').eq(2); // Выбираем третий элемент
+  var $eighthElement = $('.drop-navigation__col').eq(7); // Выбираем восьмой элемент
+
+  // Получаем высоту третьего элемента
+  var thirdElementHeight = $thirdElement.height();
+
+  // Устанавливаем высоту восьмого элемента равной высоте третьего элемента
+  $eighthElement.css('top', -thirdElementHeight + 'px');
+}
