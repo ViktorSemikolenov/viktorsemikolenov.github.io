@@ -31,7 +31,7 @@ $(document).ready(function () {
         responsive : {
             // breakpoint from 0 up
             0 : {
-                items:1,
+                items:2,
 
             },
             // breakpoint from 480 up
@@ -40,8 +40,8 @@ $(document).ready(function () {
                 margin: 24,
 
             },
-            1050 : {
-                items: 2,
+            1260 : {
+                items: 4,
 
             },
             // breakpoint from 768 up

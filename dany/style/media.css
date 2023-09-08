@@ -1,0 +1,213 @@
+@media(max-width:1439px){
+    .container{
+        width: 1200px;
+    }
+    .search{
+        width: 500px;
+    }
+    .banner-link{
+        height: 345px;
+    }
+}
+@media(max-width:1260px){
+    .container{
+        width: 720px;
+    }
+    .feed-back__phone{
+        display: none;
+    }
+    .search{
+        width: 280px;
+    }
+    .address-select__header{
+        width: 180px;
+    }
+    .banner-link{
+        height: 230px;
+    }
+    .address-select{
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    .owl-nav button{
+        width: 40px;
+        height: 40px;
+    }
+    .owl-next{
+        right: -20px;
+    }
+    .owl-prev{
+        left: -20px;
+    }
+    .restaurants-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .restaurants-header{
+        flex-wrap: wrap;
+
+    }
+    .restaurants-nav{
+        width: 100%;
+        overflow-x: scroll;
+        display: none;
+    }
+    .mb32{
+        margin-bottom: 24px;
+    }
+    section{
+        padding-bottom: 40px;
+    }
+    .restaurants-header{
+        margin-top: 24px;
+    }
+    .seo-text .container{
+        height: 200px;
+    }
+    .seo-text::before{
+        bottom: 0;
+    }
+    .btn-link{
+        bottom: 24px;
+    }
+    .text-col-two{
+        grid-template-columns: 1fr;
+    }
+    .sub-nav__link{
+        margin-left: 20px;
+    }
+    .app-section__img{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .container{
+        width: 95%;
+        max-width: 375px;
+    }
+    .app-download{
+        display: none;
+    }
+    .sub-nav__items{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .sub-nav{
+        width: 100%;
+    }
+    .sub-nav__link{
+        margin: 0;
+    }
+    .level-two .col-left{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .level-two .col-right{
+        display: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+        margin-top: 10px;
+    }
+    body{
+        padding-top: 164px;
+    }
+    .banner-link{
+        height: 120px;
+    }
+    .shops-link{
+        height: 100px;
+    }
+    .label{
+        font-size: 13px;
+        width: 125px;
+        justify-content: center;
+        display: flex;
+        left: 8px;
+        transform: translateX(0);
+    }
+    section{
+        padding-bottom: 28px;
+    }
+    .title{
+        font-size: 26px;
+    }
+    .address-select__body, .address-list{
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+    }
+    .restaurants-cards{
+        grid-template-columns: 1fr;
+        margin-top: 12px;
+    }
+    .sale-label{
+        right: 8px;
+        left: auto;
+    }
+    .app-section .container{
+        padding: 24px;
+    }
+    .restaurants-item__img{
+        height: 180px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .restaurants-item__info span{
+        font-size: 15px;
+    }
+    .down-menu{
+        display: flex;
+        position: fixed;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        padding: 8px 32px;
+        border-radius: 900px;
+    }
+    .down-menu .col-right{
+        display: flex;
+    }
+    .f-level-one{
+        flex-wrap: wrap;
+    }
+    .f-level-one .app-row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    .f-level-one .sub-nav__items{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .f-level-one .col{
+        width: 100%;
+    }
+    .footer-page{
+        padding-bottom: 90px;
+    }
+    .f-lavel-two{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .f-lavel-two span{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .app-section .container{
+        padding: 20px;
+        border-radius: 12px;
+    }
+    .f-level-one .col{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    body, html{
+        overflow-x: hidden;
+    }
+}

@@ -44,6 +44,31 @@
                                 <span class="address-select__title">г Омск, ул 5-я Кордная, 21</span>
                                 <img src="image/icons/down-arrow.svg" alt="down">
                             </header>
+                            <div class="address-select__body">
+                                <p>Заказ на этот адрес?</p>
+                                <span>5-я Кордная улица, 21</span>
+                                <div class="row">
+                                    <button class="btn btn-grey close-city open-modal" data-modal="#modal1">Нет</button>
+                                    <button class="btn btn-blue close-city">Да</button>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <button class="add-adress open-modal" data-modal="#modal1">Добавить новый адрес </button>
+                                <form action="#">
+                                    <label class="address-list__item" for="city-one">
+                                        <input checked type="radio" name="сшен-срусл" id="city-one">
+                                        <span class="check"></span>
+                                        г Омск, ул 5-я Кордная, 21
+                                    </label>
+                                    <label class="address-list__item" for="city-two">
+                                        <input type="radio" name="сшен-срусл" id="city-two">
+                                        <span class="check"></span>
+                                        г Омск, Ленина, 2
+                                    </label>
+                                </form>
+                                
+                            </div>
+                            
                         </div>
                         <form action="#" class="search">
                             <input required placeholder="Например KFC" type="search" name="Поиск" id="search">
@@ -51,7 +76,7 @@
                         </form>
                         <div class="feed-back__phone">
                             <a href="tel:+8 800 555 35 35">8 800 555 35 35</a>
-                            <button class="btn-link">Заказать звонок</button>
+                            <button class="open-modal" data-modal="#modal2">Заказать звонок</button>
                         </div>
                     </div>
                     <div class="col-right">
@@ -61,7 +86,7 @@
                         </a>
                         <button href="#" class="icon-btn">
                             <img src="image/icons/basket.png" alt="basket">
-                            <span>Войти</span>
+                            <span>Заказы</span>
                         </button>
                     </div>
                 </div>
@@ -300,7 +325,112 @@
             </div>
         </div>
     </section>
-    section.
+    <section class="app-section">
+        <div class="container">
+            <div class="app-section__info">
+                <h2 class="title">Скачивайте приложение <br>DanyExpress на свой смартфон</h2>
+                <p>DANY EXPRESS доступен бесплатно в App Store и Google Play.</p>
+                <div class="qr-row">
+                    <a href="#" target="_blank" class="qr-item">
+                        <img src="image/content/qr.jpg" alt="qr">
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" target="_blank" class="qr-item">
+                        <img src="image/content/qr.jpg" alt="qr">
+                        <span>Google Play</span>
+                    </a>
+                </div>
+            </div>
+            <img src="image/content/app-phone.png" alt="app" class="app-section__img">
+        </div>
+    </section>
+    <section class="seo-text">
+        <div class="container">
+            <h2 class="title">Текст для SEO</h2>
+            <h3>Подзаголовок</h3>
+            <div class="text-col-two">
+                <p>Перед оплатой необходимо получить подтверждение о наличии товара на складе и согласовать сроки поставки, если товар Заказной. При Оформлении Заказа Нужно Дождаться Статуса Заказа «Подтвержден» При Получении Заказа Покупатель Получает Все Необходимые Документы (Оригиналы: Счет, Счет-Фактура, И Товарная Накладная (УПД)).</p>
+                <p>Перед оплатой необходимо получить подтверждение о наличии товара на складе и согласовать сроки поставки, если товар Заказной. При Оформлении Заказа Нужно Дождаться Статуса Заказа «Подтвержден» При Получении Заказа Покупатель Получает Все Необходимые Документы (Оригиналы: Счет, Счет-Фактура, И Товарная Накладная (УПД)).</p>
+                <p>Перед оплатой необходимо получить подтверждение о наличии товара на складе и согласовать сроки поставки, если товар Заказной. При Оформлении Заказа Нужно Дождаться Статуса Заказа «Подтвержден» При Получении Заказа Покупатель Получает Все Необходимые Документы (Оригиналы: Счет, Счет-Фактура, И Товарная Накладная (УПД)).</p>
+                <p>Перед оплатой необходимо получить подтверждение о наличии товара на складе и согласовать сроки поставки, если товар Заказной. При Оформлении Заказа Нужно Дождаться Статуса Заказа «Подтвержден» При Получении Заказа Покупатель Получает Все Необходимые Документы (Оригиналы: Счет, Счет-Фактура, И Товарная Накладная (УПД)).</p>
+            </div>
+            <button class="btn-link">Показать текст</button>
+        </div>
+    </section>
+    <footer class="footer-page">
+        <div class="container">
+            <div class="f-level-one row space-between align-center">
+                <div class="col row align-center">
+                    <a href="/" class="logo">
+                        <img src="image/logo-white.png" alt="">
+                    </a>
+                    <div class="app-row">
+                        <a target="_blank" href=""><img src="image/icons/google-play.png" alt=""></a>
+                        <a target="_blank" href=""><img src="image/icons/app-store.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="sub-nav__items">
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">Партнёрам</a></li>
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">Вакансии</a></li>
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">О нас</a></li>
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f-lavel-two row align-center space-between">
+                <span>© 2023 «DanyExpress»</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+    <div class='modal modal-city' id='modal1'>
+        <div class="content">
+            <h2 class="title">Укажите адрес доставки</h2>
+            <form action="#" class="search">
+                <input required="" placeholder="Ваш адрес" type="search" name="Поиск" id="search">
+                <button class="btn-search close-modal" data-modal="#modal1">Добавить</button>
+            </form>
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb17e9897c174b8d1426526b3406225eb270745f8c9274b0a2983f9f14aaf867&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+        </div>
+        <button class='close-modal' data-modal="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+            </svg>
+        </button>
+    </div> 
+
+
+    <div class='modal modal-feedback' id='modal2'>
+        <div class="content">
+            <h2 class="title">Консультация</h2>
+            <form class="vertical-form" action="#">
+                <input required placeholder="Имя" type="text" name="name" id="name">
+                <input required placeholder="Номер телефона" type="tel" name="" id="">
+                <input placeholder="Почта" type="email" name="" id="">
+                <button class="btn-search " data-modal="#modal1">Отправить</button>
+                <p>нажимая на кнопку вы соглашаетесь на обработку персональных данных</p>
+            </form>
+        </div>
+        <button class='close-modal' data-modal="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+            </svg>
+        </button>
+    </div> 
+
+    <nav class="down-menu">
+        <div class="col-right">
+            <a href="#" class="icon-btn">
+                <img src="image/icons/user.svg" alt="user">
+                <span>Войти</span>
+            </a>
+            <button href="#" class="icon-btn">
+                <img src="image/icons/basket.png" alt="basket">
+                <span>Заказы</span>
+            </button>
+        </div>
+    </nav>
     <script src="script/jquery.min.js"></script>
     <script src="script/owl.carousel.min.js"></script>
     <script src="script/owl-main.js"></script>
