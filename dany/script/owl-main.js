@@ -9,7 +9,7 @@ $(document).ready(function () {
         autoplay:false,
         autoplayTimeout:5000,
         nav: true,
-        navText: ["<img src='../image/icons/arrow-left.svg'>","<img src='../image/icons/arrow-right.svg'>"],
+        navText: ["<img src='image/icons/arrow-left.svg'>","<img src='image/icons/arrow-right.svg'>"],
     })
 });
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
         autoplayTimeout:5000,
         nav: true,
         autoHeight:true,
-        navText: ["<img src='../image/icons/arrow-left.svg'>","<img src='../image/icons/arrow-right.svg'>"],
+        navText: ["<img src='image/icons/arrow-left.svg'>","<img src='image/icons/arrow-right.svg'>"],
         responsive : {
             // breakpoint from 0 up
             0 : {
