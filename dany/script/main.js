@@ -42,8 +42,9 @@ $('.close-city').click(function() {
 
 // --------------------------------------------------
 $('.address-select__header').click(function() {
+  var addressSelect = $(this).closest('.address-select');
   $(this).toggleClass('active');
-  $('.address-list').toggleClass('active');
+  addressSelect.find('.address-list').toggleClass('active');
 });
 
 
@@ -111,4 +112,67 @@ $(window).on('scroll', function() {
   } else {
     $('.navigation').removeClass('fixed'); // Удаляем класс, если прокрутка в начале
   }
+});
+
+// =========================================
+$('a[href^="#"]').on("click", function(e){
+  e.preventDefault();
+  var anchor = $(this).attr('href');
+  $('html, body').stop().animate({
+      scrollTop: $(anchor).offset().top - 100
+  }, 800);
+});
+
+// Находим все элементы счетчика на странице
+const decrementButtons = document.querySelectorAll('.decrement');
+const incrementButtons = document.querySelectorAll('.increment');
+const quantityInputs = document.querySelectorAll('.quantity');
+
+// Функция для обновления значения счетчика
+function updateQuantity(element, value) {
+  element.value = value;
+}
+
+// Обработчики клика на кнопки
+decrementButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    let value = parseInt(quantityInputs[index].value);
+    if (value > 0) {
+      value--;
+      updateQuantity(quantityInputs[index], value);
+    }
+  });
+});
+
+incrementButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    let value = parseInt(quantityInputs[index].value);
+    value++;
+    updateQuantity(quantityInputs[index], value);
+  });
+});
+// -------------------------------------
+
+$('.basket-open').click(function() {
+  $('.main-basket').toggleClass('active');
+});
+
+$('.close-basket').click(function() {
+  $('.main-basket').toggleClass('active');
+});
+$('.main-basket .overflow').click(function() {
+  $('.main-basket').toggleClass('active');
+});
+
+
+$(document).ready(function() {
+  $('.tab').click(function() {
+    var tabId = $(this).data('tab');
+    
+    $('.tab').removeClass('active');
+    $(this).addClass('active');
+    
+    $('.tab-pane').removeClass('active');
+    $('#' + tabId).addClass('active');
+  });
 });

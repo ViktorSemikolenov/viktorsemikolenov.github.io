@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="kz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/owl.carousel.min.css">
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="level-one">
+            <div class="container">
+                <div class="row space-between">
+                    <div class="app-download">
+                        <span>Мобильное приложение</span>
+                        <a target="_blank" href=""><img src="../image/icons/appStore.svg" alt="appStore"></a>
+                        <a target="_blank" href=""><img src="../image/icons/googleplay.svg" alt="googlefonts"></a>
+                    </div>
+                    <nav class="sub-nav">
+                        <ul class="sub-nav__items">
+                            <li class="sub-nav__item"><a class="sub-nav__link" href="#">Партнёрам</a></li>
+                            <li class="sub-nav__item"><a class="sub-nav__link" href="#">Вакансии</a></li>
+                            <li class="sub-nav__item"><a class="sub-nav__link" href="#">О нас</a></li>
+                            <li class="sub-nav__item"><a class="sub-nav__link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="level-two">
+            <div class="container">
+                <div class="row space-between">
+                    <div class="col-left">
+                        <a href="/" class="logo">
+                            <img src="../image/logo.png" alt="dany Express">
+                        </a>
+                        <div class="address-select">
+                            <header class="address-select__header">
+                                <span class="address-select__title">г Омск, ул 5-я Кордная, 21</span>
+                                <img src="../image/icons/down-arrow.svg" alt="down">
+                            </header>
+                            <div class="address-select__body">
+                                <p>Заказ на этот адрес?</p>
+                                <span>5-я Кордная улица, 21</span>
+                                <div class="row">
+                                    <button class="btn btn-grey close-city open-modal" data-modal="#modal1">Нет</button>
+                                    <button class="btn btn-blue close-city">Да</button>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <button class="add-adress open-modal" data-modal="#modal1">Добавить новый адрес </button>
+                                <form action="#">
+                                    <label class="address-list__item" for="city-one">
+                                        <input checked type="radio" name="сшен-срусл" id="city-one">
+                                        <span class="check"></span>
+                                        г Омск, ул 5-я Кордная, 21
+                                    </label>
+                                    <label class="address-list__item" for="city-two">
+                                        <input type="radio" name="сшен-срусл" id="city-two">
+                                        <span class="check"></span>
+                                        г Омск, Ленина, 2
+                                    </label>
+                                </form>
+                                
+                            </div>
+                            
+                        </div>
+                        <form action="#" class="search">
+                            <input required placeholder="Например KFC" type="search" name="Поиск" id="search">
+                            <button class="btn-search">Найти</button>
+                        </form>
+                        <div class="feed-back__phone">
+                            <a href="tel:+8 800 555 35 35">8 800 555 35 35</a>
+                            <button class="open-modal" data-modal="#modal2">Заказать звонок</button>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a href="#" class="icon-btn">
+                            <img src="../image/icons/user.svg" alt="user">
+                            <span>Войти</span>
+                        </a>
+                        <button href="#" class="icon-btn basket-open">
+                            <img src="../image/icons/basket.png" alt="basket">
+                            <span>Заказы</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-basket">
+        <div class="close-basket">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M1 21L21 1.00002M1 1L21 21" stroke="black"/>
+                </svg>
+        </div>
+        <div class="basket">
+            <div class="basket-header">
+                <header>
+                    <h3>Корзина</h3>
+                    <button class="clear-basket">Очистить</button>
+                </header>
+                <div class="basket-products">
+                    <div class="basket-product__item">
+                        <div>
+                            <div class="basket-product__item-img">
+                                <img src="../image/content/restaurants/salad.jpg" alt="Греческий">
+                            </div>
+                            <div class="basket-product__item-info">
+                                <h4>Греческий</h4>
+                                <div class="basket-product__item-row">
+                                    <span class="price">285p</span>
+                                    <span class="weight">280г</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <button class="decrement">-</button>
+                            <input class="quantity" type="number" value="1" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="basket-product__item">
+                        <div>
+                            <div class="basket-product__item-img">
+                                <img src="../image/content/restaurants/salad.jpg" alt="Греческий">
+                            </div>
+                            <div class="basket-product__item-info">
+                                <h4>Греческий</h4>
+                                <div class="basket-product__item-row">
+                                    <span class="price">285p</span>
+                                    <span class="weight">280г</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <button class="decrement">-</button>
+                            <input class="quantity" type="number" value="1" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="basket-product__item">
+                        <div>
+                            <div class="basket-product__item-img">
+                                <img src="../image/content/restaurants/salad.jpg" alt="Греческий">
+                            </div>
+                            <div class="basket-product__item-info">
+                                <h4>Греческий</h4>
+                                <div class="basket-product__item-row">
+                                    <span class="price">285p</span>
+                                    <span class="weight">280г</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="counter">
+                            <button class="decrement">-</button>
+                            <input class="quantity" type="number" value="1" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="basket-footer">
+                <div class="dely-info">
+                    <div class="deli-info__icon">
+                        <img src="../image/icons/dely-basket.svg" alt="">
+                    </div>
+                    <span class="deli-info__total">
+                        <p class="deli-info__total-price">Доставка 319p</p>
+                        <p class="deli-info__total-pric-free">До бесплатной 710p</p>
+                    </span>
+                </div>
+                <div class="pay-btn">
+                    <span class="pay-total">1 710p</span>
+                    <a href="pay-page.html" class="btn-blue">К оплате</a>
+                </div>
+            </footer>
+        </div>
+        <div class="overflow"></div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <h2 class="title">О компании</h2>
+            <div class="about__row">
+                <div class="about__info">
+                    <div class="about__img">
+                        <img src="../image/content/about.jpg" alt="">
+                    </div>
+                    <div class="about__text">
+                        <h3>DANY EXPRESS</h3>
+                        <p>Добро пожаловать на наш новый онлайн сервис организации быстрой оплаты и самовывоза! Мы предлагаем Вам удобный и быстрый способ получения заказов, без ожидания в очереди и лишних трат времени. Наш сервис очень удобен особенно для жителей мегаполисов, где постоянные пробки и нехватка парковочных мест являются обычным явлением. Вы можете заказать любой товар или блюдо из вашего любимого ресторана, а затем забрать его уже готовым в удобной для вас точке самовывоза.</p>
+                    </div>
+                </div>
+                <div class="about-triggers">
+                    <div class="trigger-item">
+                        <span>2013</span>
+                        <p>10 лет на рынке</p>
+                    </div>
+                    <div class="trigger-item">
+                        <span>2013</span>
+                        <p>10 лет на рынке</p>
+                    </div>
+                    <div class="trigger-item">
+                        <span>2013</span>
+                        <p>10 лет на рынке</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-col-two">
+                <p>Мы также предлагаем Вам возможность оформить заказ с помощью Диспетчера, который поможет Вам выбрать подходящую точку самовывоза, а также указать время и дату, когда Ваш заказ должен быть готов. Это особенно удобно, если у вас ограниченное время на обед или забегаете на промежуточную остановку в ходе своих дел.</p>
+                <p>Кроме того, мы также предлагаем услугу "Вынос на парковку", которая позволяет нашим клиентам получить свой заказ прямо к автомобилю. Это идеальное решение для тех, кто не может выйти из машины. Наш сервис гарантирует сохранность Ваших средств, а также предлагает удобную и легкую систему оплаты.</p>
+                
+            </div>
+        </div>
+    </div>
+    <section class="app-section about-app">
+        <div class="container">
+            <div class="app-section__info">
+                <h2 class="title">Скачивайте приложение <br>DanyExpress на свой смартфон</h2>
+                <p>DANY EXPRESS доступен бесплатно в App Store и Google Play.</p>
+                <div class="qr-row">
+                    <a href="#" target="_blank" class="qr-item">
+                        <img src="../image/content/qr.jpg" alt="qr">
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" target="_blank" class="qr-item">
+                        <img src="../image/content/qr.jpg" alt="qr">
+                        <span>Google Play</span>
+                    </a>
+                </div>
+            </div>
+            <img src="../image/content/app-phone.png" alt="app" class="app-section__img">
+        </div>
+    </section>
+    <footer class="footer-page">
+        <div class="container">
+            <div class="f-level-one row space-between align-center">
+                <div class="col row align-center">
+                    <a href="/" class="logo">
+                        <img src="../image/logo-white.png" alt="">
+                    </a>
+                    <div class="app-row">
+                        <a target="_blank" href=""><img src="../image/icons/google-play.png" alt=""></a>
+                        <a target="_blank" href=""><img src="../image/icons/app-store.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="sub-nav__items">
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">Партнёрам</a></li>
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">Вакансии</a></li>
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">О нас</a></li>
+                        <li class="sub-nav__item"><a class="sub-nav__link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f-lavel-two row align-center space-between">
+                <span>© 2023 «DanyExpress»</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+    <div class='modal modal-city' id='modal1'>
+        <div class="content">
+            <h2 class="title">Укажите адрес доставки</h2>
+            <form action="#" class="search">
+                <input required="" placeholder="Ваш адрес" type="search" name="Поиск" id="search">
+                <button class="btn-search close-modal" data-modal="#modal1">Добавить</button>
+            </form>
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb17e9897c174b8d1426526b3406225eb270745f8c9274b0a2983f9f14aaf867&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+        </div>
+        <button class='close-modal' data-modal="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+            </svg>
+        </button>
+    </div> 
+
+
+    <div class='modal modal-feedback' id='modal2'>
+        <div class="content">
+            <h2 class="title">Консультация</h2>
+            <form class="vertical-form" action="#">
+                <input required placeholder="Имя" type="text" name="name" id="name">
+                <input required placeholder="Номер телефона" type="tel" name="" id="">
+                <input placeholder="Почта" type="email" name="" id="">
+                <button class="btn-search " data-modal="#modal1">Отправить</button>
+                <p>нажимая на кнопку вы соглашаетесь на обработку персональных данных</p>
+            </form>
+        </div>
+        <button class='close-modal' data-modal="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+            </svg>
+        </button>
+    </div> 
+
+    <div class='modal modal-product' id='modal3'>
+        <div class="content">
+            <div class="modal-product__row">
+                <div class="modal-product__img">
+                    <img src="../image/content/restaurants/salad.jpg" alt="">
+                </div>
+                <div class="modal-product__info">
+                    <div>
+                        <h3 class="product-name">Греческий</h3>
+                        <span class="price">285p</span>
+                        <p>Томаты, огурцы, маслины, болгарский перец, сыр фета, лист салата, лук, оливковое масло, бальзамический уксус</p>
+                    </div>
+                    
+                    <footer>
+                        <div class="counter">
+                            <button class="decrement">-</button>
+                            <input class="quantity" type="number" value="1" readonly="">
+                            <button class="increment">+</button>
+                        </div>
+                        <div class="pay-btn">
+                            <span class="pay-total">1 710p</span>
+                            <a href="" class="btn-blue">К оплате</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <button class='close-modal' data-modal="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#ffffff"/>
+            </svg>
+        </button>
+    </div> 
+
+    <nav class="down-menu">
+        <div class="col-right">
+            <a href="#" class="icon-btn">
+                <img src="../image/icons/user.svg" alt="user">
+                <span>Войти</span>
+            </a>
+            <button href="#" class="icon-btn basket-open">
+                <img src="../image/icons/basket.png" alt="basket">
+                <span>Заказы</span>
+            </button>
+        </div>
+    </nav>
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/owl.carousel.min.js"></script>
+    <script src="../script/owl-main.js"></script>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>

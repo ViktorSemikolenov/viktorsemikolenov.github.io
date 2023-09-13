@@ -8,6 +8,27 @@
     .banner-link{
         height: 345px;
     }
+    .restaurant__main{
+        grid-template-columns: 870px 300px;
+    }
+    .menu-category__card h3{
+        font-size: 22px;
+    }
+    .restaurant__main .restaurants-link{
+        padding: 12px;
+    }
+    .pay-page__main-grid{
+        grid-template-columns: 670px 420px;
+    }
+    .about__info{
+        width: 960px;
+    }
+    .about-triggers{
+        width: 200px;
+    }
+    .history-grid{
+        grid-template-columns: repeat(3, 267px);
+    }
 }
 @media(max-width:1260px){
     .container{
@@ -77,6 +98,89 @@
     }
     .app-section__img{
         display: none;
+    }
+    .restaurant__main{
+        grid-template-columns: 100%;
+    }
+    .basket-col{
+        display: none;
+    }
+    .restaurant-banner__info{
+        left: 24px;
+    }
+    .menu-category__item-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .app-section-page{
+        margin-top: 0;
+    }
+    .restaurant__main-container .restaurants-nav{
+        display: block;
+    }
+    .menu-category__item{
+        padding-top: 32px;
+    }
+    .menu-category__item .title{
+        font-size: 28px;
+    }
+    .modal-product__row{
+        flex-direction: column;
+    }
+    .modal-product__info, .modal-product__img{
+        width: 300px;
+        margin-right: 0;
+    }
+    .pay-page__main-grid{
+        grid-template-columns: 100%;
+    }
+    .vacancy__row{
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 72px;
+        gap:24px ;
+    }
+    .about__row{
+        flex-wrap: wrap;
+    }
+    .about__info{
+        width: 100%;
+    }
+    .about-triggers{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:32px;
+        margin-top: 32px;
+    }
+    .trigger-item{
+        margin-bottom: 0;
+    }
+    .about-app{
+        padding-top: 60px;
+    }
+    .tabs-row{
+        flex-wrap: wrap;
+    }
+    .tabs{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .tabs a{
+        display: none;
+    }
+    .tabs .tab{
+        width: 30%;
+    }
+    .form-info{
+        width: 100%;
+    }
+    .history-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tab-content{
+        width: 100%;
     }
 }
 @media(max-width:767px){
@@ -207,7 +311,90 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    body, html{
-        overflow-x: hidden;
+
+    h1{
+        font-size: 32px;
+    }
+    .restaurant-more-info__drop{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navigation.fixed{
+        top: -95px;
+    }
+    .restaurant__main .restaurants-header{
+        top: 75px;
+    }
+    .restaurant-banner{
+        height: 260px;
+    }
+    .menu-category__item-grid{
+        grid-template-columns: 1fr;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .menu-category__item .title{
+        font-size: 24px;
+    }
+    .menu-category__card h3{
+        font-size: 20px;
+    }
+    .main-basket .basket{
+        width: 95%;
+    }
+    .order .basket-product__item-img{
+        width: 90px;
+        height: 74px;
+        margin-right: 12px;
+    }
+    .order .basket-product__item-info h4{
+        font-size: 18px;
+    }
+    .order .basket-product__item{
+        flex-wrap: wrap;
+    }
+    .more-details{
+        margin-top: 12px;
+        width: 100%;
+    }
+    .vacancy__row{
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 72px;
+        gap:24px ;
+    }
+    .about__info{
+        flex-wrap: wrap;
+    }
+    .about__img{
+        width: 100%;
+    }
+    .about__text{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+    .about-triggers{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-triggers span{
+        font-size: 32px;
+    }
+    .about__row{
+        margin-top: 32px;
+    }
+    .tabs{
+        flex-wrap: wrap;
+    }
+    .tabs .tab{
+        width: 100%;
+    }
+    .history-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .w50p{
+        width: 100%;
     }
 }
