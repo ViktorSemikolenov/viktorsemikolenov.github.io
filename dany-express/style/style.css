@@ -1666,7 +1666,7 @@ h1 {
 }
 
 .main-basket.active .overflow {
-    opacity: 0.7;
+    opacity: 0;
     transition-delay: 0.2s;
 }
 
@@ -2116,6 +2116,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid rgba(141, 159, 187, 0.31);
     background: #FFF;
+    background-color: #f1f1f1;
 }
 
 .date {
