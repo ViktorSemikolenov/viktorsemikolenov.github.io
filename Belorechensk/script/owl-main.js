@@ -151,3 +151,22 @@ $(document).ready(function () {
         }
     })
 });
+
+// --------------------------------------------------
+
+$(document).ready(function () {
+    var owl = $('.owl-page');
+    owl.owlCarousel({
+        margin: 32,
+        center: false,
+        autoHeight: false,
+        loop:true,
+        items: 1,
+        autoplay:false,
+        autoplayTimeout:5000,
+        nav: true,
+        autoHeight:true,
+        navText: ["<img src='../image/icons/arrow-left.svg'>","<img src='../image/icons/arrow-right.svg'>"]
+    })
+});
+

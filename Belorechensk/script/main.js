@@ -143,3 +143,11 @@ function adjustNavigation() {
   // Устанавливаем высоту восьмого элемента равной высоте третьего элемента
   $eighthElement.css('top', -thirdElementHeight + 'px');
 }
+
+$('.filter-header').click(function() {
+  $('.filter-body').fadeToggle('fast');
+});
+
+$('.filter-header').click(function() {
+  $(this).toggleClass('active');
+});

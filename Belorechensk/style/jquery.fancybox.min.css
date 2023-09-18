@@ -1,0 +1,761 @@
+.not-selectable {
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important
+}
+
+.carousel {
+    position: relative !important;
+    box-sizing: border-box !important
+}
+
+.carousel *,
+.carousel :before,
+.carousel :after {
+    box-sizing: inherit !important
+}
+
+.carousel.is-draggable {
+    cursor: move !important;
+    cursor: grab
+}
+
+.carousel.is-dragging {
+    cursor: move !important;
+    cursor: grabbing
+}
+
+.carousel__viewport {
+    position: relative !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    max-height: 100% !important
+}
+
+.carousel__track {
+    display: flex
+}
+
+.carousel__slide {
+    flex: 0 0 auto !important;
+    width: var(--carousel-slide-width, 60%) !important;
+    max-width: 100% !important;
+    padding: 1rem !important;
+    position: relative !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important
+}
+
+.has-dots {
+    margin-bottom: calc(0.5rem + 22px) !important
+}
+
+.carousel__dots {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: calc(100% + 0.5rem) !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    list-style: none !important;
+    user-select: none !important
+}
+
+.carousel__dots .carousel__dot {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    position: relative !important;
+    width: 22px !important;
+    height: 22px !important;
+    cursor: pointer !important
+}
+
+.carousel__dots .carousel__dot:after {
+    content: "" !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-color: currentColor !important;
+    opacity: .25 !important;
+    transition: opacity .15s ease-in-out !important
+}
+
+.carousel__dots .carousel__dot.is-selected:after {
+    opacity: 1
+}
+
+.carousel__button {
+    width: var(--carousel-button-width, 48px) !important;
+    height: var(--carousel-button-height, 48px) !important;
+    padding: 0 !important;
+    border: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    pointer-events: all !important;
+    cursor: pointer !important;
+    color: var(--carousel-button-color, currentColor) !important;
+    background: var(--carousel-button-bg, transparent) !important;
+    border-radius: var(--carousel-button-border-radius, 50%) !important;
+    box-shadow: var(--carousel-button-shadow, none) !important;
+    transition: opacity .15s ease !important
+}
+
+.carousel__button.is-prev,
+.carousel__button.is-next {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-color: #00AEEF !important;
+}
+
+.carousel__button.is-prev {
+    left: 20% !important
+}
+
+.carousel__button.is-next {
+    right: 20%  !important
+}
+
+.carousel__button[disabled] {
+    cursor: default !important;
+    opacity: .3 !important
+}
+
+.carousel__button svg {
+    width: var(--carousel-button-svg-width, 50%) !important;
+    height: var(--carousel-button-svg-height, 50%) !important;
+    fill: none !important;
+    stroke: currentColor !important;
+    stroke-width: var(--carousel-button-svg-stroke-width, 1.5) !important;
+    stroke-linejoin: bevel !important;
+    stroke-linecap: round !important;
+
+    pointer-events: none !important
+}
+
+body.compensate-for-scrollbar {
+    overflow: hidden !important;
+    touch-action: none !important
+}
+
+.fancybox__container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    direction: ltr !important;
+    margin: 0 !important;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px) !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    color: var(--fancybox-color, #fff) !important;
+    -webkit-tap-highlight-color: transparent !important;
+    overflow: hidden !important;
+    z-index: 1050 !important;
+    outline: none !important;
+    --carousel-button-width: 48px !important;
+    --carousel-button-height: 48px !important;
+    --carousel-button-svg-width: 24px !important;
+    --carousel-button-svg-height: 24px !important;
+    --carousel-button-svg-stroke-width: 2.5 !important;
+    --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4)) !important
+}
+
+.fancybox__container *,
+.fancybox__container ::before,
+.fancybox__container ::after {
+    box-sizing: inherit !important
+}
+
+.fancybox__container :focus {
+    outline: none !important
+}
+
+body:not(.is-using-mouse) .fancybox__container :focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--fancybox-accent-color, rgba(1, 210, 232, 0.94))
+}
+
+@media all and (min-width: 1024px) {
+    .fancybox__container {
+        --carousel-button-width: 48px !important;
+        --carousel-button-height: 48px !important;
+        --carousel-button-svg-width: 27px !important;
+        --carousel-button-svg-height: 27px !important
+    }
+}
+
+.fancybox__backdrop {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: -1 !important;
+    background: var(--fancybox-bg, rgba(24, 24, 27, 0.92)) !important
+}
+
+.fancybox__carousel {
+    position: relative !important;
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    z-index: 10
+}
+
+.fancybox__carousel.has-dots {
+    margin-bottom: calc(0.5rem + 22px) !important
+}
+
+.fancybox__viewport {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+    cursor: default
+}
+
+.fancybox__track {
+    display: flex !important;
+    height: 100% !important
+}
+
+.fancybox__slide {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 48px 8px 8px !important;
+    position: relative !important;
+    overscroll-behavior: contain !important;
+    display: flex !important;
+    flex-direction: column !important;
+    outline: 0 !important;
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    --carousel-button-width: 36px !important;
+    --carousel-button-height: 36px !important;
+    --carousel-button-svg-width: 22px !important;
+    --carousel-button-svg-height: 22px !important
+}
+
+.fancybox__slide::before,
+.fancybox__slide::after {
+    content: "" !important;
+    flex: 0 0 0 !important;
+    margin: auto !important
+}
+
+@media all and (min-width: 1024px) {
+    .fancybox__slide {
+        padding: 64px 100px !important
+    }
+}
+
+.fancybox__content {
+    margin: 0 env(safe-area-inset-right, 0px) 0 env(safe-area-inset-left, 0px) !important;
+    padding: 36px !important;
+    color: var(--fancybox-content-color, #374151) !important;
+    background: var(--fancybox-content-bg, #fff) !important;
+    position: relative !important;
+    align-self: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    z-index: 20 !important
+}
+
+.fancybox__content :focus:not(.carousel__button.is-close) {
+    outline: thin dotted !important;
+    box-shadow: none !important
+}
+
+.fancybox__caption {
+    align-self: center !important;
+    width: 768px !important;
+    margin: 0 !important;
+
+    line-height: 1.375 !important;
+    color: var(--fancybox-color, currentColor) !important;
+    visibility: visible !important;
+    cursor: auto !important;
+    flex-shrink: 0 !important;
+    overflow-wrap: anywhere !important;
+    background-color: #ffffff;
+    border-radius: 0 0 4px 4px;
+    color:  #10192E !important;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+    padding: 16px ;
+    padding-top: 0;
+}
+
+.is-loading .fancybox__caption {
+    visibility: hidden !important
+}
+
+.fancybox__container>.carousel__dots {
+    top: 100% !important;
+    color: var(--fancybox-color, #fff) !important
+}
+
+.fancybox__nav .carousel__button {
+    z-index: 40
+}
+
+.fancybox__nav .carousel__button.is-next {
+    right: 8px
+}
+
+@media all and (min-width: 1024px) {
+    .fancybox__nav .carousel__button.is-next {
+        right: 40px
+    }
+}
+
+.fancybox__nav .carousel__button.is-prev {
+    left: 8px
+}
+
+@media all and (min-width: 1024px) {
+    .fancybox__nav .carousel__button.is-prev {
+        left: 40px
+    }
+}
+
+.carousel__button.is-close {
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    top: calc(env(safe-area-inset-top, 0px) + 8px) !important;
+    right: calc(env(safe-area-inset-right, 0px) + 8px) !important;
+    z-index: 40 !important
+}
+
+@media all and (min-width: 1024px) {
+    .carousel__button.is-close {
+        right: 40px !important
+    }
+}
+
+.fancybox__content>.carousel__button.is-close {
+    position: absolute !important;
+    top: -40px !important;
+    right: 0 !important;
+    color: var(--fancybox-color, #fff) !important
+}
+
+.fancybox__no-click,
+.fancybox__no-click button {
+    pointer-events: none !important
+}
+
+.fancybox__spinner {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 50px !important;
+    height: 50px !important;
+    color: var(--fancybox-color, currentColor) !important
+}
+
+.fancybox__slide .fancybox__spinner {
+    cursor: pointer !important;
+    z-index: 1053
+}
+
+.fancybox__spinner svg {
+    
+    transform-origin: center center !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    margin: auto !important;
+    width: 100% !important;
+    height: 100% !important
+}
+
+.fancybox__spinner svg circle {
+    fill: none !important;
+    stroke-width: 2.75 !important;
+    stroke-miterlimit: 10 !important;
+    stroke-dasharray: 1, 200 !important;
+    stroke-dashoffset: 0 !important;
+    stroke-linecap: round !important;
+    stroke: currentColor !important
+}
+
+.fancybox__backdrop,
+.fancybox__caption,
+.fancybox__nav,
+.carousel__dots,
+.carousel__button.is-close {
+    opacity: var(--fancybox-opacity, 1) !important
+}
+
+
+
+
+
+.fancybox__carousel .carousel__slide {
+    scrollbar-width: thin !important;
+    scrollbar-color: #ccc rgba(255, 255, 255, .1) !important
+}
+
+.fancybox__carousel .carousel__slide::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important
+}
+
+.fancybox__carousel .carousel__slide::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, .1) !important
+}
+
+.fancybox__carousel .carousel__slide::-webkit-scrollbar-thumb {
+    background-color: #ccc !important;
+    border-radius: 2px !important;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .2) !important
+}
+
+.fancybox__carousel.is-draggable .fancybox__slide,
+.fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
+    cursor: move !important;
+    cursor: grab !important
+}
+
+.fancybox__carousel.is-dragging .fancybox__slide,
+.fancybox__carousel.is-dragging .fancybox__slide .fancybox__content {
+    cursor: move !important;
+    cursor: grabbing !important
+}
+
+.fancybox__carousel .fancybox__slide .fancybox__content {
+    cursor: auto !important
+}
+
+.fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
+    cursor: zoom-in !important
+}
+
+.fancybox__carousel .fancybox__slide.can-zoom_out .fancybox__content {
+    cursor: zoom-out !important
+}
+
+.fancybox__carousel .fancybox__slide.is-draggable .fancybox__content {
+    cursor: move !important;
+    cursor: grab !important
+}
+
+.fancybox__carousel .fancybox__slide.is-dragging .fancybox__content {
+    cursor: move !important;
+    cursor: grabbing !important
+}
+
+.fancybox__image {
+    transform-origin: 0 0 !important;
+    touch-action: none !important;
+    user-select: none !important;
+    transition: none !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+
+
+.has-image .fancybox__content {
+    width:768px !important ;
+    padding: 16px !important;
+    background: #ffffff !important;
+    min-height: 1px !important;
+}
+
+.is-closing .has-image .fancybox__content {
+    overflow: visible
+}
+
+.has-image[data-image-fit=contain] {
+    overflow: visible !important;
+    touch-action: none !important
+}
+
+.has-image[data-image-fit=contain] .fancybox__content {
+    flex-direction: row !important;
+    flex-wrap: wrap !important
+}
+
+.has-image[data-image-fit=contain] .fancybox__image {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important
+}
+
+.has-image[data-image-fit=contain-w] {
+    overflow-x: hidden !important;
+    overflow-y: auto !important
+}
+
+.has-image[data-image-fit=contain-w] .fancybox__content {
+    min-height: auto !important
+}
+
+.has-image[data-image-fit=contain-w] .fancybox__image {
+    max-width: 100% !important;
+    height: auto !important
+}
+
+.has-image[data-image-fit=cover] {
+    overflow: visible !important;
+    touch-action: none !important
+}
+
+.has-image[data-image-fit=cover] .fancybox__content {
+    width: 100% !important;
+    height: 100% !important
+}
+
+.has-image[data-image-fit=cover] .fancybox__image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important
+}
+
+.fancybox__carousel .fancybox__slide.has-iframe .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-map .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-pdf .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-video .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
+    flex-shrink: 1 !important;
+    min-height: 1px !important;
+    overflow: visible !important
+}
+
+.fancybox__carousel .fancybox__slide.has-iframe .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-map .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-pdf .fancybox__content {
+    width: 100% !important;
+    height: 80% !important
+}
+
+.fancybox__carousel .fancybox__slide.has-video .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
+    width: 960px !important;
+    height: 540px !important;
+    max-width: 100% !important;
+    max-height: 100% !important
+}
+
+.fancybox__carousel .fancybox__slide.has-map .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-pdf .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-video .fancybox__content,
+.fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
+    padding: 0 !important;
+    background: rgba(24, 24, 27, .9) !important;
+    color: #fff !important
+}
+
+.fancybox__carousel .fancybox__slide.has-map .fancybox__content {
+    background: #e5e3df !important
+}
+
+.fancybox__html5video,
+.fancybox__iframe {
+    border: 0 !important;
+    display: block !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: transparent !important
+}
+
+.fancybox-placeholder {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important
+}
+
+.fancybox__thumbs {
+    flex: 0 0 auto !important;
+    position: relative !important;
+    padding: 0 3px !important;
+    opacity: var(--fancybox-opacity, 1) !important
+}
+
+
+.fancybox__container.is-animated.is-closing .fancybox__thumbs {
+    opacity: 0 !important
+}
+
+.fancybox__thumbs .carousel__slide {
+    flex: 0 0 auto !important;
+    width: var(--fancybox-thumbs-width, 96px) !important;
+    margin: 0 !important;
+    padding: 8px 3px !important;
+    box-sizing: content-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    cursor: pointer !important
+}
+
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    border-width: 5px !important;
+    border-style: solid !important;
+    border-color: var(--fancybox-accent-color, rgba(1, 210, 232, 0.94)) !important;
+    opacity: 0 !important;
+    transition: opacity .15s ease !important;
+    border-radius: var(--fancybox-thumbs-border-radius, 4px) !important
+}
+
+.fancybox__thumbs .carousel__slide.is-nav-selected .fancybox__thumb::after {
+    opacity: .92 !important
+}
+
+.fancybox__thumbs .carousel__slide>* {
+    pointer-events: none !important;
+    user-select: none !important
+}
+
+.fancybox__thumb {
+    position: relative !important;
+    width: 100% !important;
+    padding-top: calc(100%/(var(--fancybox-thumbs-ratio, 1.5))) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-color: rgba(255, 255, 255, .1) !important;
+    background-repeat: no-repeat !important;
+    border-radius: var(--fancybox-thumbs-border-radius, 4px) !important
+}
+
+.fancybox__toolbar {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 20 !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.006) 8.1%, rgba(0, 0, 0, 0.021) 15.5%, rgba(0, 0, 0, 0.046) 22.5%, rgba(0, 0, 0, 0.077) 29%, rgba(0, 0, 0, 0.114) 35.3%, rgba(0, 0, 0, 0.155) 41.2%, rgba(0, 0, 0, 0.198) 47.1%, rgba(0, 0, 0, 0.242) 52.9%, rgba(0, 0, 0, 0.285) 58.8%, rgba(0, 0, 0, 0.326) 64.7%, rgba(0, 0, 0, 0.363) 71%, rgba(0, 0, 0, 0.394) 77.5%, rgba(0, 0, 0, 0.419) 84.5%, rgba(0, 0, 0, 0.434) 91.9%, rgba(0, 0, 0, 0.44) 100%) !important;
+    padding: 0 !important;
+    touch-action: none !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    --carousel-button-svg-width: 20px !important;
+    --carousel-button-svg-height: 20px !important;
+    opacity: var(--fancybox-opacity, 1) !important;
+    text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.4)) !important
+}
+
+@media all and (min-width: 1024px) {
+    .fancybox__toolbar {
+        padding: 8px !important
+    }
+}
+
+
+
+.fancybox__container.is-animated.is-closing .fancybox__toolbar {
+    opacity: 0 !important
+}
+
+.fancybox__toolbar__items {
+    display: flex !important
+}
+
+.fancybox__toolbar__items--left {
+    margin-right: auto
+}
+
+.fancybox__toolbar__items--center {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important
+}
+
+.fancybox__toolbar__items--right {
+    margin-left: auto !important
+}
+
+@media(max-width: 640px) {
+    .fancybox__toolbar__items--center:not(:last-child) {
+        display: none !important
+    }
+}
+
+.fancybox__counter {
+    min-width: 72px !important;
+    padding: 0 10px !important;
+    line-height: var(--carousel-button-height, 48px) !important;
+    text-align: center !important;
+    font-size: 17px !important;
+    font-variant-numeric: tabular-nums !important;
+    -webkit-font-smoothing: subpixel-antialiased !important
+}
+
+.fancybox__progress {
+    background: var(--fancybox-accent-color, rgba(1, 210, 232, 0.94)) !important;
+    height: 3px !important;
+    left: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    transform: scaleX(0) !important;
+    transform-origin: 0 !important;
+
+    z-index: 30 !important;
+    user-select: none !important
+}
+
+.fancybox__container:fullscreen::backdrop {
+    opacity: 0 !important
+}
+
+.fancybox__button--fullscreen g:nth-child(2) {
+    display: none !important
+}
+
+.fancybox__container:fullscreen .fancybox__button--fullscreen g:nth-child(1) {
+    display: none !important
+}
+
+.fancybox__container:fullscreen .fancybox__button--fullscreen g:nth-child(2) {
+    display: block !important
+}
+
+.fancybox__button--slideshow g:nth-child(2) {
+    display: none !important
+}
+
+.fancybox__container.has-slideshow .fancybox__button--slideshow g:nth-child(1) {
+    display: none !important
+}
+
+.fancybox__container.has-slideshow .fancybox__button--slideshow g:nth-child(2) {
+    display: block !important
+}
