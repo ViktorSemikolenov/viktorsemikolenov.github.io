@@ -759,3 +759,8 @@ font-weight: 400;
 .fancybox__container.has-slideshow .fancybox__button--slideshow g:nth-child(2) {
     display: block !important
 }
+@media(max-width:768px){
+    .has-image .fancybox__content, .fancybox__caption{
+        width: 95% !important;
+    }
+}

@@ -151,3 +151,8 @@ $('.filter-header').click(function() {
 $('.filter-header').click(function() {
   $(this).toggleClass('active');
 });
+
+const bannerTitle = document.querySelector('.banner-title');
+if (bannerTitle.textContent.length > 105) {
+  bannerTitle.classList.add('sbol-more');
+}

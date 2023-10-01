@@ -1,6 +1,6 @@
 @media(max-width:1439px) {
     .container {
-        width: 996px;
+        width: 92%;
     }
 
     .search-block input {
@@ -206,11 +206,31 @@
     .filter-body fieldset{
         gap: 8px;
     }
+    .footer-page .btn{
+        margin-right: 12px;
+    }
+    .banner-title.sbol-more{
+        font-size: 20px;
+    }
+    .content-page{
+        width: 70%;
+    }
+    .filter-body footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .filter-body .btn{
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    .select-block{
+        margin-bottom: 16px;
+    }
 }
 
 @media(max-width:1050px) {
     .container {
-        width: 740px;
+        width: 92%;
     }
 
     .search-block {
@@ -371,9 +391,6 @@
         margin-bottom: 10px;
     }
 
-    .sidebar {
-        display: none;
-    }
 
     .content-page {
         width: 100%;
@@ -403,8 +420,21 @@
     .carousel__button.is-prev {
         left: 20px !important;
     }
+    .content-page{
+        width: 68%;
+    }
+    .sidebar{
+        width: 290px;
+    }
 }
-
+@media(max-width:970px) {
+    .sidebar{
+        display: none;
+    }
+    .content-page{
+        width: 100%;
+    }
+}
 @media(max-width:760px) {
     .container {
         max-width: 365px;
@@ -852,5 +882,52 @@
     }
     .pag-btn-arrow{
         display: flex;
+    }
+    .sites-city .close{
+    top: -26px;
+    }
+    .owl-nav{
+        top: -50px;
+    }
+    .breadcrumbs-list{
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+    }
+    .breadcrumbs .breadcrumbs-list{
+        width: 100%;
+    }
+    .breadcrumbs .container{
+        overflow: hidden;
+    }
+    .title-page::after{
+        margin-top: 12px;
+    }
+    .has-image .fancybox__content{
+        width: 95% !important;
+    }
+    .select-list{
+        width: 100%;
+    }
+    .footer-news .btn{
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+    .w50p{
+        margin-right: 0;
+    }
+}
+@media(max-width:375px){
+    .filter-body footer div{
+        flex-wrap: wrap;
+    }
+    .filter-body .btn{
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .filter-body footer div{
+        width: 100%;
     }
 }
