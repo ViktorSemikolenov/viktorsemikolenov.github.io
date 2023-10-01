@@ -735,7 +735,7 @@
 
     .drop-navigation.active {
         padding-top: 20px;
-        height: 100vh;
+        height: 85vh;
         overflow-y: scroll;
     }
 

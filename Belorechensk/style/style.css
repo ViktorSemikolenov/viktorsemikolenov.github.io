@@ -1422,7 +1422,7 @@ input:focus {
     overflow-y: scroll;
     transition-duration: 0.3s;
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
 }
 
 .btn-menu-open.active {
