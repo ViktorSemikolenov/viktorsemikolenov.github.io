@@ -1531,6 +1531,7 @@ a.drop-navigation__header-link .drop-navigation__col-icon {
 
 .main-page .row {
     align-items: flex-start;
+    gap: 32px;
 }
 
 .sidebar__title {
@@ -2255,9 +2256,10 @@ table thead th:first-child {
 
 .tags-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     margin-top: 16px;
+    flex-wrap: wrap;
 }
 
 .tag {
@@ -2266,7 +2268,6 @@ table thead th:first-child {
     border: 1px solid rgba(0, 149, 218, 0.30);
     background: rgba(0, 149, 218, 0.10);
     color: var(--Blue2, #0095DA);
-    text-align: center;
     font-family: Manrope;
     font-size: 14px;
     font-style: normal;
