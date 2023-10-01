@@ -484,7 +484,7 @@
 }
 @media(max-width:760px) {
     .container {
-        max-width: 365px;
+        max-width: 95%;
         width: 100%;
     }
 
@@ -977,6 +977,25 @@
     }
     .filter-doc-page input.search-filter{
         margin-bottom: 0;
+    }
+    .small-banner, .big-banner{
+        height: auto;
+    }
+    .small-banner img, .big-banner img{
+        height: auto;
+    }
+    .bg-type-three{
+        padding-top: 225vw;
+    }
+}
+@media(max-width:540px){
+    .bg-type-three{
+        padding-top: 215vw;
+    }
+}
+@media(max-width:370px){
+    .bg-type-three{
+        padding-top: 200vw;
     }
 }
 @media(max-width:375px){

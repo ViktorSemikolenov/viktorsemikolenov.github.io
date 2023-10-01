@@ -103,7 +103,7 @@ $('.drop-navigation__header').click(function() {
 
 $('.btn-menu-open').click(function() {
   $('.drop-navigation').toggleClass("active");
-  $(this).toggleClass("active");
+  $('.btn-menu-open').toggleClass("active");
   $('body').toggleClass("overflow-hidden");
   $('html').toggleClass("overflow-hidden");
   $('.navigation').toggleClass("open-menu");
