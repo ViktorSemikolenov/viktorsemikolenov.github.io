@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инвестиционный стандарт</title>
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/animate.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/jquery-ui.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/normalize.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/main.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/slick.css">
+    <link rel="stylesheet" href="bitrix/templates/adaptive/css/new.css">
+</head>
+
+<body>
+    <div id="panel" class="hidden-print"></div>
+
+
+    <div class="wrap-320">
+        <div class="top-line">
+            <div class="top-line__center">
+                <div class="top-line__logo">
+                    <a href="/ru/"><img src="bitrix/templates/adaptive/img/sevastopol_logo.png"
+                            class="top-line__logo-ico" alt=""></a>
+                </div>
+                <p class="top-line__logo-txt">Инвестиционный<br> портал</p>
+                <div class="top-line__language">
+                    <p class="active">RU</p>
+                    <div class="hide">
+                        <a href="/en/">EN</a>
+                        <!--a href="">CH</a-->
+                    </div>
+                    <div class="top-line__language-arrow"></div>
+                </div>
+                <div class="top-line__social">
+                    <p class="label">Мы в соцсетях</p>
+                    <a href="https://t.me/sev_invest" class="tg" target="_blank"></a>
+                    <a href="https://vk.com/krs92" class="vk" target="_blank"></a>
+                    <a href="/ru/rss_news.php" class="rss"></a>
+                </div>
+                <div class="top-line__mob-btn">
+                    <form class="top-line__search" action="/ru/search/" method="get">
+                        <input type="text" placeholder="Поиск" class="top-line__search-input" name="q">
+                        <button class="top-line__search-btn" type="submit"></button>
+                    </form>
+                    <div class="top-line__line"></div>
+                    <a class="top-line__glasses-btn" href="?stype=special"></a>
+                    <div class="top-line__menu-btn">
+                        <div class="menu-btn__ico"><span></span></div>
+                    </div>
+                </div>
+                <a href="/ru/investoram/obrashcheniya-investorov/" class="top-line__btn invest-btn">Подать заявку на
+                    инвестпроект<!--/<br>Активный бизнесмен--></a>
+                <a href="/ru/kontakty/otpravit-soobshchenie/" class="top-line__btn question-btn">Задать вопрос/<br>
+                    Отправить сообщение</a>
+            </div>
+        </div>
+
+        <div class="content-wrap">
+            <div class="left-side">
+                <div class="left-side__menu">
+                    <p class="left-side__logo-txt">Инвестиционный<br> портал</p>
+                    <div class="left-side__nav">
+                        <div class="left-side__mob-logo"><img src="bitrix/templates/adaptive/img/sevastopol_logo.svg"
+                                alt=""></div>
+                        <ul class="left-side__nav-list">
+                            <li><a href="/ru/o-sevastopole/">О Севастополе</a></li>
+                            <li><a href="/ru/investoram/">Инвесторам</a></li>
+                            <li><a href="/ru/investoram/vnedrenie-regionalnogo-investstandarta/">Региональный
+                                    инвестстандарт</a></li>
+                            <li><a href="/ru/map/">Инвестиционная карта</a></li>
+                            <li><a href="/ru/investoram/podderzhka-investorov/">Меры поддержки</a></li>
+                            <li><a href="/ru/media/">Медиа</a></li>
+                            <li><a href="/ru/kontakty/">Контакты</a></li>
+                        </ul>
+                        <style>
+                            @media screen and (min-width: 920px) {
+                                .left-side__line-btn:hover {
+                                    width: 450px;
+                                    z-index: 100;
+                                    position: relative;
+                                }
+                            }
+                        </style>
+                        <div class="left-side__mob-btn">
+                            <a href="/ru/map/" class="left-side__line-btn"><span
+                                    class="ico ico-1"></span><span>Инвестиционная карта</span></a>
+                            <a href="/ru/investoram/podderzhka-investorov/svobodnaya-ekonomicheskaya-zona/"
+                                class="left-side__line-btn"><span class="ico ico-2"></span><span>Свободная экономическая
+                                    зона</span></a>
+                            <a href="/ru/investoram/podderzhka-investorov/" class="left-side__line-btn"><span
+                                    class="ico ico-3"></span><span>Меры поддержки</span></a>
+                            <a href="/ru/investoram/obrashcheniya-investorov/" class="left-side__line-btn"><span
+                                    class="ico ico-4"></span><span>Порядок рассмотрения обращений</span></a>
+                            <a href="/ru/investoram/institut-razvitiya/" class="left-side__line-btn"><span
+                                    class="ico ico-5"></span><span>Агентство развития - <br>АО «Корпорация развития
+                                    Севастополя»</span></a>
+                            <a href="/ru/investoram/bank-dokumentov/" class="left-side__line-btn"><span
+                                    class="ico ico-6"></span><span>Банк документов</span></a>
+                            <a href="/ru/kalkulyatory/" class="left-side__line-btn"><span
+                                    class="ico ico-7"></span><span>Калькуляторы</span></a>
+                        </div>
+                    </div>
+                    <div class="left-side__banner">
+                        <a href="http://mb92.ru/" class="banner-btn banner-mybuisnes" target="_blank"
+                            title="Мой бизнес">
+                            <img src="bitrix/templates/adaptive/img/left-side-btn-1.png" class="banner-mybuisnes__ico"
+                                alt="">
+                            <span class="left-side__banner-txt">Мой бизнес</span>
+                        </a>
+                        <a href="https://growsevastopol.ru/" class="banner-btn banner-intermap" target="_blank"
+                            title="Корпорация развития Севастополя">
+                            <img src="bitrix/templates/adaptive/img/left-side-btn-2_.png" class="banner-intermap__ico"
+                                alt="">
+                            <span class="left-side__banner-txt">Корпорация развития<br> Севастополя</span>
+                        </a>
+                        <a href="https://frpgs.ru/" class="banner-btn banner-mybuisnes" target="_blank"
+                            title="ФРП города Севастополя">
+                            <img src="bitrix/templates/adaptive/img/left-side-btn-5.png" alt=""
+                                class="banner-department__ico">
+                            <span class="left-side__banner-txt">ФРП города <br>Севастополя</span>
+                        </a>
+                        <a href="https://des.sev.gov.ru/" class="banner-btn banner-intermap" target="_blank"
+                            title="Департамент экономического развития Севастополя">
+                            <img src="bitrix/templates/adaptive/img/left-side-btn-4.png" alt=""
+                                class="banner-department__ico">
+                            <span class="left-side__banner-txt">Департамент <br>экономического развития</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="left-side__btns">
+                    <form class="left-side__search" action="/ru/search/" method="get">
+                        <input type="text" placeholder="Поиск" class="left-side__search-input" name="q">
+                        <button class="left-side__search-btn" type="submit"></button>
+                    </form>
+                    <div class="left-side__line"></div>
+                    <a href="?stype=special" class="left-side__glasses-btn"></a>
+                    <a href="/ru/map/" class="left-side__line-btn"><span class="ico ico-1"></span><span>Инвестиционная
+                            карта</span></a>
+                    <a href="/ru/investoram/podderzhka-investorov/svobodnaya-ekonomicheskaya-zona/"
+                        class="left-side__line-btn"><span class="ico ico-2"></span><span>Свободная экономическая
+                            зона</span></a>
+                    <a href="/ru/investoram/podderzhka-investorov/" class="left-side__line-btn"><span
+                            class="ico ico-3"></span><span>Меры поддержки</span></a>
+                    <a href="/ru/investoram/obrashcheniya-investorov/" class="left-side__line-btn"><span
+                            class="ico ico-4"></span><span>Порядок рассмотрения обращений</span></a>
+                    <a href="/ru/investoram/institut-razvitiya/" class="left-side__line-btn"><span
+                            class="ico ico-5"></span><span>Агентство развития - <br>АО «Корпорация развития
+                            Севастополя»</span></a>
+                    <a href="/ru/investoram/bank-dokumentov/" class="left-side__line-btn"><span
+                            class="ico ico-6"></span><span>Банк документов</span></a>
+                    <a href="/ru/kalkulyatory/" class="left-side__line-btn"><span
+                            class="ico ico-7"></span><span>Калькуляторы</span></a>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="breadcrumb">
+                    <a href="/ru/" class="breadcrumb__link">Главная</a>
+                    <a href="/ru/investoram/" title="Инвесторам" class="breadcrumb__link">Инвесторам</a><span
+                        class="breadcrumb__stat">Региональный инвестиционный стандарт</span>
+                </div>
+                <section class="first-screen">
+                    <div class="inner-c">
+                        <h1>Инвестиционный стандарт </h1>
+                        <p><strong>Региональный инвестиционный стандарт</strong> – новая система поддержки
+                            инвестиционных проектов, разработанная Правительством РФ совместно с деловыми объединениями
+                            во исполнение пп. г п. 2 перечня поручений Президента РФ от 26.06.2021 № Пр-1096.</p>
+                        <p>Новый региональный стандарт сформирован на основе лучших практик работы субъектов с
+                            инвесторами и направлен
+                            на оптимизацию взаимодействия инвесторов с региональными органами власти.</p>
+                        <picture class="banner-image">
+                            <source media="(max-width: 480px)"
+                                srcset="bitrix/templates/adaptive/img/new-image/image-banner320.svg">
+                            <source media="(max-width: 768px)"
+                                srcset="bitrix/templates/adaptive/img/new-image/image-banner768.png">
+                            <img src="bitrix/templates/adaptive/img/new-image/image-banner1920.png" alt="">
+                        </picture>
+
+                    </div>
+                    <img src="bitrix/templates/adaptive/img/new-image/banner-bg.jpg" alt="" class="banner-bg">
+                </section>
+                <div class="left-side__banner mob-blokc">
+                    <a href="http://mb92.ru/" class="banner-btn banner-mybuisnes" target="_blank" title="Мой бизнес">
+                        <img src="bitrix/templates/adaptive/img/left-side-btn-1.png" class="banner-mybuisnes__ico" alt="">
+                        <span class="left-side__banner-txt">Мой бизнес</span>
+                    </a>
+                    <a href="https://growsevastopol.ru/" class="banner-btn banner-intermap" target="_blank" title="Корпорация развития Севастополя">
+                        <img src="bitrix/templates/adaptive/img/left-side-btn-2_.png" class="banner-intermap__ico" alt="">
+                        <span class="left-side__banner-txt">Корпорация развития<br> Севастополя</span>
+                    </a>
+                    <a href="https://frpgs.ru/" class="banner-btn banner-mybuisnes" target="_blank" title="ФРП города Севастополя">
+                        <img src="bitrix/templates/adaptive/img/left-side-btn-5.png" alt="" class="banner-department__ico">
+                        <span class="left-side__banner-txt">ФРП города <br>Севастополя</span>
+                    </a>
+                    <a href="https://des.sev.gov.ru/" class="banner-btn banner-intermap" target="_blank" title="Департамент экономического развития Севастополя">
+                        <img src="bitrix/templates/adaptive/img/left-side-btn-4.png" alt="" class="banner-department__ico">
+                        <span class="left-side__banner-txt">Департамент <br>экономического развития</span>
+                    </a>
+                </div>
+                <section class="page-content">
+                    <div class="inner-c">
+                        <h2>Региональный инвестиционный стандарт: цели и приоритеты </h2>
+                        <picture class="section-two-image">
+                            <source media="(max-width: 480px)"
+                                srcset="bitrix/templates/adaptive/img/new-image/section-two-trigger320.svg">
+                            <source media="(max-width: 768px)"
+                                srcset="bitrix/templates/adaptive/img/new-image/section-two-trigger768.svg">
+                            <source media="(max-width: 1024px)"
+                                srcset="bitrix/templates/adaptive/img/new-image/section-two-trigger1024.svg">
+                            <img src="bitrix/templates/adaptive/img/new-image/section-two-trigger.svg" alt="">
+                        </picture>
+                        <header class="title-h2">
+                            <img src="bitrix/templates/adaptive/img/new-image/title-icon1.svg" alt="">
+                            <h2>Инвестиционная декларация</h2>
+                        </header>
+                        <p>Инвестиционная декларация города Севастополя разработана в целях создания условий для
+                            опережающего
+                            инвестиционного развития города Севастополя и декларирует обязательства города Севастополя
+                            перед инвестором
+                            о незыблемости мер государственной поддержки и условий ведения бизнеса.</p>
+                        <div class="flex-row">
+                            <div class="col-9">
+                                <h3>Декларация содержит: </h3>
+                                <ol class="ol">
+                                    <li>Описание целей и приоритетов инвестиционного развития </li>
+                                    <li>Ключевые характеристики и преимущества региона</li>
+                                    <li>Состав инвестиционной команды региона </li>
+                                </ol>
+                                <p class="mob-100">Инвестиционная декларация утверждена распоряжением Губернатора
+                                    города Севастополя от 27 марта 2023 г. № 99-РГ «О внедрении системы
+                                    поддержки новых инвестиционных проектов («Региональный
+                                    инвестиционный стандарт») в городе Севастополе и утверждении
+                                    инвестиционной декларации города Севастополя»</p>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">
+                                    <img src="bitrix/templates/adaptive/img/new-image/banner-info.png" alt=""
+                                        class="banner-small">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row triggers-row">
+                            <div class="item w20p">
+                                <p>Ключевой документ инвестиционной политики региона</p>
+                            </div>
+                            <div class="item w20p">
+                                <p>Гарантирует соблюдение прав и интересов инвестора</p>
+                            </div>
+                            <div class="item w20p">
+                                <p>Задает направления и условия инвестиционной деятельности </p>
+                            </div>
+                            <div class="item w20p">
+                                <p>Устанавливает контакт между инвестором и государством</p>
+                            </div>
+
+                            <div class="item w20p">
+                                <p>Способствует привлечению инвестиций в регион</p>
+                            </div>
+                        </div>
+                        <div class="article-col__flex article-col__flex-two grid-4">
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico1.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Цели инвестиционного
+                                    развития
+                                </p>
+                                <ol>
+                                    <li>Увеличение объема инвестиций в основной капитал;</li>
+                                    <li>Повышение уровня доходов населения и количества созданных и создаваемых рабочих
+                                        мест;</li>
+                                    <li>Формирование растущей, устойчивой экономики, создание глобально
+                                        конкурентноспособных секторов высокотехнологичной промышленности, сельского
+                                        хозяйства, IT, туризма</li>
+                                </ol>
+                            </div>
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico2.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Ключевые характеристики
+                                </p>
+                                <ol>
+                                    <li>Выгодное географическое положение, развитая транспортная и логистическая
+                                        инфраструктура, морской порт;</li>
+                                    <li>Развитая инженерная инфраструктура, возможность обеспечения инвестиционных
+                                        проектов необходимыми инженерными коммуникациями;</li>
+                                    <li>Наличие преференциального режима СЭЗ</li>
+                                </ol>
+                            </div>
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico3.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Инвестиционные обязательства
+                                </p>
+                                <ol>
+                                    <li>Предоставление инвестору налоговых льгот;</li>
+                                    <li>Оказание содействия инвесторам при реализации проекта;</li>
+                                    <li>Предоставление инвесторам государственных гарантий;</li>
+                                    <li>Создание и развитие зон экономического благоприятствования для инвестиционной
+                                        деятельности</li>
+                                    <li>Предоставление информационной и организационной государственной поддержки</li>
+                                </ol>
+                            </div>
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico4.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Инвестиционная команда
+                                </p>
+                                <ol>
+                                    <li>Губернатор города Севастополя;</li>
+                                    <li>Руководители органов исполнительной власти;</li>
+                                    <li>Руководитель агентства развития;</li>
+                                    <li>Уполномоченный по защите прав предпринимателей;</li>
+                                    <li>Представители деловых объединений;</li>
+                                    <li>Эксперты финансовых организаций;</li>
+                                    <li>Представители органов местного самоуправления;</li>
+                                    <li>Представители ресурсоснабжающих организаций</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="download-document">
+                            <a href="/upload/iblock/e95/zakon_21072017_357.pdf" class="document-name"><span
+                                    class="document-name__ico pdf"></span><span class="document-name__txt">Закон города
+                                    Севастополя от 21 июля 2017 года № 357-ЗС "Об утверждении Стратегии
+                                    социально-экономического развития города Севастополя до 2030 года"</span> <span
+                                    class="btn-blue">СКАЧАТЬ</span></a>
+                        </div>
+                        <header class="title-h2">
+                            <img src="bitrix/templates/adaptive/img/new-image/title-icon2.svg" alt="">
+                            <h2>Агентство развития</h2>
+                        </header>
+                        <p><strong>АО «Корпорация развития Севастополя» </strong> – организация, наделенная функциями
+                            агентства развития, уполномочена
+                            на привлечение частных инвестиций и оказание содействия инвесторам в реализации
+                            инвестиционных проектов
+                            на территории города Севастополя в режиме «одного окна».</p>
+                        <p>Кроме того, Корпорация развития уполномочена на организацию взаимодействия инвесторов с
+                            ресурсоснабжающими
+                            организациями и операторами дорожной инфраструктуры.</p>
+                        <p>Порядок взаимодействия с инвестором по принципу «одного окна»</p>
+
+                        <div class="step-work">
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work1.svg" alt="">
+                                <p>1. Обращение заявителя проекта
+                                    в АО “Корпорацию развития
+                                    Севастополя”</p>
+                            </div>
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work2.svg" alt="">
+                                <p>2. Подача документов в АО
+                                    “Корпорация развития Севастополя”
+                                    согласно Регламенту “одного окна”</p>
+                            </div>
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work3.svg" alt="">
+                                <p>3. Работа с проектом
+                                    и органами исполнительной
+                                    власти Севастполя</p>
+                            </div>
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work4.svg" alt="">
+                                <p>4. Заключение экспертного
+                                    совета о принятии проекта
+                                    в Корпорацию на сопровождение</p>
+                            </div>
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work5.svg" alt="">
+                                <p>5. Подписание соглашения
+                                    о сотрудничестве</p>
+                            </div>
+                        </div>
+                        <div class="download-document">
+                            <a href="/upload/iblock/e95/zakon_21072017_357.pdf" class="document-name"><span
+                                    class="document-name__ico pdf"></span><span class="document-name__txt">Постановление
+                                    Правительства Севастополя от 24.05.2018 № 329-ПП «Об утверждении регламента
+                                    сопровождения инвестиционных проектов по принципу «одного окна» на территории города
+                                    Севастополя» и распоряжение Губернатора города Севастополя от 27 марта 2023 г. №
+                                    99-РГ
+                                    «О внедрении системы поддержки новых инвестиционных проектов («Региональный
+                                    инвестиционный
+                                    стандарт») в городе Севастополе и утверждении инвестиционной декларации города
+                                    Севастополя»</span> <span class="btn-blue">СКАЧАТЬ</span></a>
+                        </div>
+                        <header class="title-h2">
+                            <img src="bitrix/templates/adaptive/img/new-image/title-icon3.svg" alt="">
+                            <h2>Инвестиционный комитет</h2>
+                        </header>
+                        <p><strong>Инвестиционный комитет города Севастополя</strong> – орган, действующий в целях
+                            разрешения разногласий и споров инвестора
+                            с государственными органами, органами местного самоуправления, уполномоченными организациями
+                            в досудебном порядке.
+                            <strong>Председатель комитета</strong> – Губернатор города Севастополя.
+                        </p>
+                        <p><strong>Комитет создан в целях: </strong></p>
+                        <ul class="ul">
+                            <li>
+                                Формирования благоприятных условий для ведения инвестиционной деятельности, защиты прав
+                                и законных интересов
+                                субъектов инвестиционной деятельности на территории города Севастополя.</li>
+                            <li>Разрешения разногласий и споров инвестора с органами власти города Севастополя, органами
+                                местного самоуправления,
+                                уполномоченными организациями на территории города Севастополя, не урегулированных АО
+                                «Корпорация развития
+                                Севастополя», которое исполняет функции агентства развития города Севастополя, в
+                                досудебном порядке.</li>
+                        </ul>
+                        <div class="step-work grid-two">
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work5.svg" alt="">
+                                <p>Комитет для оперативного решения проблем инвесторов, которые требуют нестандартных
+                                    подходов</p>
+                            </div>
+                            <div class="step-work__item">
+                                <img src="bitrix/templates/adaptive/img/new-image/step-work6.svg" alt="">
+                                <p>Инструмент привлечения инвестиций в регион и ускорения реализации инвестиционных
+                                    проектов</p>
+                            </div>
+                        </div>
+                        <div class="article-col__flex article-col__flex-two grid-3">
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico4.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Реализация Стратегии
+                                    социально-экономического
+                                    развития города Севастополя
+                                    до 2030 года
+                                </p>
+                                <p class="article-col__p">
+                                    Разработка мер, направленных на:
+                                </p>
+                                <ol>
+                                    <li>Формирование нового экономического
+                                        потенциала для обеспечения устойчивого
+                                        развития города Севастополя и социальной
+                                        стабильности;</li>
+                                    <li>Опережающее развитие высокотехнологических секторов
+                                        экономики;</li>
+                                    <li>Развитие экономического потенциала
+                                        территорий, создание новых “точек роста”;</li>
+                                    <li>Создание благоприятного инвестиционного
+                                        и делового климата;</li>
+                                    <li>Развитие транспортной, энергетической,
+                                        телекоммуникационной инфраструктур;</li>
+                                    <li>Развитие импортозамещения </li>
+                                </ol>
+                            </div>
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico5.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Формирование благоприятных
+                                    условий для ведения
+                                    инвестиционной деятельности,
+                                    защиты прав и законных интересов
+                                    инвесторов города Севастополя
+                                </p>
+                                <p class="article-col__p">
+                                    Рассмотрение вопросов по:
+                                </p>
+                                <ol>
+                                    <li>Инвестиционной деятельности;</li>
+                                    <li>Поддержке инвестиционных проектов;</li>
+                                    <li>Нарушению положений инвестиционной декларации </li>
+                                </ol>
+                            </div>
+                            <div class="article-col">
+                                <div class="article-col__ico">
+                                    <img src="bitrix/templates/adaptive/img/new-image/article-col__ico6.svg" alt="">
+                                </div>
+                                <p class="article-col__head">
+                                    Разрешение разногласий и споров
+                                    инвестора на территории города
+                                    Севастополя в досудебном порядке:
+                                </p>
+                                <p class="article-col__p">
+                                    Рассмотрение вопросов по:
+                                </p>
+                                <ol>
+                                    <li>С органами исполнительной власти
+                                        города Севастополя;</li>
+                                    <li>С органами местного самоуправления; </li>
+                                    <li>С уполномоченной организацией
+                                        по вопросам реализации инвестиционных
+                                        проектов;</li>
+                                    <li>С ресурсоснабжающими организациями </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="mechanism-operation">
+                            <h3>Механизм работы инвестиционного комитета </h3>
+                            <div class="mechanism-operation_grid">
+                                <div class="mechanism-operation_grid-item">
+                                    <img src="bitrix/templates/adaptive/img/new-image/mechanism-operation1.svg" alt="">
+                                    <div class="mechanism-operation_grid-info">
+                                        <span>1</span>
+                                        <p>Инвестор обращается <br>
+                                            в Корпорацию развития</p>
+                                    </div>
+                                </div>
+                                <div class="mechanism-operation_grid-item">
+                                    <img src="bitrix/templates/adaptive/img/new-image/mechanism-operation4.svg" alt="">
+                                    <div class="mechanism-operation_grid-info">
+                                        <span>4</span>
+                                        <p>Комитетом принимается <br>
+                                            решение</p>
+                                    </div>
+                                </div>
+                                <div class="mechanism-operation_grid-item">
+                                    <img src="bitrix/templates/adaptive/img/new-image/mechanism-operation2.svg" alt="">
+                                    <div class="mechanism-operation_grid-info">
+                                        <span>2</span>
+                                        <p>Корпорация развития <br>
+                                            взаимодействует с ОИВ</p>
+                                    </div>
+                                </div>
+                                <div class="mechanism-operation_grid-item">
+                                    <img src="bitrix/templates/adaptive/img/new-image/mechanism-operation5.svg" alt="">
+                                    <div class="mechanism-operation_grid-info">
+                                        <span>5</span>
+                                        <p>Корпорация осуществляет <br>
+                                            контроль за ходом решения <br>
+                                            вопроса</p>
+                                    </div>
+                                </div>
+                                <div class="mechanism-operation_grid-item">
+                                    <img src="bitrix/templates/adaptive/img/new-image/mechanism-operation3.svg" alt="">
+                                    <div class="mechanism-operation_grid-info">
+                                        <span>3</span>
+                                        <p>Если вопрос НЕ РЕШЕН - <br>
+                                            рассмотрение выносится <br>
+                                            на Комитет</p>
+                                    </div>
+                                </div>
+                                <div class="mechanism-operation_grid-item">
+                                    <a href="#" class="btn">Подать заявку на инвестиционный комитет</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="download-document">
+                            <a href="/upload/iblock/e95/zakon_21072017_357.pdf" class="document-name"><span
+                                    class="document-name__ico pdf"></span><span class="document-name__txt">Указ
+                                    Губернатора города Севастополя № 14-УГ от 24.04.2023 «О создании инвестиционного
+                                    комитета города Севастополя»</span> <span class="btn-blue">СКАЧАТЬ</span></a>
+                        </div>
+                        <div class="faq-section">
+                            <h3>Заседания комитета</h3>
+                            <div class="support-accardeon support-2">
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Протоколы заседаний за 2023 год</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Протоколы заседаний за 2022 год</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <header class="title-h2">
+                            <img src="bitrix/templates/adaptive/img/new-image/title-icon4.svg" alt="">
+                            <h2>Инвестиционная карта</h2>
+                        </header>
+                        <p><strong>Инвестиционная карта</strong> – цифровой сервис, который содержит информацию об
+                            инфраструктуре, мерах поддержки,
+                            инвестиционных площадках и преференциальных режимах на территории города Севастополя. </p>
+                        <p>
+                            На карте <a href="#">https://sevinvestportal.ru/ru/map/</a> собственности. Карта содержит
+                            всю необходимую информацию по доступным участкам: указаны категория земель, форма
+                            собственности, наличие доступа к автомобильным и железнодорожным путям, месторождения
+                            полезных ископаемых. </p>
+                        <div class="download-document">
+                            <a href="/upload/iblock/e95/zakon_21072017_357.pdf" class="document-name"><span
+                                    class="document-name__ico pdf"></span><span class="document-name__txt">Закон города
+                                    Севастополя от 21 июля 2017 года № 357-ЗС "Об утверждении Стратегии
+                                    социально-экономического развития города Севастополя до 2030 года"</span> <span
+                                    class="btn-blue">СКАЧАТЬ</span></a>
+                        </div>
+                        <header class="title-h2">
+                            <img src="bitrix/templates/adaptive/img/new-image/title-icon5.svg" alt="">
+                            <h2>Cвод инвестиционных правил</h2>
+                        </header>
+                        <p><strong>Свод инвестиционных правил </strong> – алгоритм действий («клиентский путь») инвестора, планирующего реализацию 
+                            инвестиционного проекта на территории города Севастополь.  </p>
+                        <p>Свод инвестиционных правил разработан в целях повышения прозрачности и упрощения взаимодействия инвестора 
+                            с органами исполнительной власти, контрольными (надзорными) органами и ресурсными организациями при реализации 
+                            инвестиционных проектов в части получения доступа к элементам инфраструктуры.</p>
+
+                        <div class="rule-steps">
+                            <div class="rule-steps__item">
+                                <span>1</span>
+                                <p>Оптимальный алгоритм действий инвестора (“клиентский путь”)</p>
+                            </div>
+                            <div class="rule-steps__item">
+                                <span>2</span>
+                                <p>Повышает прозрачность инвестиционного процесса</p>
+                            </div>
+                            <div class="rule-steps__item">
+                                <span>3</span>
+                                <p>Упрощает взаимодействие 
+                                    инвестора и органами власти, 
+                                    контрольными (надзорными) 
+                                    органами и ресурсоснабжающими 
+                                    организациями</p>
+                            </div>
+                        </div>
+                        <div class="deportation">
+                            <div class="deportation-item">
+                                <header class="deportation-header">
+                                    <h3>Департамент городского хозяйства г. Севастополя</h3>
+                                </header>
+                                <div class="deportation-body">
+                                    <ol>
+                                        <li>Присоединение к электрическим сетям;</li>
+                                        <li>Подключение к сетям газоснабжения;</li>
+                                        <li>Подключение к тепловым сетям;</li>
+                                        <li>Присоединение к сетям водоснабжения и водоотведения</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="deportation-item">
+                                <header class="deportation-header">
+                                    <h3>Департамент по имущественным и земельным отношениям г. Севастополя</h3>
+                                </header>
+                                <div class="deportation-body">
+                                    <ol>
+                                        <li>Получение земельных участков в аренду (на торгах, без торгов)</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="deportation-item">
+                                <header class="deportation-header">
+                                    <h3>Департамент архитектуры 
+                                        и градостроительства 
+                                        г. Севастополя</h3>
+                                </header>
+                                <div class="deportation-body">
+                                    <ol>
+                                        <li>Получение разрешения на  строительство;</li>
+                                        <li>Получение разрешения на ввод объекта в эксплуатацию</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="deportation-item">
+                                <header class="deportation-header">
+                                    <h3>Департамент транспорта 
+                                        и развития дорожно-
+                                        транспортной инфраструктуры 
+                                        г. Севастополя</h3>
+                                </header>
+                                <div class="deportation-body">
+                                    <ol>
+                                        <li>Обеспечение доступа к дорожной инфраструктуре</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="deportation-item">
+                                <header class="deportation-header">
+                                    <h3> Управление регистрации 
+                                        права и кадастра г. Севастополя</h3>
+                                </header>
+                                <div class="deportation-body">
+                                    <ol>
+                                        <li>Оформление права собственности на введеный в эксплуатацию объект</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-section">
+                            <h3>Алгоритмы действий инвестора</h3>
+                            <div class="support-accardeon support-2">
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Получение земельного участка (на торгах) </p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <div class="flex-row">
+                                                    <div class="col-3">
+                                                        <a href="#">
+                                                            <img src="bitrix/templates/adaptive/img/new-image/faq-banner.jpg" alt="" class="banner-small">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <p>Посмотреть презентацию алгоритма действий инвестора для получения земельного 
+                                                            участка (на торгах)</p>
+                                                    </div>
+                                                </div>
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">Алгоритм действий инвестора для получения земельного участка (на торгах)</span></a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Получение земельного участка (без торгов) </p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Получение разрешения на строительство</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Подключение к электрическим сетям (до 150 квт)</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Подключение к электрическим сетям (свыше 150 квт)</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Подключение к сетям газораспределения</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Подключение к объектам водоснабжения и водоотведения</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Подключение к сетям теплоснабжения</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Обеспечение доступа к дорожной инфраструктуре</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Получение разрешения на ввод объекта в эксплуатацию</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="support-item">
+                                    <div class="support-item__flex">
+                                        <div class="support-item__desc">
+                                            <p class="support-item__name">Оформление прав собственности на введеный в эксплуатацию объект</p>
+                                        </div>
+                                        <div class="support-accordeon__btn"></div>
+                                    </div>
+                                    <div class="support-item__hide">
+                                        <div class="document_wrap">
+                                            <div class="document-item">
+                                                <a href="/upload/iblock/1dd/АГЕНТСТВО_РАЗВИТИЯ_22.09.2023[1].pdf"
+                                                    class="document-name"><span
+                                                        class="document-name__ico pdf"></span><span
+                                                        class="document-name__txt">АО «Корпорация развития
+                                                        Севастополя»</span></a>
+                                                <span class="document-description"><b>Скачать:</b> .pdf, &nbsp; 1.01
+                                                    МБ</span>
+                                                <span class="document-info"><b>Уровень принятия:</b> Региональный</span>
+                                                <span class="document-info"><b>Тематика:</b> Другое</span> <span
+                                                    class="document-info"><b>Вид документа:</b> Другой</span> <span
+                                                    class="document-info"><b>Дата опубликования на сайте:</b>
+                                                    28.09.2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Ответственная организация за взаимодействие с региональными инвесторами по вопросам обратной связи: 
+                                <strong>Акционерное общество «Корпорация развития Севастополя»</strong>    </p>
+                                <p><strong>Контактное лицо:</strong>  Волков Сергей Григорьевич – исполняющий обязанности генерального директора</p>
+                                <p><strong>Контакты для связи:  </strong> +7 (8692) 22-36-12  ссылка <a href=" https://growsevastopol.ru/ru/contacts/"> https://growsevastopol.ru/ru/contacts/</a></p>
+                                <p>Информация об официальных сайтах ресурсоснабжающих организаций и ответственных лицах за взаимодействие 
+                                        с инвесторами</p>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <footer>
+                    <div class="footer-c">
+                        <div class="footer-logo">
+                            <img src="bitrix/templates/adaptive/img/sevastopol_logo-footer.png" alt=""
+                                class="footer-logo__ico">
+                            <p class="footer-logo__txt">Инвестиционный портал Севастополя</p>
+                        </div>
+                        <ul class="footer-menu">
+                            <li><a href="/ru/o-sevastopole/">О Севастополе</a></li>
+                            <li><a href="/ru/investoram/">Преимущества</a></li>
+                            <li><a href="/ru/investoram/">Инвесторам</a></li>
+   
+                            <li><a href="/ru/media/">Медиа</a></li>
+                            <li><a href="/ru/kontakty/">Контакты</a></li>
+                        </ul>
+                        <div class="footer-social">
+                            <p class="footer-social__label">Следуйте за нами</p>
+                            <div class="footer-social__flex">
+                                <a href="/ru/rss_news.php" class="footer-social__link fb"></a>
+                                <a href="/ru/rss_news.php" class="footer-social__link twit"></a>
+                                <a href="/ru/rss_news.php" class="footer-social__link inst"></a>
+                                <a href="/ru/rss_news.php" class="footer-social__link rss"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p class="footer-copyright">© Агентство развития города Севастополя 2023</p>
+                        <div class="footer-bottom__right">
+                            <div class="footer-count">
+
+                                <!--LiveInternet counter--><a href="//www.liveinternet.ru/click" target="_blank"><img
+                                        id="licnt4714" width="88" height="31" style="border:0"
+                                        title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                                        alt="" /></a>
+                                <script>(function (d, s) {
+                                        d.getElementById("licnt4714").src =
+                                            "//counter.yadro.ru/hit?t17.2;r" + escape(d.referrer) +
+                                            ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                                                (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+                                            ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+                                    })
+                                        (document, screen)</script><!--/LiveInternet-->
+
+                                <!-- Yandex.Metrika counter -->
+                                <script
+                                    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(35291250, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, trackHash: true }); </script>
+                                <noscript>
+                                    <div><img src="https://mc.yandex.ru/watch/35291250"
+                                            style="position:absolute; left:-9999px;" alt="" /></div>
+                                </noscript>
+                                <!-- /Yandex.Metrika counter -->
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="bitrix/templates/adaptive/js/jquery-3.3.1.min.js"></script>
+    <script type="module" src="bitrix/templates/adaptive/js/main.js"></script>
+    <script async type="module" src="bitrix/templates/adaptive/js/wow.min.js"></script>
+    <script async type="module" src="bitrix/templates/adaptive/js/jquery-ui.min.js"></script>
+    <script async type="module" src="bitrix/templates/adaptive/js/jquery.fancybox.min.js"></script>
+    <script async type="module" src="bitrix/templates/adaptive/js/jquery.maskedinput.js"></script>
+
+    <script async type="module" src="bitrix/templates/adaptive/js/resize-tester.js"></script>
+    <script async type="module" src="bitrix/templates/adaptive/js/slick.min.js"></script>
+
+</body>
+
+</html>
