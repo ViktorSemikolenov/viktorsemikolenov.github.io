@@ -1,0 +1,512 @@
+@media(max-width:1439px){
+    .container{
+        max-width: 1000px;
+    }
+    .search-page input{
+        width: 570px;
+    }
+    .title_h1{
+        font-size: 48px;
+    }
+    .title_h1 br{
+        display: none;
+    }
+    .first-screen__title{
+        width: auto;
+        padding-right: 32px;
+    }
+    .first-screen__info{
+        padding-top: 150px;
+    }
+    .owl-fs-footer{
+        width: 690px !important;
+    }
+    .navigation .level-one{
+        border-bottom: none;
+        padding: 14px 0;
+    }
+    .consultation h2{
+        width: 40%;
+    }
+    .consultation__info{
+        width: 448px;
+    }
+    h2{
+        font-size: 48px;
+    }
+    .consultation__items{
+        margin-top: 53px;
+    }
+    .tel-consultation{
+        font-size: 28px;
+    }
+    .section-man__info{
+        width: 608px;
+    }
+    .image-man{
+        left: auto;
+        right: -350px;
+    }
+    .invest-krasnodar .row{
+        flex-wrap: wrap-reverse;
+    }
+    .invest-krasnodar .col-6{
+        width: 100%;
+    }
+    .invest-krasnodar{
+        height: auto;
+    }
+    .invest-video-poster, .video-invest{
+        width: 100%;
+        right: 0;
+        height: 600px;
+    }
+    .play-icon{
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .invest-krasnodar__info{
+        padding: 60px 0;
+    }
+    .invest-krasnodar__info h2 br{
+        display: none;
+    }
+    .invest-krasnodar__item h3 br{
+        display: none;
+    }
+    .news-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news{
+        padding: 59px 0 70px;
+    }
+    .project-section{
+        padding-top: 32px;
+    }
+    .project-section h2{
+        line-height: 150%;
+    }
+    .invest-offers .invest-krasnodar__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .invest-offers__item{
+        height: 336px;
+    }
+    .invest-offers__item h3{
+        font-size: 24px;
+    }
+    .invest-offers__item-info{
+        left: 24px;
+        bottom: 16px;
+        padding-right: 24px;
+    }
+    .owl-footer-slider{
+        width: 690px !important;
+    }
+    .footer-page .level-two{
+        display: none;
+    }
+    .footer-description{
+        margin-top: 40px;
+    }
+    .footer-contacts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hidden-pc{
+        display: block;
+        
+    }
+    .open-menu{
+       margin-left: 40px; 
+    }
+    .navigation.fixed{
+        top: 0;
+    }
+    .navigation .level-two{
+        background-color: #2C3073;
+    }
+    .navigation .level-two .logo{
+        display: none;
+    }
+    .navigation .level-two ul{
+        display: block;
+        width: 100%;
+        
+    }
+    .drop-nav__container{
+        position: static;
+    }
+    .nav-item{
+        position: relative;
+    }
+    .nav-item::before{
+        content: url(../image/icons/icon-mob-menu.svg);
+        position: absolute;
+        z-index: 9;
+        top: 8px;
+    }
+    .nav-item__link{
+        padding-left: 48px;
+        border-bottom: thin solid rgba(255, 255, 255, 0.20);
+        padding-top:20px ;
+        padding-bottom: 20px;
+    }
+    .nav-item__link:hover{
+        background-color: #2c3073 !important;
+    }
+    .navigation.fixed .level-two .logo img{
+        display: none;
+    }
+    .navigation.fixed .nav-item__link{
+        padding-left: 48px;
+    }
+    .navigation.active{
+        background-color: #252962;
+    }
+    .level-two{
+        display: none !important;
+    }
+    .navigation.active .level-two{
+        display: block !important;
+    }
+    .nav-item__link::after{
+        display: none;
+    }
+    .nav-item {
+        background-color: #252962;
+    }
+    .drop-nav:hover .drop-nav__container{
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 16px;
+    }
+    .drop-nav:hover .nav-item__inset{
+        margin-bottom: 0;
+    }
+    .drop-nav.active .drop-nav__container{
+        height: auto;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+    }
+    .drop-nav.active .nav-item__inset{
+        margin-bottom: 14px;
+    }
+    .nav-item.active::before{
+        content: url(../image/icons/icon-mob-down.svg);
+    }
+    .drop-nav__container{
+        background-color: #252962;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:919px){
+    .container{
+        max-width: 100%;
+    }
+    .first-screen__info{
+        flex-wrap: wrap;
+    }
+    .first-screen__title{
+        padding-right: 0;
+        margin-bottom: 69px;
+    }
+    .first-screen__sliders{
+        width: 100%;
+    }
+    .owl-fs-footer{
+        width: 70% !important;
+    }
+    .consultation__info{
+        width: 50%;
+    }
+    .consultation__items{
+        flex-wrap: wrap;
+    }
+    .consultation__item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 48px;
+    }
+    .consultation__item:last-of-type{
+        margin-bottom: 0;
+    }
+    .consultation__item .btn{
+        margin-top: 0;
+    }
+    .consultation__item header{
+        margin-bottom: 10px;
+    }
+    .consultation{
+        padding: 59px 0;
+    }
+    .section-man .container{
+        align-items: flex-start;
+        padding-top: 80px;
+    }
+    .image-man{
+        height: 584px; 
+        right: -200px;
+        left: auto;
+    }
+    .section-man{
+        height: 888px;
+    }
+    .section-man__info{
+        padding: 27px 40px;
+        width: 568px;
+    }
+    .news-info h3{
+        font-size: 16px;
+    }
+    .news-item .news-image{
+        height: 248px;
+    }
+    .project-item h3{
+        font-size: 28px;
+    }
+    .project-section .owl-nav button{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .project-section .owl-nav span{
+        width: 64px !important;
+        height: 64px !important;
+    }
+    .project-section .owl-nav .owl-next{
+        right: -50px;
+    }
+    .project-section .owl-nav .owl-prev{
+        right: -50px;
+    }
+    .invest-krasnodar__item h3 br{
+        display: block;
+    }
+    .invest-offers__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .owl-footer-slider{
+        width: 70% !important;
+    }
+    .search-page input{
+        width: 100%;
+    }
+    .search-page form{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .search-page__row{
+        flex-wrap: wrap;
+    }
+    .search-page{
+        padding: 32px 0;
+    }
+    .navigation.fixed .level-two{
+        padding: 0;
+    }
+}
+@media(max-width:700px){
+    .level-one__buttons  .phone-link{
+        display: none !important;
+    }
+    .level-one__buttons  .drop-lang{
+        display: none !important;
+    }
+    .btn-visually{
+        margin-right: 0 !important;
+    }
+    .mob-content{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #252962;
+    }
+    .mob-content ul{
+        width: fit-content !important;
+    }
+    .mob-content .drop-lang__content{
+        position: static;
+    }
+    .level-two{
+        background: #252962;
+    }
+    .image-man{
+        height: 440px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .project-section .owl-nav .owl-next{
+        right: -35px;
+    }
+    .project-section .owl-nav .owl-prev{
+        left: -35px;
+    }
+    .consultation__info{
+        width: 100%;
+    }
+    .consultation h2{
+        width: 100%;
+    }
+    .consultation__item{
+        flex-wrap: wrap;
+    }
+    .consultation__item .btn{
+        margin-top: 24px;
+    }
+    .news-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width:480px){
+    .title_h1{
+        font-size: 32px;
+    }
+    .first-screen__sliders-item h3{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .section-man .container{
+        padding-top: 40px;
+    }
+    .section-man__info p{
+        font-size: 18px;
+    }
+    .section-man__info{
+        width: 100%;
+        padding: 17px 25px;
+    }
+
+    .image-man{
+        bottom: 0;
+        height: auto;
+        width: 120%;
+    }
+    .section-man .container{
+        height: 100%;
+        padding-bottom: 400px;
+    }
+    .section-man{
+        height: auto;
+    }
+    .invest-video-poster, .video-invest{
+        height: 280px;
+    }
+    .play-icon{
+        top: 80px;
+    }
+    .invest-krasnodar__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .invest-krasnodar__item{
+        display: flex;
+        align-items: center;
+    }
+    .invest-krasnodar__item h3{
+        margin-top: 0;
+        margin-left: 18px;
+    }
+    .news-info{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 17px;
+    }
+    .bg-text{
+        padding: 12px 32px;
+    }
+    .owl-project .slider-item{
+        height: 280px;
+    }
+    .project-info__icon{
+        width: 50px;
+        height: 50px;
+        top: 24px;
+        left: 24px;
+    }
+    .project-item h3{
+        font-size: 18px;
+        left: 24px;
+        bottom: 17px;
+    }
+    .project-section .owl-nav button{
+        width: 64px !important;
+        height: 64px !important;
+    }
+    .project-section .owl-nav span{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .project-section .owl-nav .owl-next{
+        right: -25px;
+    }
+    .project-section .owl-nav .owl-prev{
+        left: -25px;
+    }
+    .project-info{
+        padding-left: 52px;
+        padding-top: 82px;
+    }
+    .project-info__item p{
+        font-size: 18px;
+    }
+    .project-info__item{
+        margin-bottom: 14px;
+    }
+    .project-item h3{
+        padding-right: 0;
+    }
+    .invest-offers .invest-krasnodar__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .invest-offers{
+        padding: 39px 0;
+    }
+    .invest-offers .invest-krasnodar__items{
+        margin-top: 25px;
+    }
+    .invest-offers__item-info{
+        left: 20px;
+    }
+    .owl-footer-slider .owl-nav button{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .owl-footer-slider .owl-nav{
+        top: -6px;
+    }
+    .owl-footer-slider .owl-nav button{
+        margin-left: 10px;
+    }
+    .footer-description{
+        flex-wrap: wrap;
+    }
+    .footer-contacts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-info ul{
+        flex-wrap: wrap;
+    }
+    .footer-info ul li{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .level-one .btn-icon{
+        margin-right: 18px !important;
+    }
+    .open-menu{
+        margin-left: 12px;
+    }
+    .logo__image{
+        width: 170px;
+    }
+    .invest-krasnodar .col-6{
+        padding-bottom: 0;
+    }
+}

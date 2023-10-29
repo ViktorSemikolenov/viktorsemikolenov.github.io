@@ -22,7 +22,26 @@ $(document).ready(function () {
         items: 5,
         autoplay:false,
         autoplayTimeout:6000,
-        nav: true
+        nav: true,
+        responsive : {
+
+            0 : {
+               items:1,
+           },
+
+           768 : {
+               items: 2,
+           },
+           1050 : {
+               items: 3,
+   
+           },
+           
+           1439 : {
+               items: 5,
+           
+           }
+       }
     })
 });
 
@@ -58,6 +77,25 @@ $(document).ready(function () {
         autoplay:false,
         autoplayTimeout:6000,
         nav: true,
+        responsive : {
+
+            0 : {
+               items:1,
+           },
+
+           768 : {
+               items: 1,
+           },
+           1050 : {
+               items: 1,
+   
+           },
+           
+           1439 : {
+               items: 2,
+           
+           }
+       }
     })
 });
 
@@ -72,6 +110,25 @@ $(document).ready(function () {
         autoplay:false,
         autoplayTimeout:6000,
         nav: true,
+        responsive : {
+
+            0 : {
+               items:1,
+           },
+
+           768 : {
+               items: 2,
+           },
+           1050 : {
+               items: 3,
+   
+           },
+           
+           1439 : {
+               items: 5,
+           
+           }
+       }
     })
 });
 

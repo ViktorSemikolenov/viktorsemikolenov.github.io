@@ -1271,7 +1271,7 @@ a.footer-contacts__item:hover svg{
     margin-right: 12px;
 }
 
-.navigation.active{
+.navigation.fixed{
     position: fixed;
     top:-97px ;
     background-color: #252962;
@@ -1281,24 +1281,24 @@ a.footer-contacts__item:hover svg{
     display: none;
     overflow: hidden;
 }
-.navigation.active .level-two{
+.navigation.fixed .level-two{
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
 }
-.navigation.active .level-two .logo{
+.navigation.fixed .level-two .logo{
     display: block;
 }
-.navigation.active .level-two .logo img{
+.navigation.fixed .level-two .logo img{
     width: 170px;
 }
-.navigation.active  .nav-item__link{
+.navigation.fixed  .nav-item__link{
     padding-left: 32px;
     padding-right: 32px;
 }
 .search-page{
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 999999999999999999999999999;
     top: -270px;
     background-color: #2C3073;
@@ -1349,7 +1349,7 @@ text-transform: uppercase;
 
 .search-page input{
     width: 990px;
-    font-size: 14px 16px;
+    font-size:  16px;
     padding: 16px;
     color: #293C9B;
     outline: none;
@@ -1374,7 +1374,12 @@ transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
-
+.hidden-pc{
+    display: none;
+}
+.navigation .level-two{
+    display: none;
+}
 
 
 
@@ -1397,7 +1402,9 @@ transition-duration: 0.3s;
 
 
 
-
+.mob-content{
+    display: none;
+}
 
 
 

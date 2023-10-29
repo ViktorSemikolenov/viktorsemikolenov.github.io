@@ -50,9 +50,9 @@ $(document).ready(function() {
     var offset = 150;
   
     if (scrollTop > offset) {
-      navigation.addClass('active');
+      navigation.addClass('fixed');
     } else {
-      navigation.removeClass('active');
+      navigation.removeClass('fixed');
     }
   });
 
@@ -68,4 +68,24 @@ $(document).ready(function() {
     $('.close-search').click(function() {
       $('.search-page').removeClass('active');
     });
+  }); 
+  
+  
+  $(document).ready(function() {
+    $('.open-menu').click(function() {
+      $('.navigation').toggleClass('active');
+    });
   });
+
+
+// ===========================
+$(document).ready(function() {
+  var breakpoint = 1439;
+  var dropNav = $('.drop-nav');
+
+  dropNav.click(function() {
+    if ($(window).width() < breakpoint) {
+      $(this).toggleClass('active');
+    }
+  });
+});
