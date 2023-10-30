@@ -132,6 +132,21 @@ $(document).ready(function () {
     })
 });
 
+// ------------------------------
+$(document).ready(function () {
+    var owl = $('.owl-slider-image');
+    owl.owlCarousel({
+        margin: 32,
+        center: false,
+        autoHeight: false,
+        loop:true,
+        items: 1,
+        autoplay:false,
+        autoplayTimeout:6000,
+        nav: true,
+    })
+});
+// =----------------------------------------------------------
 
 
 
