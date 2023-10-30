@@ -153,8 +153,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     var owl = $('.owl-story-events');
     owl.owlCarousel({
-        nimateOut: 'slideOutUp', // Анимация при исчезновении слайда
-        animateIn: 'slideInDown', // Анимация при появлении слайда
+        animateOut: 'slideOutDown',
+        animateIn: 'fadeIn', // Анимация при исчезновении слайда
         margin: 32,
         center: false,
         autoHeight: false,
@@ -164,11 +164,6 @@ $(document).ready(function () {
         autoplayTimeout:6000,
         nav: true,
         dots:true,
-        smartSpeed:450
     })
 });
-
-
-
-
 

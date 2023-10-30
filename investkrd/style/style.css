@@ -1876,7 +1876,8 @@ cursor: pointer;
     background: #2257F7;
     padding: 58px 80px 72px;
     padding-left: 5vw;
-    padding-right: 100px;
+    padding-right: 5vw;
+
 }
 
 
@@ -1979,9 +1980,6 @@ margin-bottom: 8px;
 .story-ivents  .owl-dot.active{
     opacity: 1;
 }
-
-
-
 
 
 
