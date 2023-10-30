@@ -89,3 +89,10 @@ $(document).ready(function() {
     }
   });
 });
+
+// ---------------------
+$(document).ready(function() {
+  $('.btn').hover(function() {
+    $(this).closest('.consultation__item').toggleClass('active');
+  });
+});

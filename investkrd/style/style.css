@@ -561,7 +561,7 @@ h2{
     align-items: center;
     margin-bottom: 26px;
 }
-.consultation__item img{
+.consultation__item svg{
     width: 48px;
     margin-right: 18px;
 }
@@ -574,6 +574,15 @@ line-height: 150%;
 letter-spacing: 0.32px;
 text-transform: uppercase;
 }
+.consultation__item path{
+    transition-duration: 0.3s;
+}
+
+.consultation__item.active path{
+    stroke: #00B2FF;
+    transition-duration: 0.3s;
+}
+
 .tel-consultation{
     color:  #FFF;
     font-family: 'jost';
@@ -1411,6 +1420,7 @@ a.footer-contacts__item:hover svg{
 
 .search-page form{
     display: flex;
+    align-items: flex-start;
 }
 
 .search-page input{
@@ -1420,6 +1430,7 @@ a.footer-contacts__item:hover svg{
     color: #293C9B;
     outline: none;
     font-size: 16px;
+    border: thin solid #ffffff;
 }
 .search-page form button{
 font-size: 16px;
@@ -1430,6 +1441,7 @@ background-color: #2257F7;
 border: none;
 cursor: pointer;
 transition-duration: 0.3s;
+height: 55px;
 }
 .search-page form button:hover{
     background-color: #00B2FF;

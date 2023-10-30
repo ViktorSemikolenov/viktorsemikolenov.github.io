@@ -430,6 +430,9 @@
     .all-page-container__item .btn-link{
         right: 20px;
     }
+    .invest-offers .invest-krasnodar__items{
+            grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media(max-width:480px){
     .title_h1{
@@ -578,4 +581,13 @@
         padding-bottom: 0;
     }
 
+}
+@media(max-width:374px){
+    .news .btn span{
+        display: none;
+    }
+    .news .btn{
+        font-size: 14px;
+        padding: 14px 20px;
+    }
 }
