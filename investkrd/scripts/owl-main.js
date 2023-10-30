@@ -148,7 +148,25 @@ $(document).ready(function () {
 });
 // =----------------------------------------------------------
 
+// =----------------------------------------------------------
 
+$(document).ready(function () {
+    var owl = $('.owl-story-events');
+    owl.owlCarousel({
+        nimateOut: 'slideOutUp', // Анимация при исчезновении слайда
+        animateIn: 'slideInDown', // Анимация при появлении слайда
+        margin: 32,
+        center: false,
+        autoHeight: false,
+        loop:true,
+        items: 1,
+        autoplay:false,
+        autoplayTimeout:6000,
+        nav: true,
+        dots:true,
+        smartSpeed:450
+    })
+});
 
 
 

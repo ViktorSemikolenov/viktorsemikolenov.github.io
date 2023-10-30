@@ -74,7 +74,8 @@ $(document).ready(function() {
   $(document).ready(function() {
     $('.open-menu').click(function() {
       $('.navigation').toggleClass('active');
-      $(this).toggleClass('active')
+      $(this).toggleClass('active');
+      $('body').toggleClass('hidden');
     });
   });
 
@@ -95,5 +96,60 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.btn').hover(function() {
     $(this).closest('.consultation__item').toggleClass('active');
+  });
+});
+
+
+
+$(document).ready(function() {
+  // Проверяем размер экрана при загрузке
+  if ($(window).width() < 990) {
+      wrapTableWithScrollDiv();
+  } else {
+      unwrapTableFromScrollDiv();
+  }
+  
+  // Обрабатываем изменение размера окна
+  $(window).resize(function() {
+      if ($(window).width() < 990) {
+          if (!$('.scroll').length) {
+              wrapTableWithScrollDiv();
+          }
+      } else {
+          unwrapTableFromScrollDiv();
+      }
+  });
+});
+
+function wrapTableWithScrollDiv() {
+  if (!$('.scroll').length) {
+      $('table').wrap('<div class="scroll"></div>');
+  }
+}
+
+function unwrapTableFromScrollDiv() {
+  $('.scroll').replaceWith($('table'));
+}
+
+
+
+
+
+
+$(document).ready(function() {
+  // По клику на вкладку
+  $('.tab').click(function() {
+    // Удаляем класс "active" у всех вкладок
+    $('.tab').removeClass('active');
+    // Добавляем класс "active" к текущей вкладке
+    $(this).addClass('active');
+    
+    // Получаем индекс текущей вкладки
+    var tabIndex = $(this).index();
+    
+    // Скрываем все содержимое вкладок
+    $('.tab-content .content').removeClass('active');
+    // Отображаем содержимое текущей вкладки
+    $('.tab-content .content:eq(' + tabIndex + ')').addClass('active');
   });
 });

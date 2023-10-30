@@ -143,6 +143,7 @@ svg path{
     transition-duration: 0.3s;
     height: 0;
     overflow: hidden;
+    margin-left: -7px;
 }
 .drop-lang__content a{
     color: #ffffff;
@@ -759,8 +760,8 @@ svg circle{
 .invest-video-poster {
     position: absolute;
     top: 0;
-    right: -10px;
-    width: 50.5vw;
+    right: -9px;
+    width: 50vw;
     height: 100vh;
     object-fit: cover;
     object-position: center;
@@ -1667,6 +1668,10 @@ margin: 29px 0 37px;
     position: relative;
     
 }
+
+thead tr:first-of-type td{
+    background-color: #2257F7;
+}
 .text-page-container ul li::before{
     content: '';
     width: 12px;
@@ -1707,7 +1712,7 @@ thead tr{
     background-color :#00B2FF;
 }
 
-thead span{
+thead {
     color:  #FFF;
     font-family: 'Onest';
     font-size: 18px;
@@ -1808,12 +1813,172 @@ margin:27px 0 27px ;
     width: 38px;
 }
 
+body.hidden{
+    overflow: hidden;
+}
 
 
 
+.tab-content .content {
+    display: none;
+  }
+  
+  .tab-content .content.active {
+    display: block;
+  }
+
+  .tab{
+    display: inline;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+cursor: pointer;
+  }
+  .tab.active{
+    border-radius: 900px;
+    background-color: #2257F7;
+    padding: 16px 48px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+  }
+.tabs.title__h2, .tabs.title__h2 span{
+    font-family: 'jost';
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 112%;
+}
+
+.story-events__row{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.story-events__item{
+    width: 50%;
+    height: 100%;
+}
+.story-ivents{
+    width: 100%;
+}
+.story-ivents .slider-item{
+    width: 100% !important;
+}
 
 
+.story-events__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.story-events__info{
+    background: #2257F7;
+    padding: 58px 80px 72px;
+    padding-left: 5vw;
+    padding-right: 100px;
+}
+
+
+.story-events__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.story-events__info h3{
+    color:  #FFF;
+    font-family: 'jost';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120% ; 
+    letter-spacing: 0.8px;
+}
+
+.date{
+    color: #FFF;
+font-family: 'Onest';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0.48px;
+}
+.story-ivents .owl-nav{
+    position: absolute;
+    bottom: 80px;
+    right: 64px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-ivents .owl-nav button{
+    border: thin solid rgba(255, 255, 255, 0.20) !important;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 900px;
+    margin-top: 16px;
+    background-color: #2257F7 !important;
+    position: relative;
+    transition-duration: 0.3s;
+}
+.story-ivents .owl-nav button span{
+    display: block;
+    width: 8px !important;
+    height: 16px !important;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+.story-ivents .owl-nav .owl-prev span{
+    background-image: url(../image/icons/arrow-top.svg);
+    background-position: center top;
+}
+.story-ivents .owl-nav button:hover {
+    background: #00B2FF !important;
+    transition-duration: 0.3s;
+    border: thin solid #00B2FF!important;
+    transform: scale(1.1);
+}
+.story-ivents .owl-nav button:hover span{
+    height: 32px !important;
+    transition-duration: 0.3s;
+}
+.story-ivents .owl-nav .owl-next span{
+    background-image: url(../image/icons/arrow-bottom.svg);
+    background-position: center bottom;
+}
+
+.story-ivents .owl-dots{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    top:62px;
+}
+.story-ivents  .owl-dot{
+width: 8px !important;
+height: 8px !important;
+border-radius: 900px;
+background-color: #ffffff !important;
+opacity: 0.3;
+transition-duration: 0.3s;
+margin-bottom: 8px;
+}
+.story-ivents  .owl-dot:hover{
+    background-color: #00B2FF !important;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+.story-ivents  .owl-dot.active{
+    opacity: 1;
+}
 
 
 
