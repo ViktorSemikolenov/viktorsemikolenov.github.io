@@ -74,6 +74,7 @@ $(document).ready(function() {
   $(document).ready(function() {
     $('.open-menu').click(function() {
       $('.navigation').toggleClass('active');
+      $(this).toggleClass('active')
     });
   });
 
