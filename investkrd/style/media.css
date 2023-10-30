@@ -370,6 +370,9 @@ onsultation__item:last-of-type{
     .news-item .news-image{
         height: 32vw;
     }
+    .invest-offers__item{
+        height: 65vw;
+    }
 }
 @media(max-width:700px){
     h1{
