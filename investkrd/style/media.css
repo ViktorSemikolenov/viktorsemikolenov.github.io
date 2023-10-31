@@ -14,7 +14,7 @@
         left: -65px;
     }
     .container{
-        max-width: 1000px;
+        max-width: 1024px;
     }
     .search-page input{
         width: 570px;
@@ -263,6 +263,15 @@
     padding-right: 3vw;
     padding-bottom: 42px;
     }
+    .navigation.active .container{
+        padding-right: 0;
+    }
+    .navigation.active .level-two, .navigation.active .level-one{
+        padding-right: 20px;
+    }
+    .nav-item__link{
+        text-transform: uppercase;
+    }
 }
 
 @media(max-width:1440px){
@@ -277,6 +286,10 @@
 }
 
 @media(max-width:1200px){
+    .container{
+        padding-left: 48px;
+        padding-right: 48px;
+    }
     .story-events__row{
         flex-wrap: wrap;
         height: auto;
@@ -296,11 +309,43 @@
         margin-top: 65px;
     }
     .story-ivents .owl-dots{
-        top: 69vw;
+        top: 66vw;
         right: 85px;
     }
     .story-events__info{
         padding: 60px 40px 72px ;
+    }
+    .section-man__info-name{
+        margin-top: 32px;
+    }
+    .consultation{
+        padding: 59px 0 80px;
+    }
+    .invest-krasnodar__info{
+        padding: 60px 0;
+    
+    }
+    .invest-krasnodar__items{
+        margin-top: 28px;
+    }
+    .story-events__info{
+        padding-top: 58px;
+        padding-left: 48px;
+    }
+    .news-row{
+        margin-top: 42px;
+    }
+    .project-section{
+        padding-top: 12px;
+    }
+    .invest-offers{
+        padding: 59px 0 0;
+    }
+     .navigation.active .level-one, .navigation.active .level-two{
+        padding-right: 48px;
+    }
+    .owl-footer-slider .owl-nav, .owl-fs-footer .owl-nav{
+        right: 48px;
     }
 }
 @media(max-width:919px){
@@ -470,7 +515,30 @@ onsultation__item:last-of-type{
     .tabs.title__h2, .tabs.title__h2 span{
         line-height: 150%;
     }
-
+    .first-screen__info{
+        padding-top: 170px;
+    }
+    .consultation__item:last-of-type{
+        margin-bottom: 0;
+    }
+    .invest-krasnodar__items{
+        margin-top: 32px;
+    }
+    .news{
+        padding: 59px 0 45px;
+    }
+    .invest-offers{
+        padding: 59px 0 49px;
+    }
+    .navigation.active .level-one, .navigation.active .level-two{
+        padding-right: 32px;
+    }
+    .owl-footer-slider .owl-nav, .owl-fs-footer .owl-nav{
+        right: 32px;
+    }
+    .invest-offers{
+        padding-bottom: 0;
+    }
 }
 @media(max-width:700px){
     h1{
@@ -684,8 +752,82 @@ onsultation__item:last-of-type{
     .story-ivents .owl-dot{
         margin-right: 8px;
     }
+    .news{
+        padding-bottom: 0;
+    }
+    .invest-offers{
+        padding-top: 39px;
+    }
+    .title_h2, .title-h2, .section-man__info-name h2{
+        font-size:32px ;
+    }
+    .news-row{
+        margin-top: 30px;
+    }
+    .consultation h2{
+        margin-bottom: 16px;
+    }
+    .section-man__info{
+        width: 100%;
+    }
+    .section-man__info-name{
+        margin-top: 24px;
+    }
+    .invest-video-poster, .video-invest{
+        height: 280px;
+    }
+    .play-icon{
+        top: 80px;
+    }
+    .invest-krasnodar__info, .consultation{
+        padding-top: 32px;
+    }
+    .consultation{
+        padding-bottom: 32px;
+    }
+    .consultation__item:last-of-type{
+        margin-bottom: 0;
+    }
+    .invest-krasnodar__items{
+        margin-top: 35px;
+    }
+    .news{
+        padding-top: 40px;
+    }
+    .footer-page{
+        margin-top: 24px;
+    }
+    .first-screen__info{
+        padding-top: 120px;
+    }
+    .first-screen__sliders-item{
+        padding: 24px;
+    }
+    .first-screen__title{
+    margin-bottom: 32px;
+    }
+    .news{
+        padding-bottom: 59px;
+    }
+}
+@media(max-width:555px){
+    .invest-krasnodar__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .invest-krasnodar__item{
+        display: flex;
+        align-items: center;
+    }
+    .invest-krasnodar__item h3 {
+        margin-top: 0;
+        margin-left: 24px;
+    }
 }
 @media(max-width:480px){
+    .container{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
     .title_h1{
         font-size: 32px;
     }
@@ -852,6 +994,18 @@ onsultation__item:last-of-type{
     }
     .story-ivents{
         padding-top: 40px;
+    }
+    .news{
+        padding-bottom: 42px;
+    }
+    .navigation.active .container{
+        padding-right: 0 !important;
+    }
+    .navigation.active .level-two, .navigation.active .level-one{
+        padding-right: 20px;
+    }
+    .first-screen__title{
+        margin-bottom: 52px;
     }
 }
 @media(max-width:374px){

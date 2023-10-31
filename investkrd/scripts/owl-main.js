@@ -1,9 +1,9 @@
 $(document).ready(function () {
     var owl = $('.owl-fs-info');
     owl.owlCarousel({
-        margin: 2,
+        margin: 42,
         center: false,
-        autoHeight: false,
+        autoHeight: true,
         loop:true,
         items: 1,
         autoplay:true,

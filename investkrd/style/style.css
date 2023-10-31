@@ -1829,10 +1829,11 @@ body.hidden{
 
   .tab{
     display: inline;
-    text-decoration: underline;
+    
     transition-duration: 0.3s;
 cursor: pointer;
   }
+  
   .tab.active{
     border-radius: 900px;
     background-color: #2257F7;
@@ -1846,8 +1847,23 @@ cursor: pointer;
     color: #ffffff;
     font-size: 64px;
     line-height: 112%;
+    transition-duration: 0.3s;
+    line-height: 150%;
 }
-
+.tab:hover span{
+    color: #00B2FF !important;
+    transition-duration: 0.3s;
+    text-decoration-color: #00B2FF;
+  }
+  .tab.active:hover span{
+    color: #ffffff !important;
+  }
+  .tab span{
+    text-decoration: underline;
+  }
+  .tab.active span{
+    text-decoration: none;
+  }
 .story-events__row{
     height: 100vh;
     width: 100%;
