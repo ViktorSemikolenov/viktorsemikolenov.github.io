@@ -13,160 +13,934 @@
 </head>
 
 <body>
-    <section class="search-page">
-        <div class="container">
-            <header>
-                <h2>Поиск по сайту</h2>
-                <button class="close-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                        <path d="M1 1L25 25" stroke="white" stroke-width="2"/>
-                        <path d="M25 1L0.999999 25" stroke="white" stroke-width="2"/>
-                        </svg>
-                </button>
-            </header>
-            <div class="search-page__row">
-                <span>Введите ключевое слово</span>
-                <form action="#">
-                    <input required type="search" name="" id="">
-                    <button>Найти</button>
-                </form>
-            </div>
-        </div>
-        
-    </section>
-    <header class="navigation">
-        <div class="container">
-            <div class="level-one row justify-between align-center">
-                <a href="/" class="logo"><img class="logo__image" src="image/logo.svg"
-                        alt="Инвест портал Краснодара"></a>
-                <div class="level-one__buttons row align-center">
-                    <button class="btn-icon btn-search">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path
-                                d="M11.95 9.17454C11.95 11.151 10.3381 12.7535 8.35002 12.7535M13.7215 13.6524L19 18.9M15.4 9.05789C15.4 13.0111 12.1764 16.2157 8.19999 16.2157C4.22354 16.2157 1 13.0111 1 9.05789C1 5.10471 4.22354 1.90002 8.19999 1.90002C12.1764 1.90002 15.4 5.10471 15.4 9.05789Z"
-                                stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
-                        </svg>
+    <main class="main-content">
+        <section class="search-page">
+            <div class="container">
+                <header>
+                    <h2>Поиск по сайту</h2>
+                    <button class="close-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <path d="M1 1L25 25" stroke="white" stroke-width="2"/>
+                            <path d="M25 1L0.999999 25" stroke="white" stroke-width="2"/>
+                            </svg>
                     </button>
-                    <a href="#" class="btn-icon btn-visually">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path
-                                d="M8.93305 7.41901L11.6383 8.11352L12.7056 10.6934M17.5432 17.1759C16.1862 18.7378 13.8194 18.9044 12.2568 17.5481C10.6942 16.1918 10.5275 13.8262 11.8844 12.2643C13.2414 10.7024 15.6081 10.5358 17.1708 11.8921C18.7334 13.2484 18.9001 15.614 17.5432 17.1759ZM8.11052 7.74525C6.75466 9.30807 4.38952 9.47461 2.82784 8.11723C1.26616 6.75984 1.09931 4.39255 2.45517 2.82973C3.81103 1.26691 6.17617 1.10037 7.73785 2.45775C9.29953 3.81514 9.46638 6.18243 8.11052 7.74525Z"
-                                stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <ul class="drop-lang">
-                        <li class="drop-lang__header">
-                            <span class="drop-list__link row align-center">RU
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7"
-                                    fill="none">
-                                    <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                </svg>
-                            </span>
-                            <ul class="drop-lang__content">
-                                <li class="drop-lang__item"><a lang="en" href="#">EN</a></li>
-                               
-                            </ul>
-                        </li>
-                    </ul>
-                    <a href="tel:+7 861 251 85 79" class="phone-link row align-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path
-                                d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z"
-                                stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                        </svg>
-                        +7 861 251 85 79
-                    </a>
-                    <button class="btn-icon hidden-pc open-menu">
-                        
-                    </button>
+                </header>
+                <div class="search-page__row">
+                    <span>Введите ключевое слово</span>
+                    <form action="#">
+                        <input required type="search" name="" id="">
+                        <button>Найти</button>
+                    </form>
                 </div>
             </div>
-            <div class="scroll-mob">
-                <nav class="level-two">
-                    <div class="row justify-center mob-content">
+            
+        </section>
+        <header class="navigation">
+            <div class="container">
+                <div class="level-one row justify-between align-center">
+                    <a href="/" class="logo"><img class="logo__image" src="image/logo.svg"
+                            alt="Инвест портал Краснодара"></a>
+                    <div class="level-one__buttons row align-center">
+                        <button class="btn-icon btn-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M11.95 9.17454C11.95 11.151 10.3381 12.7535 8.35002 12.7535M13.7215 13.6524L19 18.9M15.4 9.05789C15.4 13.0111 12.1764 16.2157 8.19999 16.2157C4.22354 16.2157 1 13.0111 1 9.05789C1 5.10471 4.22354 1.90002 8.19999 1.90002C12.1764 1.90002 15.4 5.10471 15.4 9.05789Z"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <a href="#" class="btn-icon btn-visually">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M8.93305 7.41901L11.6383 8.11352L12.7056 10.6934M17.5432 17.1759C16.1862 18.7378 13.8194 18.9044 12.2568 17.5481C10.6942 16.1918 10.5275 13.8262 11.8844 12.2643C13.2414 10.7024 15.6081 10.5358 17.1708 11.8921C18.7334 13.2484 18.9001 15.614 17.5432 17.1759ZM8.11052 7.74525C6.75466 9.30807 4.38952 9.47461 2.82784 8.11723C1.26616 6.75984 1.09931 4.39255 2.45517 2.82973C3.81103 1.26691 6.17617 1.10037 7.73785 2.45775C9.29953 3.81514 9.46638 6.18243 8.11052 7.74525Z"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                            </svg>
+                        </a>
                         <ul class="drop-lang">
                             <li class="drop-lang__header">
                                 <span class="drop-list__link row align-center">RU
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
-                                        <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7"
+                                        fill="none">
+                                        <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" />
                                     </svg>
                                 </span>
                                 <ul class="drop-lang__content">
                                     <li class="drop-lang__item"><a lang="en" href="#">EN</a></li>
-                                   
+                                
                                 </ul>
                             </li>
                         </ul>
                         <a href="tel:+7 861 251 85 79" class="phone-link row align-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                <path d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+                                <path
+                                    d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
                             </svg>
                             +7 861 251 85 79
                         </a>
+                        <button class="btn-icon hidden-pc open-menu">
+                            
+                        </button>
                     </div>
-                    <a href="/" class="logo"><img class="logo__image" src="image/logo.svg"
-                        alt="Инвест портал Краснодара"></a>
+                </div>
+                <div class="scroll-mob">
+                    <nav class="level-two">
+                        <div class="row justify-center mob-content">
+                            <ul class="drop-lang">
+                                <li class="drop-lang__header">
+                                    <span class="drop-list__link row align-center">RU
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                                            <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-lang__content">
+                                        <li class="drop-lang__item"><a lang="en" href="#">EN</a></li>
+                                    
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="tel:+7 861 251 85 79" class="phone-link row align-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <path d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                                +7 861 251 85 79
+                            </a>
+                        </div>
+                        <a href="/" class="logo"><img class="logo__image" src="image/logo.svg"
+                            alt="Инвест портал Краснодара"></a>
+                        <ul class="nav-list row justify-center">
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="#">О Краснодаре</a>
+                            </li>
+                            <li class="nav-item drop-nav">
+                                <a class="nav-item__link" >Инвестору</a>
+                                <ul class="drop-nav__container">
+                                    <li class="nav-item__inset">
+                                        <a href="#">Инвестпроекты</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Градостроительная документация</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Инвестиционный паспорт Краснодара</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Промышленные предприятия</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Льготы для масштабных проектов</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Инвестиционный уполномоченный</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Промышленные площадки и парки</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Нормативно-правовая база</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item drop-nav">
+                                <a class="nav-item__link" >Предпринимателю</a>
+                                <ul class="drop-nav__container">
+                                    <li class="nav-item__inset">
+                                        <a href="#">Инвестпроекты</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Градостроительная документация</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Инвестиционный паспорт Краснодара</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Промышленные предприятия</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Льготы для масштабных проектов</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Инвестиционный уполномоченный</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Промышленные площадки и парки</a>
+                                    </li>
+                                    <li class="nav-item__inset">
+                                        <a href="#">Нормативно-правовая база</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="#">ГЧП</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="#">ВЭД</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="#">Новости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="#">Выставки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+        </header>
+        <section class="first-screen">
+            <div class="container">
+                <div class="first-screen__info">
+                    <div class="first-screen__title">
+                        <h1 class="title_h1">Бизнес — <br> в Краснодаре!</h1>
+
+                    </div>
+                    <div class="first-screen__sliders">
+                        <div class="first-screen__sliders-item">
+                            <a href="#" class="first-screen__sliders-item__link"></a>
+                            <h3>Расскажем</h3>
+                            <div class="owl-carousel owl-fs-info">
+                                <div class="slider-item">
+                                    <p>Почему в Краснодаре бизнесу комфортно </p>
+                                </div>
+                                <div class="slider-item">
+                                    <p>Подобрать земельный участок или площадку </p>
+                                </div>
+                                <div class="slider-item">
+                                    <p>Поддержку на всех этапах реализации проекта </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-screen__sliders-item">
+                            <a href="#" class="first-screen__sliders-item__link"></a>
+                            <h3>Поможем</h3>
+                            <div class="owl-carousel owl-fs-info">
+                                <div class="slider-item">
+                                    <p>Подобрать земельный участок или площадку </p>
+                                </div>
+                                <div class="slider-item">
+                                    <p>Почему в Краснодаре бизнесу комфортно </p>
+                                </div>
+                                <div class="slider-item">
+                                    <p>Поддержку на всех этапах реализации проекта </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-screen__sliders-item">
+                            <a href="#" class="first-screen__sliders-item__link"></a>
+                            <h3>Предоставим</h3>
+                            <div class="owl-carousel owl-fs-info">
+                                <div class="slider-item">
+                                    <p>Поддержку на всех этапах реализации проекта </p>
+                                </div>
+                                <div class="slider-item">
+                                    <p>Подобрать земельный участок или площадку </p>
+                                </div>
+                                <div class="slider-item">
+                                    <p>Почему в Краснодаре бизнесу комфортно </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="first-screen__footer">
+                <div class="container">
+                    <div class="owl-carousel owl-fs-footer">
+                        <div class="slider-item">
+                            <a href="#" class="owl-fs-footer__link">
+                                <img src="image/icons/fs-footer-icon/1.svg" alt="" class="owl-fs-footer__icon">
+                                <p>МЦРП “Платформа”</p>
+                            </a>
+
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="owl-fs-footer__link">
+                                <img src="image/icons/fs-footer-icon/2.svg" alt="" class="owl-fs-footer__icon">
+                                <p>Инвестиционная карта</p>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="owl-fs-footer__link">
+                                <img src="image/icons/fs-footer-icon/3.svg" alt="" class="owl-fs-footer__icon">
+                                <p>Телефоны горячих линий </p>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="owl-fs-footer__link">
+                                <img src="image/icons/fs-footer-icon/4.svg" alt="" class="owl-fs-footer__icon">
+                                <p>Меры <br> поддержки</p>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="owl-fs-footer__link">
+                                <img src="image/icons/fs-footer-icon/5.svg" alt="" class="owl-fs-footer__icon">
+                                <p>Промышленные парки</p>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="owl-fs-footer__link">
+                                <img src="image/icons/fs-footer-icon/1.svg" alt="" class="owl-fs-footer__icon">
+                                <p>МЦРП “Платформа”</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <div class="first-screen__background">
+                <img class="first-screen__background-item" src="image/content/fs-background/1.jpg" alt="bg">
+                <img class="first-screen__background-item" src="image/content/fs-background/2.jpg" alt="bg">
+                <img class="first-screen__background-item" src="image/content/fs-background/3.jpg" alt="bg">
+                <img class="first-screen__background-item" src="image/content/fs-background/4.jpg" alt="bg">
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="container">
+                <h2 class="title-h2">Получить консультацию</h2>
+                <div class="consultation__info">
+                    <p>Планируете Реализовать проект или развивать бизнес в Краснодаре?</p>
+                    <p>Хотите предложить продукцию на зарубежном рынке?</p>
+                    <p>Наши специалисты готовы оказать Вам помощь!</p>
+                </div>
+                <div class="consultation__items">
+                    <div class="consultation__item">
+                        <div>
+                            <header>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
+                                    <path d="M26.777 36.36L30.2859 35.017C31.8589 32.517 33.8899 29.704 37.7859 32.017L35.533 37.179L31.578 41.454C31.578 41.454 26.4279 45.017 25.7859 45.017C24.5609 45.017 12.294 45.017 11.069 45.017L9.01495 47.017M14.7859 39.017C14.7859 39.017 22.7859 39.017 23.7859 39.017C27.7859 39.017 27.7859 34.017 23.7859 34.017C22.7859 34.017 20.5669 34.017 17.7859 34.017C16.9529 34.017 15.39 32.017 14.069 32.017C13.483 32.017 10.421 32.017 9.06897 32.017C7.71797 32.017 6.03897 33.113 5.06897 34.017C3.56997 35.516 1 37.948 1 37.948M19.952 18.592C19.656 17.228 19.362 16.246 19.362 16.246L22.206 12.942L26.151 11.539L27.13 11.834L30.518 13.747C30.518 13.747 30.654 15.3 30.102 15.983C28.644 17.792 25.447 18.121 24.52 19.001C23.428 20.038 22.655 21.754 22.685 22.915C22.715 24.076 24.528 24.344 25.574 23.878C26.189 23.605 31.4419 21.846 34.7729 20.69C36.6579 20.036 38.275 18.796 39.406 17.152C41.49 14.123 44.002 9.916 44.002 9.916L46.528 9.19M36.14 1C36.14 1 27.725 3.218 21.591 4.916C20.202 5.3 18.996 6.159 18.173 7.341L14.2 13.82C13.734 14.58 13.63 15.508 13.916 16.351L16.514 24.017M16.514 24.017C16.514 27.33 19.201 30.017 22.514 30.017C25.827 30.017 28.514 27.33 28.514 24.017C28.514 23.625 28.477 23.242 28.405 22.871M16.514 24.017C16.514 20.704 19.201 18.017 22.514 18.017C23.45 18.017 24.335 18.231 25.124 18.613" stroke="#A9B1D7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <h3>Сопровождение <br> инвестпроектов</h3>
+                            </header>
+                            <a class="tel-consultation" href="tel:+7 (861) 259 61 30">+7 (861) 259 61 30</a>
+                        </div>
+                        <a href="#" class="btn">Отправить сообщение <span></span></a>
+                    </div>
+                    <div class="consultation__item">
+                        <div>
+                            <header>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <path d="M10.9421 22V32M20.9421 22V45M10.9421 41V45M16.9421 32V45M20.9421 33C23.1031 33 24.9421 30.945 24.9421 29V21C24.9421 17.697 22.9421 15 17.9421 15H13.9421C8.94214 15 6.94214 17.697 6.94214 21V32M34.9421 22V13H38.9421L32.3171 1L25.9421 13H29.9421V39M42.9421 38V32H46.9421L40.3171 20L33.9421 32H37.9421V47M15.9421 12C18.2731 12 19.9421 10.367 19.9421 8V6C19.9421 3.633 18.2731 2 15.9421 2C13.6111 2 11.9421 3.633 11.9421 6V8C11.9421 10.367 13.6111 12 15.9421 12ZM1.94214 32H12.9421V41H1.94214V32Z" stroke="#A9B1D7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <h3>Поддержка <br>предпринимателей</h3>
+                            </header>
+                            <a class="tel-consultation" href="tel:+7 (861) 259 52 33">+7 (861) 259 52 33</a>
+                        </div>
+                        <a href="#" class="btn">Отправить сообщение <span></span></a>
+                    </div>
+                    <div class="consultation__item">
+                        <div>
+                            <header>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
+                                    <path d="M9.99799 40.2339C4.55899 36.4389 1 30.1349 1 22.9999M1 22.9999C1 11.4019 10.402 1.99988 22 1.99988M1 22.9999H28M22 1.99988C23.019 1.99988 24.021 2.07288 25 2.21288M22 1.99988C16.478 1.99988 12 11.4019 12 22.9999C12 29.4099 13.368 35.1489 15.524 39.0009M22 1.99988V36.9999M22 12.9999C15.59 12.9999 9.84999 11.6319 5.99799 9.47588M27 33.2849C25.397 33.0979 23.723 32.9999 22 32.9999C15.591 32.9999 9.852 34.3669 6 36.5229M44.98 8.35788L27.931 1.29688L25.521 19.5919L31.241 16.2899C32.359 18.6269 33 21.2349 33 23.9989C33 33.9399 24.941 41.9989 15 41.9989C14.25 41.9989 13.516 41.9379 12.789 41.8489C15.573 43.2119 18.691 43.9989 22 43.9989C33.598 43.9989 43 34.5969 43 22.9989C43 18.7449 41.727 14.7949 39.548 11.4939L44.98 8.35788Z" stroke="#A9B1D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
+                                <h3>Поддержка <br> экспорта</h3>
+                            </header>
+                            <a class="tel-consultation" href="tel:+7 (861) 251 85 79">+7 (861) 251 85 79</a>
+                        </div>
+                        <a href="#" class="btn">Отправить сообщение <span></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-man">
+            <div class="container">
+                <div class="section-man__info">
+                    <p>Краснодар открыт для сотрудничества! Готовы поддержать бизнес в реализации инициатив и проектов,
+                        которые усилят динамику развития нашего города во всех сферах. </p>
+                    <div class="section-man__info-name">
+                        <span>Глава муниципального образования город Краснодар</span>
+                        <h2>Наумов Евгений Михайлович</h2>
+                    </div>
+                </div>
+                <img src="image/content/man.png" alt="Наумов Евгений Михайлович" class="image-man">
+            </div>
+
+        </section>
+        <section class="invest-krasnodar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 invest-krasnodar__info">
+                        <h2 class="title-h2">Инвестировать - <br>в Краснодар</h2>
+                        <div class="invest-krasnodar__items">
+                            <a href="#" class="invest-krasnodar__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                    fill="none">
+                                    <circle cx="40" cy="40" r="40" fill="#2257F7" />
+                                    <path
+                                        d="M34.734 45.982L37.806 46.193L32.244 51.375L33.833 58.423L27.403 54.892L20.973 58.423L22.561 51.375L17 46.193L24.411 45.683L27.403 38.634L28.813 41.955"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M45.0398 45.982L41.9678 46.193L47.5298 51.375L45.9408 58.423L52.3708 54.892L58.8008 58.423L57.2128 51.375L62.7738 46.193L55.3628 45.683L52.3708 38.634L50.9608 41.955"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M39.8869 21L43.1789 28.753L51.3309 29.314L45.2129 35.014L46.9599 42.767L39.8869 38.883L32.8139 42.767L34.5609 35.014L28.4429 29.314L36.5949 28.753L39.8869 21Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <h3>Преимущества <br>Краснодара
+                                    <span>
+
+                                    </span>
+                                </h3>
+                            </a>
+                            <a href="#" class="invest-krasnodar__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                    fill="none">
+                                    <circle cx="40" cy="40" r="40" fill="#2257F7" />
+                                    <path
+                                        d="M46 43H48C48.63 43 49.617 43.4 50 44H52C52.938 44 54 44.875 54 46H56C56.938 46 58 46.875 58 48V58.408C58 60.431 56 61.653 56 63"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M46 47V36C46 34.896 45.104 34 44 34C42.896 34 42 34.896 42 36V51C41.307 51.665 40.18 51.533 39.66 50.726L38.051 48.232C36.45 46.028 34.001 47.265 34.001 48.232C34.001 48.232 37.035 55.32 37.47 56.001C38.168 57.094 42.001 61.554 42.001 62.409V63"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M50 44V48" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M54 46V49" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M38.685 42.81C37.976 42.935 37.246 43 36.5 43C29.596 43 24 37.404 24 30.5C24 23.596 29.596 18 36.5 18C43.403 18 49 23.596 49 30.5C49 31.331 48.919 32.142 48.765 32.928"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                                    <path d="M32 33H38" stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                    <path
+                                        d="M34 30.3333H38C39.1047 30.3333 40 29.438 40 28.3333V27C40 25.8953 39.1047 25 38 25H34V37"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </svg>
+                                <h3>Сопровождение <br>проектов
+                                    <span>
+
+                                    </span>
+                                </h3>
+                            </a>
+                            <a href="#" class="invest-krasnodar__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                    fill="none">
+                                    <circle cx="40" cy="40" r="40" fill="#2257F7" />
+                                    <path d="M55 27V29" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M55 31V33" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M55 35V53H59L51 64L43 53H47V48" stroke="white" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linejoin="round" />
+                                    <path d="M26 60V58" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M26 56V54" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M26 52V31H22L31 18L40 31H36V35" stroke="white" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linejoin="round" />
+                                    <path d="M31 41V53" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M36 64V56" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M47 43V35" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                                        stroke-linejoin="round" />
+                                    <path d="M34 49H41" stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                    <path
+                                        d="M36 45.2222H40.6667C41.9554 45.2222 43 44.1777 43 42.8889V41.3333C43 40.0446 41.9554 39 40.6667 39H36V53"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </svg>
+                                <h3>путеводитель <br>инвестора
+                                    <span>
+
+                                    </span>
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <span class="play-icon">
+                            <img src="image/icons/play.svg" alt="">
+                        </span>
+                        <video class="video-invest" controls="controls" poster="image/content/poster.jpg">
+                            <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                    </div>
+                    <img src="image/content/poster.jpg" alt="" class="invest-video-poster play-video-poster">
+                </div>
+            </div>
+        </section>
+        <section class="story-ivents">
+            <div class="owl-carousel owl-story-events">
+                <div class="slider-item ">
+                <div class="story-events__row">
+                        <div class="story-events__image story-events__item">
+                            <img src="image/content/event-story/1.jpg" alt="">
+                        </div>
+                        <div class="story-events__info story-events__item">
+                            <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
+                            <span class="date">25-27 сентября, 2023</span>
+                        </div>
+                </div>
+                </div>
+                <div class="slider-item ">
+                    <div class="story-events__row">
+                        <div class="story-events__image story-events__item">
+                            <img src="image/content/event-story/1.jpg" alt="">
+                        </div>
+                        <div class="story-events__info story-events__item">
+                            <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
+                            <span class="date">25-27 сентября, 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item ">
+                    <div class="story-events__row">
+                        <div class="story-events__image story-events__item">
+                            <img src="image/content/event-story/1.jpg" alt="">
+                        </div>
+                        <div class="story-events__info story-events__item">
+                            <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
+                            <span class="date">25-27 сентября, 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item ">
+                    <div class="story-events__row">
+                        <div class="story-events__image story-events__item">
+                            <img src="image/content/event-story/1.jpg" alt="">
+                        </div>
+                        <div class="story-events__info story-events__item">
+                            <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
+                            <span class="date">25-27 сентября, 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <header class="news__header">
+                    <h2 class="title_h2">Новости</h2>
+                    <a href="#" class="btn">Все новости<span></span></a>
+                </header>
+                <div class="news-row">
+                    <a href="#" class="news-item">
+                        <div class="news-image">
+                            <img src="image/content/news/1.jpg" alt="">
+                            <span class="news-label">Малый-бизнес</span>
+                        </div>
+                        <div class="news-info">
+                            <h3>На Кубани за 100 млн рублей запустили завод по производству винной пробки</h3>
+                            <span class="date-news">25 сентября, 2023</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-item">
+                        <div class="news-image">
+                            <img src="image/content/news/2.jpg" alt="">
+                            <span class="news-label">Инновации</span>
+                        </div>
+                        <div class="news-info">
+                            <h3>Вениамин Кондратьев открыл распределительный центр для торговых сетей в станице Марьянской</h3>
+                            <span class="date-news">25 сентября, 2023</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-item">
+                        <div class="news-image">
+                            <img src="image/content/news/3.jpg" alt="">
+                            <span class="news-label">Инвестиции</span>
+                        </div>
+                        <div class="news-info">
+                            <h3>Для МСП расширили возможности получения микрозаймов в государственных МФО</h3>
+                            <span class="date-news">25 сентября, 2023</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="project-section">
+            <div class="container">
+                <div class="tabs title__h2">
+                    <div class="tab tab1 active"><span>Реализованные</span></div>
+                    и
+                    <div class="tab tab2"><span>реализуемые</span></div>
+                    проекты
+                </div>
+                <div class="tab-content">
+                    <div class="content content1 active">
+                        <div class="owl-carousel owl-project">
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительстве тепличного комплекса по производству и переработке зеленых культур</h3>
+                                    <img class="project-item__img" src="image/content/project/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительство гостиницы на 29 номеров</h3>
+                                    <img class="project-item__img" src="image/content/project/2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
+                                    <img class="project-item__img" src="image/content/project/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
+                                    <img class="project-item__img" src="image/content/project/3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content content2">
+                        <div class="owl-carousel owl-project">
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительстве тепличного комплекса по производству и переработке зеленых культур</h3>
+                                    <img class="project-item__img" src="image/content/project/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительство гостиницы на 29 номеров</h3>
+                                    <img class="project-item__img" src="image/content/project/2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
+                                    <img class="project-item__img" src="image/content/project/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="slider-item">
+                                <button class="project-info__icon"></button>
+                                <a href="#" class="project-item">
+                                    <div class="project-info">
+                                        <div class="project-info__item">
+                                            <span>Срок реализации:</span>
+                                            <p>2020 – 2024 г.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Объем инвестиций:</span>
+                                            <p>428 млн. руб.</p>
+                                        </div>
+                                        <div class="project-info__item">
+                                            <span>Инвестор</span>
+                                            <p>ИП Чахова М.Д.</p>
+                                        </div>
+                                    </div>
+                                    <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
+                                    <img class="project-item__img" src="image/content/project/3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+        <section class="invest-offers">
+            <div class="container">
+                <h2 class="title_h2">Инвестиционные предложения</h2>
+                <div class="invest-krasnodar__items row align-center justify-between align-center">
+                    <a href="#" class="invest-krasnodar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="40" fill="#2257F7"/>
+                            <path d="M26 17C28.761 17 31 19.046 31 21.57C31.002 22.662 30.825 23.418 30.146 24.411C29.466 25.402 26 30.006 26 30.006C26 30.006 22.533 25.402 21.854 24.41C21.175 23.417 20.998 22.661 21 21.569C21 19.046 23.238 17 26 17Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M30 30.7231C31.813 31.4461 33 32.6471 33 34.0061C33 36.2151 29.866 38.0061 26 38.0061C22.134 38.0061 19 36.2151 19 34.0061C19 32.6471 20.187 31.4451 22 30.7231" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M53 46.0059C56.866 46.0059 60 44.215 60 42.0059C60 39.7967 56.866 38.0059 53 38.0059C49.134 38.0059 46 39.7967 46 42.0059C46 44.215 49.134 46.0059 53 46.0059Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M30 60.0059C33.866 60.0059 37 58.215 37 56.0059C37 53.7967 33.866 52.0059 30 52.0059C26.134 52.0059 23 53.7967 23 56.0059C23 58.215 26.134 60.0059 30 60.0059Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M32 36.0059L47 40.0059" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M48 45.0059L35 53.0059" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        <h3>смотреть Все <br> предложения
+                            <span>
+
+                            </span>
+                        </h3>
+                    </a>
+                    <a href="#" class="invest-krasnodar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="40" fill="#2257F7"/>
+                            <path d="M46 43.0508H54L63 57.0508V60.0508H17V57.0508L25 43.0508H34" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M39.993 27.0508C39.996 27.0508 39.998 27.0508 40 27.0508C40.002 27.0508 40.004 27.0508 40.007 27.0508C42.209 27.0508 43.996 28.7228 44 31.0458C44.004 33.3668 42.22 35.0508 40.018 35.0508C40.012 35.0508 40.006 35.0508 40 35.0508C39.994 35.0508 39.988 35.0508 39.982 35.0508C37.779 35.0508 35.996 33.3658 36 31.0458C36.003 28.7228 37.791 27.0508 39.993 27.0508Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M40.0001 20C46.0351 20 50.9281 24.893 50.9281 30.928C50.9321 33.539 50.5441 35.348 49.0601 37.721C47.5781 40.094 40.0001 51.101 40.0001 51.101C40.0001 51.101 32.4231 40.093 30.9401 37.721C29.4571 35.347 29.0681 33.538 29.0721 30.928C29.0721 24.893 33.9651 20 40.0001 20Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        <h3>Земельные <br> участки
+                            <span>
+
+                            </span>
+                        </h3>
+                    </a>
+                    <a href="#" class="invest-krasnodar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="40" fill="#2257F7"/>
+                            <path d="M25 42C27.29 42 29 40.082 29 37.715V36.285C29 33.919 27.29 32 25 32C22.71 32 21 33.919 21 36.285V37.715C21 40.082 22.71 42 25 42Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M24.842 58.533L21.626 57.846C20.675 57.712 20.03 57.499 19.143 56.158L18.289 54.275C17.536 52.62 17 51.91 17 50.564C17 47.745 18.441 45.001 21.619 45.001C22.269 45.001 24.416 45.001 27.383 45.001C29.231 45.076 30.365 45.399 31.374 46.616C32.383 47.833 33.329 48.98 33.329 48.98" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.7371 50.2852L22.6411 52.5452C23.0021 53.4472 23.4381 53.8012 24.2801 54.1122L26.6081 54.9391" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M35.543 57C35.543 57 32.834 57 32.013 57C31.822 54.625 33.889 53 33.889 53H37.061C37.759 53 38.2119 53.782 37.8999 54.447L37.221 55.894C36.903 56.572 36.253 57 35.543 57Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M36.588 53L37.903 50.308C38.203 49.698 37.766 48.979 37.096 48.979H30.092C29.75 48.979 29.438 49.176 29.285 49.487L24.774 58.671C24.474 59.281 24.91 60 25.581 60H32.586C32.927 60 33.24 59.804 33.393 59.492L34.617 57" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M21 57.7241V61.0001" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M31.94 41.034C34.445 43.4 37.972 45.098 42 45.729V53L49.335 45.665C57.153 44.314 63 38.938 63 32.5C63 25.044 55.165 19 45.5 19C37.374 19 30.541 23.273 28.571 29.065" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M43.5 38H48.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M46 38V30H44" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M46 25.5V26.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Предложить <br>проект
+                            <span>
+
+                            </span>
+                        </h3>
+                    </a>
+                    <a href="#" class="invest-krasnodar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="40" fill="#2257F7"/>
+                            <path d="M34.646 42.73C33.792 42.907 32.907 43 32 43C24.82 43 19 37.18 19 30C19 22.82 24.82 17 32 17C38.654 17 44.14 21.999 44.908 28.446" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M27 32H33" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M29 29.3333H33C34.1047 29.3333 35 28.438 35 27.3333V26C35 24.8953 34.1047 24 33 24H29V36" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M50 55C56.6274 55 62 49.6274 62 43C62 36.3726 56.6274 31 50 31C43.3726 31 38 36.3726 38 43C38 49.6274 43.3726 55 50 55Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M39.8539 49.4038L31.9898 57.2678C30.8178 58.4398 30.8178 60.3388 31.9898 61.5108C33.1608 62.6818 35.0608 62.6818 36.2328 61.5108L44.2248 53.5178" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M44.6741 19.722C45.6871 19.259 46.8131 19 48.0001 19C52.4181 19 56.0001 22.582 56.0001 27C56.0001 27.691 55.912 28.362 55.748 29.002" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M32.5 51C29.462 51 27 48.538 27 45.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Поиск <br>соинвестора
+                            <span>
+
+                            </span>
+                        </h3>
+                    </a>
+                </div>
+                <div class="invest-offers__items">
+                    <a href="#" class="invest-offers__item">
+                        <div class="invest-offers__item-info">
+                            <span class="label">Инвестпроекты</span>
+                            <h3>Строительство предприятия по промышленной переработке стекла</h3>
+                        </div>
+                        <img src="image/content/invest-offers/1.jpg" alt="">
+                    </a>
+                    <a href="#" class="invest-offers__item">
+                        <div class="invest-offers__item-info">
+                            <span class="label">Инвестпроекты</span>
+                            <h3>Развитие аэропорта «Краснодар» (Пашковский)</h3>
+                        </div>
+                        <img src="image/content/invest-offers/2.jpg" alt="">
+                    </a>
+                    <a href="#" class="invest-offers__item">
+                        <div class="invest-offers__item-info">
+                            <span class="label">Проекты ГПЧ</span>
+                            <h3>Наземный электрический транспорт ("Восток")</h3>
+                        </div>
+                        <img src="image/content/invest-offers/3.jpg" alt="">
+                    </a>
+                    <a href="#" class="invest-offers__item">
+                        <div class="invest-offers__item-info">
+                            <span class="label">Проекты ГПЧ</span>
+                            <h3>ТехПром-Парк-Северный</h3>
+                        </div>
+                        <img src="image/content/invest-offers/4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-page">
+            <div class="container">
+                <div class="owl-carousel owl-footer-slider">
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Департамент инвестиций и развития малого и среднего предпринимательства Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Инвестиционный портал Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Официальный интернет-портал малого и среднего предпринимательства Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Официальный сайт администрации Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Уполномоченный по защите прав предпринимателей в Краснодарском крае</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Департамент инвестиций и развития малого и среднего предпринимательства Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Инвестиционный портал Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Официальный интернет-портал малого и среднего предпринимательства Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Официальный сайт администрации Краснодарского края</p>
+                        </a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="#" class="footer-slider-link">
+                            <div class="btn-link">
+                                <span></span>
+                            </div>
+                            <p>Уполномоченный по защите прав предпринимателей в Краснодарском крае</p>
+                        </a>
+                    </div>
+                </div>
+                <nav class="level-two ">
                     <ul class="nav-list row justify-center">
                         <li class="nav-item">
                             <a class="nav-item__link" href="#">О Краснодаре</a>
                         </li>
                         <li class="nav-item drop-nav">
-                            <a class="nav-item__link" >Инвестору</a>
-                            <ul class="drop-nav__container">
-                                <li class="nav-item__inset">
-                                    <a href="#">Инвестпроекты</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Градостроительная документация</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Инвестиционный паспорт Краснодара</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Промышленные предприятия</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Льготы для масштабных проектов</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Инвестиционный уполномоченный</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Промышленные площадки и парки</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Нормативно-правовая база</a>
-                                </li>
-                            </ul>
+                            <a class="nav-item__link" href="#">Инвестору</a>
                         </li>
                         <li class="nav-item drop-nav">
-                            <a class="nav-item__link" >Предпринимателю</a>
-                            <ul class="drop-nav__container">
-                                <li class="nav-item__inset">
-                                    <a href="#">Инвестпроекты</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Градостроительная документация</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Инвестиционный паспорт Краснодара</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Промышленные предприятия</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Льготы для масштабных проектов</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Инвестиционный уполномоченный</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Промышленные площадки и парки</a>
-                                </li>
-                                <li class="nav-item__inset">
-                                    <a href="#">Нормативно-правовая база</a>
-                                </li>
-                            </ul>
+                            <a class="nav-item__link" href="#">Предпринимателю</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-item__link" href="#">ГЧП</a>
@@ -185,845 +959,72 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-            
-        </div>
-    </header>
-    <section class="first-screen">
-        <div class="container">
-            <div class="first-screen__info">
-                <div class="first-screen__title">
-                    <h1 class="title_h1">Бизнес — <br> в Краснодаре!</h1>
-
+                <div class="footer-description">
+                    <a href="/" class="logo"><img class="logo__image" src="image/logo.svg" alt="Инвест портал Краснодара"></a>
+                    <p>Инвестиционный портал города Краснодара — ресурс, созданный специально для помощи предпринимателям и инвесторам. Здесь можно узнать, куда инвестировать в Краснодаре, а также о льготах для малого и среднего предпринимательства.</p>
                 </div>
-                <div class="first-screen__sliders">
-                    <div class="first-screen__sliders-item">
-                        <a href="#" class="first-screen__sliders-item__link"></a>
-                        <h3>Расскажем</h3>
-                        <div class="owl-carousel owl-fs-info">
-                            <div class="slider-item">
-                                <p>Почему в Краснодаре бизнесу комфортно </p>
-                            </div>
-                            <div class="slider-item">
-                                <p>Подобрать земельный участок или площадку </p>
-                            </div>
-                            <div class="slider-item">
-                                <p>Поддержку на всех этапах реализации проекта </p>
-                            </div>
+                <div class="footer-contacts">
+                    <div class="footer-contacts__item">
+                        <div class="footer-contacts__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="27" viewBox="0 0 20 27" fill="none">
+                                <path d="M10 26C12.262 18.47 19 16.908 19 10C19 5.157 14.694 1 10 1C5.306 1 1 5.157 1 10C1 16.908 7.738 18.47 10 26Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                <path d="M10.013 12.976C11.6765 12.976 13.025 11.6382 13.025 9.988C13.025 8.33777 11.6765 7 10.013 7C8.34949 7 7.00098 8.33777 7.00098 9.988C7.00098 11.6382 8.34949 12.976 10.013 12.976Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            </svg> 
+                        </div>
+                        <div class="footer-contacts__info">
+                            <span>Адрес:</span>
+                            <p>350000, г. Краснодар, ул. Красная, 122</p>
                         </div>
                     </div>
-                    <div class="first-screen__sliders-item">
-                        <a href="#" class="first-screen__sliders-item__link"></a>
-                        <h3>Поможем</h3>
-                        <div class="owl-carousel owl-fs-info">
-                            <div class="slider-item">
-                                <p>Подобрать земельный участок или площадку </p>
-                            </div>
-                            <div class="slider-item">
-                                <p>Почему в Краснодаре бизнесу комфортно </p>
-                            </div>
-                            <div class="slider-item">
-                                <p>Поддержку на всех этапах реализации проекта </p>
-                            </div>
+                    <a href="#" class="footer-contacts__item">
+                        <div class="footer-contacts__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                        <div class="footer-contacts__info">
+                            <span>Инвесторам:</span>
+                            <p>+ 7 (861) 259 61 30</p>
+                        </div>
+                    </a>
+                    <div class="footer-contacts__item">
+                        <div class="footer-contacts__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="27" viewBox="0 0 13 27" fill="none">
+                                <path d="M6.35693 1H10.1069L8.49979 6.97826H6.35693H4.21408L2.60693 1H6.35693Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                <path d="M8.5 6.97803H6.35714H4.21429L1 20.565L6.35714 25.9998L11.7143 20.565L8.5 6.97803Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="footer-contacts__info">
+                            <span>Представителям малого бизнеса:</span>
+                            <a href="tel:+7 (861) 255 06 38">+7 (861) 255 06 38</a>
+                            <a href="tel:+7 (861) 259 52 33">+7 (861) 259 52 33</a>
                         </div>
                     </div>
-                    <div class="first-screen__sliders-item">
-                        <a href="#" class="first-screen__sliders-item__link"></a>
-                        <h3>Предоставим</h3>
-                        <div class="owl-carousel owl-fs-info">
-                            <div class="slider-item">
-                                <p>Поддержку на всех этапах реализации проекта </p>
-                            </div>
-                            <div class="slider-item">
-                                <p>Подобрать земельный участок или площадку </p>
-                            </div>
-                            <div class="slider-item">
-                                <p>Почему в Краснодаре бизнесу комфортно </p>
-                            </div>
+                    <a href="mailto:invest@krd.ru" class="footer-contacts__item">
+                        <div class="footer-contacts__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18" fill="none">
+                                <path d="M23.7097 15.9677C23.7097 16.5375 23.2472 17 22.6774 17H2.03226C1.46245 17 1 16.5375 1 15.9677V2.03226C1 1.46245 1.46245 1 2.03226 1H22.6774C23.2472 1 23.7097 1.46245 23.7097 2.03226V15.9677Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                <path d="M22.1612 2.54834L14.9096 9.79995C13.499 11.2105 11.2111 11.2105 9.80047 9.79995L2.54834 2.54834" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                <path d="M2.54834 15.4518L8.22576 9.77441" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                <path d="M22.1613 15.4518L16.4839 9.77441" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
                         </div>
-                    </div>
+                        <div class="footer-contacts__info">
+                            <span>E-mail:</span>
+                            <p>invest@krd.ru</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>© Администрация муниципального образования город Краснодар Управление инвестиций и развития малого и среднего предпринимательства</p>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Политика Cookies</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <footer class="first-screen__footer">
-            <div class="container">
-                <div class="owl-carousel owl-fs-footer">
-                    <div class="slider-item">
-                        <a href="#" class="owl-fs-footer__link">
-                            <img src="image/icons/fs-footer-icon/1.svg" alt="" class="owl-fs-footer__icon">
-                            <p>МЦРП “Платформа”</p>
-                        </a>
-
-                    </div>
-                    <div class="slider-item">
-                        <a href="#" class="owl-fs-footer__link">
-                            <img src="image/icons/fs-footer-icon/2.svg" alt="" class="owl-fs-footer__icon">
-                            <p>Инвестиционная карта</p>
-                        </a>
-                    </div>
-                    <div class="slider-item">
-                        <a href="#" class="owl-fs-footer__link">
-                            <img src="image/icons/fs-footer-icon/3.svg" alt="" class="owl-fs-footer__icon">
-                            <p>Телефоны горячих линий </p>
-                        </a>
-                    </div>
-                    <div class="slider-item">
-                        <a href="#" class="owl-fs-footer__link">
-                            <img src="image/icons/fs-footer-icon/4.svg" alt="" class="owl-fs-footer__icon">
-                            <p>Меры <br> поддержки</p>
-                        </a>
-                    </div>
-                    <div class="slider-item">
-                        <a href="#" class="owl-fs-footer__link">
-                            <img src="image/icons/fs-footer-icon/5.svg" alt="" class="owl-fs-footer__icon">
-                            <p>Промышленные парки</p>
-                        </a>
-                    </div>
-                    <div class="slider-item">
-                        <a href="#" class="owl-fs-footer__link">
-                            <img src="image/icons/fs-footer-icon/1.svg" alt="" class="owl-fs-footer__icon">
-                            <p>МЦРП “Платформа”</p>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
         </footer>
-        <div class="first-screen__background">
-            <img class="first-screen__background-item" src="image/content/fs-background/1.jpg" alt="bg">
-            <img class="first-screen__background-item" src="image/content/fs-background/2.jpg" alt="bg">
-            <img class="first-screen__background-item" src="image/content/fs-background/3.jpg" alt="bg">
-            <img class="first-screen__background-item" src="image/content/fs-background/4.jpg" alt="bg">
-        </div>
-    </section>
-    <section class="consultation">
-        <div class="container">
-            <h2 class="title-h2">Получить консультацию</h2>
-            <div class="consultation__info">
-                <p>Планируете Реализовать проект или развивать бизнес в Краснодаре?</p>
-                <p>Хотите предложить продукцию на зарубежном рынке?</p>
-                <p>Наши специалисты готовы оказать Вам помощь!</p>
-            </div>
-            <div class="consultation__items">
-                <div class="consultation__item">
-                    <div>
-                        <header>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
-                                <path d="M26.777 36.36L30.2859 35.017C31.8589 32.517 33.8899 29.704 37.7859 32.017L35.533 37.179L31.578 41.454C31.578 41.454 26.4279 45.017 25.7859 45.017C24.5609 45.017 12.294 45.017 11.069 45.017L9.01495 47.017M14.7859 39.017C14.7859 39.017 22.7859 39.017 23.7859 39.017C27.7859 39.017 27.7859 34.017 23.7859 34.017C22.7859 34.017 20.5669 34.017 17.7859 34.017C16.9529 34.017 15.39 32.017 14.069 32.017C13.483 32.017 10.421 32.017 9.06897 32.017C7.71797 32.017 6.03897 33.113 5.06897 34.017C3.56997 35.516 1 37.948 1 37.948M19.952 18.592C19.656 17.228 19.362 16.246 19.362 16.246L22.206 12.942L26.151 11.539L27.13 11.834L30.518 13.747C30.518 13.747 30.654 15.3 30.102 15.983C28.644 17.792 25.447 18.121 24.52 19.001C23.428 20.038 22.655 21.754 22.685 22.915C22.715 24.076 24.528 24.344 25.574 23.878C26.189 23.605 31.4419 21.846 34.7729 20.69C36.6579 20.036 38.275 18.796 39.406 17.152C41.49 14.123 44.002 9.916 44.002 9.916L46.528 9.19M36.14 1C36.14 1 27.725 3.218 21.591 4.916C20.202 5.3 18.996 6.159 18.173 7.341L14.2 13.82C13.734 14.58 13.63 15.508 13.916 16.351L16.514 24.017M16.514 24.017C16.514 27.33 19.201 30.017 22.514 30.017C25.827 30.017 28.514 27.33 28.514 24.017C28.514 23.625 28.477 23.242 28.405 22.871M16.514 24.017C16.514 20.704 19.201 18.017 22.514 18.017C23.45 18.017 24.335 18.231 25.124 18.613" stroke="#A9B1D7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <h3>Сопровождение <br> инвестпроектов</h3>
-                        </header>
-                        <a class="tel-consultation" href="tel:+7 (861) 259 61 30">+7 (861) 259 61 30</a>
-                    </div>
-                    <a href="#" class="btn">Отправить сообщение <span></span></a>
-                </div>
-                <div class="consultation__item">
-                    <div>
-                        <header>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M10.9421 22V32M20.9421 22V45M10.9421 41V45M16.9421 32V45M20.9421 33C23.1031 33 24.9421 30.945 24.9421 29V21C24.9421 17.697 22.9421 15 17.9421 15H13.9421C8.94214 15 6.94214 17.697 6.94214 21V32M34.9421 22V13H38.9421L32.3171 1L25.9421 13H29.9421V39M42.9421 38V32H46.9421L40.3171 20L33.9421 32H37.9421V47M15.9421 12C18.2731 12 19.9421 10.367 19.9421 8V6C19.9421 3.633 18.2731 2 15.9421 2C13.6111 2 11.9421 3.633 11.9421 6V8C11.9421 10.367 13.6111 12 15.9421 12ZM1.94214 32H12.9421V41H1.94214V32Z" stroke="#A9B1D7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <h3>Поддержка <br>предпринимателей</h3>
-                        </header>
-                        <a class="tel-consultation" href="tel:+7 (861) 259 52 33">+7 (861) 259 52 33</a>
-                    </div>
-                    <a href="#" class="btn">Отправить сообщение <span></span></a>
-                </div>
-                <div class="consultation__item">
-                    <div>
-                        <header>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
-                                <path d="M9.99799 40.2339C4.55899 36.4389 1 30.1349 1 22.9999M1 22.9999C1 11.4019 10.402 1.99988 22 1.99988M1 22.9999H28M22 1.99988C23.019 1.99988 24.021 2.07288 25 2.21288M22 1.99988C16.478 1.99988 12 11.4019 12 22.9999C12 29.4099 13.368 35.1489 15.524 39.0009M22 1.99988V36.9999M22 12.9999C15.59 12.9999 9.84999 11.6319 5.99799 9.47588M27 33.2849C25.397 33.0979 23.723 32.9999 22 32.9999C15.591 32.9999 9.852 34.3669 6 36.5229M44.98 8.35788L27.931 1.29688L25.521 19.5919L31.241 16.2899C32.359 18.6269 33 21.2349 33 23.9989C33 33.9399 24.941 41.9989 15 41.9989C14.25 41.9989 13.516 41.9379 12.789 41.8489C15.573 43.2119 18.691 43.9989 22 43.9989C33.598 43.9989 43 34.5969 43 22.9989C43 18.7449 41.727 14.7949 39.548 11.4939L44.98 8.35788Z" stroke="#A9B1D7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                            </svg>
-                            <h3>Поддержка <br> экспорта</h3>
-                        </header>
-                        <a class="tel-consultation" href="tel:+7 (861) 251 85 79">+7 (861) 251 85 79</a>
-                    </div>
-                    <a href="#" class="btn">Отправить сообщение <span></span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-man">
-        <div class="container">
-            <div class="section-man__info">
-                <p>Краснодар открыт для сотрудничества! Готовы поддержать бизнес в реализации инициатив и проектов,
-                    которые усилят динамику развития нашего города во всех сферах. </p>
-                <div class="section-man__info-name">
-                    <span>Глава муниципального образования город Краснодар</span>
-                    <h2>Наумов Евгений Михайлович</h2>
-                </div>
-            </div>
-            <img src="image/content/man.png" alt="Наумов Евгений Михайлович" class="image-man">
-        </div>
-
-    </section>
-    <section class="invest-krasnodar">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 invest-krasnodar__info">
-                    <h2 class="title-h2">Инвестировать - <br>в Краснодар</h2>
-                    <div class="invest-krasnodar__items">
-                        <a href="#" class="invest-krasnodar__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
-                                fill="none">
-                                <circle cx="40" cy="40" r="40" fill="#2257F7" />
-                                <path
-                                    d="M34.734 45.982L37.806 46.193L32.244 51.375L33.833 58.423L27.403 54.892L20.973 58.423L22.561 51.375L17 46.193L24.411 45.683L27.403 38.634L28.813 41.955"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M45.0398 45.982L41.9678 46.193L47.5298 51.375L45.9408 58.423L52.3708 54.892L58.8008 58.423L57.2128 51.375L62.7738 46.193L55.3628 45.683L52.3708 38.634L50.9608 41.955"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M39.8869 21L43.1789 28.753L51.3309 29.314L45.2129 35.014L46.9599 42.767L39.8869 38.883L32.8139 42.767L34.5609 35.014L28.4429 29.314L36.5949 28.753L39.8869 21Z"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <h3>Преимущества <br>Краснодара
-                                <span>
-
-                                </span>
-                            </h3>
-                        </a>
-                        <a href="#" class="invest-krasnodar__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
-                                fill="none">
-                                <circle cx="40" cy="40" r="40" fill="#2257F7" />
-                                <path
-                                    d="M46 43H48C48.63 43 49.617 43.4 50 44H52C52.938 44 54 44.875 54 46H56C56.938 46 58 46.875 58 48V58.408C58 60.431 56 61.653 56 63"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M46 47V36C46 34.896 45.104 34 44 34C42.896 34 42 34.896 42 36V51C41.307 51.665 40.18 51.533 39.66 50.726L38.051 48.232C36.45 46.028 34.001 47.265 34.001 48.232C34.001 48.232 37.035 55.32 37.47 56.001C38.168 57.094 42.001 61.554 42.001 62.409V63"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M50 44V48" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M54 46V49" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M38.685 42.81C37.976 42.935 37.246 43 36.5 43C29.596 43 24 37.404 24 30.5C24 23.596 29.596 18 36.5 18C43.403 18 49 23.596 49 30.5C49 31.331 48.919 32.142 48.765 32.928"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
-                                <path d="M32 33H38" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                                <path
-                                    d="M34 30.3333H38C39.1047 30.3333 40 29.438 40 28.3333V27C40 25.8953 39.1047 25 38 25H34V37"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                            </svg>
-                            <h3>Сопровождение <br>проектов
-                                <span>
-
-                                </span>
-                            </h3>
-                        </a>
-                        <a href="#" class="invest-krasnodar__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
-                                fill="none">
-                                <circle cx="40" cy="40" r="40" fill="#2257F7" />
-                                <path d="M55 27V29" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M55 31V33" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M55 35V53H59L51 64L43 53H47V48" stroke="white" stroke-width="2"
-                                    stroke-miterlimit="10" stroke-linejoin="round" />
-                                <path d="M26 60V58" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M26 56V54" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M26 52V31H22L31 18L40 31H36V35" stroke="white" stroke-width="2"
-                                    stroke-miterlimit="10" stroke-linejoin="round" />
-                                <path d="M31 41V53" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M36 64V56" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M47 43V35" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                                    stroke-linejoin="round" />
-                                <path d="M34 49H41" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                                <path
-                                    d="M36 45.2222H40.6667C41.9554 45.2222 43 44.1777 43 42.8889V41.3333C43 40.0446 41.9554 39 40.6667 39H36V53"
-                                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                            </svg>
-                            <h3>путеводитель <br>инвестора
-                                <span>
-
-                                </span>
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <span class="play-icon">
-                        <img src="image/icons/play.svg" alt="">
-                    </span>
-                    <video class="video-invest" controls="controls" poster="image/content/poster.jpg">
-                        <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                    </video>
-                </div>
-                <img src="image/content/poster.jpg" alt="" class="invest-video-poster play-video-poster">
-            </div>
-        </div>
-    </section>
-    <section class="story-ivents">
-        <div class="owl-carousel owl-story-events">
-            <div class="slider-item ">
-               <div class="story-events__row">
-                    <div class="story-events__image story-events__item">
-                        <img src="image/content/event-story/1.jpg" alt="">
-                    </div>
-                    <div class="story-events__info story-events__item">
-                        <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
-                        <span class="date">25-27 сентября, 2023</span>
-                    </div>
-               </div>
-            </div>
-            <div class="slider-item ">
-                <div class="story-events__row">
-                     <div class="story-events__image story-events__item">
-                         <img src="image/content/event-story/1.jpg" alt="">
-                     </div>
-                     <div class="story-events__info story-events__item">
-                         <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
-                         <span class="date">25-27 сентября, 2023</span>
-                     </div>
-                </div>
-             </div>
-             <div class="slider-item ">
-                <div class="story-events__row">
-                     <div class="story-events__image story-events__item">
-                         <img src="image/content/event-story/1.jpg" alt="">
-                     </div>
-                     <div class="story-events__info story-events__item">
-                         <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
-                         <span class="date">25-27 сентября, 2023</span>
-                     </div>
-                </div>
-             </div>
-             <div class="slider-item ">
-                <div class="story-events__row">
-                     <div class="story-events__image story-events__item">
-                         <img src="image/content/event-story/1.jpg" alt="">
-                     </div>
-                     <div class="story-events__info story-events__item">
-                         <h3>87-я Международная специализированная B2B выставка обуви, сумок, акссесуаров, кожи и комплектующих материалов «MosShoes»</h3>  
-                         <span class="date">25-27 сентября, 2023</span>
-                     </div>
-                </div>
-             </div>
-        </div>
-    </section>
-    <section class="news">
-        <div class="container">
-            <header class="news__header">
-                <h2 class="title_h2">Новости</h2>
-                <a href="#" class="btn">Все новости<span></span></a>
-            </header>
-            <div class="news-row">
-                <a href="#" class="news-item">
-                    <div class="news-image">
-                        <img src="image/content/news/1.jpg" alt="">
-                        <span class="news-label">Малый-бизнес</span>
-                    </div>
-                    <div class="news-info">
-                        <h3>На Кубани за 100 млн рублей запустили завод по производству винной пробки</h3>
-                        <span class="date-news">25 сентября, 2023</span>
-                    </div>
-                </a>
-                <a href="#" class="news-item">
-                    <div class="news-image">
-                        <img src="image/content/news/2.jpg" alt="">
-                        <span class="news-label">Инновации</span>
-                    </div>
-                    <div class="news-info">
-                        <h3>Вениамин Кондратьев открыл распределительный центр для торговых сетей в станице Марьянской</h3>
-                        <span class="date-news">25 сентября, 2023</span>
-                    </div>
-                </a>
-                <a href="#" class="news-item">
-                    <div class="news-image">
-                        <img src="image/content/news/3.jpg" alt="">
-                        <span class="news-label">Инвестиции</span>
-                    </div>
-                    <div class="news-info">
-                        <h3>Для МСП расширили возможности получения микрозаймов в государственных МФО</h3>
-                        <span class="date-news">25 сентября, 2023</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="project-section">
-        <div class="container">
-            <div class="tabs title__h2">
-                <div class="tab tab1 active"><span>Реализованные</span></div>
-                и
-                <div class="tab tab2"><span>реализуемые</span></div>
-                проекты
-              </div>
-              <div class="tab-content">
-                <div class="content content1 active">
-                    <div class="owl-carousel owl-project">
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительстве тепличного комплекса по производству и переработке зеленых культур</h3>
-                                <img class="project-item__img" src="image/content/project/1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительство гостиницы на 29 номеров</h3>
-                                <img class="project-item__img" src="image/content/project/2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
-                                <img class="project-item__img" src="image/content/project/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
-                                <img class="project-item__img" src="image/content/project/3.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="content content2">
-                    <div class="owl-carousel owl-project">
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительстве тепличного комплекса по производству и переработке зеленых культур</h3>
-                                <img class="project-item__img" src="image/content/project/1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительство гостиницы на 29 номеров</h3>
-                                <img class="project-item__img" src="image/content/project/2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
-                                <img class="project-item__img" src="image/content/project/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <button class="project-info__icon"></button>
-                            <a href="#" class="project-item">
-                                <div class="project-info">
-                                    <div class="project-info__item">
-                                        <span>Срок реализации:</span>
-                                        <p>2020 – 2024 г.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Объем инвестиций:</span>
-                                        <p>428 млн. руб.</p>
-                                    </div>
-                                    <div class="project-info__item">
-                                        <span>Инвестор</span>
-                                        <p>ИП Чахова М.Д.</p>
-                                    </div>
-                                </div>
-                                <h3>Строительство фабрики по производству продукции из композитных материалов</h3>
-                                <img class="project-item__img" src="image/content/project/3.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-              </div>
-            
-        </div>
-    </section>
-    <section class="invest-offers">
-        <div class="container">
-            <h2 class="title_h2">Инвестиционные предложения</h2>
-            <div class="invest-krasnodar__items row align-center justify-between align-center">
-                <a href="#" class="invest-krasnodar__item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-                        <circle cx="40" cy="40" r="40" fill="#2257F7"/>
-                        <path d="M26 17C28.761 17 31 19.046 31 21.57C31.002 22.662 30.825 23.418 30.146 24.411C29.466 25.402 26 30.006 26 30.006C26 30.006 22.533 25.402 21.854 24.41C21.175 23.417 20.998 22.661 21 21.569C21 19.046 23.238 17 26 17Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M30 30.7231C31.813 31.4461 33 32.6471 33 34.0061C33 36.2151 29.866 38.0061 26 38.0061C22.134 38.0061 19 36.2151 19 34.0061C19 32.6471 20.187 31.4451 22 30.7231" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M53 46.0059C56.866 46.0059 60 44.215 60 42.0059C60 39.7967 56.866 38.0059 53 38.0059C49.134 38.0059 46 39.7967 46 42.0059C46 44.215 49.134 46.0059 53 46.0059Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M30 60.0059C33.866 60.0059 37 58.215 37 56.0059C37 53.7967 33.866 52.0059 30 52.0059C26.134 52.0059 23 53.7967 23 56.0059C23 58.215 26.134 60.0059 30 60.0059Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M32 36.0059L47 40.0059" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M48 45.0059L35 53.0059" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        </svg>
-                    <h3>смотреть Все <br> предложения
-                        <span>
-
-                        </span>
-                    </h3>
-                </a>
-                <a href="#" class="invest-krasnodar__item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-                        <circle cx="40" cy="40" r="40" fill="#2257F7"/>
-                        <path d="M46 43.0508H54L63 57.0508V60.0508H17V57.0508L25 43.0508H34" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        <path d="M39.993 27.0508C39.996 27.0508 39.998 27.0508 40 27.0508C40.002 27.0508 40.004 27.0508 40.007 27.0508C42.209 27.0508 43.996 28.7228 44 31.0458C44.004 33.3668 42.22 35.0508 40.018 35.0508C40.012 35.0508 40.006 35.0508 40 35.0508C39.994 35.0508 39.988 35.0508 39.982 35.0508C37.779 35.0508 35.996 33.3658 36 31.0458C36.003 28.7228 37.791 27.0508 39.993 27.0508Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M40.0001 20C46.0351 20 50.9281 24.893 50.9281 30.928C50.9321 33.539 50.5441 35.348 49.0601 37.721C47.5781 40.094 40.0001 51.101 40.0001 51.101C40.0001 51.101 32.4231 40.093 30.9401 37.721C29.4571 35.347 29.0681 33.538 29.0721 30.928C29.0721 24.893 33.9651 20 40.0001 20Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        </svg>
-                    <h3>Земельные <br> участки
-                        <span>
-
-                        </span>
-                    </h3>
-                </a>
-                <a href="#" class="invest-krasnodar__item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-                        <circle cx="40" cy="40" r="40" fill="#2257F7"/>
-                        <path d="M25 42C27.29 42 29 40.082 29 37.715V36.285C29 33.919 27.29 32 25 32C22.71 32 21 33.919 21 36.285V37.715C21 40.082 22.71 42 25 42Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M24.842 58.533L21.626 57.846C20.675 57.712 20.03 57.499 19.143 56.158L18.289 54.275C17.536 52.62 17 51.91 17 50.564C17 47.745 18.441 45.001 21.619 45.001C22.269 45.001 24.416 45.001 27.383 45.001C29.231 45.076 30.365 45.399 31.374 46.616C32.383 47.833 33.329 48.98 33.329 48.98" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M21.7371 50.2852L22.6411 52.5452C23.0021 53.4472 23.4381 53.8012 24.2801 54.1122L26.6081 54.9391" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M35.543 57C35.543 57 32.834 57 32.013 57C31.822 54.625 33.889 53 33.889 53H37.061C37.759 53 38.2119 53.782 37.8999 54.447L37.221 55.894C36.903 56.572 36.253 57 35.543 57Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        <path d="M36.588 53L37.903 50.308C38.203 49.698 37.766 48.979 37.096 48.979H30.092C29.75 48.979 29.438 49.176 29.285 49.487L24.774 58.671C24.474 59.281 24.91 60 25.581 60H32.586C32.927 60 33.24 59.804 33.393 59.492L34.617 57" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        <path d="M21 57.7241V61.0001" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        <path d="M31.94 41.034C34.445 43.4 37.972 45.098 42 45.729V53L49.335 45.665C57.153 44.314 63 38.938 63 32.5C63 25.044 55.165 19 45.5 19C37.374 19 30.541 23.273 28.571 29.065" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M43.5 38H48.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M46 38V30H44" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M46 25.5V26.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <h3>Предложить <br>проект
-                        <span>
-
-                        </span>
-                    </h3>
-                </a>
-                <a href="#" class="invest-krasnodar__item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-                        <circle cx="40" cy="40" r="40" fill="#2257F7"/>
-                        <path d="M34.646 42.73C33.792 42.907 32.907 43 32 43C24.82 43 19 37.18 19 30C19 22.82 24.82 17 32 17C38.654 17 44.14 21.999 44.908 28.446" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-                        <path d="M27 32H33" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M29 29.3333H33C34.1047 29.3333 35 28.438 35 27.3333V26C35 24.8953 34.1047 24 33 24H29V36" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M50 55C56.6274 55 62 49.6274 62 43C62 36.3726 56.6274 31 50 31C43.3726 31 38 36.3726 38 43C38 49.6274 43.3726 55 50 55Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M39.8539 49.4038L31.9898 57.2678C30.8178 58.4398 30.8178 60.3388 31.9898 61.5108C33.1608 62.6818 35.0608 62.6818 36.2328 61.5108L44.2248 53.5178" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M44.6741 19.722C45.6871 19.259 46.8131 19 48.0001 19C52.4181 19 56.0001 22.582 56.0001 27C56.0001 27.691 55.912 28.362 55.748 29.002" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-                        <path d="M32.5 51C29.462 51 27 48.538 27 45.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-                    </svg>
-                    <h3>Поиск <br>соинвестора
-                        <span>
-
-                        </span>
-                    </h3>
-                </a>
-            </div>
-            <div class="invest-offers__items">
-                <a href="#" class="invest-offers__item">
-                    <div class="invest-offers__item-info">
-                        <span class="label">Инвестпроекты</span>
-                        <h3>Строительство предприятия по промышленной переработке стекла</h3>
-                    </div>
-                    <img src="image/content/invest-offers/1.jpg" alt="">
-                </a>
-                <a href="#" class="invest-offers__item">
-                    <div class="invest-offers__item-info">
-                        <span class="label">Инвестпроекты</span>
-                        <h3>Развитие аэропорта «Краснодар» (Пашковский)</h3>
-                    </div>
-                    <img src="image/content/invest-offers/2.jpg" alt="">
-                </a>
-                <a href="#" class="invest-offers__item">
-                    <div class="invest-offers__item-info">
-                        <span class="label">Проекты ГПЧ</span>
-                        <h3>Наземный электрический транспорт ("Восток")</h3>
-                    </div>
-                    <img src="image/content/invest-offers/3.jpg" alt="">
-                </a>
-                <a href="#" class="invest-offers__item">
-                    <div class="invest-offers__item-info">
-                        <span class="label">Проекты ГПЧ</span>
-                        <h3>ТехПром-Парк-Северный</h3>
-                    </div>
-                    <img src="image/content/invest-offers/4.jpg" alt="">
-                </a>
-            </div>
-        </div>
-    </section>
-    <footer class="footer-page">
-        <div class="container">
-            <div class="owl-carousel owl-footer-slider">
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Департамент инвестиций и развития малого и среднего предпринимательства Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Инвестиционный портал Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Официальный интернет-портал малого и среднего предпринимательства Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Официальный сайт администрации Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Уполномоченный по защите прав предпринимателей в Краснодарском крае</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Департамент инвестиций и развития малого и среднего предпринимательства Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Инвестиционный портал Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Официальный интернет-портал малого и среднего предпринимательства Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Официальный сайт администрации Краснодарского края</p>
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#" class="footer-slider-link">
-                        <div class="btn-link">
-                            <span></span>
-                        </div>
-                        <p>Уполномоченный по защите прав предпринимателей в Краснодарском крае</p>
-                    </a>
-                </div>
-            </div>
-            <nav class="level-two ">
-                <ul class="nav-list row justify-center">
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="#">О Краснодаре</a>
-                    </li>
-                    <li class="nav-item drop-nav">
-                        <a class="nav-item__link" href="#">Инвестору</a>
-                    </li>
-                    <li class="nav-item drop-nav">
-                        <a class="nav-item__link" href="#">Предпринимателю</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="#">ГЧП</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="#">ВЭД</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="#">Новости</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="#">Выставки</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="footer-description">
-                <a href="/" class="logo"><img class="logo__image" src="image/logo.svg" alt="Инвест портал Краснодара"></a>
-                <p>Инвестиционный портал города Краснодара — ресурс, созданный специально для помощи предпринимателям и инвесторам. Здесь можно узнать, куда инвестировать в Краснодаре, а также о льготах для малого и среднего предпринимательства.</p>
-            </div>
-            <div class="footer-contacts">
-                <div class="footer-contacts__item">
-                    <div class="footer-contacts__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="27" viewBox="0 0 20 27" fill="none">
-                            <path d="M10 26C12.262 18.47 19 16.908 19 10C19 5.157 14.694 1 10 1C5.306 1 1 5.157 1 10C1 16.908 7.738 18.47 10 26Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                            <path d="M10.013 12.976C11.6765 12.976 13.025 11.6382 13.025 9.988C13.025 8.33777 11.6765 7 10.013 7C8.34949 7 7.00098 8.33777 7.00098 9.988C7.00098 11.6382 8.34949 12.976 10.013 12.976Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        </svg> 
-                    </div>
-                    <div class="footer-contacts__info">
-                        <span>Адрес:</span>
-                        <p>350000, г. Краснодар, ул. Красная, 122</p>
-                    </div>
-                </div>
-                <a href="#" class="footer-contacts__item">
-                    <div class="footer-contacts__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        </svg>
-                    </div>
-                    <div class="footer-contacts__info">
-                        <span>Инвесторам:</span>
-                        <p>+ 7 (861) 259 61 30</p>
-                    </div>
-                </a>
-                <div class="footer-contacts__item">
-                    <div class="footer-contacts__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="27" viewBox="0 0 13 27" fill="none">
-                            <path d="M6.35693 1H10.1069L8.49979 6.97826H6.35693H4.21408L2.60693 1H6.35693Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                            <path d="M8.5 6.97803H6.35714H4.21429L1 20.565L6.35714 25.9998L11.7143 20.565L8.5 6.97803Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="footer-contacts__info">
-                        <span>Представителям малого бизнеса:</span>
-                        <a href="tel:+7 (861) 255 06 38">+7 (861) 255 06 38</a>
-                        <a href="tel:+7 (861) 259 52 33">+7 (861) 259 52 33</a>
-                    </div>
-                </div>
-                <a href="mailto:invest@krd.ru" class="footer-contacts__item">
-                    <div class="footer-contacts__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18" fill="none">
-                            <path d="M23.7097 15.9677C23.7097 16.5375 23.2472 17 22.6774 17H2.03226C1.46245 17 1 16.5375 1 15.9677V2.03226C1 1.46245 1.46245 1 2.03226 1H22.6774C23.2472 1 23.7097 1.46245 23.7097 2.03226V15.9677Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                            <path d="M22.1612 2.54834L14.9096 9.79995C13.499 11.2105 11.2111 11.2105 9.80047 9.79995L2.54834 2.54834" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                            <path d="M2.54834 15.4518L8.22576 9.77441" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                            <path d="M22.1613 15.4518L16.4839 9.77441" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        </svg>
-                    </div>
-                    <div class="footer-contacts__info">
-                        <span>E-mail:</span>
-                        <p>invest@krd.ru</p>
-                    </div>
-                </a>
-            </div>
-            <div class="footer-info">
-                <p>© Администрация муниципального образования город Краснодар Управление инвестиций и развития малого и среднего предпринимательства</p>
-                <ul>
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Политика Cookies</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
+    </main>
     <div class="window-width" style="position: fixed;z-index: 99999;bottom: 0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);background: rgba(0,0,0,.5);width: 100px;height: 40px;font-size: 19px;line-height: 40px;text-align: center;color: #fff;"><span>1527</span>px</div>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/main.js"></script>

@@ -153,3 +153,13 @@ $(document).ready(function() {
     $('.tab-content .content:eq(' + tabIndex + ')').addClass('active');
   });
 });
+
+
+
+
+
+$(document).ready(function() {
+  $('.filter-header').click(function() {
+    $(this).parent('.filter').toggleClass('active');
+  });
+});

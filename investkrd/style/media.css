@@ -272,6 +272,21 @@
     .nav-item__link{
         text-transform: uppercase;
     }
+    .filter-level-one{
+        flex-wrap: wrap;
+    }
+    .filter__date-row{
+        margin-top:32px ;
+    }
+    .filter__search input{
+        width: 100%;
+    }
+    .filter__search{
+        width: 100%;
+    }
+    .search-row{
+        width: 67%;
+    }
 }
 
 @media(max-width:1440px){
@@ -346,6 +361,9 @@
     }
     .owl-footer-slider .owl-nav, .owl-fs-footer .owl-nav{
         right: 48px;
+    }
+    .search-row{
+        width: 64%;
     }
 }
 @media(max-width:919px){
@@ -538,6 +556,22 @@ onsultation__item:last-of-type{
     }
     .invest-offers{
         padding-bottom: 0;
+    }
+    .filter-submit-row{
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 32px;
+    }
+    .filter__search{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .search-row{
+        width: 100%;
+        margin-top: 16px;
+    }
+    .search-row .input{
+        width: 100%;
     }
 }
 @media(max-width:700px){
@@ -809,6 +843,77 @@ onsultation__item:last-of-type{
     .news{
         padding-bottom: 59px;
     }
+    .filter-header{
+        padding: 20px !important;
+    }
+    .filter-header__btn{
+        min-width: 40px;
+    }
+    .filter-body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .filter__date-row{
+        margin-top: 20px;
+    }
+    .filter__date-row{
+        flex-wrap: wrap;
+    }
+    .filter__date{
+        width: 100%;
+    }
+    .filter__date-row{
+        width: 100%;
+    }
+    .filter__date .datepicker{
+        width: 100%;
+    }
+    .filter__search .form-subtitle{
+        font-size: 14px;
+    }
+    .filter-btn__item label{
+        font-size: 15px;
+    }
+    .filter-header__description{
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .filter-header{
+        flex-wrap: wrap;
+    }
+    .filter-submit-row .btn{
+        width: 50%;
+        padding-left: 16px;
+        padding-right: 36px;
+        font-size: 14px;
+
+    }
+    .btn-clear::before, .btn-submit::before {
+        right: 16px;
+    }
+    .filter-btn__item label{
+        padding: 8px 14px;
+    }
+    .pagination-item__more{
+        display: none;
+    }
+    .pagination-item:nth-of-type(7){
+        display: none;
+    }
+    .pagination{
+        margin-top: 40px;
+        margin-bottom: 48px;
+    }
+    .pagination-link{
+        width: 40px;
+        height: 40px;
+    }
+    .pagination-item{
+        margin: 0 4px ;
+    }
+
 }
 @media(max-width:555px){
     .invest-krasnodar__items{
@@ -1007,6 +1112,16 @@ onsultation__item:last-of-type{
     .first-screen__title{
         margin-bottom: 52px;
     }
+    .input{
+        font-size: 16px;
+    }
+    .input::placeholder{
+        font-size: 15px;
+    }
+    .input{
+        padding-left: 12px;
+    }
+    
 }
 @media(max-width:374px){
     .news .btn span{
@@ -1024,5 +1139,17 @@ onsultation__item:last-of-type{
     }
     .open-menu{
         margin-top: -8px;
+    }
+    .btn-clear, .btn-submit{
+        text-align: center;
+        padding-right: 16px !important;
+        text-align: center !important;
+        justify-content: center;
+    }
+    .btn-clear::before, .btn-submit::before{
+        display: none;
+    }
+    .pagination-next-next, .pagination-prev-prev{
+        display: none;
     }
 }
