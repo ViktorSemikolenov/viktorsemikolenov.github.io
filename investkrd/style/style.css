@@ -2320,3 +2320,241 @@ letter-spacing: 0.48px;
 .filter.active .filter-header{
     padding-bottom: 20px;
 }
+.filter.active .filter-body{
+    overflow: visible;
+}
+.select-list{
+    width: 416px;
+
+}
+.select-block{
+    position: relative;
+}
+.select-block::before{
+    content: url(../image/icons/btn-select.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+.docs-item{
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: #ffffff;
+    padding:31px 0 31px ;
+    border-bottom: thin solid rgba(255, 255, 255, 0.20);
+
+}
+.docs-item-icon{
+    min-width: 56px;
+    height: 70px;
+    margin-right: 32px;
+}
+.pdf-doc{
+    background-image: url(../image/icons/docs-item/pdf.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.docs-item-info h3{
+    color: var(--White, #FFF);
+font-family: 'jost';
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 133%; /* 133.333% */
+letter-spacing: 0.48px;
+text-transform: uppercase;
+padding-left: 16px;
+position: relative;
+}
+.docs-item-info h3::before{
+    content: "";
+    background: #2257F7;
+    width: 4px;
+    height: 75%;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+.docs-item-info p{
+    margin:18px 0 15px;
+    color: #BEC4E1;
+
+font-family: Onest;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 133%; 
+letter-spacing: 0.36px;
+}
+.docs-row{
+    margin-top: 10px;
+}
+.docs-item-info ul{
+    list-style: none;
+}
+.docs-item-info li{
+    color: #BEC4E1;
+
+    font-family: Onest;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%; 
+    letter-spacing: 0.36px;
+    margin-bottom: 4px;
+}
+.docs-item-info li span{
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+.docs-item:hover h3, .docs-item:hover p{
+    text-decoration: underline;
+    color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+.docs-item:hover h3::before{
+background-color: #00B2FF;
+transition-duration: 0.3s;
+}
+.docs-item:hover .type-mb{
+    color: #00B2FF;
+}
+
+.doc-doc{
+    background-image: url(../image/icons/docs-item/doc.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dmg-doc{
+    background-image: url(../image/icons/docs-item/dmg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mow-doc{
+    background-image: url(../image/icons/docs-item/mow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.jpg-doc{
+    background-image: url(../image/icons/docs-item/jpg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.csv-doc{
+    background-image: url(../image/icons/docs-item/csv.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.avi-doc{
+    background-image: url(../image/icons/docs-item/avii.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.psd-doc{
+    background-image: url(../image/icons/docs-item/psd.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.eps-doc{
+    background-image: url(../image/icons/docs-item/esp.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gif-doc{
+    background-image: url(../image/icons/docs-item/gif.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dll-doc{
+    background-image: url(../image/icons/docs-item/dll.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.zip-doc{
+    background-image: url(../image/icons/docs-item/zip.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sql-doc{
+    background-image: url(../image/icons/docs-item/sql.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.flac-doc{
+    background-image: url(../image/icons/docs-item/flac.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mp3-doc{
+    background-image: url(../image/icons/docs-item/mp3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.html-doc{
+    background-image: url(../image/icons/docs-item/html.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.url-doc{
+    background-image: url(../image/icons/docs-item/url.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rar-doc{
+    background-image: url(../image/icons/docs-item/rar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.xls-doc{
+    background-image: url(../image/icons/docs-item/xls.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.svg-doc{
+    background-image: url(../image/icons/docs-item/svg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.png-doc{
+    background-image: url(../image/icons/docs-item/png.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rtf-doc{
+    background-image: url(../image/icons/docs-item/rtf.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.ppt-doc{
+    background-image: url(../image/icons/docs-item/ppt.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.wav-doc{
+    background-image: url(../image/icons/docs-item/wav.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.css-doc{
+    background-image: url(../image/icons/docs-item/css.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.xml-doc{
+    background-image: url(../image/icons/docs-item/xml.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.txt-doc{
+    background-image: url(../image/icons/docs-item/txt.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.exe-doc{
+    background-image: url(../image/icons/docs-item/exe.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -287,6 +287,16 @@
     .search-row{
         width: 67%;
     }
+    .filter-docs .search-row{
+        width: 100%;
+    }
+    .number-doc{
+        margin-top: 32px;
+        width: 52%;
+    }
+    .number-doc input{
+        width: 100%;
+    }
 }
 
 @media(max-width:1440px){
@@ -364,6 +374,15 @@
     }
     .search-row{
         width: 64%;
+    }
+    .filter-docs .number-doc{
+        width: 48%;
+    }
+    .filter-docs .filter__date-row{
+        width: 48%;
+    }
+    .filter-docs .datepicker{
+        width: 100%;
     }
 }
 @media(max-width:919px){
@@ -572,6 +591,12 @@ onsultation__item:last-of-type{
     }
     .search-row .input{
         width: 100%;
+    }
+    .filter-docs .number-doc{
+        width: 38%;
+    }
+    .filter-docs .filter__date-row{
+        width: 58%;
     }
 }
 @media(max-width:700px){
@@ -913,7 +938,32 @@ onsultation__item:last-of-type{
     .pagination-item{
         margin: 0 4px ;
     }
-
+    .filter-docs .number-doc, .select-list, .select-block, .filter-docs .filter__date-row{
+        width: 100%;
+    }
+    .docs-item{
+        padding: 22px 0;
+        flex-wrap: wrap;
+    }
+    .docs-item-info h3{
+        font-size: 16px;
+    }
+    .docs-item-info p{
+        margin-top: 10px;
+        margin-bottom: 18px;
+        font-size: 16px;
+    }
+    .docs-item-info li{
+        font-size: 14px;
+    }
+    .docs-item-icon{
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+    .docs-item-icon{
+        min-width: 48px;
+        height: 58px;
+    }
 }
 @media(max-width:555px){
     .invest-krasnodar__items{
