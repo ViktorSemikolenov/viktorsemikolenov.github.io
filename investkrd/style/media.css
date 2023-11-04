@@ -297,6 +297,12 @@
     .number-doc input{
         width: 100%;
     }
+    .accordion-content{
+        max-width: 768px;
+    }
+    .accordion-inside-header::after{
+        min-width: 56px;
+    }
 }
 
 @media(max-width:1440px){
@@ -597,6 +603,9 @@ onsultation__item:last-of-type{
     }
     .filter-docs .filter__date-row{
         width: 58%;
+    }
+    .accordion-content{
+        max-width: 608px;
     }
 }
 @media(max-width:700px){
@@ -963,6 +972,29 @@ onsultation__item:last-of-type{
     .docs-item-icon{
         min-width: 48px;
         height: 58px;
+    }
+    .accordion-content{
+        max-width: 92%;
+    }
+    .accordion-link span, .accordion-header span{
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .accordion-inside-header span{
+        font-size: 20px;
+        line-height: 120%;
+    }
+    .accordion-link::after, .accordion-header::after{
+        transform: scale(0.8);
+    }
+    .accordion-inside-header::after{
+        transform: scale(0.6);
+    }
+    .docs-item-info{
+        width: 100%;
+    }
+    .accordion-inside .docs-item-info h3{
+        font-size: 16px;
     }
 }
 @media(max-width:555px){
