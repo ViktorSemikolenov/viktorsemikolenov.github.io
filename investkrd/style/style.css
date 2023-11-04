@@ -3062,6 +3062,9 @@ letter-spacing: 0.48px;
     transform: scale(0.75);
     margin-left: 16px;
 }
+.accordion-inside-item.active .accordion-inside-header::after{
+    content: url(../image/icons/ac-minus.svg);
+}
 .accordion-header:hover span, .accordion-inside-header:hover span{
     color: #00B2FF !important;
     transition-duration: 0.3s;
