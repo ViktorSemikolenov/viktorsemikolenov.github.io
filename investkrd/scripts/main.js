@@ -198,3 +198,12 @@ $(document).ready(function() {
     $(this).val(val);
   });
 });
+
+
+$(document).ready(function() {
+  $('.order-work__item').each(function() {
+    if ($(this).next().hasClass('accordion-item')) {
+      $(this).addClass('no-line');
+    }
+  });
+});

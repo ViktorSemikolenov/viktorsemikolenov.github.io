@@ -349,6 +349,29 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
     }
+    .development-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-page-row{
+        flex-wrap: wrap;
+    }
+    .project-page-row .text-page-slider{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .project-page-row .image-wrapper{
+        height: 568px;
+    }
+    .project-page-row  .fancy-link::before{
+        top: 42%;
+    }
+    .project-page__info{
+        width: 100%;
+        margin-top: 39px;
+    }
+    .project-page__description li span{
+        min-width: 288px;
+    }
 }
 
 @media(max-width:1440px){
@@ -731,6 +754,31 @@ onsultation__item:last-of-type{
     }
     .calendar-item{
         padding: 24px;
+    }
+    .order-work{
+        width: 85%;
+        margin-left: 0;
+    }
+    .right-text{
+        height: 77%;
+    }
+    .team-insider{
+        grid-template-columns: 1fr;
+    }
+    .team-item__accordion .accordion-header{
+        align-items: flex-start !important;
+    }
+    .project-page-row .text-page-slider{
+        max-width: 100%;
+    }
+    .project-page-row .image-wrapper{
+        height: 65vw;
+    }
+    .project-page-row .text-page-slider .owl-nav button{
+        top: 50%;
+    }
+    .project-page__description li span{
+        min-width: 50%;
     }
 }
 @media(max-width:700px){
@@ -1224,6 +1272,40 @@ onsultation__item:last-of-type{
         gap: 24px;
         margin-top: 35px;
     }
+    .development-grid{
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    .team-item{
+        flex-wrap: wrap;
+    }
+    .team-item__img{
+        margin-right: 0;
+        margin-bottom: 21px;
+    }
+    .team-item__img{
+        min-width: 160px;
+        height: 215px;
+    }
+    .team-item__accordion .accordion-content{
+        max-width: 100%;
+    }
+    .team-insider__img{
+        width: 160px;
+        height: 215px;
+    }
+    .team-item__accordion .title_h3{
+        font-size: 18px;
+    }
+    .team-item__accordion .accordion-header p, .team-item__accordion .accordion-header span{
+        font-size: 20px;
+    }
+    .project-page__description li{
+        flex-wrap: wrap;
+    }
+    .project-page__description li span{
+        width: 100%;
+    }
 
 }
 @media(max-width:555px){
@@ -1450,6 +1532,22 @@ onsultation__item:last-of-type{
         padding-left: 0;
         padding-right: 0;
         font-size: 14px;
+    }
+    .right-text{
+        height: 80%;
+        right: -55px;
+    }
+    .right-text::after{
+        width: 16px;
+    }
+    .right-text::before{
+        width: 16px;
+    }
+    .project-page-row .text-page-slider .owl-nav .owl-next{
+        right: -25px;
+    }
+    .project-page-row .text-page-slider .owl-nav .owl-prev{
+        left: -25px;
     }
 }
 @media(max-width:374px){
