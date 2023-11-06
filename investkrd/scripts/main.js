@@ -163,3 +163,38 @@ $(document).ready(function() {
     $(this).parent('.filter').toggleClass('active');
   });
 });
+
+
+
+$(document).ready(function() {
+  $('.file-input').change(function() {
+    var fileName = $(this).val().split('\\').pop();
+    var $fileInputCol = $(this).closest('.file-input__col');
+    $fileInputCol.find('.file-name').html(fileName).addClass('active');
+  });
+});
+
+
+
+$(document).ready(function() {
+  $('.policy-input').change(function() {
+    var isChecked = $(this).prop('checked');
+    var $policyStatus = $(this).siblings('.policy-status');
+    
+    if (isChecked) {
+      $policyStatus.text('Согласен');
+    } else {
+      $policyStatus.text('Не согласен');
+    }
+  });
+});
+
+
+
+$(document).ready(function() {
+  $('.numeric-input').on('input', function() {
+    var val = $(this).val();
+    val = val.replace(/\D/g, ''); // Remove all non-numeric characters
+    $(this).val(val);
+  });
+});

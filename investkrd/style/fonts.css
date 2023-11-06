@@ -26,3 +26,9 @@
 	font-style: normal;
 	font-weight: 500;
 }
+@font-face {
+	font-family: 'jost';
+	src: url('../fonts/jost/Jost-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
