@@ -780,6 +780,17 @@ onsultation__item:last-of-type{
     .project-page__description li span{
         min-width: 50%;
     }
+    .filter-header{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .filter-body{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .filter-submit span{
+        margin-bottom: 10px;
+    }
 }
 @media(max-width:700px){
     h1{
@@ -1094,7 +1105,7 @@ onsultation__item:last-of-type{
         width: 50%;
         padding-left: 16px;
         padding-right: 36px;
-        font-size: 14px;
+        font-size: 16px;
 
     }
     .btn-clear::before, .btn-submit::before {
@@ -1305,6 +1316,9 @@ onsultation__item:last-of-type{
     }
     .project-page__description li span{
         width: 100%;
+    }
+    .development-container{
+        margin-bottom: 90px;
     }
 
 }
@@ -1548,6 +1562,26 @@ onsultation__item:last-of-type{
     }
     .project-page-row .text-page-slider .owl-nav .owl-prev{
         left: -25px;
+    }
+    .investment-page .filter-submit-row .btn{
+        font-size: 16px;
+    }
+    .docs-item-info p{
+        line-height: 150%;
+    }
+    .docs-item-info h3::before{
+        height: 85%;
+        top: 3px;
+    }
+    .filter-submit-row .btn{
+        font-size: 16px;
+    }
+    .btn-clear::before, .btn-submit::before{
+        width: 16px;
+        right: 14px;
+    }
+    .select-block::before{
+        z-index: 9;
     }
 }
 @media(max-width:374px){

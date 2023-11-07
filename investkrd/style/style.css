@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Onest';
+    font-family: 'Onest', Helvetica, sans-serif;
     font-weight: 400;
 }
 
@@ -895,7 +895,7 @@ svg circle {
 }
 
 .news {
-    padding: 94px 0 120px;
+    padding: 94px 0 80px;
 }
 
 .news__header {
@@ -1429,7 +1429,7 @@ section {
 }
 
 .footer-contacts__icon {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     border-radius: 900px;
     background-color: #2257F7;
@@ -2402,7 +2402,7 @@ body.hidden {
 .datepicker {
     width: 200px;
 }
-
+/* 
 .filter-body .search-row::before {
     content: url(../image/icons/search.svg);
     width: 48px;
@@ -2414,7 +2414,7 @@ body.hidden {
     align-items: center;
     justify-content: center;
     background: #2257F7;
-}
+} */
 
 .filter__date {
     position: relative;
@@ -2431,7 +2431,21 @@ body.hidden {
     align-items: center;
     justify-content: center;
     background: #2257F7;
-    z-index: 99;
+    z-index:-1;
+}
+.filter__date::after{
+    content: "";
+    width: calc(100% - 48px);
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+.datepicker{
+    background: none;
 }
 
 .datepicker__header {
@@ -2660,7 +2674,7 @@ body.hidden {
 
 .docs-item-info h3 {
     color: var(--White, #FFF);
-    font-family: 'jost';
+    font-family: 'jost', Helvetica, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -2676,10 +2690,10 @@ body.hidden {
     content: "";
     background: #2257F7;
     width: 4px;
-    height: 75%;
+    height: 60%;
     position: absolute;
     left: 0;
-    top: 3px;
+    top: 6px;
 }
 
 .docs-item-info p {
@@ -3283,8 +3297,9 @@ margin-bottom: 16px;
     margin-bottom: 0;
     cursor: pointer;
 }
-.policy-row .input-subtitle span{
+.input-subtitle span{
     color: #00B2FF;
+    font-size: 24px;
 }
 .check-icon{
     width: 24px;
@@ -3873,3 +3888,27 @@ text-transform: uppercase;
 .project-page-row .fancy-link::before{
     top: 43%;
 }
+.select-list{
+    background: none;
+    cursor: pointer;
+}
+.select-block::before{
+    z-index: -1;
+}
+.select-block::after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 48px);
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
