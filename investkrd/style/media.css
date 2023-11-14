@@ -372,6 +372,9 @@
     .project-page__description li span{
         min-width: 288px;
     }
+    .project-info__item p{
+        font-size: 18px;
+    }
 }
 
 @media(max-width:1440px){
@@ -507,7 +510,7 @@
         align-items: flex-start;
         margin-bottom: 48px;
     }
-onsultation__item:last-of-type{
+.сonsultation__item:last-of-type{
         margin-bottom: 0;
     }
     .consultation__item .btn{
@@ -606,8 +609,8 @@ onsultation__item:last-of-type{
         display: block;
     }
     .container{
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .first-screen__sliders-item{
         margin-bottom: 40px;
@@ -785,12 +788,13 @@ onsultation__item:last-of-type{
         padding-right: 24px;
     }
     .filter-body{
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 32px;
+        padding-right:32px;
     }
     .filter-submit span{
         margin-bottom: 10px;
     }
+
 }
 @media(max-width:700px){
     h1{
@@ -1320,7 +1324,9 @@ onsultation__item:last-of-type{
     .development-container{
         margin-bottom: 90px;
     }
-
+    .project-info__item p{
+        padding-right: 16px;
+    }
 }
 @media(max-width:555px){
     .invest-krasnodar__items{
@@ -1582,6 +1588,12 @@ onsultation__item:last-of-type{
     }
     .select-block::before{
         z-index: 9;
+    }
+    .projects-row .project-item h3{
+        line-height: 138%;
+    }
+    .project-info{
+        width: 100%;
     }
 }
 @media(max-width:374px){
