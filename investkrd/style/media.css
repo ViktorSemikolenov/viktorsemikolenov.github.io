@@ -158,7 +158,12 @@
         content: url(../image/icons/icon-mob-menu.svg);
         position: absolute;
         z-index: 9;
-        top: 8px;
+        top: 10px;
+        left: 0;
+        display: block;
+        width: auto;
+        height:auto;
+        background: none;
     }
     .nav-item__link{
         padding-left: 48px;
@@ -189,6 +194,9 @@
     }
     .nav-item {
         background-color: #252962;
+    }
+    .drop-nav__container{
+        margin: 0;
     }
     .drop-nav:hover .drop-nav__container{
         height: 0;
@@ -375,6 +383,10 @@
     .project-info__item p{
         font-size: 18px;
     }
+    .search-page h2{
+        font-size: 48px;
+    }
+
 }
 
 @media(max-width:1440px){
@@ -793,6 +805,9 @@
     }
     .filter-submit span{
         margin-bottom: 10px;
+    }
+    .search-page h2{
+        font-size: 48px;
     }
 
 }
@@ -1269,6 +1284,7 @@
     }
     .projects-row .project-info{
         padding-top: 100px !important;
+        left: -100%;
     }
     .investproject-filter .filter-btn-row{
         grid-template-columns: 1fr;
@@ -1327,6 +1343,9 @@
     .project-info__item p{
         padding-right: 16px;
     }
+    .search-page h2{
+        font-size: 32px;
+    }
 }
 @media(max-width:555px){
     .invest-krasnodar__items{
@@ -1352,7 +1371,7 @@
     .first-screen__sliders-item h3{
         font-size: 20px;
     }
-    h2{
+    h2, .search-page h2{
         font-size: 32px;
     }
     .section-man .container{
