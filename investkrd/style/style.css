@@ -4123,3 +4123,44 @@ select {
 .invest-offers__item{
     display: block;
 }
+.calendar-item{
+    position: relative;
+    padding-bottom: 73px;
+}
+.calendar-item__status{
+    background-color: #2257F7;
+    width: 100%;
+    color:  #FFFFFF;
+    text-align: center;
+    font-family: Onest;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /*  */
+    letter-spacing: 0.48px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    padding: 12px 16px ;
+}
+.calendar-item.disabled{
+    background: #232766;
+}
+
+.calendar-item.disabled .calendar-item__status{
+    background: #293C9B;
+
+}
+.calendar-item.disabled img{
+    opacity: 0.7;
+}
+.calendar-item.disabled h3{
+    opacity: 0.7;
+}
+.calendar-item.disabled:hover h3{
+    color: #ffffff;
+}
+.calendar-item.disabled:hover h3::before{
+    background:#2257F7
+}
