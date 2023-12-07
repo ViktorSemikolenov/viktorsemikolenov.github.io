@@ -1116,6 +1116,7 @@ svg circle {
 
 }
 
+
 .owl-project {
     margin-top: 60px;
 }
@@ -4163,4 +4164,11 @@ select {
 }
 .calendar-item.disabled:hover h3::before{
     background:#2257F7
+}
+
+a.slider-item{
+    text-decoration: none;
+}
+.drop-nav__container{
+    margin-top: 0;
 }
