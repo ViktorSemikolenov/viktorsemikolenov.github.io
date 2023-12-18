@@ -1169,6 +1169,9 @@ input:hover, textarea:hover {
     border: 1px solid #DCDEDF;
     background: #FAFAFA;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .news-item__img {
